@@ -1,0 +1,232 @@
+<!doctype html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>mirage</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="9renpoto" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+
+  <body class="impress-not-supported" onload="prettyPrint()">
+
+    <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+      <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+      <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>Dockerを使った非エンジニアでも使える検証環境の構築</q>
+      </div>
+
+      <div id="aboutme" class="step slide" data-x="0" data-y="-1500">
+        <pre>
+    {
+        "id" : "9renpoto",
+        "name": "Keisuke Kan",
+        "ingress" : "Resistance",
+        "editor " : "vim",
+        "game" : [
+            "FPS",
+            "RTS",
+            "格ゲー",
+            "音ゲー"
+        ],
+    }
+        </pre>
+      </div>
+
+      <div id='google' class="step" data-x="0" data-y="-1000">
+        <q>TL;DR</q>
+        <img src='img/google-search.png' alt='kayac dockerで検索'/>
+      </div>
+
+      <div class="step slide" data-x="0" data-y="-1500">
+        <pre>
+    {
+        "id" : "9renpoto",
+        "name": "Keisuke Kan",
+        "ingress" : "Resistance",
+        "editor " : "vim",
+        "game" : [
+            "FPS",
+            "RTS",
+            "格ゲー",
+            "音ゲー"
+        ],
+    }
+        </pre>
+      </div>
+
+      <div id="about" class="step" data-x="500" data-y="-1500" data-rotate="90" data-scale="0.3">
+        <h1>Web Service????</h1>
+      </div>
+
+      <div id="ing" class="step" data-x="1000" data-y="-1500" data-rotate="90">
+        <ul>
+          <li><b class="positioning">Setup OS...</b></li>
+          <li><b class="rotating">Install_Middleware</b></li>
+          <li><b class="scaling">Coding</b></li>
+          <li><b>Network</b></li>
+          <li><b class="positioning">...Test</b></li>
+          <li><b class="rotating">Deploy...</b></li>
+        </ul>
+      </div>
+
+      <div id="yaruo" class="step" data-x="1000" data-y="-1500" data-scale="0.1" data-rotate="90">
+        <pre>
+          　　　　　 　　 ＿＿＿_　　　　 ━┓
+          　　　　　　 ／　―　　 ＼ 　　 ┏┛
+          　　　　　／ノ　　( ●)　　＼ 　 ・
+          　 　 　 ｜ ( ●) 　 ⌒）　　 |
+          　 　 　 ｜　　 （__ノ￣　　　/
+          　 　 　 ｜ 　 　 　 　 　 　/
+          　　　　　＼＿　　　⊂ヽ∩＼
+          　　　　　　　/´　　　 (,＿ ＼.＼
+          　　 　 　 　 |　　/　　　　 ＼＿ﾉ) ) )
+        </pre>
+      </div>
+
+      <div id="oops" class="step" data-x="1000" data-y="-500" data-rotate="90">
+        <img src="http://tiqav.com/5Jm.jpg" alt="イチからか" align="right" style="margin-left: 50px">
+        <strong>PaaS?</strong>
+        <pre>git push heroku master?</pre>
+        <br/>
+        <br/>
+        <span style="font-size: 32px;">
+          Q.local? private?<br/>
+          A.<a href="https://github.com/flynn/flynn">flynn</a>
+        </span>
+      </div>
+
+      <div class="step" data-x="780" data-y="-150" data-rotate="90" data-scale="0.1">
+        commit, push<br/> 出来るくらいならエンジニア
+      </div>
+
+      <div id="demo" class="step" data-x="1000" data-y="500" data-rotate="90">
+        <q>Demo</q>
+        <div style="font-size: 32px;">
+          <ul>
+            <li>(1).<a href="http://demo.192.168.33.33.xip.io/">Demoサイト</a>を立ち上げる<li>
+            <li>(2).<a href="http://master.192.168.33.33.xip.io/form">作ったもの</a>から立ち上げる<li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mirage" class="step" data-x="-500" data-y="500" data-rotate="180">
+        <q><a href="https://github.com/acidlemon/mirage">github.com/acidlemon/mirage</a></q><br/>
+        <div style="font-size: 32px;">
+          mirage is reverse proxy for docker container and container manager.
+          <a href="https://github.com/acidlemon/mirage/blob/master/config_sample.yml">( config.yml )</a>
+        </div>
+        <div style="font-size: 20px;">
+          <pre>
+host:
+  webapi: docker.192.168.33.33.xip.io
+  reverse_proxy_suffix: .192.168.33.33.xip.io
+
+listen:
+  foreign_address: 127.0.0.1
+  http:
+    - listen: 8080
+      target: 5000
+
+          </pre>
+        </div>
+      </div>
+
+      <div id="mirage-2" class="step" data-x="-1500" data-y="500" data-rotate="180">
+        <q><a href="https://github.com/acidlemon/mirage">github.com/acidlemon/mirage</a></q><br/>
+        <img src="http://tiqav.com/2yA.jpg" align="right"/>
+        <ul style="font-size: 42px;">
+          <li> - /api/list</li>
+          <li> - /api/launch</li>
+          <li> - /api/terminate</li>
+        </ul>
+      </div>
+
+      <div id="test-view-app" class="step" data-x="-2500" data-y="500" data-rotate="180">
+        <p><a href="https://bitbucket.org/9renpoto/test-view-app">bitbucket.org/9renpoto/test-view-app</a></p>
+        <div style="font-size: 32px;">
+          <ul>
+            <li>1.web formからテンプレートをPOST</li>
+            <li>2.アプリが自らをclone, 変更, commit, push</li>
+            <li>3.<strong>mirage</strong>のAPIを呼び出す</li>
+            <li>4.dockerが起きる</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="test-view-app-2" class="step" data-x="-3500" data-y="500" data-rotate="180">
+        <p><a href="https://bitbucket.org/9renpoto/test-view-app">bitbucket.org/9renpoto/test-view-app</a></p>
+        <div style="font-size: 32px;">
+          <a href="https://bitbucket.org/9renpoto/test-view-app/src/3af0f1b549598d3a293dc83828495b9ad2305786/docker/Dockerfile?at=master">Dockerfile</a>
+          <div style="font-size: 15px;">
+            <pre>
+RUN curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | /home/app/local/python-2.7.9/bin/python
+RUN /home/app/local/python-2.7.9/bin/pip install -r requirements.txt
+CMD /bin/sh /home/app/test-view-app/docker/docker_run.sh
+            </pre>
+          </div>
+          <a href="https://bitbucket.org/9renpoto/test-view-app/src/3af0f1b549598d3a293dc83828495b9ad2305786/docker/docker_run.sh?at=master">docker_run.sh</a>
+          <div style="font-size: 15px;">
+            <pre>
+#!/bin/sh
+set -e
+PATH=/home/app/local/python-2.7.9/bin:$PATH
+git fetch
+git checkout $GIT_BRANCH
+git pull
+pip install -r requirements.txt
+python myapp.py
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="test-view-app-3" class="step" data-x="-4500" data-y="500" data-rotate="180">
+        <img src="img/merged.png" />
+      </div>
+
+      <div id="end" class="step" data-x="-3500" data-y="0" data-rotate="0" data-scale="0.1" >
+        <div style="font-size: 72px; align: center">
+          <img src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg' width="400px" align="right" />
+          Happy Hacking!<br/>
+          <div style="font-size: 25px;">
+            <ul>
+              <li>- <a href="http://tech.kayac.com/archive/mirage_for_docker.html">tech.kayac.com</a></li>
+              <li>- <a href="https://github.com/acidlemon/mirage">github.com/acidlemon/mirage</a></li>
+              <li>- <a href="http://xip.io/">xip.io</a></li>
+              <li>- <a href="http://tiqav.com/">tiqav.com</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+if ("ontouchstart" in document.documentElement) {
+  document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+    </script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+
