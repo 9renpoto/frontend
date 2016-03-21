@@ -2,7 +2,7 @@
   "name": "slides",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Feature: add test\""
   },
   "author": "9renpoto",
   "license": "MIT"
