@@ -2,8 +2,20 @@
   "name": "slides",
   "private": true,
   "scripts": {
-    "test": "echo \"Feature: add test\""
+    "build": "gulp build",
+    "prebuild": "rm -rf dist",
+    "test": "npm run build"
   },
-  "author": "9renpoto",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-pug": "^3.0.3",
+    "pug": "^2.0.0-beta2",
+    "require-dir": "^0.3.0",
+    "tslint": "^3.10.2",
+    "typescript-require": "^0.2.9-1",
+    "typings": "^1.0.4"
+  }
 }
