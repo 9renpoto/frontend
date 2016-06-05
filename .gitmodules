@@ -1,3 +1,0 @@
-[submodule "impress.js"]
-	path = test-view-app/impress.js
-	url = git@github.com:bartaz/impress.js.git
