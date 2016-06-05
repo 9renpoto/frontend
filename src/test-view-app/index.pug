@@ -1,0 +1,205 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=1024')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    title mirage
+    meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
+    meta(name='author', content='9renpoto')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
+    link(href='impress-demo.css', rel='stylesheet')
+    link(rel='shortcut icon', href='favicon.png')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+  body.impress-not-supported(onload='prettyPrint()')
+    .fallback-message
+      p
+        | Your browser
+        b doesn't support the features required
+        |  by impress.js, so you are presented with a simplified version of this presentation.
+      p
+        | For the best experience please use the latest
+        b Chrome
+        | ,
+        b Safari
+        |  or
+        b Firefox
+        |  browser.
+    #impress
+      #bored.step.slide(data-x='-1000', data-y='-1500')
+        q Dockerを使った非エンジニアでも使える検証環境の構築
+      #aboutme.step.slide(data-x='0', data-y='-1500')
+        pre.
+          \n    {
+                  "id" : "9renpoto",
+                  "name": "Keisuke Kan",
+                  "ingress" : "Resistance",
+                  "editor " : "vim",
+                  "game" : [
+                      "FPS",
+                      "RTS",
+                      "格ゲー",
+                      "音ゲー"
+                  ],
+              }
+      #google.step(data-x='0', data-y='-1000')
+        q TL;DR
+        img(src='img/google-search.png', alt='kayac dockerで検索')
+      .step.slide(data-x='0', data-y='-1500')
+        pre.
+              {
+                  "id" : "9renpoto",
+                  "name": "Keisuke Kan",
+                  "ingress" : "Resistance",
+                  "editor " : "vim",
+                  "game" : [
+                      "FPS",
+                      "RTS",
+                      "格ゲー",
+                      "音ゲー"
+                  ],
+              }
+      #about.step(data-x='500', data-y='-1500', data-rotate='90', data-scale='0.3')
+        h1 Web Service????
+      #ing.step(data-x='1000', data-y='-1500', data-rotate='90')
+        ul
+          li
+            b.positioning Setup OS...
+          li
+            b.rotating Install_Middleware
+          li
+            b.scaling Coding
+          li
+            b Network
+          li
+            b.positioning ...Test
+          li
+            b.rotating Deploy...
+      #yaruo.step(data-x='1000', data-y='-1500', data-scale='0.1', data-rotate='90')
+        pre.
+                    　　　　　 　　 ＿＿＿_　　　　 ━┓
+                    　　　　　　 ／　―　　 ＼ 　　 ┏┛
+                    　　　　　／ノ　　( ●)　　＼ 　 ・
+                    　 　 　 ｜ ( ●) 　 ⌒）　　 |
+                    　 　 　 ｜　　 （__ノ￣　　　/
+                    　 　 　 ｜ 　 　 　 　 　 　/
+                    　　　　　＼＿　　　⊂ヽ∩＼
+                    　　　　　　　/´　　　 (,＿ ＼.＼
+                    　　 　 　 　 |　　/　　　　 ＼＿ﾉ) ) )
+      #oops.step(data-x='1000', data-y='-500', data-rotate='90')
+        img(src='http://tiqav.com/5Jm.jpg', alt='イチからか', align='right', style='margin-left: 50px')
+        strong PaaS?
+        pre.
+          git push heroku master?
+        br
+        br
+        span(style='font-size: 32px;')
+          | Q.local? private?
+          br
+          |           A.
+          a(href='https://github.com/flynn/flynn') flynn
+      .step(data-x='780', data-y='-150', data-rotate='90', data-scale='0.1')
+        | commit, push
+        br
+        |  出来るくらいならエンジニア
+      #demo.step(data-x='1000', data-y='500', data-rotate='90')
+        q Demo
+        div(style='font-size: 32px;')
+          ul
+            li
+              | (1).
+              a(href='http://demo.192.168.33.33.xip.io/') Demoサイト
+              | を立ち上げる
+            li
+              | (2).
+              a(href='http://master.192.168.33.33.xip.io/form') 作ったもの
+              | から立ち上げる
+      #mirage.step(data-x='-500', data-y='500', data-rotate='180')
+        q
+          a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
+        br
+        div(style='font-size: 32px;')
+          | mirage is reverse proxy for docker container and container manager.
+          a(href='https://github.com/acidlemon/mirage/blob/master/config_sample.yml') ( config.yml )
+        div(style='font-size: 20px;')
+          pre.
+            host:
+              webapi: docker.192.168.33.33.xip.io
+              reverse_proxy_suffix: .192.168.33.33.xip.io
+            listen:
+              foreign_address: 127.0.0.1
+              http:
+                - listen: 8080
+                  target: 5000
+      #mirage-2.step(data-x='-1500', data-y='500', data-rotate='180')
+        q
+          a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
+        br
+        img(src='http://tiqav.com/2yA.jpg', align='right')
+        ul(style='font-size: 42px;')
+          li  - /api/list
+          li  - /api/launch
+          li  - /api/terminate
+      #test-view-app.step(data-x='-2500', data-y='500', data-rotate='180')
+        p
+          a(href='https://bitbucket.org/9renpoto/test-view-app') bitbucket.org/9renpoto/test-view-app
+        div(style='font-size: 32px;')
+          ul
+            li 1.web formからテンプレートをPOST
+            li 2.アプリが自らをclone, 変更, commit, push
+            li
+              | 3.
+              strong mirage
+              | のAPIを呼び出す
+            li 4.dockerが起きる
+      #test-view-app-2.step(data-x='-3500', data-y='500', data-rotate='180')
+        p
+          a(href='https://bitbucket.org/9renpoto/test-view-app') bitbucket.org/9renpoto/test-view-app
+        div(style='font-size: 32px;')
+          a(href='https://bitbucket.org/9renpoto/test-view-app/src/3af0f1b549598d3a293dc83828495b9ad2305786/docker/Dockerfile?at=master') Dockerfile
+          div(style='font-size: 15px;')
+            pre.
+              RUN curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | /home/app/local/python-2.7.9/bin/python
+              RUN /home/app/local/python-2.7.9/bin/pip install -r requirements.txt
+              CMD /bin/sh /home/app/test-view-app/docker/docker_run.sh
+          a(href='https://bitbucket.org/9renpoto/test-view-app/src/3af0f1b549598d3a293dc83828495b9ad2305786/docker/docker_run.sh?at=master') docker_run.sh
+          div(style='font-size: 15px;')
+            pre.
+              #!/bin/sh
+              set -e
+              PATH=/home/app/local/python-2.7.9/bin:$PATH
+              git fetch
+              git checkout $GIT_BRANCH
+              git pull
+              pip install -r requirements.txt
+              python myapp.py
+      #test-view-app-3.step(data-x='-4500', data-y='500', data-rotate='180')
+        img(src='img/merged.png')
+      #end.step(data-x='-3500', data-y='0', data-rotate='0', data-scale='0.1')
+        div(style='font-size: 72px; align: center')
+          img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400px', align='right')
+          |           Happy Hacking!
+          br
+          div(style='font-size: 25px;')
+            ul
+              li
+                | -
+                a(href='http://tech.kayac.com/archive/mirage_for_docker.html') tech.kayac.com
+              li
+                | -
+                a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
+              li
+                | -
+                a(href='http://xip.io/') xip.io
+              li
+                | -
+                a(href='http://tiqav.com/') tiqav.com
+    .hint
+      p Use a spacebar or arrow keys to navigate
+    script.
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+    script(src='impress.js')
+    script.
+      impress().init();

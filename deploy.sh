@@ -2,6 +2,7 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+cd dist
 git init
 git add -A
 msg="[ci skip] publish / `date`"
