@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
+    "postinstall": "typings install",
     "prebuild": "rm -rf dist",
     "test": "npm run build"
   },
