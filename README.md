@@ -7,7 +7,7 @@ My eslint config set.
 ## Usage
 
 ```sh
-npm install -D @9renpto/eslint-config eslint
+npm install -D @9renpoto/eslint-config eslint
 ```
 
 ```json
