@@ -1,9 +1,9 @@
 /// <reference path="../typings/index.d.ts" />
 
-import path = require('path');
-let root: any = path.join(__dirname, '../');
+import path = require('path')
+const global: any = path.join(__dirname, '../')
 
 export = {
-  dist: path.join(root, 'dist'),
-  root: root
-};
+  dist: path.join(global, 'dist'),
+  global: global
+}

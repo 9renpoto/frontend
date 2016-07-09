@@ -1,5 +1,5 @@
 /// <reference path='../../typings/index.d.ts' />
-import gulp = require('gulp');
+import gulp = require('gulp')
 
 gulp.task('build', function (callback: Function) {
   const path: any = require('path')
@@ -7,9 +7,9 @@ gulp.task('build', function (callback: Function) {
   const pug: any = require('gulp-pug')
   const gulpIf: any = require('gulp-if')
 
-  return gulp.src(path.join(config.root, 'src/**'))
+  return gulp.src(path.join(config.global, 'src/**'))
     .pipe(gulpIf('*.pug', pug({
       locales: 'en-us'
     })))
-    .pipe(gulp.dest(config.dist));
-});
+    .pipe(gulp.dest(config.dist))
+})
