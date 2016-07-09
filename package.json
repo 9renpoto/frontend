@@ -1,14 +1,16 @@
 {
-  "name": "slides",
+  "name": "@9renpoto/slides",
   "private": true,
   "scripts": {
     "build": "gulp build",
+    "lint": "tslint gulpfile.ts gulp/**/*.ts",
     "postinstall": "typings install",
     "prebuild": "rm -rf dist",
-    "test": "npm run build"
+    "test": "npm run lint && npm run build"
   },
   "license": "MIT",
   "devDependencies": {
+    "@uncovertruth/tslint-config": "^0.0.1",
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",
     "gulp-if": "^2.0.1",
