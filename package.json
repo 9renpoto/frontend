@@ -4,7 +4,8 @@
   "description": "my eslint config",
   "main": "index.js",
   "scripts": {
-    "test": "eslint test"
+    "test": "eslint test",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,6 @@
   },
   "devDependencies": {
     "eslint": "^3.0.1"
+    "greenkeeper-postpublish": "^1.0.0"
   }
 }
