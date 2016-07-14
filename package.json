@@ -18,7 +18,7 @@
     "gulp-pug": "^3.0.3",
     "pug": "^2.0.0-beta2",
     "require-dir": "^0.3.0",
-    "tslint": "^3.10.2",
+    "tslint": "^3.13.0",
     "typescript-require": "^0.2.9-1",
     "typings": "^1.0.4"
   }
