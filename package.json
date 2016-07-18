@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "lint:ts": "tslint $(find src test -name '*.ts')",
+    "lint:ts": "tslint gulpfile.ts gulp/**/*.ts",
     "lint": "npm run lint:ts",
     "postinstall": "typings install",
     "prebuild": "rm -rf dist",
