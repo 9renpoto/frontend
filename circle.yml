@@ -1,11 +1,10 @@
 checkout:
   post:
-    - git submodule sync
     - git submodule update --init --recursive
 
 machine:
   node:
-    version: 5.7.0
+    version: 6.1.0
 
 dependencies:
   pre:
