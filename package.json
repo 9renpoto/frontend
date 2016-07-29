@@ -13,7 +13,7 @@
   "devDependencies": {
     "@uncovertruth/tslint-config": "^0.0.1",
     "gulp": "^3.9.1",
-    "gulp-connect": "^4.2.0",
+    "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.1",
     "gulp-pug": "^3.0.3",
     "pug": "^2.0.0-beta2",
