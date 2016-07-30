@@ -1,1 +1,5 @@
-# style
+# @9renpoto/style
+
+## license
+
+MIT
