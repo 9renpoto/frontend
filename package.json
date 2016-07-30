@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "lint:ts": "tslint gulpfile.ts gulp/**/*.ts",
+    "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
     "lint": "npm run lint:ts",
     "postinstall": "typings install",
     "prebuild": "rm -rf dist",
@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@uncovertruth/tslint-config": "^0.0.1",
+    "@9renpoto/tslint-config": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.1",
