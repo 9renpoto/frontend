@@ -1,16 +1,11 @@
-doctype html
-html(lang='ja')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=1024')
-    meta(name='apple-mobile-web-app-capable', content='yes')
-    title mirage
-    meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
-    meta(name='author', content='9renpoto')
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
-    link(href='impress-demo.css', rel='stylesheet')
-    link(rel='shortcut icon', href='favicon.png')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+extends ../base.pug
+
+block head
+  meta(name='viewport', content='width=1024')
+  meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
+  link(href='impress-demo.css', rel='stylesheet')
+block body
   body.impress-not-supported(onload='prettyPrint()')
     .fallback-message
       p

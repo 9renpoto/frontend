@@ -1,3 +1,3 @@
 {
-  "extends": "@uncovertruth/tslint-config"
+  "extends": "@9renpoto/tslint-config"
 }
