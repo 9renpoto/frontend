@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "styleguidist build",
+    "lint:js": "eslint .",
+    "lint:ts": "tslint \"src/**\"",
+    "lint": "npm-run-all -p lint:*",
     "start": "styleguidist server",
-    "test": "npm run build"
+    "test:build": "npm run build",
+    "test:lint": "npm run lint",
+    "test": "npm-run-all -p test:*"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,7 @@
     "@9renpoto/eslint-config": "0.0.3",
     "@9renpoto/tslint-config": "^1.0.0",
     "eslint": "^3.2.0",
+    "npm-run-all": "^2.3.0",
     "react-styleguidist": "^3.0.2",
     "ts-loader": "^0.8.2",
     "tslint": "^3.14.0",
