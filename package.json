@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/9renpoto/style#readme",
   "devDependencies": {
-    "@9renpoto/eslint-config": "0.0.3",
+    "@9renpoto/eslint-config": "1.0.0",
     "@9renpoto/tslint-config": "^1.0.0",
     "eslint": "^3.2.0",
     "greenkeeper-postpublish": "^1.0.0",
