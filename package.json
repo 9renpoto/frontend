@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/eslint-config",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "my eslint config",
   "main": "index.js",
   "scripts": {
