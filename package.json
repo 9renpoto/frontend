@@ -16,7 +16,7 @@
     "config"
   ],
   "author": "9renpoto",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
