@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "jsx": "react",
     "module": "commonjs",
-    "target": "es5",
     "noImplicitAny": false,
-    "sourceMap": false
+    "sourceMap": false,
+    "target": "es6",
+    "outDir": "dist"
   },
   "compileOnSave": false,
   "buildOnSave": false,
