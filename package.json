@@ -7,7 +7,7 @@
     "build": "tsc",
     "deploy": "storybook-to-ghpages",
     "lint:js": "eslint .",
-    "lint:ts": "tslint \"src/**\"",
+    "lint:ts": "tslint \"src/**/*.ts\"",
     "lint": "npm-run-all -p lint:*",
     "postpublish": "greenkeeper-postpublish",
     "prebuild": "rimraf dist",
