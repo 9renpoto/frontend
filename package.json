@@ -4,14 +4,17 @@
   "description": "my style",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "deploy": "storybook-to-ghpages",
     "lint:js": "eslint .",
     "lint:ts": "tslint \"src/**\"",
     "lint": "npm-run-all -p lint:*",
-    "start": "start-storybook -p",
-    "deploy-storybook": "storybook-to-ghpages",
+    "postpublish": "greenkeeper-postpublish",
+    "prebuild": "rimraf dist",
+    "predeploy": "npm run build",
+    "start": "start-storybook -p 9001",
     "test:lint": "npm run lint",
-    "test": "npm-run-all -p test:*",
-    "postpublish": "greenkeeper-postpublish"
+    "test": "npm-run-all -p test:*"
   },
   "repository": {
     "type": "git",
@@ -41,6 +44,7 @@
     "eslint": "^3.2.0",
     "greenkeeper-postpublish": "^1.0.0",
     "npm-run-all": "^2.3.0",
+    "rimraf": "^2.5.4",
     "ts-loader": "^0.8.2",
     "tslint": "^3.14.0",
     "typescript": "^2.0.0"
