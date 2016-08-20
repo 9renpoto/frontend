@@ -6,7 +6,6 @@
     "clean": "rimraf dist",
     "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
     "lint": "npm run lint:ts",
-    "postinstall": "typings install",
     "test": "npm run lint && npm run build"
   },
   "license": "MIT",
