@@ -4,7 +4,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 npm run clean || exit 1
 
-cd dist
+mkdir dist && cd dist
 git init
 git remote add origin git@github.com:9renpoto/slides.git
 git checkout -b gh-pages origin/gh-pages
