@@ -3,15 +3,18 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "clean": "rimraf dist",
-    "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
+    "deploy": "ghpages --path dist",
     "lint": "npm run lint:ts",
+    "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
+    "prebuild": "rimraf dist",
+    "predeploy": "npm run build",
     "test": "npm run lint && npm run build"
   },
   "license": "MIT",
   "devDependencies": {
     "@9renpoto/tslint-config": "^1.0.0",
     "@types/gulp": "^3.8.30",
+    "ghpages": "0.0.8",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.1",
