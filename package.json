@@ -3,23 +3,25 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
+    "clean": "rimraf dist",
     "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
     "lint": "npm run lint:ts",
     "postinstall": "typings install",
-    "prebuild": "rm -rf dist",
     "test": "npm run lint && npm run build"
   },
   "license": "MIT",
   "devDependencies": {
     "@9renpoto/tslint-config": "^1.0.0",
+    "@types/gulp": "^3.8.30",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.1",
     "gulp-pug": "^3.0.3",
     "pug": "^2.0.0-beta2",
     "require-dir": "^0.3.0",
+    "rimraf": "^2.5.4",
     "tslint": "^3.13.0",
-    "typescript-require": "^0.2.9-1",
-    "typings": "^1.0.4"
+    "typescript": "^2.0.0",
+    "typescript-require": "^0.2.9-1"
   }
 }

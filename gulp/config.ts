@@ -1,5 +1,3 @@
-/// <reference path="../typings/index.d.ts" />
-
 import path = require('path')
 const global: any = path.join(__dirname, '../')
 
