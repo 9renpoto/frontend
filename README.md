@@ -27,4 +27,4 @@ MIT
 [daviddm-image]: https://david-dm.org/9renpoto/eslint-config.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/9renpoto/eslint-config
 [dev-daviddm-image]: https://david-dm.org/9renpoto/eslint-config/dev-status.svg
-[dev-daviddm-url]: https://david-dm.org/9renpoto/eslint-config#info=devDependencies
+[dev-daviddm-url]: https://david-dm.org/9renpoto/eslint-config?type=dev
