@@ -1,14 +1,15 @@
-import gulp = require('gulp')
+import * as gulp from 'gulp'
+import * as path from 'path'
+import * as gulpIf from 'gulp-if'
+const pug: any = require('gulp-pug')
+
+import { global, dist } from '../config'
 
 gulp.task('build', function (callback: Function) {
-  const path: any = require('path')
-  const config: any = require('../config')
-  const pug: any = require('gulp-pug')
-  const gulpIf: any = require('gulp-if')
 
-  return gulp.src(path.join(config.global, 'src/**'))
+  return gulp.src(path.join(global, 'src/**'))
     .pipe(gulpIf('*.pug', pug({
       locales: 'en-us'
     })))
-    .pipe(gulp.dest(config.dist))
+    .pipe(gulp.dest(dist))
 })

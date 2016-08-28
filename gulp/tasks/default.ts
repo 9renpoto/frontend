@@ -1,2 +1,2 @@
-import gulp = require('gulp')
+import * as gulp from 'gulp'
 gulp.task('default', ['build', 'serve'])
