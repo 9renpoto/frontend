@@ -4,7 +4,7 @@ block head
   meta(name='viewport', content='width=1024')
   meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
   link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
-  link(href='impress-demo.css', rel='stylesheet')
+  link(href='../impress.bundle.css', rel='stylesheet')
 block body
   body.impress-not-supported(onload='prettyPrint()')
     .fallback-message
@@ -25,21 +25,21 @@ block body
         q Dockerを使った非エンジニアでも使える検証環境の構築
       #aboutme.step.slide(data-x='0', data-y='-1500')
         pre.
-          \n    {
-                  "id" : "9renpoto",
-                  "name": "Keisuke Kan",
-                  "ingress" : "Resistance",
-                  "editor " : "vim",
-                  "game" : [
-                      "FPS",
-                      "RTS",
-                      "格ゲー",
-                      "音ゲー"
-                  ],
-              }
+          {
+              "id" : "9renpoto",
+              "name": "Keisuke Kan",
+              "ingress" : "Resistance",
+              "editor " : "vim",
+              "game" : [
+                  "FPS",
+                  "RTS",
+                  "格ゲー",
+                  "音ゲー"
+              ],
+          }
       #google.step(data-x='0', data-y='-1000')
         q TL;DR
-        img(src='img/google-search.png', alt='kayac dockerで検索')
+        img(src='../img/google-search.png', alt='kayac dockerで検索')
       .step.slide(data-x='0', data-y='-1500')
         pre.
               {
@@ -169,7 +169,7 @@ block body
               pip install -r requirements.txt
               python myapp.py
       #test-view-app-3.step(data-x='-4500', data-y='500', data-rotate='180')
-        img(src='img/merged.png')
+        img(src='../img/merged.png')
       #end.step(data-x='-3500', data-y='0', data-rotate='0', data-scale='0.1')
         div(style='font-size: 72px; align: center')
           img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400px', align='right')
@@ -195,6 +195,6 @@ block body
       if ("ontouchstart" in document.documentElement) {
         document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
       }
-    script(src='impress.js')
+    script(src='../impress.bundle.js')
     script.
       impress().init();
