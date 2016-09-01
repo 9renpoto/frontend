@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
+import style from '../style.css'
 
 declare var module: any
 
