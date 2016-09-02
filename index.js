@@ -8,6 +8,7 @@ module.exports = {
     'mocha': true
   },
   rules: {
+    'consistent-return': 2,
     'no-else-return': 2,
     'no-var': 2,
     'prefer-const': 2,
