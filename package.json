@@ -1,36 +1,11 @@
 {
   "name": "@9renpoto/style",
-  "version": "0.0.1",
   "description": "my style",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "deploy": "storybook-to-ghpages",
-    "lint:js": "eslint .",
-    "lint:ts": "tslint \"src/**/*.ts\"",
-    "lint:css": "stylelint \"src/*.css\"",
-    "lint": "npm-run-all -p lint:*",
-    "postpublish": "greenkeeper-postpublish",
-    "prebuild": "rimraf dist",
-    "predeploy": "npm run build",
-    "start": "start-storybook -p 9001",
-    "test:build": "npm run build",
-    "test:lint": "npm run lint",
-    "test": "npm-run-all -p test:*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/style.git"
-  },
-  "keywords": [
-    "styleguide"
-  ],
+  "version": "0.0.1",
   "author": "9renpoto",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/9renpoto/style/issues"
   },
-  "homepage": "https://9renpoto.github.io/style/",
   "dependencies": {
     "@types/node": "^6.0.38",
     "@types/react": "^0.14.33",
@@ -53,5 +28,30 @@
     "ts-loader": "^0.8.2",
     "tslint": "^3.15.1",
     "typescript": "^2.0.0"
+  },
+  "homepage": "https://9renpoto.github.io/style/",
+  "keywords": [
+    "styleguide"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/style.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "deploy": "storybook-to-ghpages",
+    "lint": "npm-run-all -p lint:*",
+    "lint:css": "stylelint \"src/*.css\"",
+    "lint:js": "eslint .",
+    "lint:ts": "tslint \"src/**/*.ts\"",
+    "postpublish": "greenkeeper-postpublish",
+    "prebuild": "rimraf dist",
+    "predeploy": "npm run build",
+    "start": "start-storybook -p 9001",
+    "test": "npm-run-all -p test:*",
+    "test:build": "npm run build",
+    "test:lint": "npm run lint"
   }
 }
