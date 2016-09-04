@@ -1,20 +1,7 @@
 {
   "name": "@9renpoto/slides",
-  "private": true,
-  "scripts": {
-    "build": "npm-run-all build:*",
-    "build:webpack": "webpack",
-    "build:html": "pug src --out dist",
-    "deploy": "ghpages --path dist",
-    "lint": "npm-run-all lint:*",
-    "postbuild": "cp -r src/img dist/img",
-    "lint:js": "eslint .",
-    "prebuild": "rimraf dist",
-    "predeploy": "npm run build",
-    "start": "webpack-dev-server --content-base dist/",
-    "test": "npm-run-all lint build"
-  },
-  "license": "MIT",
+  "description": "my slides",
+  "version": "0.0.0",
   "dependencies": {
     "impress.js": "^0.6.0"
   },
@@ -34,5 +21,17 @@
     "typescript": "^2.0.2",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
+  },
+  "license": "MIT",
+  "main": "dist/index.html",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "deploy": "ghpages --path dist",
+    "lint": "npm run lint:ts",
+    "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
+    "prebuild": "rimraf dist",
+    "predeploy": "npm run build",
+    "test": "npm run lint && npm run build"
   }
 }
