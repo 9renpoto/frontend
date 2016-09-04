@@ -26,12 +26,16 @@
   "main": "dist/index.html",
   "private": true,
   "scripts": {
-    "build": "gulp build",
+    "build": "npm-run-all build:*",
+    "build:webpack": "webpack",
+    "build:html": "pug src --out dist",
     "deploy": "ghpages --path dist",
-    "lint": "npm run lint:ts",
-    "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
+    "lint": "npm-run-all lint:*",
+    "postbuild": "cp -r src/img dist/img",
+    "lint:js": "eslint .",
     "prebuild": "rimraf dist",
     "predeploy": "npm run build",
-    "test": "npm run lint && npm run build"
+    "start": "webpack-dev-server --content-base dist/",
+    "test": "npm-run-all lint build"
   }
 }
