@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { storiesOf } from '@kadira/storybook'
 
-import {Button} from '../src/components/button'
+import {Button} from '../'
 
 declare const module: any
 
