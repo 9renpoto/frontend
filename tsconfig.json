@@ -3,9 +3,9 @@
     "declaration": true,
     "jsx": "react",
     "module": "commonjs",
-    "noImplicitAny": false,
-    "sourceMap": false,
-    "target": "es6",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "target": "es5",
     "outDir": "dist"
   },
   "compileOnSave": false,

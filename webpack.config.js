@@ -8,14 +8,13 @@ module.exports = [{
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.ts', '.tsx', '.js', '.html'],
     modulesDirectories: ['node_modules']
   },
   module: {
     loaders: [
       {
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
+        test: /\.css?$/,
+        loader: 'style!css'
       }
     ]
   }
