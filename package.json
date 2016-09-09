@@ -20,7 +20,6 @@
     "@kadira/storybook": "^2.8.0",
     "@kadira/storybook-deployer": "^1.1.0",
     "@types/enzyme": "^2.4.32",
-    "@types/jsdom": "^2.0.28",
     "@types/mocha": "^2.2.31",
     "@types/power-assert": "0.0.27",
     "codecov": "^1.0.1",
