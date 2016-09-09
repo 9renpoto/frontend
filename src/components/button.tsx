@@ -5,7 +5,7 @@ export class Button extends React.Component<any, any> {
     const text = this.props.text || 'Btn'
     return (
       <div>
-        <button>{text}</button>
+        <button className='btn'>{text}</button>
       </div>
     )
   }
