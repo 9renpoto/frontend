@@ -4,6 +4,8 @@ node_js: stable
 cache:
   directories:
   - node_modules
+after_success:
+- npm run codecov
 notifications:
   email: false
   slack:
