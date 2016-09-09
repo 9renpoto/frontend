@@ -2,14 +2,14 @@
 
 [![Travis Build Status][travis-image]][travis-url] [![Dependency Status][david-dm-image]][david-dm-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url] [![codecov][codecov-image]][codecov-url]
 
-## Develop
+## develop
 
 ```sh
 tsc -w
 npm start
 ```
 
-## Tests
+## tests
 
 ```sh
 npm test
