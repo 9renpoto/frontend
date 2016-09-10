@@ -6,6 +6,7 @@ cache:
   - node_modules
 after_success:
 - npm run codecov
+- npm run deploy-storybook
 notifications:
   email: false
   slack:

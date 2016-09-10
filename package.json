@@ -63,6 +63,7 @@
     "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
     "cp:settings": "cp test/mocha.opts dist/test/.",
     "cp:setup": "cp test/setup.js dist/test/.",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint": "npm-run-all -p lint:*",
     "lint:css": "stylelint \"src/*.css\"",
     "lint:js": "eslint .",
