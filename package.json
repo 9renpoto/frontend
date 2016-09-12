@@ -7,9 +7,6 @@
     "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
-    "@types/node": "^6.0.38",
-    "@types/react": "^0.14.33",
-    "@types/react-dom": "^0.14.16",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
   },
@@ -21,11 +18,15 @@
     "@kadira/storybook-deployer": "^1.1.0",
     "@types/enzyme": "^2.4.32",
     "@types/mocha": "^2.2.31",
+    "@types/node": "^6.0.38",
     "@types/power-assert": "0.0.27",
+    "@types/react": "^0.14.33",
+    "@types/react-dom": "^0.14.16",
     "codecov": "^1.0.1",
     "enzyme": "^2.4.1",
     "eslint": "^3.4.0",
     "greenkeeper-postpublish": "^1.0.1",
+    "intelli-espower-loader": "^1.0.1",
     "istanbul": "^0.4.5",
     "jsdom": "^9.5.0",
     "jsdom-global": "^2.1.0",
@@ -63,6 +64,7 @@
     "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
     "cp:settings": "cp test/mocha.opts dist/test/.",
     "cp:setup": "cp test/setup.js dist/test/.",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint": "npm-run-all -p lint:*",
     "lint:css": "stylelint \"src/*.css\"",
     "lint:js": "eslint .",
