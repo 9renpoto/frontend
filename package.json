@@ -23,6 +23,7 @@
     "@types/react": "^0.14.33",
     "@types/react-dom": "^0.14.16",
     "codecov": "^1.0.1",
+    "concurrently": "^2.2.0",
     "enzyme": "^2.4.1",
     "eslint": "^3.4.0",
     "greenkeeper-postpublish": "^1.0.1",
@@ -75,9 +76,11 @@
     "prebuild-storybook": "npm run build",
     "prestart": "npm run build",
     "pretest:mocha": "npm-run-all build cp:*",
-    "start": "start-storybook -p 9001",
+    "serve:storybook": "start-storybook -p 9001",
+    "serve:ts": "tsc -w",
+    "start": "concurrently --kill-others  \"npm run serve:ts\" \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
-    "test:mocha": "istanbul cover _mocha -- dist/test/*.test.js"
+    "test:mocha": "istanbul cover _mocha -- dist/test/**/**/*.test.js"
   }
 }
