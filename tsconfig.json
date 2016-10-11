@@ -4,9 +4,9 @@
     "jsx": "react",
     "module": "commonjs",
     "noImplicitAny": true,
+    "outDir": "dist",
     "sourceMap": true,
-    "target": "es5",
-    "outDir": "dist"
+    "target": "es6"
   },
   "compileOnSave": false,
   "buildOnSave": false,
