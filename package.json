@@ -35,7 +35,7 @@
     "npm-run-all": "^3.1.0",
     "power-assert": "^1.4.1",
     "react-addons-test-utils": "^15.3.2",
-    "remap-istanbul": "^0.6.4",
+    "remap-istanbul": "^0.7.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "stylelint": "^7.4.2",
