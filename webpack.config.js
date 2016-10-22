@@ -1,21 +1,6 @@
-const path = require('path')
-
-module.exports = [{
-  entry: './index',
-  output: {
-    path: path.join(__dirname, 'styles'),
-    filename: '[name].bundle.js',
-    publicPath: '/static/'
-  },
-  resolve: {
-    modulesDirectories: ['node_modules']
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.css?$/,
-        loader: 'style!css'
-      }
-    ]
-  }
-}]
+module.exports = {
+  module: { loaders: [
+    { test: /\.css$/, loaders: ['style-loader', 'css-loader?importLoaders=1', 'postcss-loader'] }
+  ]},
+  postcss: () => [require('autoprefixer'), require('precss')]
+}
