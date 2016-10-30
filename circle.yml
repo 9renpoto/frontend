@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: v6.1.0
+
+deployment:
+  update-dependencies:
+    branch: master
+    commands:
+      - >
+        if [ -n "${NPM_UPDATE}" ]; then
+          $(npm bin)/ci-npm-update --execute
+        fi
