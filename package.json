@@ -55,6 +55,9 @@
   "directories": {
     "test": "dist/test"
   },
+  "engine": {
+    "node": ">= 5"
+  },
   "homepage": "https://9renpoto.github.io/style/",
   "keywords": [
     "styleguide"
