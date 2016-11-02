@@ -3,6 +3,7 @@ sudo: false
 node_js:
 - stable
 - 6
+- 5
 cache:
   directories:
   - node_modules
