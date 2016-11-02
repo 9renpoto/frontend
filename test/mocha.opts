@@ -1,4 +1,4 @@
---require dist/test/setup.js
+--require test/setup.js
 --require jsdom-global/register
 --require intelli-espower-loader
 --recursive

@@ -71,10 +71,7 @@
     "clean": "rimraf dist coverage",
     "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
     "cover": "npm-run-all -p cover:*",
-    "cover:html": "cd coverage && remap-istanbul -i coverage.json -o html-report -t html",
     "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
-    "cp:settings": "cp test/mocha.opts dist/test/.",
-    "cp:setup": "cp test/setup.js dist/test/.",
     "deploy-storybook": "storybook-to-ghpages",
     "lint": "npm-run-all -p lint:*",
     "lint:css": "stylelint *.css",
@@ -85,12 +82,12 @@
     "prebuild": "npm run clean",
     "prebuild-storybook": "npm run build",
     "prestart": "npm run build",
-    "pretest:mocha": "npm-run-all build cp:*",
+    "pretest:mocha": "npm-run-all build",
     "serve:storybook": "start-storybook -p 9001",
     "serve:ts": "tsc -w",
     "start": "concurrently --kill-others  \"npm run serve:ts\" \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
-    "test:mocha": "istanbul cover _mocha -- dist/test/**/**/*.test.js"
+    "test:mocha": "istanbul cover _mocha --opts=test/mocha.opts -- dist/test/**/**/*.test.js"
   }
 }
