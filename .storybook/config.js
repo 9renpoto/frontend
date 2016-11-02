@@ -1,9 +1,6 @@
 import { configure } from '@kadira/storybook'
-import '../src/style.css'
-
-function loadStories () {
-  require('../dist/stories/button')
-  // require as many as stories you need.
-}
-
-configure(loadStories, module)
+import '../style.css'
+const req = require.context('../dist/stories', true, /.js$/)
+configure(() =>  {
+  req.keys().forEach((filename) => req(filename))
+}, module)

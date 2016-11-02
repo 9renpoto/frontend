@@ -5,7 +5,6 @@
 ## develop
 
 ```sh
-tsc -w
 npm start
 ```
 
