@@ -1,3 +1,9 @@
 {
-  "extends": "@9renpoto/tslint-config"
+  "extends": "@9renpoto/tslint-config",
+  "rules": {
+    "no-unused-variable":  [
+      true,
+      "react"
+    ]
+  }
 }
