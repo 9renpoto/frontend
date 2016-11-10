@@ -1,6 +1,6 @@
 [ignore]
 .*/node_modules/fbjs/lib/.*
-.*/__test__/.*
+.*/node_modules/.*test.*/.*
 
 [include]
 
