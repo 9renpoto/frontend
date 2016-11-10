@@ -25,7 +25,6 @@
     "babel-plugin-flow-react-proptypes": "^0.17.2",
     "babel-plugin-transform-flow-strip-types": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
-    "babel-preset-power-assert": "^1.0.0",
     "babel-preset-react": "^6.16.0",
     "ci-npm-update": "^1.0.9",
     "codecov": "^1.0.1",
@@ -40,6 +39,7 @@
     "jsdom": "^9.8.3",
     "jsdom-global": "^2.1.0",
     "mocha": "^3.1.2",
+    "npm-run-all": "^3.1.1",
     "postcss-loader": "^1.1.0",
     "power-assert": "^1.4.1",
     "react-addons-test-utils": "^15.3.2",
@@ -55,7 +55,7 @@
     "styleguide"
   ],
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
@@ -74,6 +74,6 @@
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
-    "test:mocha": "mocha -- test/**/*.test.jsx"
+    "test:mocha": "mocha -- test/**/*.js{,x}"
   }
 }

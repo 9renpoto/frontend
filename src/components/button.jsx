@@ -1,11 +1,6 @@
-import React, { Component } from 'react'
-
-type Props = {
-  text: string;
-}
+import React, { Component, PropTypes } from 'react'
 
 export class Button extends Component {
-  props: Props
   render () {
     const text = this.props.text || 'Btn'
     return (
@@ -13,5 +8,8 @@ export class Button extends Component {
         <button className='btn'>{text}</button>
       </div>
     )
+  }
+  static propTypes = {
+    text: PropTypes.string
   }
 }

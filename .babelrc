@@ -7,12 +7,5 @@
     "flow-react-proptypes",
     "transform-class-properties",
     "transform-flow-strip-types"
-  ],
-  "env": {
-    "development": {
-      "presets": [
-        "power-assert"
-      ]
-    }
-  }
+  ]
 }
