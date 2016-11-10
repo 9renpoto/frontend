@@ -1,6 +1,5 @@
 import { configure } from '@kadira/storybook'
-import '../style.css'
-const req = require.context('../dist/stories', true, /.js$/)
+const req = require.context('../stories/', true, /.jsx$/)
 configure(() =>  {
   req.keys().forEach((filename) => req(filename))
 }, module)

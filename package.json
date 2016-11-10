@@ -4,18 +4,12 @@
   "version": "0.0.1",
   "author": "9renpoto",
   "bugs": {
-    "url": "https://github.com/9renpoto/style/issues"
+    "url": "https://github.com/9renpoto/style/pulls"
   },
   "dependencies": {
-    "@types/react": "^0.14.44",
-    "@types/react-dom": "^0.14.18",
-    "@types/react-redux": "^4.4.32",
-    "@types/redux": "^3.6.31",
     "basscss": "^8.0.3",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0"
+    "react-dom": "^15.3.2"
   },
   "devDependencies": {
     "@9renpoto/eslint-config": "^1.4.0",
@@ -24,36 +18,34 @@
     "@9renpoto/tslint-config": "^1.1.0",
     "@kadira/storybook": "^2.29.0",
     "@kadira/storybook-deployer": "^1.2.0",
-    "@types/enzyme": "^2.5.37",
-    "@types/mocha": "^2.2.32",
-    "@types/node": "^6.0.46",
-    "@types/power-assert": "1.4.29",
     "autoprefixer": "^6.5.1",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-flow-react-proptypes": "^0.17.2",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-preset-react": "^6.16.0",
     "ci-npm-update": "^1.0.9",
     "codecov": "^1.0.1",
     "concurrently": "^3.1.0",
     "enzyme": "^2.5.1",
     "eslint": "^3.9.1",
+    "flow-bin": "^0.34.0",
+    "flow-typed": "^2.0.0",
+    "flowtype": "^2.0.0",
     "greenkeeper-postpublish": "^1.0.1",
     "intelli-espower-loader": "^1.0.1",
-    "istanbul": "^0.4.5",
     "jsdom": "^9.8.3",
     "jsdom-global": "^2.1.0",
     "mocha": "^3.1.2",
-    "npm-run-all": "^3.1.1",
     "postcss-loader": "^1.1.0",
     "power-assert": "^1.4.1",
     "react-addons-test-utils": "^15.3.2",
-    "remap-istanbul": "^0.7.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
-    "stylelint": "^7.5.0",
-    "tslint": "^3.15.1",
-    "typescript": "^2.0.7",
-    "typescript-eslint-parser": "^0.4.0"
-  },
-  "directories": {
-    "test": "dist/test"
+    "stylelint": "^7.5.0"
   },
   "engine": {
     "node": ">= 5"
@@ -69,31 +61,19 @@
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
-    "build": "tsc",
     "build-storybook": "build-storybook -o ./.out",
     "clean": "rimraf dist coverage",
-    "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
-    "cover": "npm-run-all -p cover:*",
-    "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
     "deploy-storybook": "storybook-to-ghpages",
     "lint": "npm-run-all -p lint:*",
     "lint:css": "stylelint *.css",
     "lint:js": "eslint .",
-    "lint:ts": "npm-run-all -p lint:ts:*",
-    "lint:ts:src": "tslint index.tsx src/*.ts{,x} src/**/*.ts{,x}",
-    "lint:ts:test": "tslint test/**/*.ts{,x} test/**/**/*.ts{,x}",
-    "lint:ts:stories": "tslint stories/*.tsx",
+    "lint:flow": "flow",
     "postpublish": "greenkeeper-postpublish",
-    "posttest": "npm run cover",
     "prebuild": "npm run clean",
-    "prebuild-storybook": "npm run build",
-    "prestart": "npm run build",
-    "pretest:mocha": "npm-run-all build",
     "serve:storybook": "start-storybook -p 9001",
-    "serve:ts": "tsc -w",
-    "start": "concurrently --kill-others  \"npm run serve:ts\" \"npm run serve:storybook\"",
+    "start": "concurrently --kill-others  \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
-    "test:mocha": "istanbul cover _mocha --opts=test/mocha.opts -- dist/test/**/**/*.test.js"
+    "test:mocha": "mocha -- test/**/*.test.jsx"
   }
 }

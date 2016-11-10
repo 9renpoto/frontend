@@ -1,14 +1,12 @@
-import * as React from 'react'
+import React from 'react'
 import { storiesOf } from '@kadira/storybook'
 
-import {Button} from '../'
-
-declare const module: any
+import { Button } from '../'
 
 storiesOf('Button', module)
   .add('with no text', () => (
-    <Button/>
+    <Button />
   ))
   .add('with text', () => (
-    <Button text='opapy'/>
+    <Button text='opapy' />
   ))
