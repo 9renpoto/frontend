@@ -1,6 +1,9 @@
 module.exports = {
-  module: { loaders: [
-    { test: /\.css$/, loaders: ['style-loader', 'css-loader?importLoaders=1', 'postcss-loader'] }
-  ]},
-  postcss: () => [require('autoprefixer'), require('precss')]
+  extensions: ['', '.js', '.jsx', '.css'],
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.jsx?$/, loader: 'babel' }
+    ]
+  }
 }

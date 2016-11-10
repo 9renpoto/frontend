@@ -1,8 +1,8 @@
-import * as React from 'react'
-import * as assert from 'power-assert'
+import React from 'react'
+import assert from 'power-assert'
 import { mount, shallow } from 'enzyme'
 
-import {Button} from '../../src/components/button'
+import { Button } from '../../src/components/button'
 
 describe('first', function () {
   it('element check1', function () {

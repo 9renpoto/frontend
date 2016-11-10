@@ -3,5 +3,5 @@
     "@9renpoto/eslint-config",
     "@9renpoto/eslint-config-react"
   ],
-  "parser": "typescript-eslint-parser"
+  "parser": "babel-eslint"
 }
