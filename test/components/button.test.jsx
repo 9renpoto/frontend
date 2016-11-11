@@ -1,5 +1,5 @@
 import React from 'react'
-import assert from 'power-assert'
+import assert from 'assert'
 import { mount, shallow } from 'enzyme'
 
 import { Button } from '../../src/components/button'

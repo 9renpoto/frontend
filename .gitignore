@@ -1,4 +1,5 @@
 .out/
+.nyc_output/
 dist/
 flow-typed/
 

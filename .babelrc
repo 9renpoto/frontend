@@ -7,5 +7,12 @@
     "flow-react-proptypes",
     "transform-class-properties",
     "transform-flow-strip-types"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
 }
