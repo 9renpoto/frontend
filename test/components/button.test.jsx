@@ -1,5 +1,5 @@
 import React from 'react'
-import assert from 'assert'
+import assert from 'power-assert'
 import { mount, shallow } from 'enzyme'
 
 import { Button } from '../../src/components/button'
@@ -14,6 +14,6 @@ describe('first', function () {
     const wrapper = shallow(
       <Button text='opapy' />
     )
-    assert(wrapper.text() === 'opapy')
+    assert(wrapper.text() === 'Button opapy')
   })
 })
