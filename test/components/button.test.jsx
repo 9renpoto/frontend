@@ -14,6 +14,6 @@ describe('first', function () {
     const wrapper = shallow(
       <Button text='opapy' />
     )
-    assert(wrapper.text() === 'opapy')
+    assert(wrapper.text() === 'Button opapy')
   })
 })
