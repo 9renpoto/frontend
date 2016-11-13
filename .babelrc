@@ -1,11 +1,11 @@
 {
   "presets": [
-    "react",
-    "es2015"
+    "react"
   ],
   "plugins": [
     "flow-react-proptypes",
     "transform-class-properties",
+    "transform-es2015-modules-commonjs",
     "transform-flow-strip-types"
   ],
   "env": {
