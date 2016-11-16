@@ -44,7 +44,7 @@
     "nyc": "^9.0.1",
     "postcss-loader": "^1.1.0",
     "power-assert": "^1.4.1",
-    "react-addons-test-utils": "^15.3.2",
+    "react-addons-test-utils": "^15.4.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "stylelint": "^7.5.0"
