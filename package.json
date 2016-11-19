@@ -17,7 +17,7 @@
     "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
-    "tslint": "^3.15.1",
+    "tslint": "^4.0.0",
     "typescript": "^2.0.3",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
