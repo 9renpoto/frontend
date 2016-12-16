@@ -23,7 +23,7 @@
     "babel-plugin-flow-react-proptypes": "^0.18.2",
     "babel-plugin-istanbul": "^3.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
-    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "babel-preset-power-assert": "^1.0.0",
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
