@@ -37,7 +37,7 @@
     "flow-typed": "^2.0.0",
     "flowtype": "^2.0.0",
     "greenkeeper-postpublish": "^1.0.1",
-    "jsdom": "^9.8.3",
+    "jsdom": "^9.9.1",
     "jsdom-global": "^2.1.0",
     "mocha": "^3.1.2",
     "npm-run-all": "^3.1.2",
