@@ -14,7 +14,7 @@
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "^0.0.2",
     "@9renpoto/eslint-config-react": "^0.0.2",
-    "@9renpoto/stylelint-config": "^1.1.0",
+    "@9renpoto/stylelint-config": "^1.2.0",
     "@kadira/storybook": "^2.35.1",
     "@kadira/storybook-deployer": "^1.2.0",
     "autoprefixer": "^6.6.0",
