@@ -11,3 +11,9 @@ Object.keys(document.defaultView).forEach((property) => {
 global.navigator = {
   userAgent: 'node.js'
 }
+
+function noop () {
+  return {}
+}
+
+require.extensions['.css'] = noop

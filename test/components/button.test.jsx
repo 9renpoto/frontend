@@ -1,8 +1,9 @@
 import React from 'react'
-import assert from 'power-assert'
+import assert from 'assert'
 import { mount, shallow } from 'enzyme'
+import { random } from 'faker'
 
-import { Button } from '../../src/components/button'
+import { Button } from '../../index.js'
 
 describe('first', function () {
   it('element check1', function () {
@@ -11,9 +12,10 @@ describe('first', function () {
   })
 
   it('text check', function () {
+    const text = random.word()
     const wrapper = shallow(
-      <Button text='opapy' />
+      <Button text={text} />
     )
-    assert(wrapper.text() === 'Button opapy')
+    assert(wrapper.text() === text)
   })
 })
