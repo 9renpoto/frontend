@@ -1,19 +1,19 @@
 /* @flow */
-import React, { Component, PropTypes } from 'react'
+import styles from './button.css'
+import React, { Component } from 'react'
+
+type Props = {
+  text: string
+}
 
 export class Button extends Component {
-  addPrefix (suffix: string) {
-    return `Button ${suffix}`
-  }
+  props: Props
   render () {
-    const text = this.addPrefix(this.props.text || 'Btn')
+    const text = this.props.text || 'Btn'
     return (
       <div>
-        <button className='btn'>{text}</button>
+        <button className={styles.className}>{text}</button>
       </div>
     )
-  }
-  static propTypes = {
-    text: PropTypes.string
   }
 }

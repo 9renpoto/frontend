@@ -9,9 +9,9 @@
     "transform-flow-strip-types"
   ],
   "env": {
-    "test": {
+    "develop": {
       "presets": [
-        "babel-preset-power-assert"
+        "power-assert"
       ],
       "plugins": [
         "istanbul"
