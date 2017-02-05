@@ -2,9 +2,12 @@
 .*/node_modules/fbjs/lib/.*
 .*/node_modules/.*test.*/.*
 .*/node_modules/stylelint/.*
+.*/node_modules/typography/src/.*
+.*/node_modules/typography-theme-wordpress-2016/src/.*
 
 [include]
 
 [libs]
 
 [options]
+module.name_mapper='gatsby-helpers' -> '<PROJECT_ROOT>/node_modules/gatsby/dist/isomorphic/gatsby-helpers.js'

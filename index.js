@@ -1,2 +1,1 @@
-/* @flow */
-export { Button } from './src/components/button'
+export { Button } from './dist/components/button'

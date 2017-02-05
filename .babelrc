@@ -6,16 +6,7 @@
     "flow-react-proptypes",
     "transform-class-properties",
     "transform-es2015-modules-commonjs",
+    "transform-async-to-generator",
     "transform-flow-strip-types"
-  ],
-  "env": {
-    "develop": {
-      "presets": [
-        "power-assert"
-      ],
-      "plugins": [
-        "istanbul"
-      ]
-    }
-  }
+  ]
 }
