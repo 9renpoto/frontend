@@ -1,7 +1,8 @@
 [ignore]
 .*/node_modules/fbjs/lib/.*
-.*/node_modules/.*test.*/.*
-.*/node_modules/stylelint/.*
+.*/node_modules/stylelint/lib/.*
+.*/node_modules/typography-theme-wordpress-2016/src/.*
+.*/node_modules/typography/src/.*
 
 [include]
 

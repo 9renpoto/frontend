@@ -1,2 +1,3 @@
 /* @flow */
-export { Button } from './src/components/button'
+
+export { Bio } from './src/components/Bio'
