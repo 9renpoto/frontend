@@ -2,12 +2,11 @@
 import React, { Component } from 'react'
 import moment from 'moment'
 import Helmet from 'react-helmet'
-import ReadNext from '../components/ReadNext'
-import { rhythm } from '../utils/typography'
-import { config } from 'config'
-import Bio from '../components/Bio'
 
-import '../components/zenburn.css'
+import { ReadNext } from '../components/ReadNext'
+import { rhythm } from '../utils/typography'
+import { Bio } from '../components/Bio'
+import styles from '../components/zenburn.css'
 
 type Props = {
   route: Object
@@ -20,9 +19,9 @@ class MarkdownWrapper extends Component {
     const post = route.page.data
 
     return (
-      <div className='markdown'>
+      <div className={styles.markdown}>
         <Helmet
-          title={`${post.title} | ${config.blogTitle}`}
+          title={`${post.title}`}
         />
         <h1 style={{marginTop: 0}}>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
@@ -40,7 +39,7 @@ class MarkdownWrapper extends Component {
           }}
         />
         <ReadNext post={post} pages={route.pages} />
-        <Bio />
+        <Bio authorName={'foo'} />
       </div>
     )
   }

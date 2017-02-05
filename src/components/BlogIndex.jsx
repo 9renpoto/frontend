@@ -1,25 +1,27 @@
 /* @flow */
-import { config } from 'config'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import include from 'underscore.string/include'
-import React from 'react'
 import sortBy from 'lodash/sortBy'
+import { Link } from 'react-router'
+import { prefixLink } from '../../node_modules/gatsby/dist/isomorphic/gatsby-helpers'
 import { get } from 'lodash/get'
 
 import { rhythm } from '../utils/typography'
-import Bio from './Bio'
+import { Bio } from './Bio'
 
 type Props = {
-  route: Object
+  route: Object,
+  blogTitle: string
 }
 
-class BlogIndex extends React.Component {
+export class BlogIndex extends Component {
   props: Props
   render () {
+    const { route, blogTitle } = this.props
+
     // Sort pages.
-    const sortedPages = sortBy(this.props.route.pages, 'data.date')
+    const sortedPages = sortBy(route.pages, 'data.date')
     // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
     const visiblePages = sortedPages.filter(page => (
       get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
@@ -27,13 +29,13 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet
-          title={config.blogTitle}
+          title={blogTitle}
           meta={[
             {'name': 'description', 'content': 'Sample blog'},
             {'name': 'keywords', 'content': 'blog, articles'}
           ]}
         />
-        <Bio />
+        <Bio authorName={'foo'} />
         <ul>
           {visiblePages.map((page) => (
             <li
@@ -52,5 +54,3 @@ class BlogIndex extends React.Component {
     )
   }
 }
-
-export default BlogIndex
