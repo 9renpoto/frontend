@@ -1,11 +1,11 @@
 # @9renpoto/slides
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/9renpoto/slides.svg)](https://greenkeeper.io/)
-
 slides
 
- [![CircleCI][circleci-image]][circleci-url] [![Dependency Status][david-dm-image]][david-dm-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url]
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper-url] [![CircleCI][circleci-image]][circleci-url] [![Dependency Status][david-dm-image]][david-dm-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url]
 
+[greenkeeper-badge]: https://badges.greenkeeper.io/9renpoto/slides.svg
+[greepkeeper-url]: https://greenkeeper.io/
 [david-dm-image]: https://david-dm.org/9renpoto/slides.svg
 [david-dm-url]: https://david-dm.org/9renpoto/slides
 [dev-david-dm-image]: https://david-dm.org/9renpoto/slides/dev-status.svg

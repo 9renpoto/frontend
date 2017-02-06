@@ -11,7 +11,7 @@
     "awesome-typescript-loader": "^3.0.3",
     "css-loader": "^0.26.0",
     "eslint": "^3.9.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
     "ghpages": "0.0.8",
     "npm-run-all": "^4.0.0",
     "pug-cli": "^1.0.0-alpha6",
@@ -19,6 +19,7 @@
     "style-loader": "^0.13.1",
     "tslint": "^4.0.0",
     "typescript": "^2.0.3",
+    "uglifyjs-webpack-plugin": "^0.1.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.2.1"
   },
