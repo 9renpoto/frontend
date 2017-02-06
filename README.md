@@ -1,5 +1,7 @@
 # @9renpoto/style
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/9renpoto/react-components.svg)](https://greenkeeper.io/)
+
 [![Travis Build Status][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url] [![Dependency Status][gemnasium-image]][gemnasium-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url]
 
 ## install
