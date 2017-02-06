@@ -1,5 +1,7 @@
 # @9renpoto/slides
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/9renpoto/slides.svg)](https://greenkeeper.io/)
+
 slides
 
  [![CircleCI][circleci-image]][circleci-url] [![Dependency Status][david-dm-image]][david-dm-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url]
