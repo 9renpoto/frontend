@@ -29,7 +29,6 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "postpublish": "greenkeeper-postpublish",
     "test": "eslint test"
   }
 }
