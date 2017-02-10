@@ -12,7 +12,7 @@
     "css-loader": "^0.26.0",
     "eslint": "^3.9.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
-    "ghpages": "0.0.9",
+    "ghpages": "0.0.10",
     "npm-run-all": "^4.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.5.4",
