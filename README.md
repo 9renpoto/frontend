@@ -1,5 +1,7 @@
 # @9renpoto/eslint-config
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/9renpoto/eslint-config.svg)](https://greenkeeper.io/)
+
 My eslint config set.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![devDependency Status][dev-daviddm-image]][dev-daviddm-url]
