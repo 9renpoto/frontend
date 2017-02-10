@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "author": "9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
@@ -29,7 +29,6 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "postpublish": "greenkeeper-postpublish",
     "test": "eslint test"
   }
 }
