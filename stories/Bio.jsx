@@ -1,11 +1,10 @@
 /* @flow */
 import React from 'react'
-import { random } from 'faker'
 import { storiesOf } from '@kadira/storybook'
 
-import { Bio } from '../'
+import { Bio } from '../src/'
 
-storiesOf('Button', module)
+storiesOf('Bio', module)
   .add('', () => (
-    <Bio authorName={random.word()} />
+    <Bio />
   ))
