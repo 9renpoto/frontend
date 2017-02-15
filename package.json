@@ -1,13 +1,14 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "author": "9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
     "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1"
   },
