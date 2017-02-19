@@ -1,15 +1,13 @@
 /* @flow */
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { Container } from 'react-responsive-grid'
-import { prefixLink } from '../../node_modules/gatsby/dist/isomorphic/gatsby-helpers'
-import { rhythm } from '../utils/typography'
+import { Container } from 'rebass'
+import { prefixLink } from 'gatsby/dist/isomorphic/gatsby-helpers'
 
 type Props = {
   children: any,
   blogTitle: string,
-  location: Object,
-  route: Object
+  location: Object
 }
 
 export class Template extends Component {
@@ -21,7 +19,6 @@ export class Template extends Component {
       header = (
         <h1
           style={{
-            marginBottom: rhythm(1.5),
             marginTop: 0
           }}
         >
@@ -59,12 +56,7 @@ export class Template extends Component {
       )
     }
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-        }}
-      >
+      <Container>
         {header}
         {children}
       </Container>

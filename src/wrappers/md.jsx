@@ -4,7 +4,6 @@ import moment from 'moment'
 import Helmet from 'react-helmet'
 
 import { ReadNext } from '../components/ReadNext'
-import { rhythm } from '../utils/typography'
 import { Bio } from '../components/Bio'
 import styles from '../components/zenburn.css'
 
@@ -12,7 +11,7 @@ type Props = {
   route: Object
 }
 
-class MarkdownWrapper extends Component {
+export default class MarkdownWrapper extends Component {
   props: Props
   render () {
     const { route } = this.props
@@ -27,22 +26,15 @@ class MarkdownWrapper extends Component {
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
         <em
           style={{
-            display: 'block',
-            marginBottom: rhythm(2)
+            display: 'block'
           }}
         >
           Posted {moment(post.date).format('MMMM D, YYYY')}
         </em>
-        <hr
-          style={{
-            marginBottom: rhythm(2)
-          }}
-        />
+        <hr />
         <ReadNext post={post} pages={route.pages} />
-        <Bio authorName={'foo'} />
+        <Bio />
       </div>
     )
   }
 }
-
-export default MarkdownWrapper

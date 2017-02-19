@@ -1,15 +1,15 @@
 /* @flow */
 import React, { Component } from 'react'
-import { Avator } from 'rebass'
+import { Avatar } from 'rebass'
 
 import profilePic from './profile.png'
 
 export class Bio extends Component {
   render () {
     return (
-      <Avator
+      <Avatar
         circle
-        size={48}
+        size={32}
         src={profilePic}
       />
     )

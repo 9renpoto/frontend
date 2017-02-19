@@ -1,11 +1,9 @@
 /* @flow */
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { prefixLink } from '../../node_modules/gatsby/dist/isomorphic/gatsby-helpers'
+import { prefixLink } from 'gatsby/dist/isomorphic/gatsby-helpers'
 import { prune, include as includes } from 'underscore.string'
 import find from 'lodash/find'
-
-import { rhythm } from '../utils/typography'
 
 type Props = {
   post: Object,
@@ -45,8 +43,7 @@ export class ReadNext extends Component {
           </h6>
         <h3
           style={{
-            marginTop: 0,
-            marginBottom: rhythm(1 / 4)
+            marginTop: 0
           }}
           >
           <Link

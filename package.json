@@ -13,17 +13,13 @@
     "url": "https://github.com/9renpoto/style/pulls"
   },
   "dependencies": {
-    "config": "^1.25.1",
     "gatsby": "^0.12.34",
     "lodash": "^4.17.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
-    "react-responsive-grid": "^0.3.4",
     "react-router": "^3.0.2",
     "rebass": "^0.3.4",
-    "typography": "^0.15.8",
-    "typography-theme-wordpress-2016": "^0.15.1",
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
@@ -44,6 +40,7 @@
     "browser-env": "^2.0.21",
     "codecov": "^1.0.1",
     "concurrently": "^3.3.0",
+    "copyfiles": "^1.2.0",
     "enzyme": "^2.7.1",
     "eslint": "^3.15.0",
     "faker": "^3.1.0",
@@ -81,7 +78,7 @@
     "build": "npm-run-all clean -p build:*",
     "build-storybook": "build-storybook -o ./.out",
     "build:js": "babel src -d lib",
-    "clean": "rimraf dist coverage",
+    "clean": "rimraf lib coverage",
     "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "deploy-storybook": "storybook-to-ghpages",
     "flow-gen": "flow gen-flow-files src/ --out-dir lib",
@@ -89,6 +86,7 @@
     "lint:css": "stylelint src/components/*.css",
     "lint:flow": "flow",
     "lint:js": "eslint . --ext=js,jsx --cache",
+    "postbuild": "copyfiles -f src/components/*.png lib/components",
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
     "test": "npm-run-all clean -p test:*",

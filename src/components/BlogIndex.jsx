@@ -4,10 +4,9 @@ import Helmet from 'react-helmet'
 import include from 'underscore.string/include'
 import sortBy from 'lodash/sortBy'
 import { Link } from 'react-router'
-import { prefixLink } from '../../node_modules/gatsby/dist/isomorphic/gatsby-helpers'
+import { prefixLink } from 'gatsby/dist/isomorphic/gatsby-helpers'
 import { get } from 'lodash/get'
 
-import { rhythm } from '../utils/typography'
 import { Bio } from './Bio'
 
 type Props = {
@@ -40,9 +39,6 @@ export class BlogIndex extends Component {
           {visiblePages.map((page) => (
             <li
               key={page.path}
-              style={{
-                marginBottom: rhythm(1 / 4)
-              }}
               >
               <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
                 {get(page, 'data.title', page.path)}
