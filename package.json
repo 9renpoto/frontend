@@ -13,8 +13,8 @@
     "url": "https://github.com/9renpoto/style/pulls"
   },
   "dependencies": {
-    "gatsby": "^0.12.34",
     "lodash": "^4.17.4",
+    "moment": "^2.17.1",
     "react": "^15.4.1",
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
@@ -31,7 +31,7 @@
     "ava": "^0.18.2",
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.10",
+    "babel-loader": "^6.3.2",
     "babel-plugin-flow-react-proptypes": "^0.21.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
@@ -55,7 +55,7 @@
     "rimraf": "^2.6.0",
     "style-loader": "^0.13.1",
     "stylefmt": "^5.1.2",
-    "stylelint": "^7.8.0",
+    "stylelint": "^7.9.0",
     "url-loader": "^0.5.7"
   },
   "engine": {

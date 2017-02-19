@@ -1,19 +1,19 @@
 /* @flow */
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { prefixLink } from 'gatsby/dist/isomorphic/gatsby-helpers'
 import { prune, include as includes } from 'underscore.string'
 import find from 'lodash/find'
 
 type Props = {
   post: Object,
-  pages: []
+  pages: [],
+  prefixLink: Function
 }
 
 export class ReadNext extends Component {
   props: Props
   render () {
-    const { pages, post } = this.props
+    const { pages, post, prefixLink } = this.props
     const { readNext } = post
     let nextPost
     if (readNext) {
@@ -33,27 +33,17 @@ export class ReadNext extends Component {
 
     return (
       <div>
-        <h6
-          style={{
-            margin: 0,
-            letterSpacing: -0.25
-          }}
-          >
-            READ THIS NEXT:
-          </h6>
-        <h3
-          style={{
-            marginTop: 0
-          }}
-          >
+        <h6>
+          READ THIS NEXT:
+        </h6>
+        <h3>
           <Link
             to={{
               pathname: prefixLink(nextPost.path),
               query: {
                 readNext: true
               }
-            }}
-            >
+            }}>
             {nextPost.data.title}
           </Link>
         </h3>
