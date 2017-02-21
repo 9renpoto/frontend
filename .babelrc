@@ -1,12 +1,10 @@
 {
   "presets": [
-    "react"
+    "react",
+    "latest",
+    "stage-0"
   ],
   "plugins": [
-    "flow-react-proptypes",
-    "transform-class-properties",
-    "transform-es2015-modules-commonjs",
-    "transform-async-to-generator",
-    "transform-flow-strip-types"
+    "flow-react-proptypes"
   ]
 }
