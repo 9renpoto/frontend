@@ -15,7 +15,7 @@
     "ghpages": "0.0.10",
     "npm-run-all": "^4.0.0",
     "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.5.4",
+    "rimraf": "^2.6.0",
     "style-loader": "^0.13.1",
     "tslint": "^4.0.0",
     "typescript": "^2.2.1",
