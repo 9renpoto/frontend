@@ -6,8 +6,14 @@ node_js:
 cache:
   directories:
   - node_modules
+env:
+  matrix:
+  - CI_MODE=lint
+  - CI_MODE=unit
+script:
+- npm run test:$CI_MODE
 after_success:
-- npm run codecov
+- npm run coverage:$CI_MODE
 - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && npm run deploy-storybook'
 notifications:
   email: false

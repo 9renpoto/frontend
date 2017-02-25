@@ -77,7 +77,7 @@
     "build:js": "babel src -d lib",
     "build:storybook": "build-storybook -o ./.out",
     "clean": "rimraf lib coverage",
-    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "coverage:unit": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "deploy-storybook": "storybook-to-ghpages",
     "flow-gen": "flow gen-flow-files src/ --out-dir lib",
     "lint": "npm-run-all -p lint:*",
@@ -87,8 +87,8 @@
     "postbuild": "copyfiles -f src/components/*.png lib/components",
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
-    "test": "npm-run-all clean -p test:*",
+    "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
-    "test:mocha": "nyc mocha -- test"
+    "test:unit": "nyc mocha -- test"
   }
 }
