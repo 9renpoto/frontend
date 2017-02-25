@@ -43,7 +43,7 @@
     "concurrently": "^3.3.0",
     "copyfiles": "^1.2.0",
     "enzyme": "^2.7.1",
-    "eslint": "^3.16.0",
+    "eslint": "^3.16.1",
     "faker": "^4.1.0",
     "file-loader": "^0.10.1",
     "flow-bin": "^0.39.0",
