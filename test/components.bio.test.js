@@ -1,11 +1,14 @@
 /* @flow */
-import React from 'react'
-import test from 'ava'
+import { describe, it } from 'mocha'
 import { shallow } from 'enzyme'
+import assert from 'assert'
 
-import { Bio } from '../src/components/Bio'
+import React from 'react'
+import { Bio } from '../src/'
 
-test('Bio', t => {
-  const wrapper = shallow(React.createElement(Bio))
-  t.is(wrapper.length, 1)
+describe('bio', () => {
+  it('render', () => {
+    const wrapper = shallow(React.createElement(Bio))
+    assert(wrapper.length === 1)
+  })
 })

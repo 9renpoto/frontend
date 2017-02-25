@@ -1,21 +1,15 @@
 {
   "name": "@9renpoto/react-components",
-  "description": "my style",
+  "description": "simple components",
   "version": "0.0.1",
-  "author": "9renpoto",
-  "ava": {
-    "require": [
-      "babel-register",
-      "./test/helpers/setup-browser-env.js"
-    ]
-  },
+  "author": "@9renpoto",
   "bugs": {
-    "url": "https://github.com/9renpoto/style/pulls"
+    "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
-    "react": "^15.4.1",
+    "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
     "react-router": "^3.0.2",
@@ -28,13 +22,13 @@
     "@9renpoto/stylelint-config": "^1.2.1",
     "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-deployer": "^1.2.0",
-    "ava": "^0.18.2",
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.3.2",
-    "babel-plugin-flow-react-proptypes": "^0.21.0",
+    "babel-plugin-istanbul": "^4.0.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
+    "babel-preset-power-assert": "^1.0.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.23.0",
@@ -50,8 +44,10 @@
     "flow-typed": "^2.0.0",
     "jsdom": "^9.11.0",
     "jsdom-global": "^2.1.1",
+    "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
     "nyc": "^10.1.2",
+    "power-assert": "^1.4.2",
     "react-addons-test-utils": "^15.4.2",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.2",
@@ -67,6 +63,7 @@
   ],
   "homepage": "https://9renpoto.github.io/react-components/",
   "keywords": [
+    "react",
     "styleguide"
   ],
   "license": "MIT",
@@ -77,10 +74,10 @@
   },
   "scripts": {
     "build": "npm-run-all clean -p build:*",
-    "build:storybook": "build-storybook -o ./.out",
     "build:js": "babel src -d lib",
+    "build:storybook": "build-storybook -o ./.out",
     "clean": "rimraf lib coverage",
-    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "coverage:unit": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "deploy-storybook": "storybook-to-ghpages",
     "flow-gen": "flow gen-flow-files src/ --out-dir lib",
     "lint": "npm-run-all -p lint:*",
@@ -90,8 +87,8 @@
     "postbuild": "copyfiles -f src/components/*.png lib/components",
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
-    "test": "npm-run-all clean -p test:*",
-    "test:ava": "nyc ava",
-    "test:lint": "npm run lint"
+    "test": "npm-run-all -p test:*",
+    "test:lint": "npm run lint",
+    "test:unit": "nyc mocha -- test"
   }
 }
