@@ -43,9 +43,9 @@
     "concurrently": "^3.3.0",
     "copyfiles": "^1.2.0",
     "enzyme": "^2.7.1",
-    "eslint": "^3.16.0",
+    "eslint": "^3.16.1",
     "faker": "^4.1.0",
-    "file-loader": "^0.10.0",
+    "file-loader": "^0.10.1",
     "flow-bin": "^0.40.0",
     "flow-typed": "^2.0.0",
     "jsdom": "^9.11.0",
@@ -53,11 +53,11 @@
     "npm-run-all": "^4.0.1",
     "nyc": "^10.1.2",
     "react-addons-test-utils": "^15.4.2",
-    "rimraf": "^2.6.0",
-    "style-loader": "^0.13.1",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.13.2",
     "stylefmt": "^5.1.2",
     "stylelint": "^7.9.0",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.8"
   },
   "engine": {
     "node": ">= 5"
