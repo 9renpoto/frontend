@@ -34,7 +34,7 @@
     "babel-register": "^6.23.0",
     "browser-env": "^2.0.21",
     "codecov": "^1.0.1",
-    "concurrently": "^3.3.0",
+    "concurrently": "^3.4.0",
     "cpx": "^1.5.0",
     "enzyme": "^2.7.1",
     "eslint": "^3.16.1",
