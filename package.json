@@ -32,7 +32,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.23.0",
-    "browser-env": "^2.0.21",
+    "browser-env": "^2.0.22",
     "codecov": "^1.0.1",
     "concurrently": "^3.3.0",
     "cpx": "^1.5.0",
