@@ -8,11 +8,11 @@ module.exports = {
     'browser': true
   },
   rules: {
-    'eslint-comments/disable-enable-pair': 1,
-    'eslint-comments/no-duplicate-disable': 1,
-    'eslint-comments/no-unlimited-disable': 1,
-    'eslint-comments/no-unused-disable': 1,
-    'eslint-comments/no-unused-enable': 1,
+    'eslint-comments/disable-enable-pair': 2,
+    'eslint-comments/no-duplicate-disable': 2,
+    'eslint-comments/no-unlimited-disable': 2,
+    'eslint-comments/no-unused-disable': 2,
+    'eslint-comments/no-unused-enable': 2,
     'no-else-return': 2,
     'no-var': 2,
     'prefer-const': 2,
