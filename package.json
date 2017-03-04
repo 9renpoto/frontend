@@ -37,7 +37,7 @@
     "concurrently": "^3.4.0",
     "cpx": "^1.5.0",
     "enzyme": "^2.7.1",
-    "eslint": "^3.16.1",
+    "eslint": "^3.17.0",
     "faker": "^4.1.0",
     "file-loader": "^0.10.1",
     "flow-bin": "^0.40.0",
