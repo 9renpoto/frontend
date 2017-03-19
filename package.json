@@ -7,13 +7,13 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard": "^7.0.0",
+    "eslint-config-standard": "^7.1.0",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^3.16.1"
+    "eslint": "^3.18.0"
   },
   "homepage": "https://github.com/9renpoto/eslint-config#readme",
   "keywords": [
@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.15.0"
+    "eslint": "^3.18.0"
   },
   "repository": {
     "type": "git",
