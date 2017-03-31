@@ -11,7 +11,7 @@
     "awesome-typescript-loader": "^3.1.2",
     "cpx": "^1.5.0",
     "css-loader": "^0.28.0",
-    "eslint": "^3.17.1",
+    "eslint": "^3.19.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "ghpages": "0.0.10",
     "npm-run-all": "^4.0.2",
