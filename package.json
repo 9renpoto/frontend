@@ -6,7 +6,7 @@
     "impress.js": "^0.6.0"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config": "^1.6.0",
+    "@9renpoto/eslint-config": "^2.0.0",
     "@9renpoto/tslint-config": "^3.0.0",
     "awesome-typescript-loader": "^3.1.2",
     "cpx": "^1.5.0",
