@@ -1,8 +1,6 @@
 import browserEnv from 'browser-env'
-browserEnv(['window', 'document', 'navigator'])
+import 'css-modules-require-hook/preset'
+import imgHook from 'images-require-hook'
 
-function noop () {
-  return {}
-}
-require.extensions['.css'] = noop
-require.extensions['.png'] = function () { return null }
+browserEnv(['window', 'document', 'navigator'])
+imgHook(['.png'], '../src/images')
