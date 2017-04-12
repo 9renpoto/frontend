@@ -10,7 +10,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "react": "^15.5.4",
-    "react-dom": "^15.4.2",
+    "react-dom": "^15.5.4",
     "react-helmet": "^5.0.0",
     "react-router": "^4.0.0",
     "rebass": "^0.3.4",
