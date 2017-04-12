@@ -22,7 +22,7 @@ export class BlogIndex extends Component {
 
     // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
     const visiblePages = sortedPages.filter(page => (
-      get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
+      (get(page, 'file.ext') === 'md' && !include(page.path, '/404')) || get(page, 'data.date')
     ))
     return (
       <div>
