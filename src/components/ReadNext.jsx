@@ -1,7 +1,7 @@
 /* @flow */
-import React, { Component } from 'react'
-import { Link } from 'react-router'
-import { prune, include as includes } from 'underscore.string'
+import React, {Component} from 'react'
+import {Link} from 'react-router'
+import {prune, include as includes} from 'underscore.string'
 import find from 'lodash/find'
 
 type Props = {
@@ -13,20 +13,16 @@ type Props = {
 export class ReadNext extends Component {
   props: Props
   render () {
-    const { pages, post, prefixLink } = this.props
-    const { readNext } = post
+    const {pages, post, prefixLink} = this.props
+    const {readNext} = post
     let nextPost
     if (readNext) {
-      nextPost = find(pages, (page) =>
-        includes(page.path, readNext)
-      )
+      nextPost = find(pages, page => includes(page.path, readNext))
     }
     if (!nextPost) {
       return React.createElement('noscript', null)
     }
-    nextPost = find(pages, (page) =>
-      includes(page.path, readNext.slice(1, -1))
-    )
+    nextPost = find(pages, page => includes(page.path, readNext.slice(1, -1)))
     // Create pruned version of the body.
     const html = nextPost.data.body
     const body = prune(html.replace(/<[^>]*>/g, ''), 200)
@@ -43,7 +39,8 @@ export class ReadNext extends Component {
               query: {
                 readNext: true
               }
-            }}>
+            }}
+          >
             {nextPost.data.title}
           </Link>
         </h3>

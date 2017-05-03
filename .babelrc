@@ -1,8 +1,11 @@
 {
   "presets": [
     "react",
-    "env",
-    "stage-0",
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      }
+    }],
     "flow"
   ],
   "env": {
@@ -11,6 +14,7 @@
         "power-assert",
       ],
       "plugins": [
+        "flow-react-proptypes",
         "istanbul"
       ]
     }
