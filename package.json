@@ -51,7 +51,7 @@
     "npm-run-all": "^4.0.2",
     "nyc": "^10.3.0",
     "power-assert": "^1.4.2",
-    "prettier-eslint": "^6.1.2",
+    "prettier-eslint": "^6.2.0",
     "react-addons-test-utils": "^15.5.1",
     "rimraf": "^2.6.1",
     "style-loader": "^0.17.0",
