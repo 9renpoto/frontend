@@ -1,10 +1,10 @@
 /* @flow */
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import moment from 'moment'
 import Helmet from 'react-helmet'
 
-import { ReadNext } from '../components/ReadNext'
-import { Footer } from '../components/Footer'
+import {ReadNext} from '../components/ReadNext'
+import {Footer} from '../components/Footer'
 import styles from '../components/zenburn.css'
 
 type Props = {
@@ -15,16 +15,14 @@ type Props = {
 export default class MarkdownWrapper extends Component {
   props: Props
   render () {
-    const { route, prefixLink } = this.props
+    const {route, prefixLink} = this.props
     const post = route.page.data
 
     return (
       <div className={styles.markdown}>
-        <Helmet
-          title={`${post.title}`}
-        />
+        <Helmet title={`${post.title}`} />
         <h1 style={{marginTop: 0}}>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
+        <div dangerouslySetInnerHTML={{__html: post.body}} />
         <em
           style={{
             display: 'block'
