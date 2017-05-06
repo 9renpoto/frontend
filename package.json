@@ -1,21 +1,23 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard": "^10.0.0",
+    "eslint-config-standard": "^10.2.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.0"
+    "eslint-plugin-standard": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^3.19.0",
+    "prettier": "^1.3.1"
   },
   "homepage": "https://github.com/9renpoto/eslint-config#readme",
   "keywords": [
@@ -25,7 +27,8 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.18.0"
+    "eslint": "3.x",
+    "prettier": "1.x"
   },
   "repository": {
     "type": "git",
