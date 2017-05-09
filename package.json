@@ -1,17 +1,17 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "2.0.1",
-  "author": "9renpoto",
+  "version": "2.1.0",
+  "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
+    "eslint-config-prettier": "^2.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   },
@@ -35,6 +35,7 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "test": "eslint . --cache"
+    "lint": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "test": "eslint . --cache && npm run lint"
   }
 }
