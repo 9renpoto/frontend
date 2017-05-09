@@ -1,12 +1,10 @@
 module.exports = {
-  extends: [`prettier`, `standard`],
-  plugins: [`eslint-comments`],
+  extends: ['standard'],
+  plugins: ['eslint-comments'],
   env: {
     browser: true
   },
   rules: {
-    'quotes': [`error`, `backtick`],
-    'curly': [`error`, `all`],
     'eslint-comments/disable-enable-pair': 2,
     'eslint-comments/no-duplicate-disable': 2,
     'eslint-comments/no-unlimited-disable': 2,
