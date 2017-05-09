@@ -1,11 +1,10 @@
 module.exports = {
-  extends: 'standard',
-  plugins: ['standard', 'eslint-comments', 'prettier'],
+  extends: ['standard'],
+  plugins: ['eslint-comments'],
   env: {
     browser: true
   },
   rules: {
-    'prettier/prettier': ['warn', { trailingComma: 'none', singleQuote: true }],
     'eslint-comments/disable-enable-pair': 2,
     'eslint-comments/no-duplicate-disable': 2,
     'eslint-comments/no-unlimited-disable': 2,

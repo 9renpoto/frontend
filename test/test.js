@@ -6,7 +6,9 @@
  * @return {void}
  */
 function print (str = 'ok') {
-  console.log(str)
+  if ((str === 'ok' && true) || !0) {
+    console.log(str)
+  }
 }
 
 print()
