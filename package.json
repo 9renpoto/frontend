@@ -1,5 +1,5 @@
 {
-  "name": "@9renpoto/react-components",
+  "name": "@9renpoto/style",
   "description": "simple components",
   "version": "0.0.1",
   "author": "@9renpoto",
@@ -7,25 +7,20 @@
     "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-helmet": "^5.0.3",
-    "react-router": "^4.1.1",
-    "rebass": "^0.3.4",
-    "underscore.string": "^3.3.4"
+    "rebass": "^0.3.4"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-flowtype": "github:9renpoto/eslint-config-flowtype",
-    "@9renpoto/eslint-config-react": "github:9renpoto/eslint-config-react",
-    "@9renpoto/stylelint-config": "github:9renpoto/stylelint-config",
+    "@9renpoto/eslint-config-flowtype": "latest",
+    "@9renpoto/eslint-config-react": "latest",
+    "@9renpoto/stylelint-config": "latest",
     "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-deployer": "^1.2.0",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-flow-react-proptypes": "^2.1.3",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-flow-react-proptypes": "^2.2.1",
     "babel-plugin-istanbul": "^4.1.3",
     "babel-preset-env": "^1.4.0",
     "babel-preset-flow": "^6.23.0",
@@ -33,25 +28,25 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
     "browser-env": "^2.0.31",
-    "codecov": "^2.1.0",
+    "codecov": "^2.2.0",
     "concurrently": "^3.4.0",
     "cpx": "^1.5.0",
-    "cross-env": "^4.0.0",
+    "cross-env": "^5.0.0",
     "css-modules-require-hook": "^4.0.6",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "faker": "^4.1.0",
     "file-loader": "^0.11.1",
-    "flow-bin": "^0.45.0",
+    "flow-bin": "^0.46.0",
     "flow-typed": "^2.1.2",
     "husky": "^0.13.3",
     "images-require-hook": "^1.0.3",
     "lint-staged": "^3.4.1",
     "mocha": "^3.3.0",
     "npm-run-all": "^4.0.2",
-    "nyc": "^10.3.0",
+    "nyc": "^10.3.2",
     "power-assert": "^1.4.2",
-    "prettier-eslint": "^6.2.0",
+    "prettier-eslint": "^6.2.2",
     "react-addons-test-utils": "^15.5.1",
     "rimraf": "^2.6.1",
     "style-loader": "^0.17.0",
@@ -65,17 +60,12 @@
   "files": [
     "lib/"
   ],
-  "homepage": "https://9renpoto.github.io/react-components/",
+  "homepage": "https://9renpoto.github.io/style/",
   "keywords": [
     "react",
     "styleguide"
   ],
   "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/react-components.git"
-  },
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier-eslint --write",
@@ -83,24 +73,28 @@
       "git add"
     ]
   },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/style.git"
+  },
   "scripts": {
-    "precommit": "lint-staged",
     "build": "npm-run-all clean -p build:*",
     "build:js": "cross-env NODE_ENV=production babel src -d lib",
     "build:storybook": "build-storybook -o ./.out",
     "clean": "rimraf lib coverage",
     "coverage:unit": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "deploy-storybook": "storybook-to-ghpages",
-    "flow-gen": "flow gen-flow-files src/ --out-dir lib",
     "lint": "npm-run-all -p lint:*",
-    "lint:css": "stylelint src/components/*.css",
     "lint:flow": "flow",
     "lint:js": "eslint . --ext=js,jsx --cache",
-    "postbuild": "cpx 'src/**/*.{css,png,jpg}' lib --verbose",
+    "postbuild": "cpx 'assets/**/*.{css,png,jpg}' lib",
+    "precommit": "lint-staged",
     "prepublish": "npm run build",
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
+    "test:flow": "flow gen-flow-files src/ --out-dir lib",
     "test:lint": "npm run lint",
     "test:unit": "nyc mocha -- test"
   }

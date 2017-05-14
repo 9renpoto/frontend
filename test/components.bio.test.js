@@ -1,10 +1,10 @@
 /* @flow */
-import { describe, it } from 'mocha'
-import { shallow } from 'enzyme'
+import {describe, it} from 'mocha'
+import {shallow} from 'enzyme'
 import assert from 'assert'
 
 import React from 'react'
-import { Bio } from '../src/'
+import {Bio} from '../src/'
 
 describe('bio', () => {
   it('render', () => {
