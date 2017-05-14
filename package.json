@@ -80,7 +80,6 @@
   },
   "scripts": {
     "build": "npm-run-all clean -p build:*",
-    "build:flow": "flow gen-flow-files src/ --out-dir lib",
     "build:js": "cross-env NODE_ENV=production babel src -d lib",
     "build:storybook": "build-storybook -o ./.out",
     "clean": "rimraf lib coverage",
@@ -95,6 +94,7 @@
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
     "test": "npm-run-all -p test:*",
+    "test:flow": "flow gen-flow-files src/ --out-dir lib",
     "test:lint": "npm run lint",
     "test:unit": "nyc mocha -- test"
   }
