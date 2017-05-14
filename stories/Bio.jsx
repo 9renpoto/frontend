@@ -4,6 +4,6 @@ import {storiesOf} from '@kadira/storybook'
 
 import {Bio, Footer} from '../src/'
 
-storiesOf('Only myself', module)
+storiesOf('profile', module)
   .add('Bio', () => <Bio />)
   .add('Footer', () => <Footer />)
