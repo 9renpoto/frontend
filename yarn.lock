@@ -2,23 +2,22 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config@9renpoto/eslint-config":
-  version "2.0.1"
-  resolved "https://codeload.github.com/9renpoto/eslint-config/tar.gz/c80c15c618f122d8e40e1cf584498b4fd1a6e70f"
+"@9renpoto/eslint-config@latest":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-2.1.0.tgz#6b39d306ffb4867690294f7e77ef473f7771735a"
   dependencies:
     eslint-config-standard "^10.2.1"
     eslint-plugin-eslint-comments "^1.0.0"
     eslint-plugin-import "^2.2.0"
     eslint-plugin-node "^4.2.2"
-    eslint-plugin-prettier "^2.0.1"
     eslint-plugin-promise "^3.5.0"
     eslint-plugin-standard "^3.0.1"
 
-"@9renpoto/tslint-config@9renpoto/tslint-config":
+"@9renpoto/tslint-config@latest":
   version "3.0.0"
-  resolved "https://codeload.github.com/9renpoto/tslint-config/tar.gz/431a0b00a6a1f56046f11412ad9872f3b320de6f"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tslint-config/-/tslint-config-3.0.0.tgz#4c281b248add7cffceaa075ea17b70dfab2dd443"
   dependencies:
-    tslint-config-standard "^5.0.0"
+    tslint-config-standard "^4.0.0"
 
 abbrev@1:
   version "1.0.9"
@@ -1196,12 +1195,6 @@ eslint-plugin-node@^4.2.2:
     object-assign "^4.0.1"
     resolve "^1.1.7"
     semver "5.3.0"
-
-eslint-plugin-prettier@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.0.1.tgz#2ae1216cf053dd728360ca8560bf1aabc8af3fa9"
-  dependencies:
-    requireindex "~1.1.0"
 
 eslint-plugin-promise@^3.5.0:
   version "3.5.0"
@@ -3466,10 +3459,6 @@ require-uncached@^1.0.2:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
-requireindex@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
-
 requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
@@ -3954,23 +3943,21 @@ tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
 
-tslib@^1.0.0, tslib@^1.6.0:
+tslib@^1.6.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.7.0.tgz#6e8366695f72961252b35167b0dd4fbeeafba491"
 
-tslint-config-standard@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/tslint-config-standard/-/tslint-config-standard-5.0.2.tgz#e98fd5c412a6b973798366dc2c85508cf0ed740f"
-  dependencies:
-    tslint-eslint-rules "^4.0.0"
-
-tslint-eslint-rules@^4.0.0:
+tslint-config-standard@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/tslint-eslint-rules/-/tslint-eslint-rules-4.0.0.tgz#4e0e59ecd5701c9a48c66ed47bdcafb1c635d27b"
+  resolved "https://registry.yarnpkg.com/tslint-config-standard/-/tslint-config-standard-4.0.0.tgz#d456112ec81ebadaa00beb0d8f30e7864538cd3d"
+  dependencies:
+    tslint-eslint-rules "^3.2.3"
+
+tslint-eslint-rules@^3.2.3:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/tslint-eslint-rules/-/tslint-eslint-rules-3.5.1.tgz#e43efdcdd760d6285600031720f972c92f4a058a"
   dependencies:
     doctrine "^0.7.2"
-    tslib "^1.0.0"
-    tsutils "^1.4.0"
 
 tslint@^5.2.0:
   version "5.2.0"
@@ -3987,7 +3974,7 @@ tslint@^5.2.0:
     tslib "^1.6.0"
     tsutils "^1.8.0"
 
-tsutils@^1.4.0, tsutils@^1.8.0:
+tsutils@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-1.8.0.tgz#bf8118ed8e80cd5c9fc7d75728c7963d44ed2f52"
 
