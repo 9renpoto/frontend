@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react'
-import {storiesOf} from '@kadira/storybook'
+import { storiesOf } from '@storybook/react'
 
-import {Bio, Footer} from '../src/'
+import { Bio, Footer } from '../src/'
 
 storiesOf('profile', module)
   .add('Bio', () => <Bio />)
