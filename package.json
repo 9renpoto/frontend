@@ -43,7 +43,7 @@
     "lint-staged": "^3.5.0",
     "mocha": "^3.4.2",
     "npm-run-all": "^4.0.2",
-    "nyc": "^10.3.2",
+    "nyc": "^11.0.0",
     "power-assert": "^1.4.2",
     "prettier-eslint": "^6.2.3",
     "react-addons-test-utils": "^15.5.1",
