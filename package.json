@@ -19,7 +19,7 @@
     "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
-    "tslint": "^5.4.2",
+    "tslint": "^5.4.3",
     "typescript": "^2.3.4",
     "uglify-js": "^3.0.15",
     "uglifyjs-webpack-plugin": "^0.4.3",
