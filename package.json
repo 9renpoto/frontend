@@ -21,7 +21,7 @@
     "style-loader": "^0.18.2",
     "tslint": "^5.4.3",
     "typescript": "^2.3.4",
-    "uglify-js": "^3.0.15",
+    "uglify-js": "^3.0.17",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
