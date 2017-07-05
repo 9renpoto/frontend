@@ -19,8 +19,7 @@ matrix:
 script:
 - npm run test:$CI_MODE
 after_success:
-- npm run coverage:$CI_MODE
-- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && npm run deploy-storybook'
+- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && npm run coverage'
 notifications:
   email: false
   slack:
