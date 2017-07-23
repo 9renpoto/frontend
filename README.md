@@ -1,5 +1,7 @@
 # @9renpoto/style
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b2991eb86d7341478596c9a694d1dcfe)](https://www.codacy.com/app/9renpoto/style?utm_source=github.com&utm_medium=referral&utm_content=9renpoto/style&utm_campaign=badger)
+
 [![Travis Build Status][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url] [![Dependency Status][gemnasium-image]][gemnasium-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url] [![Greenkeeper badge][greenkeeper-image]](https://greenkeeper.io/)
 
 ## install
