@@ -1,6 +1,9 @@
 [ignore]
-.*/node_modules/fbjs/lib/.*
 .*/node_modules/stylelint/lib/.*
+<PROJECT_ROOT>/node_modules/babel-plugin-flow-runtime/src/.*
+<PROJECT_ROOT>/node_modules/babel-plugin-flow-runtime/tools/.*
+<PROJECT_ROOT>/node_modules/fbjs/lib/.*
+<PROJECT_ROOT>/node_modules/styled-components/src/.*
 
 [include]
 

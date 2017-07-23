@@ -6,16 +6,19 @@
   "bugs": {
     "url": "https://github.com/9renpoto/style/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rebass": "^1.0.3"
+  },
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "latest",
     "@9renpoto/eslint-config-react": "latest",
     "@9renpoto/stylelint-config": "latest",
-    "@storybook/react": "^3.1.7",
+    "@storybook/react": "^3.1.9",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
-    "babel-plugin-flow-react-proptypes": "^3.4.1",
+    "babel-plugin-flow-react-proptypes": "^3.4.3",
+    "babel-plugin-flow-runtime": "^0.11.1",
     "babel-plugin-istanbul": "^4.1.4",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
@@ -29,13 +32,14 @@
     "cross-env": "^5.0.1",
     "css-modules-require-hook": "^4.0.6",
     "enzyme": "^2.9.1",
-    "eslint": "^4.1.0",
+    "eslint": "^4.3.0",
     "faker": "^4.1.0",
     "file-loader": "^0.11.2",
     "flow-bin": "^0.51.0",
     "husky": "^0.14.0",
-    "images-require-hook": "^1.0.3",
-    "lint-staged": "^4.0.0",
+    "images-require-hook": "^1.0.6",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
     "mocha": "^3.4.2",
     "npm-run-all": "^4.0.2",
     "nyc": "^11.0.3",
@@ -44,7 +48,6 @@
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
-    "rebass": "^0.3.4",
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
     "stylefmt": "^6.0.0",
@@ -79,26 +82,25 @@
   "peerDependencies": {
     "react": "15.x",
     "react-dom": "15.x",
-    "react-router-dom": "4.x",
-    "rebass": "^0.3.4"
+    "react-router-dom": "4.x"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
-    "build": "npm-run-all clean -p build:*",
+    "build": "run-s clean build:*",
     "build:assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
     "build:js": "cross-env NODE_ENV=production babel src -d lib",
     "clean": "rimraf lib coverage",
     "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "lint": "npm-run-all -p lint:*",
+    "lint": "run-p lint:*",
     "lint:flow": "flow",
     "lint:js": "eslint . --ext=js,jsx --cache",
     "precommit": "lint-staged",
     "serve:storybook": "start-storybook -p 9001",
     "start": "concurrently --kill-others  \"npm run serve:storybook\"",
-    "test": "npm-run-all -p test:*",
+    "test": "run-p test:*",
     "test:flow": "flow gen-flow-files src/ --out-dir lib",
     "test:lint": "npm run lint",
     "test:unit": "nyc mocha -- test"

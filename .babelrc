@@ -14,6 +14,7 @@
         "power-assert",
       ],
       "plugins": [
+        "flow-runtime",
         "flow-react-proptypes",
         "istanbul"
       ]
