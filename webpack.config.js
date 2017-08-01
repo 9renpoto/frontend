@@ -1,8 +1,23 @@
 /* @flow */
+const path = require('path')
+const webpack = require('webpack')
+const { version, name, author } = require('./package.json')
+
+const date = new Date()
+const env = process.env.NODE_ENV || 'local'
+
 module.exports = {
-  extensions: ['.js', '.jsx', '.css', '.png', '.scss'],
+  entry: './index.js',
+  output: {
+    path: path.join(__dirname, 'lib'),
+    filename: 'index.js',
+    libraryTarget: 'commonjs2'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css', '.png', '.scss']
+  },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.png$/,
         loader: 'url-loader?mimetype=image/png'
@@ -31,5 +46,14 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(env)
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.BannerPlugin({
+      banner: `${name} ${version} | Copyright (c) ${date.getFullYear()} ${author}`
+    })
+  ]
 }

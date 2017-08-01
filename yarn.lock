@@ -3475,7 +3475,7 @@ flow-runtime@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/flow-runtime/-/flow-runtime-0.14.0.tgz#bbbcb700b19a0a299ab403e807d69912ef077c16"
 
-font-awesome@^4.7.0:
+font-awesome@^4.3.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
@@ -6653,6 +6653,13 @@ react-dom@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+react-fa@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-fa/-/react-fa-4.2.0.tgz#691e056c68ff4be8763917a21f7e3eaef3be8e0f"
+  dependencies:
+    font-awesome "^4.3.0"
+    prop-types "^15.5.8"
 
 react-html-attributes@^1.3.0:
   version "1.3.0"
