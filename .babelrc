@@ -8,6 +8,7 @@
     }],
     "flow"
   ],
+  "plugins": ["transform-class-properties"],
   "env": {
     "development": {
       "presets": [

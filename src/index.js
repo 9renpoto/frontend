@@ -1,3 +1,5 @@
 /* @flow */
+import 'bulma/css/bulma.css'
+import 'font-awesome/css/font-awesome.css'
 
-export { Footer } from './components/Footer'
+export { Header } from './components/Header'
