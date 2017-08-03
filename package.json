@@ -40,6 +40,7 @@
     "flow-runtime": "^0.14.0",
     "husky": "^0.14.0",
     "images-require-hook": "^1.0.7",
+    "isomorphic-style-loader": "^3.0.0",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.2",
     "mocha": "^3.5.0",
@@ -51,7 +52,6 @@
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
     "rimraf": "^2.6.1",
-    "style-loader": "^0.18.2",
     "stylefmt": "^6.0.0",
     "stylelint": "^8.0.0",
     "url-loader": "^0.5.9"
