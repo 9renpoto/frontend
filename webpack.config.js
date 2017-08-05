@@ -24,15 +24,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'isomorphic-style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          }
-        ]
+        loaders: ['style-loader', 'css-loader?importLoaders=1']
       },
       {
         test: /\.jsx?$/,
@@ -41,7 +33,17 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['isomorphic-style-loader', 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
       }
     ]
   },
