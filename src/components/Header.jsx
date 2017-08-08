@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 type Props = {
-  title: string,
+  Logo: (className: string) => React$Element<any>,
   titles: Array<string>,
   baseUrl: string
 }
@@ -10,16 +10,16 @@ type Props = {
 export class Header extends Component {
   props: Props
   render () {
+    const { Logo, titles, baseUrl } = this.props
+    const logoClassName = 'nav-item title'
     return (
       <header className='nav'>
         <div className='nav-left'>
-          <a className='nav-item title' href='/'>
-            {this.props.title}
-          </a>
+          {Logo(logoClassName)}
         </div>
         <div className='nav-right nav-menu'>
-          {this.props.titles.map((title, index) =>
-            <a className='nav-item' href={`${this.props.baseUrl}/${title}/`}>
+          {titles.map((title, index) =>
+            <a className='nav-item' href={`${baseUrl}/${title}/`}>
               {title}
             </a>
           )}

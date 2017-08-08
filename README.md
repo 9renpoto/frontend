@@ -10,6 +10,7 @@
 [![codebeat badge](https://codebeat.co/badges/d5824375-f5d2-4f02-af34-0093b4cee3de)](https://codebeat.co/projects/github-com-9renpoto-style-master)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/style/badge)](https://www.codefactor.io/repository/github/9renpoto/style)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b2991eb86d7341478596c9a694d1dcfe)](https://www.codacy.com/app/9renpoto/style?utm_source=github.com&utm_medium=referral&utm_content=9renpoto/style&utm_campaign=badger)
+[![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/style?branch=master)](https://bettercodehub.com/)
 
 ## install
 

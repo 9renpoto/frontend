@@ -7,12 +7,15 @@ import assert from 'assert'
 import React from 'react'
 import { Header } from '../src/components/Header'
 
-describe('bio', () => {
+describe('header', () => {
   it('render', () => {
     const wrapper = shallow(
       <Header
         baseUrl={internet.url()}
-        title={random.word()}
+        Logo={() =>
+          <div>
+            {random.word()}
+          </div>}
         titles={[random.word(), random.word()]}
       />
     )

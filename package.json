@@ -7,18 +7,18 @@
     "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
-    "bulma": "^0.5.0",
+    "bulma": "^0.5.1",
     "react-fa": "^4.2.0"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "^0.4.0",
     "@9renpoto/eslint-config-react": "latest",
     "@9renpoto/stylelint-config": "latest",
-    "@storybook/react": "^3.2.0",
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
-    "babel-plugin-flow-react-proptypes": "^4.0.0",
+    "babel-plugin-flow-react-proptypes": "^4.1.0",
     "babel-plugin-flow-runtime": "^0.11.1",
     "babel-plugin-istanbul": "^4.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -28,12 +28,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
     "browser-env": "^3.0.0",
-    "codecov": "^2.2.0",
+    "codecov": "^2.3.0",
     "cpx": "^1.5.0",
-    "cross-env": "^5.0.1",
+    "cross-env": "^5.0.4",
     "css-modules-require-hook": "^4.0.6",
     "enzyme": "^2.9.1",
-    "eslint": "^4.3.0",
+    "eslint": "^4.4.1",
+    "extract-text-webpack-plugin": "^3.0.0",
     "faker": "^4.1.0",
     "file-loader": "^1.0.0-rc.0",
     "flow-bin": "^0.52.0",
@@ -41,7 +42,7 @@
     "husky": "^0.14.0",
     "images-require-hook": "^1.0.7",
     "jest": "^20.0.4",
-    "lint-staged": "^4.0.2",
+    "lint-staged": "^4.0.3",
     "mocha": "^3.5.0",
     "npm-run-all": "^4.0.2",
     "nyc": "^11.1.0",
@@ -53,8 +54,7 @@
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
     "stylefmt": "^6.0.0",
-    "stylelint": "^8.0.0",
-    "url-loader": "^0.5.9"
+    "stylelint": "^8.0.0"
   },
   "engine": {
     "node": ">= 5"
@@ -80,7 +80,7 @@
       "git add"
     ]
   },
-  "main": "lib/index.js",
+  "main": "lib/main.js",
   "peerDependencies": {
     "react": "15.x",
     "react-dom": "15.x",
@@ -102,7 +102,8 @@
     "lint:flow": "flow",
     "lint:js": "eslint . --ext=js,jsx --cache",
     "precommit": "lint-staged",
-    "start": "start-storybook -p 9001",
+    "start": "start-storybook -p 9001 -s ./lib",
     "test": "nyc mocha -- test"
-  }
+  },
+  "style": "lib/main.css"
 }

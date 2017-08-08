@@ -1,6 +1,7 @@
 /* @flow */
 const path = require('path')
 const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const { version, name, author } = require('./package.json')
 
 const date = new Date()
@@ -10,44 +11,39 @@ module.exports = {
   entry: './index.js',
   output: {
     path: path.join(__dirname, 'lib'),
-    filename: 'index.js',
+    filename: '[name].js',
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.png', '.scss']
+    extensions: ['.js', '.jsx', '.css', '.scss']
   },
   module: {
     rules: [
       {
-        test: /\.png$/,
-        loader: 'url-loader?mimetype=image/png'
-      },
-      {
-        test: /\.css$/,
-        loaders: ['style-loader', 'css-loader?importLoaders=1']
-      },
-      {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
         exclude: /node_modules/
       },
       {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
+        })
+      },
+      {
         test: /\.scss$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       }
     ]
   },
   plugins: [
+    new ExtractTextPlugin({
+      filename: '[name].css'
+    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env)
     }),
