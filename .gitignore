@@ -1,4 +1,6 @@
-### https://raw.github.com/github/gitignore/be962308a6efb6d27446d13ee05b74948e616a01/Node.gitignore
+dist/
+
+### https://raw.github.com/github/gitignore/cb38a4c85e5ca596ad52ee4ee8ae5e2295d59d49/Node.gitignore
 
 # Logs
 logs

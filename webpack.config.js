@@ -1,11 +1,13 @@
 /* @flow */
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const nodeExternals = require('webpack-node-externals')
 const { version, name, author } = require('./package.json')
 
 const date = new Date()
 const env = process.env.NODE_ENV || 'local'
+
+const externals = env === 'production' ? [nodeExternals()] : []
 
 module.exports = {
   entry: './index.js',
@@ -15,35 +17,19 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.scss']
+    extensions: ['.js', '.jsx']
   },
+  externals,
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         use: 'babel-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader']
-        })
-      },
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        })
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: '[name].css'
-    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env)
     }),
