@@ -1,21 +1,21 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-eslint-comments": "^1.0.2",
+    "eslint-plugin-eslint-comments": "^1.0.3",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.1.1"
+    "eslint": "^4.4.1"
   },
   "homepage": "https://github.com/9renpoto/eslint-config#readme",
   "keywords": [
