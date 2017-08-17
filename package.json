@@ -12,7 +12,7 @@
     "react-fa": "^4.2.0"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-flowtype": "^0.4.0",
+    "@9renpoto/eslint-config-flowtype": "^0.5.0",
     "@9renpoto/eslint-config-react": "latest",
     "@9renpoto/stylelint-config": "latest",
     "@storybook/react": "^3.2.3",
