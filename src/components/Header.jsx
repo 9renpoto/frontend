@@ -7,8 +7,7 @@ type Props = {
   baseUrl: string
 }
 
-export class Header extends Component {
-  props: Props
+export class Header extends Component<Props> {
   render () {
     const { Logo, titles, baseUrl } = this.props
     const logoClassName = 'nav-item title'

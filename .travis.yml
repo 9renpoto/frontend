@@ -11,7 +11,6 @@ cache:
 env:
   matrix:
   - CMD=build
-  - CMD=flow
   - CMD=lint
   - CMD=test
   global:
