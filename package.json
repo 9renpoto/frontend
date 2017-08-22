@@ -85,7 +85,7 @@
     ],
     "{src,stories,__tests__}/**/*.{js,tsx}": [
       "prettier-eslint --write",
-      "eslint --cache --ext=js,jsx",
+      "eslint --cache",
       "git add"
     ],
     "src/**/*.css": [
@@ -101,7 +101,7 @@
   },
   "scripts": {
     "beta:lint": "run-p beta:lint:*",
-    "beta:lint:ts": "eslint . --ext=ts,tsx --parser=typescript-eslint-parser",
+    "beta:lint:ts": "eslint . --ext=ts,tsx -c .eslintrc.ts.js",
     "build": "run-p build:pre:*",
     "build:post:storybook": "build-storybook -o ./dist -s ./lib",
     "build:post:ts": "cross-env NODE_ENV=production webpack",
@@ -115,12 +115,11 @@
     "lint:flow": "flow",
     "lint:js": "eslint . --ext=js,jsx",
     "postbuild": "run-p build:post:*",
-    "postinstall": "flow-typed install",
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "prestart": "npm run build",
     "start": "start-storybook -p 9001 -s ./lib",
     "test": "jest"
   },
-  "style": "lib/main.css"
+  "style": "lib/bundle.css"
 }
