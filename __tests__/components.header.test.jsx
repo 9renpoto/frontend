@@ -2,7 +2,7 @@
 import { create } from 'react-test-renderer'
 
 import React from 'react'
-import { Header } from '../src/components/Header'
+import { Header } from '../lib/components/Header'
 
 describe('header', () => {
   test('render', () => {

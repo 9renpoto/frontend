@@ -10,7 +10,9 @@ const env = process.env.NODE_ENV || 'local'
 const externals = env === 'production' ? [nodeExternals()] : []
 
 module.exports = {
-  entry: './index.js',
+  entry: {
+    bundle: path.join(__dirname, 'lib/index.js')
+  },
   output: {
     path: path.join(__dirname, 'lib'),
     filename: '[name].js',

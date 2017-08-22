@@ -7,6 +7,8 @@
     "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
+    "@types/react": "^16.0.3",
+    "@types/react-dom": "^15.5.4",
     "bulma": "^0.5.1",
     "react-calendar-heatmap": "^1.2.0",
     "react-fa": "^4.2.0"
@@ -15,6 +17,7 @@
     "@9renpoto/eslint-config-flowtype": "^0.5.0",
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/stylelint-config": "^1.2.1",
+    "@9renpoto/tslint-config": "^3.2.0",
     "@storybook/react": "^3.2.5",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -51,6 +54,12 @@
     "rimraf": "^2.6.1",
     "stylefmt": "^6.0.0",
     "stylelint": "^8.0.0",
+    "ts-loader": "^2.3.3",
+    "tslib": "^1.7.1",
+    "tslint": "^5.6.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.4.2",
+    "typescript-eslint-parser": "^7.0.0",
     "webpack-node-externals": "^1.6.0"
   },
   "engine": {
@@ -69,37 +78,47 @@
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier-eslint --write",
-      "eslint --cache",
+    "{src,stories,__tests__}/**/*.{ts,tsx}": [
+      "prettier --write --parser=typescript",
+      "tslint --fix",
       "git add"
     ],
-    "*.css": [
+    "{src,stories,__tests__}/**/*.{js,tsx}": [
+      "prettier-eslint --write",
+      "eslint --cache --ext=js,jsx",
+      "git add"
+    ],
+    "src/**/*.css": [
       "stylefmt",
       "stylelint",
       "git add"
     ]
   },
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
-    "build": "run-p build:*",
-    "build:assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
-    "build:bundle": "cross-env NODE_ENV=production webpack",
-    "build:css": "postcss index.css -o lib/main.css",
-    "build:js": "cross-env NODE_ENV=production babel src -d lib",
-    "clean": "rimraf lib coverage",
+    "beta:lint": "run-p beta:lint:*",
+    "beta:lint:ts": "eslint . --ext=ts,tsx --parser=typescript-eslint-parser",
+    "build": "run-p build:pre:*",
+    "build:post:storybook": "build-storybook -o ./dist -s ./lib",
+    "build:post:ts": "cross-env NODE_ENV=production webpack",
+    "build:pre:assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
+    "build:pre:css": "postcss src/index.css -o lib/bundle.css",
+    "build:pre:ts": "cross-env NODE_ENV=production tsc",
+    "clean": "rimraf lib coverage dist",
     "coverage": "codecov -f ./coverage/lcov.info",
-    "deploy": "build-storybook -o ./dist -s ./lib && gh-pages -d dist",
-    "flow": "flow gen-flow-files src/ --out-dir lib && flow",
+    "deploy": "npm run build && gh-pages -d dist",
     "lint": "run-p lint:*",
     "lint:flow": "flow",
-    "lint:js": "eslint . --ext=js,jsx --cache",
+    "lint:js": "eslint . --ext=js,jsx",
+    "postbuild": "run-p build:post:*",
+    "postinstall": "flow-typed install",
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
+    "prestart": "npm run build",
     "start": "start-storybook -p 9001 -s ./lib",
     "test": "jest"
   },

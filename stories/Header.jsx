@@ -3,7 +3,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { random } from 'faker'
 
-import { Header } from '../'
+import { Header } from '../lib'
 
 storiesOf('Content', module).add('Header', () =>
   <Header
