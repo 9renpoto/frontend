@@ -11,13 +11,9 @@
   "plugins": ["transform-class-properties"],
   "env": {
     "development": {
-      "presets": [
-        "power-assert",
-      ],
       "plugins": [
         "flow-runtime",
-        "flow-react-proptypes",
-        "istanbul"
+        "flow-react-proptypes"
       ]
     }
   }

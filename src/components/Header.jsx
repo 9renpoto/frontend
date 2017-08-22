@@ -18,7 +18,7 @@ export class Header extends Component<Props> {
         </div>
         <div className='nav-right nav-menu'>
           {titles.map((title, index) =>
-            <a className='nav-item' href={`${baseUrl}/${title}/`}>
+            <a className='nav-item' href={`${baseUrl}/${title}/`} key={index}>
               {title}
             </a>
           )}

@@ -15,43 +15,39 @@
     "@9renpoto/eslint-config-flowtype": "^0.5.0",
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/stylelint-config": "^1.2.1",
-    "@storybook/react": "^3.2.3",
-    "babel-cli": "^6.24.1",
+    "@storybook/react": "^3.2.5",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^7.1.2",
     "babel-plugin-flow-react-proptypes": "^5.0.0",
     "babel-plugin-flow-runtime": "^0.11.1",
-    "babel-plugin-istanbul": "^4.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
-    "babel-preset-power-assert": "^1.0.0",
     "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.24.1",
-    "browser-env": "^3.1.2",
+    "babel-register": "^6.26.0",
     "codecov": "^2.3.0",
     "cpx": "^1.5.0",
     "cross-env": "^5.0.5",
     "enzyme": "^2.9.1",
-    "eslint": "^4.4.1",
+    "eslint": "^4.5.0",
+    "eslint-plugin-jest": "^20.0.3",
     "faker": "^4.1.0",
     "file-loader": "^1.0.0-rc.0",
     "flow-bin": "^0.53.1",
     "flow-runtime": "^0.14.0",
+    "flow-typed": "^2.1.5",
     "gh-pages": "^1.0.0",
     "husky": "^0.14.0",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.3",
-    "mocha": "^3.5.0",
     "npm-run-all": "^4.0.2",
-    "nyc": "^11.1.0",
     "postcss-cli": "^4.1.0",
     "postcss-import": "^10.0.0",
-    "power-assert": "^1.4.4",
-    "prettier-eslint-cli": "^4.1.1",
+    "prettier-eslint-cli": "^4.2.1",
     "react": "^15.6.1",
-    "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
     "rimraf": "^2.6.1",
     "stylefmt": "^6.0.0",
     "stylelint": "^8.0.0",
@@ -64,6 +60,9 @@
     "lib/"
   ],
   "homepage": "https://9renpoto.github.io/style/",
+  "jest": {
+    "collectCoverage": true
+  },
   "keywords": [
     "react",
     "styleguide"
@@ -82,11 +81,6 @@
     ]
   },
   "main": "lib/main.js",
-  "peerDependencies": {
-    "react": "15.x",
-    "react-dom": "15.x",
-    "react-router-dom": "4.x"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
@@ -98,7 +92,7 @@
     "build:css": "postcss index.css -o lib/main.css",
     "build:js": "cross-env NODE_ENV=production babel src -d lib",
     "clean": "rimraf lib coverage",
-    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "build-storybook -o ./dist -s ./lib && gh-pages -d dist",
     "flow": "flow gen-flow-files src/ --out-dir lib && flow",
     "lint": "run-p lint:*",
@@ -107,7 +101,7 @@
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "start": "start-storybook -p 9001 -s ./lib",
-    "test": "nyc mocha -- test"
+    "test": "jest"
   },
   "style": "lib/main.css"
 }
