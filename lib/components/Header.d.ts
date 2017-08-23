@@ -8,6 +8,5 @@ export interface Props {
 export interface State {
 }
 export declare class Header extends React.Component<Props, State> {
-    constructor(props: Props);
     render(): JSX.Element;
 }
