@@ -7,10 +7,10 @@
     "url": "https://github.com/9renpoto/style/issues"
   },
   "dependencies": {
-    "@types/react": "^16.0.3",
+    "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
     "bulma": "^0.5.1",
-    "react-calendar-heatmap": "^1.2.0",
+    "react-calendar-heatmap": "^1.2.1",
     "react-fa": "^4.2.0"
   },
   "devDependencies": {
@@ -18,13 +18,13 @@
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/stylelint-config": "^1.2.1",
     "@9renpoto/tslint-config": "^3.2.0",
-    "@storybook/react": "^3.2.5",
-    "@types/jest": "^20.0.7",
+    "@storybook/react": "^3.2.8",
+    "@types/jest": "^20.0.8",
     "@types/react-test-renderer": "^15.5.4",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
-    "babel-plugin-flow-react-proptypes": "^5.0.0",
+    "babel-plugin-flow-react-proptypes": "^5.1.1",
     "babel-plugin-flow-runtime": "^0.11.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
@@ -45,7 +45,7 @@
     "gh-pages": "^1.0.0",
     "husky": "^0.14.0",
     "jest": "^20.0.4",
-    "lint-staged": "^4.0.3",
+    "lint-staged": "^4.0.4",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
     "postcss-import": "^10.0.0",
@@ -59,7 +59,7 @@
     "ts-jest": "^20.0.10",
     "ts-loader": "^2.3.3",
     "tslib": "^1.7.1",
-    "tslint": "^5.6.0",
+    "tslint": "^5.7.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.4.2",
     "typescript-eslint-parser": "^7.0.0",
@@ -93,17 +93,18 @@
   "license": "MIT",
   "lint-staged": {
     "{src,stories,__tests__}/**/*.{ts,tsx}": [
-      "prettier --write --parser=typescript",
+      "prettier --write --parser typescript",
       "tslint --fix",
       "git add"
     ],
-    "{src,stories,__tests__}/**/*.{js,tsx}": [
+    "stories/**/*.{js,jsx}": [
       "prettier-eslint --write",
       "eslint --cache",
       "git add"
     ],
     "src/**/*.css": [
       "stylefmt",
+      "prettier --parser postcss",
       "stylelint",
       "git add"
     ]
