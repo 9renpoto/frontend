@@ -39,7 +39,7 @@
     "eslint-plugin-jest": "^20.0.3",
     "faker": "^4.1.0",
     "file-loader": "^1.0.0-rc.0",
-    "flow-bin": "^0.53.1",
+    "flow-bin": "^0.54.0",
     "flow-runtime": "^0.14.0",
     "flow-typed": "^2.1.5",
     "gh-pages": "^1.0.0",
