@@ -62,7 +62,7 @@
     "tslint": "^5.7.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.4.2",
-    "typescript-eslint-parser": "^7.0.0",
+    "typescript-eslint-parser": "^8.0.0",
     "webpack-node-externals": "^1.6.0"
   },
   "engine": {
