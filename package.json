@@ -14,7 +14,7 @@
     "react-fa": "^4.2.0"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-flowtype": "^0.5.0",
+    "@9renpoto/eslint-config-flowtype": "^0.6.0",
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/stylelint-config": "^1.2.1",
     "@9renpoto/tslint-config": "^3.2.0",
