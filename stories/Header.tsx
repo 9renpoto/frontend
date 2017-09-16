@@ -1,17 +1,17 @@
-/* @flow */
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { random } from 'faker'
 
-import { Header } from '../lib'
+import { Header } from '../src'
 
-storiesOf('Content', module).add('Header', () =>
+storiesOf('Content', module).add('Header', () => (
   <Header
-    Logo={className =>
+    Logo={(className: string) => (
       <a href='#' className={className}>
         {random.word()}
-      </a>}
+      </a>
+    )}
     titles={['blog', 'profile', 'slides']}
     baseUrl='#'
   />
-)
+))

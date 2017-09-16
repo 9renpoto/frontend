@@ -7,11 +7,7 @@ import { Header } from '../src/components/Header'
 describe('header', () => {
   test('render', () => {
     function foo (name: string) {
-      return (
-        <div className={name}>
-          {'Hello'}
-        </div>
-      )
+      return <div className={name}>{'Hello'}</div>
     }
 
     const wrapper = create(

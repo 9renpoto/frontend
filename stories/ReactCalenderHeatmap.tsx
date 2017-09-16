@@ -1,10 +1,8 @@
-/* @flow */
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { random, date } from 'faker'
 
 import CalendarHeatmap from 'react-calendar-heatmap'
-import '../src/components/ReactCalenderHeatmap.css'
 
 const DATE = new Date()
 
@@ -20,16 +18,16 @@ function createRows (max: number = random.number({ max: 365 })) {
   return rows
 }
 
-storiesOf('ReactCalenderHeatmap', module).add('default', () =>
+storiesOf('ReactCalenderHeatmap', module).add('default', () => (
   <CalendarHeatmap
     endDate={DATE}
     numDays={365}
     values={createRows()}
-    classForValue={(value: any) => {
+    classForValue={(value: { date: string; count: number } | null) => {
       if (!value) {
         value = { count: 0 }
       }
       return `color-github-${value.count}`
     }}
   />
-)
+))

@@ -1,5 +1,5 @@
-flow-typed/
-dist/
+lib/
+.storybook/build
 
 ### https://raw.github.com/github/gitignore/cb38a4c85e5ca596ad52ee4ee8ae5e2295d59d49/Node.gitignore
 
