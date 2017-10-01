@@ -1,0 +1,27 @@
+{
+  "name": "@9renpoto/eslint-config-react",
+  "description": "my react eslint-config",
+  "version": "0.2.0",
+  "author": "9renpoto",
+  "bugs": {
+    "url": "https://github.com/9renpoto/eslint-config/issues"
+  },
+  "dependencies": {
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-react": "^7.2.1"
+  },
+  "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
+  "keywords": [
+    "eslint",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
+  },
+  "scripts": {
+    "test": "eslint . --cache --ext=js,jsx"
+  }
+}

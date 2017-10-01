@@ -1,37 +1,27 @@
 {
-  "name": "@9renpoto/eslint-config",
-  "description": "my eslint config",
-  "version": "2.3.0",
-  "author": "github.com/9renpoto",
-  "bugs": {
-    "url": "https://github.com/9renpoto/eslint-config/issues"
-  },
-  "dependencies": {
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-eslint-comments": "^1.0.3",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
-  },
+  "name": "@9renpoto/eslint-config-preset",
+  "version": "0.0.1",
+  "author": "Keisuke Kan <9renpoto@gmail.com>",
   "devDependencies": {
-    "eslint": "^4.4.1"
+    "eslint": "^4.8.0",
+    "fixpack": "^2.3.1",
+    "husky": "^0.14.3",
+    "lerna": "^2.2.0",
+    "lint-staged": "^4.2.3"
   },
-  "homepage": "https://github.com/9renpoto/eslint-config#readme",
-  "keywords": [
-    "config",
-    "eslint"
-  ],
   "license": "MIT",
+  "lint-staged": {
+    "package.json": [
+      "fixpack",
+      "git add"
+    ]
+  },
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "^4.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
-  },
+  "private": true,
+  "repository": "ssh://git@github.com/9renpoto/eslint-config.git",
   "scripts": {
-    "test": "eslint . --cache"
+    "postinstall": "lerna bootstrap",
+    "precommit": "lint-staged",
+    "test": "lerna run test"
   }
 }
