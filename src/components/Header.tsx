@@ -1,4 +1,3 @@
-/* @flow */
 import * as React from 'react'
 
 export interface Props {
@@ -7,9 +6,7 @@ export interface Props {
   baseUrl: string
 }
 
-export interface State {}
-
-export class Header extends React.Component<Props, State> {
+export class Header extends React.Component<Props, {}> {
   render () {
     const { Logo, titles, baseUrl } = this.props
 
