@@ -8,14 +8,13 @@
   },
   "dependencies": {
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-eslint-comments": "^1.0.3",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.4.1"
+    "eslint": "^4.8.0"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
   "keywords": [
