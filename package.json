@@ -9,7 +9,7 @@
   "dependencies": {
     "bulma": "^0.5.2",
     "react-calendar-heatmap": "github:9renpoto/react-calendar-heatmap#build",
-    "react-fa": "^4.2.0"
+    "react-fa": "^5.0.0"
   },
   "devDependencies": {
     "@9renpoto/eslint-config": "^2.3.0",
