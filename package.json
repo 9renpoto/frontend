@@ -29,7 +29,7 @@
     "enzyme": "^3.0.0",
     "eslint": "^4.7.0",
     "faker": "^4.1.0",
-    "file-loader": "^1.0.0-rc.0",
+    "file-loader": "^1.1.5",
     "gh-pages": "^1.0.0",
     "husky": "^0.14.3",
     "inferno": "^3.9.0",
