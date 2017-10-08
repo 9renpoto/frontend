@@ -8,9 +8,10 @@
   "devDependencies": {
     "@types/extract-text-webpack-plugin": "^3.0.0",
     "@types/impress": "^0.5.29",
-    "@types/node": "^8.0.32",
-    "@types/webpack": "^3.0.12",
+    "@types/node": "^8.0.33",
+    "@types/webpack": "^3.0.13",
     "awesome-typescript-loader": "^3.2.3",
+    "concurrently": "^3.5.0",
     "cpx": "^1.5.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.1",
@@ -27,6 +28,7 @@
     "ts-loader": "^2.3.7",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3",
+    "vnu-jar": "^17.11.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   },
@@ -35,21 +37,30 @@
     "*.ts": [
       "prettier --parser typescript --write",
       "git add"
+    ],
+    "*.pug": [
+      "pug-lint"
     ]
   },
   "main": "n/a",
   "private": true,
   "scripts": {
-    "build": "run-s clean build:* copy",
+    "build": "run-s clean build:* copy clean:html",
     "build:html": "pug src --out dist",
     "build:webpack": "webpack",
     "clean": "rimraf dist",
+    "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
     "copy": "cpx \"src/**/*.png\" dist",
     "deploy": "gh-pages -d dist",
+    "dev": "webpack-dev-server --content-base dist/",
     "lint": "pug-lint src",
     "precommit": "lint-staged",
     "predeploy": "npm run build",
-    "start": "webpack-dev-server --content-base dist/",
-    "test": "run-s build"
+    "start": "concurrently --kill-others 'npm run w:pug' 'npm run dev'",
+    "test": "run-s lint build",
+    "test:build": "npm run build",
+    "test:html": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
+    "test:pug": "npm run lint",
+    "w:pug": "npm run build:html -- -w"
   }
 }

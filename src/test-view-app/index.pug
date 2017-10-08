@@ -21,9 +21,9 @@ block body
         b Firefox
         |  browser.
     #impress
-      #bored.step.slide(data-x='-1000', data-y='-1500')
+      .step.slide#bored(data-x='-1000', data-y='-1500')
         q Dockerを使った非エンジニアでも使える検証環境の構築
-      #aboutme.step.slide(data-x='0', data-y='-1500')
+      .step.slide#aboutme(data-x='0', data-y='-1500')
         pre.
           {
               "id" : "9renpoto",
@@ -37,7 +37,7 @@ block body
                   "音ゲー"
               ],
           }
-      #google.step(data-x='0', data-y='-1000')
+      .step#google(data-x='0', data-y='-1000')
         q TL;DR
         img(src='../img/google-search.png', alt='kayac dockerで検索')
       .step.slide(data-x='0', data-y='-1500')
@@ -54,9 +54,9 @@ block body
                       "音ゲー"
                   ],
               }
-      #about.step(data-x='500', data-y='-1500', data-rotate='90', data-scale='0.3')
+      .step#about(data-x='500', data-y='-1500', data-rotate='90', data-scale='0.3')
         h1 Web Service????
-      #ing.step(data-x='1000', data-y='-1500', data-rotate='90')
+      .step#ing(data-x='1000', data-y='-1500', data-rotate='90')
         ul
           li
             b.positioning Setup OS...
@@ -70,7 +70,7 @@ block body
             b.positioning ...Test
           li
             b.rotating Deploy...
-      #yaruo.step(data-x='1000', data-y='-1500', data-scale='0.1', data-rotate='90')
+      .step#yaruo(data-x='1000', data-y='-1500', data-scale='0.1', data-rotate='90')
         pre.
                     　　　　　 　　 ＿＿＿_　　　　 ━┓
                     　　　　　　 ／　―　　 ＼ 　　 ┏┛
@@ -81,7 +81,7 @@ block body
                     　　　　　＼＿　　　⊂ヽ∩＼
                     　　　　　　　/´　　　 (,＿ ＼.＼
                     　　 　 　 　 |　　/　　　　 ＼＿ﾉ) ) )
-      #oops.step(data-x='1000', data-y='-500', data-rotate='90')
+      .step#oops(data-x='1000', data-y='-500', data-rotate='90')
         img(src='http://tiqav.com/5Jm.jpg', alt='イチからか', align='right', style='margin-left: 50px')
         strong PaaS?
         pre.
@@ -97,7 +97,7 @@ block body
         | commit, push
         br
         |  出来るくらいならエンジニア
-      #demo.step(data-x='1000', data-y='500', data-rotate='90')
+      .step#demo(data-x='1000', data-y='500', data-rotate='90')
         q Demo
         div(style='font-size: 32px;')
           ul
@@ -109,7 +109,7 @@ block body
               | (2).
               a(href='http://master.192.168.33.33.xip.io/form') 作ったもの
               | から立ち上げる
-      #mirage.step(data-x='-500', data-y='500', data-rotate='180')
+      .step#mirage(data-x='-500', data-y='500', data-rotate='180')
         q
           a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
         br
@@ -126,16 +126,16 @@ block body
               http:
                 - listen: 8080
                   target: 5000
-      #mirage-2.step(data-x='-1500', data-y='500', data-rotate='180')
+      .step#mirage-2(data-x='-1500', data-y='500', data-rotate='180')
         q
           a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
         br
-        img(src='http://tiqav.com/2yA.jpg', align='right')
+        img(src='http://tiqav.com/2yA.jpg', alt='img', align='right')
         ul(style='font-size: 42px;')
           li  - /api/list
           li  - /api/launch
           li  - /api/terminate
-      #test-view-app.step(data-x='-2500', data-y='500', data-rotate='180')
+      .step#test-view-app(data-x='-2500', data-y='500', data-rotate='180')
         p
           a(href='https://bitbucket.org/9renpoto/test-view-app') bitbucket.org/9renpoto/test-view-app
         div(style='font-size: 32px;')
@@ -147,7 +147,7 @@ block body
               strong mirage
               | のAPIを呼び出す
             li 4.dockerが起きる
-      #test-view-app-2.step(data-x='-3500', data-y='500', data-rotate='180')
+      .step#test-view-app-2(data-x='-3500', data-y='500', data-rotate='180')
         p
           a(href='https://bitbucket.org/9renpoto/test-view-app') bitbucket.org/9renpoto/test-view-app
         div(style='font-size: 32px;')
@@ -168,11 +168,11 @@ block body
               git pull
               pip install -r requirements.txt
               python myapp.py
-      #test-view-app-3.step(data-x='-4500', data-y='500', data-rotate='180')
-        img(src='../img/merged.png')
-      #end.step(data-x='-3500', data-y='0', data-rotate='0', data-scale='0.1')
+      .step#test-view-app-3(data-x='-4500', data-y='500', data-rotate='180')
+        img(src='../img/merged.png', alt='img')
+      .step#end(data-x='-3500', data-y='0', data-rotate='0', data-scale='0.1')
         div(style='font-size: 72px; align: center')
-          img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400px', align='right')
+          img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400px', align='right', alt='img')
           |           Happy Hacking!
           br
           div(style='font-size: 25px;')
