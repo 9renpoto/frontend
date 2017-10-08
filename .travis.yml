@@ -16,6 +16,7 @@ matrix:
   fast_finish: true
   allow_failures:
   - env: CMD=beta:lint
+  - env: CMD=build
 script:
 - yarn $CMD
 after_success:
