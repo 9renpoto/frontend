@@ -1,5 +1,10 @@
 dist: precise 
 language: node_js
 node_js: stable
+cache:
+  directories:
+    - node_modules
+before_install:
+- npm i -g npm
 notifications:
   email: false
