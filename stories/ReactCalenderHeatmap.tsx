@@ -1,6 +1,6 @@
-import * as React from 'react'
 import { storiesOf } from '@storybook/react'
-import { random, date } from 'faker'
+import { date, random } from 'faker'
+import * as React from 'react'
 
 import CalendarHeatmap from 'react-calendar-heatmap'
 
