@@ -2,11 +2,11 @@ language: node_js
 sudo: false
 node_js:
 - stable
-- 7
 - 6
 env:
   matrix:
   - CMD=build
+  - CMD=build:storybook
   - CMD=lint
   - CMD=test
   - CMD=beta:lint
@@ -16,7 +16,7 @@ matrix:
   fast_finish: true
   allow_failures:
   - env: CMD=beta:lint
-  - env: CMD=build
+  - env: CMD=build:storybook
 script:
 - yarn $CMD
 after_success:
@@ -25,7 +25,7 @@ after_success:
 - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
 - cp deploy.key ~/.ssh/
 - chmod 600 ~/.ssh/deploy.key
-- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$CMD" == "build" ] && yarn deploy'
+- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$CMD" == "build:storybook" ] && yarn deploy'
 notifications:
   email: false
   slack:
