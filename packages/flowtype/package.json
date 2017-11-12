@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "@9renpoto/eslint-config": "^2.3.0",
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "^8.0.2",
     "eslint-plugin-flowtype": "^2.39.1"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "flow-bin": "^0.56.0"
+    "eslint": "^4.11.0",
+    "flow-bin": "^0.59.0"
   },
   "engine": {
     "node": "> 5"
@@ -25,10 +25,6 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "4.x",
-    "flow-bin": "0.56.x"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"

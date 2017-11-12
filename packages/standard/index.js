@@ -1,9 +1,7 @@
 module.exports = {
   extends: ['standard'],
-  env: {
-    browser: true
-  },
   rules: {
+    'sort-imports': 2,
     'no-else-return': 2,
     'no-var': 2,
     'prefer-const': 2,
