@@ -24,7 +24,7 @@ export class Header extends React.PureComponent<Props, State> {
   render () {
     const { Logo, titles, baseUrl } = this.props
     return (
-      <header className={`${NAVBAR} is-fixed-top`}>
+      <header className={`${NAVBAR}`}>
         <div className={`${NAVBAR}-brand`}>
           {Logo(`${NAVBAR}-item`)}
           <div

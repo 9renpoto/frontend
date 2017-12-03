@@ -2,7 +2,7 @@
 
 exports[`header render 1`] = `
 <header
-  className="navbar is-fixed-top"
+  className="navbar"
 >
   <div
     className="navbar-brand"
