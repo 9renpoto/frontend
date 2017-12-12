@@ -42,7 +42,7 @@
     "postcss-cli": "^4.1.1",
     "postcss-import": "^11.0.0",
     "postcss-nested": "^3.0.0",
-    "prettier": "^1.9.1",
+    "prettier": "^1.9.2",
     "react": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "rimraf": "^2.6.2",
