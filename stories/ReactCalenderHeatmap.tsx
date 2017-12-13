@@ -7,7 +7,7 @@ import CalendarHeatmap from 'react-calendar-heatmap'
 const DATE = new Date()
 
 function createRows (max: number = random.number({ max: 365 })) {
-  let rows = []
+  const rows = []
   for (let i = 0; i < max; i++) {
     const d = date.past()
     rows.push({

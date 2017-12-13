@@ -22,7 +22,7 @@
     "@types/faker": "^4.1.2",
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.58",
-    "@types/react": "^16.0.29",
+    "@types/react": "^16.0.20",
     "@types/react-calendar-heatmap": "^1.6.0",
     "@types/react-test-renderer": "^16.0.0",
     "@types/storybook__react": "^3.0.5",
@@ -30,6 +30,7 @@
     "cpx": "^1.5.0",
     "enzyme": "^3.2.0",
     "eslint": "^4.13.1",
+    "eslint-plugin-jest": "^21.4.2",
     "faker": "^4.1.0",
     "file-loader": "^1.1.5",
     "gh-pages": "^1.1.0",
@@ -41,7 +42,7 @@
     "npm-run-all": "^4.1.2",
     "postcss-cli": "^4.1.1",
     "postcss-import": "^11.0.0",
-    "postcss-nested": "^3.0.0",
+    "postcss-nested": "^2.1.2",
     "prettier": "^1.9.2",
     "react": "^16.2.0",
     "react-test-renderer": "^16.2.0",
@@ -52,7 +53,8 @@
     "tslib": "^1.8.1",
     "tslint": "^5.8.0",
     "tslint-react": "^3.2.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.6.2",
+    "typescript-eslint-parser": "^11.0.0"
   },
   "engine": {
     "node": ">= 5"
@@ -84,6 +86,7 @@
     "*.{ts,tsx}": [
       "prettier --write --parser typescript",
       "tslint --fix",
+      "eslint --ext=ts,tsx",
       "git add"
     ],
     "src/**/*.css": [
@@ -99,8 +102,6 @@
   },
   "scripts": {
     "assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
-    "beta:lint": "run-p beta:lint:*",
-    "beta:lint:ts": "eslint . --ext=ts,tsx",
     "build": "run-s clean tsc build:css assets",
     "build:css": "postcss src/index.css -o lib/bundle.css",
     "build:storybook": "run-s build storybook",
@@ -108,6 +109,7 @@
     "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "npm run build && gh-pages -d .storybook/build",
     "lint": "run-p lint:*",
+    "lint:es": "eslint . --ext=ts,tsx",
     "lint:ts": "tslint {src,stories,__tests__}/**/*.ts{,x}",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
