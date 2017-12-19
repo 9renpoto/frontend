@@ -17,7 +17,7 @@
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/stylelint-config": "^1.4.0",
     "@9renpoto/tslint-config": "^3.4.0",
-    "@storybook/react": "^3.2.17",
+    "@storybook/react": "^3.2.18",
     "@types/classnames": "^2.2.3",
     "@types/faker": "^4.1.2",
     "@types/jest": "^21.1.8",
