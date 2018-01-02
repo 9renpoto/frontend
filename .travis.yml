@@ -7,6 +7,8 @@ env:
   - CMD=lint
 matrix:
   fast_finish: true
+  allow_failures:
+  - env: MODE=lint
 script:
 - npm run $CMD
 notifications:
