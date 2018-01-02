@@ -1,21 +1,13 @@
 language: node_js
 sudo: false
-node_js:
-- stable
-- 6
+node_js: stable
 env:
   matrix:
   - CMD=build
-  - CMD=build:storybook
   - CMD=lint
   - CMD=test
   global:
     secure: LIFpgka9AnCqvzRhopmjlG8GdwYwD4hBvguQaPg9Lqqh1E0SnRuMAOlc44snGEfQTKq9DnZLwXPLeAwx6jO0q1wj5pfsLSllbJouhJq0d+chDaFNDiuHS1tIbnfExu7bm8Ewluk/Hyoi6k3LPL4H9/AmwbbZBYF+zIS0jnGdxBtK5aMKlmjMm9i8iAkTryfLtqk+6RUznQ4xyjmcZG8Pn0iYywPdMs/Fhtjrn2CMDlVrO79a7LMArsAmeJkEPVSQqaBycXIYLMSvMSNu/QaiK29SgAj1PZR00tEsoRAHbPfOlo4w/Rz+5HIsZRa8byNA4hkEUy2RpXvqReXtwjdp2csdbVDqnkd9X83+WkroqriAciiUDUTyQm+ddsznkftbZYRGJSU8M3tbOj32rHriL19QLwjNYbylKD3w0l5WoUNjJEptpR3Zsj4YXXmKm64A5WU+r/Q6fJhR+sHPkEZW9wswZdO0LZ7Ys35GlS8hcJFgY878ZDnfJ2NvmfrK3fJPbc7DWB/TEGjF2vyaH+40hdE56pwdHujCIoK52m1EgFV2/ACPbJxlzG2PzESpzIL9TS6A43pOTOj13JIIdQtXvjnGZkaho0EJN7EydOgo5/jAh1FYXhMJIet6WD4uXUQ1W3ouXzld5VSCQp+mZyUMq7/twjW1j6nCc3pPl21vaVU=
-matrix:
-  fast_finish: true
-  allow_failures:
-  - env: CMD=beta:lint
-  - env: CMD=build:storybook
 script:
 - yarn $CMD
 after_success:
@@ -24,7 +16,7 @@ after_success:
 - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
 - cp deploy.key ~/.ssh/
 - chmod 600 ~/.ssh/deploy.key
-- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$CMD" == "build:storybook" ] && yarn deploy'
+- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$CMD" == "test" ] && yarn deploy'
 notifications:
   email: false
   slack:

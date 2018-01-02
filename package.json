@@ -43,7 +43,7 @@
     "postcss-cli": "^4.1.1",
     "postcss-import": "^11.0.0",
     "postcss-nested": "^2.1.2",
-    "prettier": "^1.9.2",
+    "prettier-eslint-cli": "^4.7.0",
     "react": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "rimraf": "^2.6.2",
@@ -84,13 +84,17 @@
   "license": "MIT",
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --write --parser typescript",
+      "prettier-eslint --write --parser typescript",
       "tslint --fix",
       "eslint --ext=ts,tsx",
       "git add"
     ],
+    "*.md": [
+      "prettier --parser markdown --write",
+      "git add"
+    ],
     "src/**/*.css": [
-      "prettier --parser postcss",
+      "prettier --parser postcss --write",
       "stylelint --fix",
       "git add"
     ]
@@ -102,9 +106,9 @@
   },
   "scripts": {
     "assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
-    "build": "run-s clean tsc build:css assets",
+    "build": "run-s clean tsc assets build:*",
     "build:css": "postcss src/index.css -o lib/bundle.css",
-    "build:storybook": "run-s build storybook",
+    "build:storybook": "build-storybook -o ./.storybook/build -s ./lib",
     "clean": "rimraf coverage .stoybook/build lib",
     "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "npm run build && gh-pages -d .storybook/build",
@@ -115,7 +119,6 @@
     "prepublish": "npm run build",
     "prestart": "run-s clean build:css",
     "start": "start-storybook -p 9001 -s ./lib",
-    "storybook": "build-storybook -o ./.storybook/build -s ./lib",
     "test": "jest",
     "tsc": "tsc"
   },
