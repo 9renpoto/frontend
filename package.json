@@ -32,7 +32,7 @@
     "typescript-eslint-parser": "^11.0.0",
     "vnu-jar": "^17.11.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.10.0"
   },
   "license": "MIT",
   "lint-staged": {
