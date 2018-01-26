@@ -13,9 +13,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
   },
-  "devDependencies": {
-    "eslint": "^4.11.0"
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
   "keywords": [
     "config",
@@ -23,9 +21,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "4.x"
-  },
+  "peerDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
