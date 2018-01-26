@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
@@ -13,7 +13,6 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
   },
-  "devDependencies": {},
   "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
   "keywords": [
     "config",
@@ -21,7 +20,6 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "peerDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
