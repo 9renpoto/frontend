@@ -6,7 +6,7 @@ My eslint config react set.
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[![NPM version][npm-image]][npm-url]
+[![NPM version](https://badge.fury.io/js/%409renpoto%2Feslint-config-react.svg)](https://badge.fury.io/js/%409renpoto%2Feslint-config-react)
 
 ## Usage
 
@@ -23,6 +23,3 @@ npm install -D @9renpoto/eslint-config-react eslint
 ## License
 
 MIT
-
-[npm-image]: https://badge.fury.io/js/%409renpoto%2Feslint-config-react.svg
-[npm-url]: https://badge.fury.io/js/%409renpoto%2Feslint-config-react
