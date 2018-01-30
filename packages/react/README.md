@@ -4,6 +4,7 @@ My eslint config react set.
 
 `eslint-config-standard-react` based
 
+[![Build Status](https://travis-ci.org/9renpoto/eslint-config.svg?branch=master)](https://travis-ci.org/9renpoto/eslint-config)
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 [![NPM version](https://badge.fury.io/js/%409renpoto%2Feslint-config-react.svg)](https://badge.fury.io/js/%409renpoto%2Feslint-config-react)
