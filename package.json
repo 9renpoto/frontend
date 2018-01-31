@@ -6,7 +6,7 @@
     "lerna": "^2.5.1",
     "lerna-changelog": "^0.7.0",
     "lint-staged": "^6.0.0",
-    "markdownlint-cli": "^0.6.0",
+    "markdownlint-cli": "^0.7.0",
     "prettier-eslint-cli": "^4.7.0"
   },
   "license": "MIT",
