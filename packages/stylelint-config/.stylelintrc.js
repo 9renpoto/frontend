@@ -1,10 +1,10 @@
 module.exports = {
-  extends: "stylelint-config-standard",
+  extends: 'stylelint-config-standard',
   rules: {
-    "block-closing-brace-newline-before": "always",
-    "selector-pseudo-class-no-unknown": [
+    'block-closing-brace-newline-before': 'always',
+    'selector-pseudo-class-no-unknown': [
       true,
-      { ignorePseudoClasses: ["global", "local"] }
+      { ignorePseudoClasses: ['global', 'local'] }
     ]
   }
-};
+}
