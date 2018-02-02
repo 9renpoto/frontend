@@ -1,6 +1,6 @@
 module.exports = {
-  "extends": ["standard-react"],
-  "rules": {
+  extends: ["standard-react"],
+  rules: {
     "react/prop-types": 0
   }
-}
+};

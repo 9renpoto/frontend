@@ -7,7 +7,9 @@
     "lerna-changelog": "^0.7.0",
     "lint-staged": "^6.0.0",
     "markdownlint-cli": "^0.7.0",
-    "prettier-eslint-cli": "^4.7.0"
+    "prettier-eslint-cli": "^4.7.0",
+    "stylelint": "^8.4.0",
+    "tslint": "^5.9.1"
   },
   "license": "MIT",
   "lint-staged": {
@@ -18,6 +20,10 @@
     "*.md": [
       "prettier --write",
       "markdownlint",
+      "git add"
+    ],
+    "*.{ts,js}": [
+      "prettier --write",
       "git add"
     ]
   },

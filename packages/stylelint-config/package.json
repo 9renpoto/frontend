@@ -1,0 +1,25 @@
+{
+  "name": "@9renpoto/stylelint-config",
+  "description": "@9renpoto stylelint config",
+  "version": "1.4.0",
+  "author": "@9renpoto",
+  "bugs": {
+    "url": "https://github.com/9renpoto/stylelint-config/pulls"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "homepage": "https://github.com/9renpoto/stylelint-config#readme",
+  "keywords": [
+    "stylelint-config"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/stylelint-config.git"
+  },
+  "scripts": {
+    "test": "stylelint \"examples/*.css\""
+  }
+}
