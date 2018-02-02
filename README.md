@@ -1,21 +1,42 @@
-# @9renpoto/eslint-config
+# config
 
-[![Build Status](https://travis-ci.org/9renpoto/eslint-config.svg?branch=master)](https://travis-ci.org/9renpoto/eslint-config)
+[![Build Status](https://travis-ci.org/9renpoto/config.svg?branch=master)](https://travis-ci.org/9renpoto/config)
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+## Table of Contents
+
+* [Packages](#packages)
+* [Installation](#install)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Contribute](#contribute)
+* [License](#license)
+
+## Packages
+
+This repository is managed as monorepo.
+
+| Package                                                                  | Version                                                                                                                                            |
+| :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[@9renpoto/eslint-config](/packages/eslint-config)**                   | [![NPM version](https://badge.fury.io/js/%409renpoto%2Feslint-config.svg)](https://badge.fury.io/js/%409renpoto%2Feslint-config)                   |
+| **[@9renpoto/eslint-config-flowtype](/packages/eslint-config-flowtype)** | [![NPM version](https://badge.fury.io/js/%409renpoto%2Feslint-config-flowtype.svg)](https://badge.fury.io/js/%409renpoto%2Feslint-config-flowtype) |
+| **[@9renpoto/eslint-config-react](/packages/eslint-config-react)**       | [![NPM version](https://badge.fury.io/js/%409renpoto%2Feslint-config-react.svg)](https://badge.fury.io/js/%409renpoto%2Feslint-config-react)       |
+| **[@9renpoto/tslint-config](/packages/tslint-config)**                   | [![npm version](https://badge.fury.io/js/%409renpoto%2Ftslint-config.svg)](https://badge.fury.io/js/%409renpoto%2Ftslint-config)                   |
+| **[@9renpoto/stylelint-config](/packages/stylelint-config)**             | [![NPM version](https://badge.fury.io/js/%409renpoto%2Fstylelint-config.svg)](https://badge.fury.io/js/%409renpoto%2Fstylelint-config)             |
 
 ## Install
 
-```sh
-npm i
-```
+    npm install
 
-## Test
+## Tests
 
-```sh
-npm test
-```
+    npm test
 
-## License
+## Contribute
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## license
 
 MIT

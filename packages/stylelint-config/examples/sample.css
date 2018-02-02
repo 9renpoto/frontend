@@ -1,0 +1,11 @@
+:local {
+  .selector-x {
+    width: 10%;
+  }
+}
+
+:global {
+  .selector-y {
+    width: 10%;
+  }
+}
