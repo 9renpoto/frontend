@@ -24,7 +24,11 @@
       "markdownlint",
       "git add"
     ],
-    "*.js": [
+    "*.{css,scss,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,jsx}": [
       "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js",
       "git add"
     ]

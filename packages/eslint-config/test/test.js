@@ -1,16 +1,16 @@
-"use strict";
+'use strict'
 
-const d = { hello: "ok" };
+const d = { hello: 'ok' }
 
 /**
  * print
  * @param  {any} str print any object
  * @return {void}
  */
-function print({ str } = d) {
-  if ((str === "ok" && true) || !0) {
-    console.log(str);
+function print ({ str } = d) {
+  if ((str === 'ok' && true) || !0) {
+    console.log(str)
   }
 }
 
-print();
+print()
