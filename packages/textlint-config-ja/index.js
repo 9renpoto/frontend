@@ -5,7 +5,9 @@ module.exports = {
     'ja-no-successive-word': true,
     'ja-no-weak-phrase': true,
     'max-ten': { max: 3 },
-    'no-dead-link': true,
+    'no-dead-link': {
+      ignore: ['https://badge.fury.io/js/**/*']
+    },
     'no-double-negative-ja': true,
     'no-doubled-conjunction': true,
     'no-doubled-conjunctive-particle-ga': true,

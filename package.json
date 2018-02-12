@@ -34,6 +34,9 @@
     ]
   },
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "ssh://git@github.com/9renpoto/eslint-config.git",
   "scripts": {
     "postinstall": "lerna bootstrap",
