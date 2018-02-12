@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/eslint-config-react",
   "description": "my react eslint-config",
-  "version": "3.0.0-beta1",
+  "version": "4.0.0-beta1",
   "author": "9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
