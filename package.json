@@ -41,7 +41,7 @@
     "lint-staged": "^6.1.0",
     "npm-run-all": "^4.1.2",
     "postcss-cli": "^5.0.0",
-    "postcss-import": "^11.0.0",
+    "postcss-import": "^11.1.0",
     "postcss-nested": "^2.1.2",
     "prettier-eslint-cli": "^4.7.0",
     "react": "^16.2.0",
