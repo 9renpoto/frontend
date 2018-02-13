@@ -31,7 +31,7 @@
     "typescript": "^2.7.1",
     "typescript-eslint-parser": "^13.0.0",
     "vnu-jar": "^17.11.1",
-    "webpack": "^3.10.0",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
   "license": "MIT",
