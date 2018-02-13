@@ -6,7 +6,7 @@
     "impress.js": "^0.6.0"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config": "^2.4.0",
+    "@9renpoto/eslint-config": "^4.0.0",
     "@types/extract-text-webpack-plugin": "^3.0.0",
     "@types/impress": "^0.5.29",
     "@types/node": "^9.4.1",
