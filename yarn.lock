@@ -25,9 +25,9 @@
   dependencies:
     stylelint-config-standard "^18.0.0"
 
-"@9renpoto/tslint-config@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/tslint-config/-/tslint-config-3.4.0.tgz#2df01d2c4d0d455e718763621fc90e0e020c43c1"
+"@9renpoto/tslint-config@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tslint-config/-/tslint-config-4.0.0.tgz#05ea287b1ade8c53f6b9913bd447a541232ad4b0"
   dependencies:
     tslint-config-standard "^7.0.0"
 
