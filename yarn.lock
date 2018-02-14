@@ -8829,9 +8829,9 @@ tslint-eslint-rules@^4.1.1:
     tslib "^1.0.0"
     tsutils "^1.4.0"
 
-tslint-react@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.5.0.tgz#88c13ed92bb6ac14596bdec6767b9be97ced2d3b"
+tslint-react@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.5.1.tgz#a5ca48034bf583fb63b42763bb89fa23062d5390"
   dependencies:
     tsutils "^2.13.1"
 
