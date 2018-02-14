@@ -256,9 +256,9 @@
   version "16.0.29"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.29.tgz#4eea6a8de9f40ca71d580ae7a9f3b4b77b368de8"
 
-"@types/storybook__react@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@types/storybook__react/-/storybook__react-3.0.6.tgz#f4c0e59dc2051772e31764237919d579dc4b596f"
+"@types/storybook__react@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@types/storybook__react/-/storybook__react-3.0.7.tgz#2ca6ab78e5fe777737aa5880b0bb5228f564e137"
   dependencies:
     "@types/react" "*"
     "@types/webpack-env" "*"
