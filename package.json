@@ -28,7 +28,7 @@
     "style-loader": "^0.20.2",
     "ts-loader": "^3.5.0",
     "ts-node": "^4.0.1",
-    "typescript": "^2.7.1",
+    "typescript": "^2.7.2",
     "typescript-eslint-parser": "^13.0.0",
     "vnu-jar": "^17.11.1",
     "webpack": "^3.11.0",
