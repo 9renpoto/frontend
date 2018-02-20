@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard-react": "^5.0.0",
+    "eslint-config-standard-react": "^6.0.0",
     "eslint-plugin-react": "^7.6.1"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
