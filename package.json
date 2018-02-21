@@ -13,7 +13,7 @@
     "react-fa": "^5.0.0"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config": "^4.0.0",
+    "@9renpoto/eslint-config": "^4.2.0",
     "@9renpoto/eslint-config-react": "^4.0.0",
     "@9renpoto/stylelint-config": "^4.0.0",
     "@9renpoto/tslint-config": "^4.0.0",
