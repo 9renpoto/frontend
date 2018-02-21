@@ -4429,9 +4429,9 @@ inferno-vnode-flags@3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.10.1.tgz#88a4528a3b4df0f33a3ace68dc45f05b651c0e41"
 
-inferno-vnode-flags@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-4.0.3.tgz#1b5138f9ddef96f69d40c34745f729e941b409b0"
+inferno-vnode-flags@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-4.0.4.tgz#ddf99e383ee6771cc9a22df684cbd41ebfdee24a"
 
 inferno@3.10.1, inferno@^3.4.3:
   version "3.10.1"
@@ -4440,11 +4440,11 @@ inferno@3.10.1, inferno@^3.4.3:
     inferno-shared "3.10.1"
     inferno-vnode-flags "3.10.1"
 
-inferno@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-4.0.3.tgz#7fc4c5df7428a0cb90ee92a3bb169a1ddedc096a"
+inferno@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-4.0.4.tgz#db38098bc53ef64bc2cae9334ffb491e6fca722b"
   dependencies:
-    inferno-vnode-flags "4.0.3"
+    inferno-vnode-flags "4.0.4"
     opencollective "^1.0.3"
 
 inflight@^1.0.4:
