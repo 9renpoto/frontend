@@ -8650,8 +8650,8 @@ stylelint-config-standard@^18.1.0:
     stylelint-config-recommended "^2.0.0"
 
 stylelint@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.0.0.tgz#dfad428e948830e522a96e0f331f510d07a4fc0b"
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.1.0.tgz#ff24e8be30b9c2718cc53e8b75318988970c426f"
   dependencies:
     autoprefixer "^8.0.0"
     balanced-match "^1.0.0"
@@ -8673,7 +8673,6 @@ stylelint@^9.0.0:
     meow "^4.0.0"
     micromatch "^2.3.11"
     normalize-selector "^0.2.0"
-    opencollective "^1.0.3"
     pify "^3.0.0"
     postcss "^6.0.16"
     postcss-html "^0.12.0"
