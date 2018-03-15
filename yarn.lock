@@ -2530,9 +2530,9 @@ import-local@^1.0.0:
     pkg-dir "^2.0.0"
     resolve-cwd "^2.0.0"
 
-impress.js@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/impress.js/-/impress.js-0.6.0.tgz#5211da4976408bb5b844eefc2914d9d4fe927e91"
+impress.js@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/impress.js/-/impress.js-1.0.0.tgz#a73f86bf8bc6748fc8822809d8d764a607d0b846"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
