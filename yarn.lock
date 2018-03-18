@@ -4406,9 +4406,9 @@ inferno-shared@3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.10.1.tgz#6ad59d64ca03c0fdcc8495d4864410cafee81332"
 
-inferno-shared@4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-4.0.8.tgz#65208ff739d4e94a3af3ee839555cc6452439739"
+inferno-shared@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-5.0.0.tgz#4c0a392982e00fc437c7d55fa4a879eec2cae484"
 
 inferno-transition-group@2.1.1:
   version "2.1.1"
@@ -4421,9 +4421,9 @@ inferno-vnode-flags@3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.10.1.tgz#88a4528a3b4df0f33a3ace68dc45f05b651c0e41"
 
-inferno-vnode-flags@4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-4.0.8.tgz#fefc41019cc27d5c9b3fad03bd4da06d23c2f40c"
+inferno-vnode-flags@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-5.0.0.tgz#fa7ac985cde8bdd17567a722799a296a47060efd"
 
 inferno@3.10.1, inferno@^3.4.3:
   version "3.10.1"
@@ -4432,12 +4432,12 @@ inferno@3.10.1, inferno@^3.4.3:
     inferno-shared "3.10.1"
     inferno-vnode-flags "3.10.1"
 
-inferno@4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-4.0.8.tgz#0cd7b831507f99f6564411a8ba877bb1082ce8dc"
+inferno@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-5.0.0.tgz#41a5e0416b55dab006bd6ec5478836303d4c46c3"
   dependencies:
-    inferno-shared "4.0.8"
-    inferno-vnode-flags "4.0.8"
+    inferno-shared "5.0.0"
+    inferno-vnode-flags "5.0.0"
     opencollective "^1.0.3"
 
 inflight@^1.0.4:
