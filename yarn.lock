@@ -5880,9 +5880,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vnu-jar@17.11.1:
-  version "17.11.1"
-  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-17.11.1.tgz#2f2c932a47561e61f4ca41b93d065d5e74091b6a"
+vnu-jar@17.12.28:
+  version "17.12.28"
+  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-17.12.28.tgz#c1662cf438dfdd9528284e088d1dd45ee73679d4"
 
 void-elements@^2.0.1:
   version "2.0.1"
