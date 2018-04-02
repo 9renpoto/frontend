@@ -196,9 +196,9 @@
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.0.2.tgz#5386a15187798efb48eb71fa1cbf6ca2770b206a"
 
-"@textlint/ast-traverse@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@textlint/ast-traverse/-/ast-traverse-2.0.6.tgz#d8936dc2c63eb1aff3c7af98e561309be6f15641"
+"@textlint/ast-traverse@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-traverse/-/ast-traverse-2.0.7.tgz#a205fbb4419df0f362059233f31ff84143ffeb4e"
   dependencies:
     "@textlint/ast-node-types" "^4.0.2"
 
@@ -208,11 +208,11 @@
   dependencies:
     map-like "^2.0.0"
 
-"@textlint/fixer-formatter@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@textlint/fixer-formatter/-/fixer-formatter-3.0.5.tgz#d046aabea44c31469d3b1d16b3b2b079ff77c59d"
+"@textlint/fixer-formatter@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@textlint/fixer-formatter/-/fixer-formatter-3.0.6.tgz#daa57e750bcac3f3452c44587f32f7575fe5c7ed"
   dependencies:
-    "@textlint/kernel" "^2.0.7"
+    "@textlint/kernel" "^2.0.8"
     chalk "^1.1.3"
     debug "^2.1.0"
     diff "^2.2.2"
@@ -222,12 +222,12 @@
     text-table "^0.2.0"
     try-resolve "^1.0.1"
 
-"@textlint/kernel@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@textlint/kernel/-/kernel-2.0.7.tgz#b6339ad878d1272970dbacc3db428b3f0f4696d5"
+"@textlint/kernel@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@textlint/kernel/-/kernel-2.0.8.tgz#e68a1df095a2c85b0c3633d7146348c7a1a09980"
   dependencies:
     "@textlint/ast-node-types" "^4.0.2"
-    "@textlint/ast-traverse" "^2.0.6"
+    "@textlint/ast-traverse" "^2.0.7"
     "@textlint/feature-flag" "^3.0.4"
     "@types/bluebird" "^3.5.18"
     bluebird "^3.5.1"
@@ -236,13 +236,13 @@
     object-assign "^4.1.1"
     structured-source "^3.0.2"
 
-"@textlint/linter-formatter@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@textlint/linter-formatter/-/linter-formatter-3.0.5.tgz#c5a7c6e583f8743a0e77d7de4d595846e4d070ca"
+"@textlint/linter-formatter@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@textlint/linter-formatter/-/linter-formatter-3.0.6.tgz#6fce8a4ace562834a332a619cf78259182fde40c"
   dependencies:
     "@azu/format-text" "^1.0.1"
     "@azu/style-format" "^1.0.0"
-    "@textlint/kernel" "^2.0.7"
+    "@textlint/kernel" "^2.0.8"
     chalk "^1.0.0"
     concat-stream "^1.5.1"
     js-yaml "^3.2.4"
@@ -256,33 +256,33 @@
     try-resolve "^1.0.1"
     xml-escape "^1.0.0"
 
-"@textlint/markdown-to-ast@^6.0.6":
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-6.0.6.tgz#bef5a6a4a4a135a776d24f0ac12d97ca0ed17e70"
+"@textlint/markdown-to-ast@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-6.0.7.tgz#52f5a4e0335225272943e0bf9e1940cb778fe0b5"
   dependencies:
     "@textlint/ast-node-types" "^4.0.2"
     debug "^2.1.3"
-    remark "^7.0.1"
+    remark "^9.0.0"
     structured-source "^3.0.2"
     traverse "^0.6.6"
 
-"@textlint/text-to-ast@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@textlint/text-to-ast/-/text-to-ast-3.0.6.tgz#c026835ad8e6fd5fa469818b182a2148a9681bf7"
+"@textlint/text-to-ast@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@textlint/text-to-ast/-/text-to-ast-3.0.7.tgz#3a153cfba0d39eaea38fda14244a48d2f2b2eb25"
   dependencies:
     "@textlint/ast-node-types" "^4.0.2"
 
-"@textlint/textlint-plugin-markdown@^4.0.8":
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-4.0.8.tgz#43743bc2867b105c05c5e21e212c0a83657dfa01"
+"@textlint/textlint-plugin-markdown@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-4.0.9.tgz#1c8762d9a77b377107dc9527aa77d485b202794c"
   dependencies:
-    "@textlint/markdown-to-ast" "^6.0.6"
+    "@textlint/markdown-to-ast" "^6.0.7"
 
-"@textlint/textlint-plugin-text@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-text/-/textlint-plugin-text-3.0.8.tgz#e62dfcb3d80889979d43d31e5dba8d11565aabd3"
+"@textlint/textlint-plugin-text@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-text/-/textlint-plugin-text-3.0.9.tgz#93349a3a7eda1602227eb11f9a5d5bc35faa9127"
   dependencies:
-    "@textlint/text-to-ast" "^3.0.6"
+    "@textlint/text-to-ast" "^3.0.7"
 
 "@types/bluebird@^3.5.18":
   version "3.5.20"
@@ -4775,27 +4775,6 @@ regx@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/regx/-/regx-1.0.4.tgz#a0ee32c308910902019ca1117ed41b9ddd041b2f"
 
-remark-parse@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-3.0.1.tgz#1b9f841a44d8f4fbf2246850265459a4eb354c80"
-  dependencies:
-    collapse-white-space "^1.0.2"
-    has "^1.0.1"
-    is-alphabetical "^1.0.0"
-    is-decimal "^1.0.0"
-    is-whitespace-character "^1.0.0"
-    is-word-character "^1.0.0"
-    markdown-escapes "^1.0.0"
-    parse-entities "^1.0.2"
-    repeat-string "^1.5.4"
-    state-toggle "^1.0.0"
-    trim "0.0.1"
-    trim-trailing-lines "^1.0.0"
-    unherit "^1.0.4"
-    unist-util-remove-position "^1.0.0"
-    vfile-location "^2.0.0"
-    xtend "^4.0.1"
-
 remark-parse@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"
@@ -4816,25 +4795,6 @@ remark-parse@^5.0.0:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
-remark-stringify@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-3.0.1.tgz#79242bebe0a752081b5809516fa0c06edec069cf"
-  dependencies:
-    ccount "^1.0.0"
-    is-alphanumeric "^1.0.0"
-    is-decimal "^1.0.0"
-    is-whitespace-character "^1.0.0"
-    longest-streak "^2.0.1"
-    markdown-escapes "^1.0.0"
-    markdown-table "^1.1.0"
-    mdast-util-compact "^1.0.0"
-    parse-entities "^1.0.2"
-    repeat-string "^1.5.4"
-    state-toggle "^1.0.0"
-    stringify-entities "^1.0.1"
-    unherit "^1.0.4"
-    xtend "^4.0.1"
-
 remark-stringify@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-5.0.0.tgz#336d3a4d4a6a3390d933eeba62e8de4bd280afba"
@@ -4853,14 +4813,6 @@ remark-stringify@^5.0.0:
     stringify-entities "^1.0.1"
     unherit "^1.0.4"
     xtend "^4.0.1"
-
-remark@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/remark/-/remark-7.0.1.tgz#a5de4dacfabf0f60a49826ef24c479807f904bfb"
-  dependencies:
-    remark-parse "^3.0.0"
-    remark-stringify "^3.0.0"
-    unified "^6.0.0"
 
 remark@^9.0.0:
   version "9.0.0"
@@ -5827,18 +5779,18 @@ textlint-util-to-string@^1.1.0, textlint-util-to-string@^1.2.0:
     object-assign "^4.0.1"
     structured-source "^3.0.2"
 
-textlint@10.1.5:
-  version "10.1.5"
-  resolved "https://registry.yarnpkg.com/textlint/-/textlint-10.1.5.tgz#da8dd16145dfff0ee6c28edfdff120ac454cc980"
+textlint@10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/textlint/-/textlint-10.2.0.tgz#e0c24df67862ac7fc0ed5dcdcad44eb6db73e5d3"
   dependencies:
     "@textlint/ast-node-types" "^4.0.2"
-    "@textlint/ast-traverse" "^2.0.6"
+    "@textlint/ast-traverse" "^2.0.7"
     "@textlint/feature-flag" "^3.0.4"
-    "@textlint/fixer-formatter" "^3.0.5"
-    "@textlint/kernel" "^2.0.7"
-    "@textlint/linter-formatter" "^3.0.5"
-    "@textlint/textlint-plugin-markdown" "^4.0.8"
-    "@textlint/textlint-plugin-text" "^3.0.8"
+    "@textlint/fixer-formatter" "^3.0.6"
+    "@textlint/kernel" "^2.0.8"
+    "@textlint/linter-formatter" "^3.0.6"
+    "@textlint/textlint-plugin-markdown" "^4.0.9"
+    "@textlint/textlint-plugin-text" "^3.0.9"
     "@types/bluebird" "^3.5.18"
     bluebird "^3.0.5"
     debug "^2.1.0"
