@@ -2,13 +2,13 @@ import * as classnames from 'classnames'
 import * as React from 'react'
 
 export type Props = {
-  Logo: Function;
-  titles: Array<string>;
-  baseUrl: string;
+  Logo: Function
+  titles: Array<string>
+  baseUrl: string
 }
 
 export type State = {
-  isActive: boolean;
+  isActive: boolean
 }
 
 const NAVBAR = 'navbar'

@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import { random } from 'faker'
 import * as React from 'react'
 
-import { Header } from '../src'
+import { Header } from '.'
 
 export function DefaultHeader () {
   return (

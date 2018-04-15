@@ -1,19 +1,21 @@
+const { CheckerPlugin } = require('awesome-typescript-loader')
 module.exports = {
   resolve: {
-    alias: {
-      react: "inferno-compat",
-      "react-dom": "inferno-compat"
-    },
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
     enforceExtension: false
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loader: 'awesome-typescript-loader'
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
-  }
+  },
+  plugins: [new CheckerPlugin()]
 }
