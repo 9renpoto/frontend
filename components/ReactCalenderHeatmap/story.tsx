@@ -18,10 +18,10 @@ function createRows (max: number = random.number({ max: 365 })) {
   return rows
 }
 
-storiesOf('ReactCalenderHeatmap', module).add('default', () => (
+storiesOf('ReactCalenderHeatmap DontTest', module).add('default', () => (
   <CalendarHeatmap
+    startDate={(d => d.setMonth(d.getMonth() - 12))(new Date())}
     endDate={DATE}
-    numDays={365}
     values={createRows()}
     classForValue={(value: any) => {
       let data = value
