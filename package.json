@@ -29,7 +29,7 @@
     "ts-loader": "4.2.0",
     "ts-node": "6.0.0",
     "typescript": "2.8.1",
-    "typescript-eslint-parser": "14.0.0",
+    "typescript-eslint-parser": "15.0.0",
     "vnu-jar": "18.3.0",
     "webpack": "3.11.0",
     "webpack-dev-server": "3.1.3"
