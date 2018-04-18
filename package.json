@@ -52,7 +52,7 @@
     "tslint": "5.9.1",
     "tslint-react": "3.5.1",
     "typescript": "2.8.1",
-    "typescript-eslint-parser": "14.0.0"
+    "typescript-eslint-parser": "15.0.0"
   },
   "files": [
     "lib/"
