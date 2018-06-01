@@ -33,7 +33,7 @@
     "eslint-plugin-jest": "21.17.0",
     "faker": "4.1.0",
     "file-loader": "1.1.11",
-    "gh-pages": "1.1.0",
+    "gh-pages": "1.2.0",
     "husky": "0.14.3",
     "jest": "23.1.0",
     "lint-staged": "7.1.3",
