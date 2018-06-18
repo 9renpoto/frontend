@@ -4267,17 +4267,6 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-globby@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
-  dependencies:
-    array-union "^1.0.1"
-    dir-glob "^2.0.0"
-    glob "^7.1.2"
-    ignore "^3.3.5"
-    pify "^3.0.0"
-    slash "^1.0.0"
-
 globby@^8.0.0:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/globby/-/globby-8.0.1.tgz#b5ad48b8aa80b35b814fc1281ecc851f1d2b5b50"
@@ -7101,16 +7090,16 @@ postcss-calc@^5.2.0:
     postcss-message-helpers "^2.0.0"
     reduce-css-calc "^1.2.6"
 
-postcss-cli@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-5.0.0.tgz#3d6aee7652b8dc6566f0189dd90d11bb0a535a20"
+postcss-cli@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-5.0.1.tgz#95f309fffbee3273c161704e2b9f58d5a4993cf1"
   dependencies:
     chalk "^2.1.0"
     chokidar "^2.0.0"
     dependency-graph "^0.7.0"
     fs-extra "^5.0.0"
-    get-stdin "^5.0.1"
-    globby "^7.1.1"
+    get-stdin "^6.0.0"
+    globby "^8.0.0"
     postcss "^6.0.1"
     postcss-load-config "^1.1.0"
     postcss-reporter "^5.0.0"
