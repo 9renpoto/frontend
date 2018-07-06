@@ -24,7 +24,7 @@
     "@types/jest": "23.1.4",
     "@types/node": "9.6.23",
     "@types/react-calendar-heatmap": "1.6.1",
-    "@types/storybook__react": "3.0.7",
+    "@types/storybook__react": "3.0.8",
     "awesome-typescript-loader": "4.0.1",
     "codecov": "3.0.2",
     "cpx": "1.5.0",
