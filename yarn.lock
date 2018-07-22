@@ -5263,9 +5263,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vnu-jar@18.7.22:
-  version "18.7.22"
-  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-18.7.22.tgz#583ccecd418becb5d006d3d351e72368bd380603"
+vnu-jar@18.7.23:
+  version "18.7.23"
+  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-18.7.23.tgz#ff93dd2e8ea327753e265684f3c29c84f89301b5"
 
 void-elements@^2.0.1:
   version "2.0.1"
