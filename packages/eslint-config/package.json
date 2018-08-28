@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^7.0.0",
     "eslint-plugin-promise": "^4.0.0",
