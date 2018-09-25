@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@9renpoto/eslint-config": "4.4.0",
-    "@9renpoto/eslint-config-react": "4.3.0",
+    "@9renpoto/eslint-config-react": "4.6.0",
     "@9renpoto/stylelint-config": "4.4.0",
     "@9renpoto/tslint-config": "4.0.0",
     "@storybook/addon-storyshots": "3.4.11",
