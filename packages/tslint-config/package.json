@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/tslint-config",
   "description": "@9nrepoto Linter Settings",
-  "version": "4.0.0",
+  "version": "4.6.0",
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/tslint-config/issues"
