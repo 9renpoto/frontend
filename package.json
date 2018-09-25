@@ -39,7 +39,6 @@
   },
   "repository": "ssh://git@github.com/9renpoto/eslint-config.git",
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "precommit": "lint-staged",
     "test": "lerna run test"
   },
