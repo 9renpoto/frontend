@@ -2,7 +2,7 @@
   "devDependencies": {
     "eslint": "5.6.0",
     "fixpack": "2.3.1",
-    "husky": "1.0.0",
+    "husky": "1.0.1",
     "lerna": "3.4.0",
     "lerna-changelog": "0.8.0",
     "lint-staged": "7.3.0",
