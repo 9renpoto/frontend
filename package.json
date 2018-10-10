@@ -22,7 +22,7 @@
     "@types/classnames": "2.2.6",
     "@types/faker": "4.1.4",
     "@types/jest": "23.3.5",
-    "@types/node": "9.6.34",
+    "@types/node": "9.6.35",
     "@types/react-calendar-heatmap": "1.6.2",
     "@types/storybook__react": "3.0.9",
     "awesome-typescript-loader": "4.0.1",
