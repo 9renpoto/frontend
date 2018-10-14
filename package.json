@@ -30,7 +30,7 @@
     "cpx": "1.5.0",
     "enzyme": "3.7.0",
     "eslint": "5.7.0",
-    "eslint-plugin-jest": "21.24.1",
+    "eslint-plugin-jest": "21.24.2",
     "faker": "4.1.0",
     "file-loader": "2.0.0",
     "gh-pages": "2.0.1",
