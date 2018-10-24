@@ -11,8 +11,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/style/badge)](https://www.codefactor.io/repository/github/9renpoto/style)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b2991eb86d7341478596c9a694d1dcfe)](https://www.codacy.com/app/9renpoto/style?utm_source=github.com&utm_medium=referral&utm_content=9renpoto/style&utm_campaign=badger)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/style?branch=master)](https://bettercodehub.com/results/9renpoto/style)
-[![Dependency Status](https://dependencyci.com/github/9renpoto/style/badge)](https://dependencyci.com/github/9renpoto/style)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F9renpoto%2Fstyle.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F9renpoto%2Fstyle?ref=badge_shield)
 
 ## install
 
@@ -36,4 +34,3 @@ npm test
 
 MIT
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F9renpoto%2Fstyle.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F9renpoto%2Fstyle?ref=badge_large)
