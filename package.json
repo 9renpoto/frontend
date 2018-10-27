@@ -21,7 +21,7 @@
     "@storybook/react": "3.4.11",
     "@types/classnames": "2.2.6",
     "@types/faker": "4.1.4",
-    "@types/jest": "23.3.7",
+    "@types/jest": "23.3.8",
     "@types/node": "9.6.35",
     "@types/react-calendar-heatmap": "1.6.2",
     "@types/storybook__react": "3.0.9",
