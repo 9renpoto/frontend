@@ -4,11 +4,6 @@
     fill: #aaa;
   }
 
-  & [rect:hover] {
-    stroke: #555;
-    stroke-width: 1px;
-  }
-
   & .color-github {
     &-0 {
       fill: #eee;

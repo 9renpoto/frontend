@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import { date, random } from 'faker'
-import * as React from 'react'
-
+import React from 'react'
 import CalendarHeatmap from 'react-calendar-heatmap'
 
 const DATE = new Date()

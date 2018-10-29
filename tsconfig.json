@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "module": "commonjs",
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "module": "esnext",
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
@@ -18,10 +21,5 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
-  "exclude": [
-    "stories",
-    "tests",
-    "__tests__",
-    "node_modules"
-  ]
+  "exclude": ["stories", "tests", "__tests__", "node_modules"]
 }

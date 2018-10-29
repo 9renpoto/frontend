@@ -1,4 +1,4 @@
-import { configure } from '@storybook/react'
+const { configure } = require('@storybook/react')
 const req = require.context('../components/', true, /story.tsx?$/)
 
 configure(() => {
