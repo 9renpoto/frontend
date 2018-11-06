@@ -1,36 +1,38 @@
-import * as path from "path";
-import * as ExtractTextPlugin from "extract-text-webpack-plugin";
+import * as path from 'path'
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const devMode = process.env.NODE_ENV !== 'production'
 
-export default {
+module.exports = (env: string) => ({
   entry: {
-    impress: path.join(__dirname, "src/impress.ts")
+    impress: path.join(__dirname, 'src/impress.ts')
   },
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "[name].bundle.js"
+    path: path.join(__dirname, '/dist'),
+    filename: '[name].bundle.js'
   },
+  mode: !env ? 'none' : env === 'development' ? 'development' : 'production',
   resolve: {
-    extensions: [".js", ".ts", ".css"]
+    extensions: ['.js', '.ts', '.css']
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
       },
       {
         test: /\.ts$/,
-        use: "awesome-typescript-loader",
+        use: 'awesome-typescript-loader',
         exclude: /node_modules/
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: "[name].bundle.css"
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.css'
     })
   ]
-};
+})
