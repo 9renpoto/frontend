@@ -32,7 +32,7 @@
     "typescript": "3.1.6",
     "typescript-eslint-parser": "21.0.1",
     "vnu-jar": "18.11.5",
-    "webpack": "4.26.0",
+    "webpack": "4.26.1",
     "webpack-cli": "3.1.2",
     "webpack-dev-server": "3.1.10"
   },
