@@ -10,7 +10,7 @@
     "lint-staged": "8.1.0",
     "markdownlint-cli": "0.13.0",
     "prettier-eslint-cli": "4.7.1",
-    "stylelint": "9.8.0",
+    "stylelint": "9.9.0",
     "tslint": "5.11.0",
     "typescript": "3.1.6",
     "typescript-eslint-parser": "21.0.1"
