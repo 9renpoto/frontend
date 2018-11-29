@@ -9,7 +9,7 @@
   "dependencies": {
     "bulma": "0.7.2",
     "classnames": "2.2.6",
-    "react-calendar-heatmap": "1.7.0",
+    "react-calendar-heatmap": "1.8.0",
     "react-fa": "5.0.0"
   },
   "devDependencies": {

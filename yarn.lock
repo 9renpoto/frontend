@@ -7629,6 +7629,11 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+memoize-one@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.0.3.tgz#cdfdd942853f1a1b4c71c5336b8c49da0bf0273c"
+  integrity sha512-QmpUu4KqDmX0plH4u+tf0riMc1KHE1+lw95cMrLlXQAFOx/xnBtwhZ52XJxd9X2O6kwKBqX32kmhbhlobD0cuw==
+
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -9700,11 +9705,12 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-calendar-heatmap@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/react-calendar-heatmap/-/react-calendar-heatmap-1.7.0.tgz#e6bf32a79c1557962cf68806a89e21aeb16797b8"
-  integrity sha512-stPZSm07l3mZmj/MXOD+feHM2ZWY4Jb8fn06O+OeMFMasRCuiB2ZjBgCnCLb0BZ4hHh8vHNQ9v7wapiMcVgU0g==
+react-calendar-heatmap@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/react-calendar-heatmap/-/react-calendar-heatmap-1.8.0.tgz#7672fc697c792c3ab71cb6d8ecb19362ace14ed1"
+  integrity sha512-Dsf2d2MKA31QzLN63fW6PTixJVzMCm2+KhprkGXaeZFvBAL2hK2guiYvr+zFpPkh1ZpGNYdrdNfn9FxhiBd1fg==
   dependencies:
+    memoize-one "^4.0.2"
     prop-types "^15.6.2"
 
 react-dev-utils@^6.1.0:
