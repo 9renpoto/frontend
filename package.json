@@ -34,7 +34,7 @@
     "cssnano": "4.1.7",
     "enzyme": "3.7.0",
     "eslint": "5.9.0",
-    "eslint-plugin-jest": "22.1.1",
+    "eslint-plugin-jest": "22.1.2",
     "faker": "4.1.0",
     "file-loader": "2.0.0",
     "gh-pages": "2.0.1",
