@@ -9727,7 +9727,7 @@ prettier-eslint@^8.5.0:
     typescript "^2.5.1"
     typescript-eslint-parser "^11.0.0"
 
-prettier-stylelint@^0.4.2:
+prettier-stylelint@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/prettier-stylelint/-/prettier-stylelint-0.4.2.tgz#62845e342f786218b008da69eef14f0a5c05bcfb"
   integrity sha512-CmatjDsW8xKMtWg/Tc6/W02wC59p50kkItrXmkgbhR4b2EKMU5Pm55x1WuCahkkZeZoNVReWRxA8VL/s69mkBg==
