@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/style",
   "description": "simple components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/style/issues"
@@ -61,7 +61,8 @@
     "typescript-eslint-parser": "21.0.2"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "esm/"
   ],
   "homepage": "https://9renpoto.github.io/style/",
   "husky": {
@@ -115,16 +116,19 @@
     ]
   },
   "main": "lib/index.js",
+  "module": "esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
     "assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
-    "build": "run-s clean tsc assets build:*",
+    "build": "run-s clean build:* && npm run assets",
+    "build:cjs": "tsc --module commonjs",
     "build:css": "postcss src/index.css -o lib/bundle.css",
+    "build:esm": "tsc --module es2015 --outDir esm",
     "build:storybook": "build-storybook -o ./.storybook/build -s ./lib",
-    "clean": "rimraf coverage .stoybook/build lib",
+    "clean": "rimraf coverage .stoybook/build lib esm",
     "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "npm run build && gh-pages -d .storybook/build",
     "lint": "run-p lint:*",

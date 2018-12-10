@@ -1,3 +1,4 @@
+esm/
 lib/
 .cache/
 .storybook/build
