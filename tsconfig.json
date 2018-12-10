@@ -1,25 +1,30 @@
 {
   "compilerOptions": {
-    "target": "esnext",
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
+    "alwaysStrict": true,
+    "declaration": true,
     "esModuleInterop": true,
     "importHelpers": true,
-    "module": "esnext",
     "jsx": "react",
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./lib",
-    "removeComments": true,
-    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
+    "noImplicitReturns": true,
     "noImplicitThis": true,
-    "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "outDir": "./lib",
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "esnext"
   },
-  "exclude": ["stories", "tests", "__tests__", "node_modules"]
+  "exclude": [
+    "stories",
+    "tests",
+    "__tests__",
+    "node_modules"
+  ]
 }

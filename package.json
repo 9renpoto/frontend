@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/style",
   "description": "simple components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/style/issues"
@@ -9,8 +9,7 @@
   "dependencies": {
     "bulma": "0.7.2",
     "classnames": "2.2.6",
-    "react-calendar-heatmap": "1.8.0",
-    "react-fa": "5.0.0"
+    "react-calendar-heatmap": "1.8.0"
   },
   "devDependencies": {
     "@9renpoto/eslint-config": "4.7.0",
@@ -24,6 +23,7 @@
     "@types/jest": "23.3.10",
     "@types/node": "10.12.12",
     "@types/react-calendar-heatmap": "1.6.2",
+    "@types/storybook__addon-storyshots": "3.4.3",
     "@types/storybook__react": "4.0.0",
     "awesome-typescript-loader": "5.2.1",
     "babel-jest": "23.6.0",
@@ -130,7 +130,7 @@
     "lint": "run-p lint:*",
     "lint:es": "eslint . --ext=ts,tsx",
     "lint:ts": "tslint components/**/*.ts{,x}",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "prestart": "run-s clean build:css",
     "start": "start-storybook -p 9001 -s ./lib",
     "test": "jest",
