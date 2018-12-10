@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/style",
   "description": "simple components",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/style/issues"
@@ -46,6 +46,7 @@
     "postcss-import": "12.0.1",
     "postcss-nested": "2.1.2",
     "prettier-eslint-cli": "4.7.1",
+    "prettier-stylelint": "^0.4.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-test-renderer": "16.6.3",
@@ -59,32 +60,57 @@
     "typescript": "3.2.2",
     "typescript-eslint-parser": "21.0.2"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "homepage": "https://9renpoto.github.io/style/",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "setupFiles": ["<rootDir>/setup.js"],
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+    "setupFiles": [
+      "<rootDir>/setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
     "collectCoverage": true
   },
-  "keywords": ["react", "styleguide"],
+  "keywords": [
+    "react",
+    "styleguide"
+  ],
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": ["prettier-eslint --write", "git add"],
+    "*.{js,jsx}": [
+      "prettier-eslint --write",
+      "git add"
+    ],
     "*.{ts,tsx}": [
-      "prettier-eslint --write --parser typescript",
+      "prettier-eslint --write",
       "tslint --fix",
       "eslint --ext=ts,tsx",
       "git add"
     ],
-    "*.{md,json}": ["prettier --parser --write", "git add"],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ],
     "src/**/*.css": [
-      "prettier --parser postcss --write",
-      "stylelint --fix",
+      "prettier-stylelint --write",
+      "stylelint",
       "git add"
     ]
   },
@@ -111,10 +137,5 @@
     "tsc": "tsc"
   },
   "style": "lib/bundle.css",
-  "types": "lib/index.d.ts",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  "types": "lib/index.d.ts"
 }
