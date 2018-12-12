@@ -21,7 +21,7 @@
     "@types/classnames": "2.2.6",
     "@types/faker": "4.1.4",
     "@types/jest": "23.3.10",
-    "@types/node": "10.12.12",
+    "@types/node": "10.12.14",
     "@types/react-calendar-heatmap": "1.6.2",
     "@types/storybook__addon-storyshots": "3.4.3",
     "@types/storybook__react": "4.0.0",
