@@ -5,6 +5,6 @@ module.exports = {
     'no-var': 2,
     'prefer-const': 2,
     'prefer-destructuring': 2,
-    'valid-jsdoc': 2
+    'sort-imports': 2
   }
 }
