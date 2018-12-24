@@ -34,7 +34,7 @@
     "vnu-jar": "18.11.5",
     "webpack": "4.28.2",
     "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.13"
+    "webpack-dev-server": "3.1.14"
   },
   "license": "MIT",
   "lint-staged": {
