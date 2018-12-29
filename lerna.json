@@ -1,15 +1,15 @@
 {
+  "changelog": {
+    "cacheDir": ".changelog",
+    "labels": {
+      "bug": ":bug: Bug Fix",
+      "enhancement": ":rocket: Enhancement"
+    }
+  },
+  "npmClient": "yarn",
   "packages": [
     "packages/*"
   ],
-  "changelog": {
-    "labels": {
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix"
-    },
-    "cacheDir": ".changelog"
-  },
-  "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "4.7.0"
 }

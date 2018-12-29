@@ -7,9 +7,9 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "@9renpoto/eslint-config": "^4.7.0",
-    "babel-eslint": "^10.0.0",
-    "eslint-plugin-flowtype": "^3.0.0"
+    "@9renpoto/eslint-config": "4.7.0",
+    "babel-eslint": "10.0.0",
+    "eslint-plugin-flowtype": "3.2.0"
   },
   "devDependencies": {
     "flow-bin": "0.89.0"
