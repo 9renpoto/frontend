@@ -7,14 +7,11 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard-react": "^7.0.0",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-config-standard-react": "7.0.0",
+    "eslint-plugin-react": "7.7.0"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
-  "keywords": [
-    "eslint",
-    "react"
-  ],
+  "keywords": ["eslint", "react"],
   "license": "MIT",
   "main": "index.js",
   "repository": {

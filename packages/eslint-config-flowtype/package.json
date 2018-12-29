@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@9renpoto/eslint-config": "^4.7.0",
-    "babel-eslint": "^10.0.0",
-    "eslint-plugin-flowtype": "^3.0.0"
+    "babel-eslint": "10.0.0",
+    "eslint-plugin-flowtype": "3.0.0"
   },
   "devDependencies": {
     "flow-bin": "0.89.0"
@@ -17,11 +17,9 @@
   "engine": {
     "node": "> 5"
   },
-  "homepage": "https://github.com/9renpoto/eslint-config/packages/flowtype#readme",
-  "keywords": [
-    "eslint",
-    "flowtype"
-  ],
+  "homepage":
+    "https://github.com/9renpoto/eslint-config/packages/flowtype#readme",
+  "keywords": ["eslint", "flowtype"],
   "license": "MIT",
   "main": "index.js",
   "repository": {

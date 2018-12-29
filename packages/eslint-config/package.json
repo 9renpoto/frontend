@@ -7,17 +7,15 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-promise": "4.0.0",
+    "eslint-plugin-standard": "4.0.0"
   },
-  "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
-  "keywords": [
-    "config",
-    "eslint"
-  ],
+  "homepage":
+    "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
+  "keywords": ["config", "eslint"],
   "license": "MIT",
   "main": "index.js",
   "repository": {

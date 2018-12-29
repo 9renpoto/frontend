@@ -7,12 +7,10 @@
     "url": "https://github.com/9renpoto/stylelint-config/pulls"
   },
   "dependencies": {
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "18.2.0"
   },
   "homepage": "https://github.com/9renpoto/stylelint-config#readme",
-  "keywords": [
-    "stylelint-config"
-  ],
+  "keywords": ["stylelint-config"],
   "license": "MIT",
   "main": "index.js",
   "repository": {
