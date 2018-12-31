@@ -3,7 +3,6 @@ extends ../base.pug
 block head
   meta(name='viewport', content='width=1024')
   meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
-  link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
   link(href='../impress.bundle.css', rel='stylesheet')
 block body
   body.impress-not-supported(onload='prettyPrint()')
@@ -82,7 +81,7 @@ block body
                     　　　　　　　/´　　　 (,＿ ＼.＼
                     　　 　 　 　 |　　/　　　　 ＼＿ﾉ) ) )
       .step#oops(data-x='1000', data-y='-500', data-rotate='90')
-        img(src='http://tiqav.com/5Jm.jpg', alt='イチからか', align='right', style='margin-left: 50px')
+        img(src='http://tiqav.com/5Jm.jpg', alt='イチからか', style='margin-left: 50px')
         strong PaaS?
         pre.
           git push heroku master?
@@ -130,7 +129,7 @@ block body
         q
           a(href='https://github.com/acidlemon/mirage') github.com/acidlemon/mirage
         br
-        img(src='http://tiqav.com/2yA.jpg', alt='img', align='right')
+        img(src='http://tiqav.com/2yA.jpg', alt='img')
         ul(style='font-size: 42px;')
           li  - /api/list
           li  - /api/launch
@@ -171,8 +170,8 @@ block body
       .step#test-view-app-3(data-x='-4500', data-y='500', data-rotate='180')
         img(src='../img/merged.png', alt='img')
       .step#end(data-x='-3500', data-y='0', data-rotate='0', data-scale='0.1')
-        div(style='font-size: 72px; align: center')
-          img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400px', align='right', alt='img')
+        div(style='font-size: 72px;')
+          img(src='https://cdn.path.com/photos2/a886385e-9fef-45a9-b840-12c93d75b31c/2x.jpg', width='400', alt='img')
           |           Happy Hacking!
           br
           div(style='font-size: 25px;')
