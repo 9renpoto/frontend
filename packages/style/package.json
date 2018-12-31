@@ -38,7 +38,10 @@
     "svg-inline-loader": "0.8.0",
     "ts-jest": "23.10.5"
   },
-  "files": ["lib/", "esm/"],
+  "files": [
+    "lib/",
+    "esm/"
+  ],
   "homepage": "https://9renpoto.github.io/style/",
   "jest": {
     "transform": {
@@ -46,11 +49,23 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "setupFiles": ["<rootDir>/setup.js"],
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+    "setupFiles": [
+      "<rootDir>/setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
     "collectCoverage": true
   },
-  "keywords": ["react", "styleguide"],
+  "keywords": [
+    "react",
+    "styleguide"
+  ],
   "license": "MIT",
   "main": "lib/index.js",
   "module": "esm/index.js",

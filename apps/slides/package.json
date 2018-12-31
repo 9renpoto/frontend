@@ -11,7 +11,6 @@
   "scripts": {
     "build": "run-s clean build:* copy clean:html",
     "build:html": "pug src --out dist",
-    "build:webpack": "webpack",
     "clean": "rimraf dist",
     "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
     "copy": "cpx \"src/**/*.png\" dist",

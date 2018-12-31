@@ -1,6 +1,7 @@
-const initStoryshots = require('@storybook/addon-storyshots').default
-const faker = require('faker')
-faker.seed(123)
+import initStoryshots from "@storybook/addon-storyshots";
+import faker from "faker";
+
+faker.seed(123);
 initStoryshots({
   storyKindRegex: /^((?!.*?DontTest).)*$/
-})
+});

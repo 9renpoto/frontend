@@ -1,6 +1,5 @@
-import * as path from "path";
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = (env: string) => ({
   entry: {
@@ -19,7 +18,7 @@ module.exports = (env: string) => ({
       {
         test: /\.css$/,
         use: [
-          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+          env === "development" ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader"
         ]
       },
