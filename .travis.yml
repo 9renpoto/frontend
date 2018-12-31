@@ -3,6 +3,6 @@ node_js:
 - stable
 - "lts/*"
 after_success:
-- '[ "$CMD" == "test" ] && yarn coverage'
+- npm run coverage
 notifications:
   email: false
