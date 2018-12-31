@@ -3,7 +3,6 @@ extends ../base.pug
 block head
   meta(name='viewport', content='width=1024')
   meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
-  link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
   link(href='../impress.bundle.css', rel='stylesheet')
 block body
   body.impress-not-supported
@@ -11,7 +10,7 @@ block body
     #impress
       .step.slide#board(data-x='-1000', data-y='-1500')
         q JavaScript の苦手なあなたに
-        img(src='http://4.bp.blogspot.com/-ub5B6A2wCZ4/Wat2OAh6dmI/AAAAAAABGWA/4bPTYOUuZ5wpZzBw54UqngQo8KNtfvatwCLcBGAs/s800/bar_oachirano_okyakusama.png', width='400rem', alt='bar_oachirano_okyakusama')
+        img(src='http://4.bp.blogspot.com/-ub5B6A2wCZ4/Wat2OAh6dmI/AAAAAAABGWA/4bPTYOUuZ5wpZzBw54UqngQo8KNtfvatwCLcBGAs/s800/bar_oachirano_okyakusama.png', width='400', alt='bar_oachirano_okyakusama')
       .step.slide#aboutme(data-x='0', data-y='-1500')
         include ./profile.pug
       .step#about(data-x='500', data-y='-1500', data-rotate='90', data-scale='0.3')
@@ -23,7 +22,7 @@ block body
 
       .step#esnext(data-x='1200', data-y='-1500', data-scale='0.01')
         script(src='https://gist.github.com/9renpoto/2b4f0b0f172bb57e93628a5dfa9b8b17.js')
-        img(src='http://4.bp.blogspot.com/-IxWKND4JML8/VwIjILi7wFI/AAAAAAAA5fE/lgjzp6DwT6cVJKTZI5dOQe-AHX4hGDaYw/s800/internet_kanki_woman2.png', style='max-width:20rem;', align='right', alt='')
+        img(src='http://4.bp.blogspot.com/-IxWKND4JML8/VwIjILi7wFI/AAAAAAAA5fE/lgjzp6DwT6cVJKTZI5dOQe-AHX4hGDaYw/s800/internet_kanki_woman2.png', style='max-width:20rem;', alt='')
 
       .step#why-is-it-great(data-x='1230', data-y='-1500', data-scale='0.01')
         ul
@@ -42,16 +41,16 @@ block body
           li Flux
           li Rx
           li Vuex
-        img(src='http://3.bp.blogspot.com/-zGMD_MYatSo/VyNc1u6gLyI/AAAAAAAA6I8/b_YPfMpAGT427n6xuXb3KuNk3TiO-qpWgCLcB/s800/regulation_tv_shinpai.png', width='320px', align='right', alt='regulation_tv_shinpai')
+        img(src='http://3.bp.blogspot.com/-zGMD_MYatSo/VyNc1u6gLyI/AAAAAAAA6I8/b_YPfMpAGT427n6xuXb3KuNk3TiO-qpWgCLcB/s800/regulation_tv_shinpai.png', width='320', alt='regulation_tv_shinpai')
 
       .step#json-deram-stream(data-x='1000', data-y='1500', data-rotate='90')
         h2 Dream streams
         div Pub / Sub (Elm Architecture)
         div(style='width:100%;height:0;padding-bottom:58%;position:relative;')
-          .giphy-embed.iframe(src='https://giphy.com/embed/14aumMYgx9CvKw', width='100%', height='100%', style='position:absolute', frameborder='0')
+          iframe.giphy-embed(src='https://giphy.com/embed/14aumMYgx9CvKw', style='position:absolute')
         p
           a(href='https://giphy.com/gifs/cats-endless-stream-14aumMYgx9CvKw')
-            via GIPHY
+            | via GIPHY
 
       .step#like-react(data-x='1000', data-y='3000', data-rotate='90')
         h2 React
@@ -71,8 +70,8 @@ block body
             | Object.freeze
 
       .step#end(data-x='-500', data-y='-500', data-rotate='0', data-scale='0.1')
-        div(style='font-size: 36px; align: center')
-          img(src='http://2.bp.blogspot.com/-QKUYCmLZQaM/WYAyZZB0e2I/AAAAAAABF1Q/QdBxruPS3lMAVBN1dCvmBYiDkP-J3l7BACLcBGAs/s800/police_man_kenju_gun.png', width='400px', align='right', alt='police_man_kenju_gun')
+        div(style='font-size: 36px;')
+          img(src='http://2.bp.blogspot.com/-QKUYCmLZQaM/WYAyZZB0e2I/AAAAAAABF1Q/QdBxruPS3lMAVBN1dCvmBYiDkP-J3l7BACLcBGAs/s800/police_man_kenju_gun.png', width='400', alt='police_man_kenju_gun')
           |           Happy Hacking!
           br
           div
