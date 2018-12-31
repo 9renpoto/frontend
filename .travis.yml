@@ -2,5 +2,7 @@ language: node_js
 node_js:
 - stable
 - "lts/*"
+after_success:
+- '[ "$CMD" == "test" ] && yarn coverage'
 notifications:
   email: false
