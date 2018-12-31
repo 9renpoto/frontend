@@ -1,0 +1,71 @@
+{
+  "name": "@9renpoto/slides",
+  "description": "my slides",
+  "version": "0.0.0",
+  "dependencies": {
+    "impress.js": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/extract-text-webpack-plugin": "3.0.3",
+    "@types/impress": "0.5.29",
+    "@types/node": "9.6.18",
+    "@types/webpack": "4.4.22",
+    "awesome-typescript-loader": "5.2.1",
+    "concurrently": "4.1.0",
+    "cpx": "1.5.0",
+    "css-loader": "2.1.0",
+    "gh-pages": "2.0.1",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.0",
+    "mini-css-extract-plugin": "0.5.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.15.3",
+    "pug-cli": "1.0.0-alpha6",
+    "pug-lint": "2.5.0",
+    "pug-lint-config-clock": "2.0.0",
+    "rimraf": "2.6.2",
+    "style-loader": "0.23.1",
+    "ts-loader": "5.3.2",
+    "ts-node": "7.0.1",
+    "typescript": "3.1.1",
+    "vnu-jar": "18.11.5",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.14"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.pug": [
+      "pug-lint"
+    ],
+    "*.{md,json,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "n/a",
+  "private": true,
+  "scripts": {
+    "build": "run-s clean build:* copy clean:html",
+    "build:html": "pug src --out dist",
+    "build:webpack": "webpack",
+    "clean": "rimraf dist",
+    "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
+    "copy": "cpx \"src/**/*.png\" dist",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack-dev-server --content-base dist/",
+    "lint": "run-p lint:*",
+    "lint:html": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
+    "lint:pug": "pug-lint src",
+    "predeploy": "npm run build",
+    "start": "concurrently --kill-others 'npm run w:pug' 'npm run dev'",
+    "test": "run-p test:*",
+    "test:build": "npm run build",
+    "w:pug": "npm run build:html -- -w"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
