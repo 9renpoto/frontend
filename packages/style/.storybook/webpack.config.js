@@ -1,4 +1,3 @@
-const { CheckerPlugin } = require('awesome-typescript-loader')
 module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
@@ -16,6 +15,5 @@ module.exports = {
         loader: 'svg-inline-loader'
       }
     ]
-  },
-  plugins: [new CheckerPlugin()]
+  }
 }

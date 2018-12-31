@@ -1,24 +1,29 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "baseUrl": "./",
-    "downlevelIteration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "declaration": true,
+    "esModuleInterop": true,
     "importHelpers": true,
-    "jsx": "preserve",
-    "module": "commonjs",
+    "jsx": "react",
+    "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "./lib",
     "removeComments": true,
+    "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es6"
-  }
+    "target": "esnext"
+  },
+  "exclude": [
+    "stories",
+    "node_modules",
+    "__tests__/**/*.tsx?"
+  ]
 }
