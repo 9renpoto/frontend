@@ -2,7 +2,13 @@ language: node_js
 node_js:
 - stable
 - "lts/*"
+env:
+  matrix:
+  - CMD=build
+  - CMD=test
+script:
+- yarn $CMD
 after_success:
-- npm run coverage
+- '[ "$CMD" == "test" ] && yarn coverage'
 notifications:
   email: false
