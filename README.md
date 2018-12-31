@@ -1,15 +1,15 @@
-# config
+# @9renpoto frontend playground
 
-[![Build Status](https://travis-ci.org/9renpoto/config.svg?branch=master)](https://travis-ci.org/9renpoto/config)
+[![Build Status](https://travis-ci.org/9renpoto/frontend.svg?branch=master)](https://travis-ci.org/9renpoto/frontend)
 
 ## Table of Contents
 
-* [Packages](#packages)
-* [Installation](#install)
-* [Usage](#usage)
-* [Tests](#tests)
-* [Contribute](#contribute)
-* [License](#license)
+- [Packages](#packages)
+- [Installation](#install)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Packages
 

@@ -12,7 +12,7 @@ module.exports = (env: string) => ({
   },
   mode: !env ? "none" : env === "development" ? "development" : "production",
   resolve: {
-    extensions: [".js", ".ts", ".css"]
+    extensions: [".js", ".ts", ".tsx", ".css"]
   },
   module: {
     rules: [
@@ -24,8 +24,8 @@ module.exports = (env: string) => ({
         ]
       },
       {
-        test: /\.ts$/,
-        use: "awesome-typescript-loader",
+        test: /\.tsx?$/,
+        use: "ts-loader",
         exclude: /node_modules/
       }
     ]

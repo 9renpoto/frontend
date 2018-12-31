@@ -3,6 +3,7 @@
   "description": "my slides",
   "version": "0.0.0",
   "dependencies": {
+    "@types/impress": "0.5.29",
     "impress.js": "1.0.0"
   },
   "main": "n/a",
