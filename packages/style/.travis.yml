@@ -1,0 +1,27 @@
+language: node_js
+sudo: false
+node_js: stable
+env:
+  matrix:
+  - CMD=build
+  - CMD=lint
+  - CMD=lint:ts
+  - CMD=test
+  global:
+    secure: LIFpgka9AnCqvzRhopmjlG8GdwYwD4hBvguQaPg9Lqqh1E0SnRuMAOlc44snGEfQTKq9DnZLwXPLeAwx6jO0q1wj5pfsLSllbJouhJq0d+chDaFNDiuHS1tIbnfExu7bm8Ewluk/Hyoi6k3LPL4H9/AmwbbZBYF+zIS0jnGdxBtK5aMKlmjMm9i8iAkTryfLtqk+6RUznQ4xyjmcZG8Pn0iYywPdMs/Fhtjrn2CMDlVrO79a7LMArsAmeJkEPVSQqaBycXIYLMSvMSNu/QaiK29SgAj1PZR00tEsoRAHbPfOlo4w/Rz+5HIsZRa8byNA4hkEUy2RpXvqReXtwjdp2csdbVDqnkd9X83+WkroqriAciiUDUTyQm+ddsznkftbZYRGJSU8M3tbOj32rHriL19QLwjNYbylKD3w0l5WoUNjJEptpR3Zsj4YXXmKm64A5WU+r/Q6fJhR+sHPkEZW9wswZdO0LZ7Ys35GlS8hcJFgY878ZDnfJ2NvmfrK3fJPbc7DWB/TEGjF2vyaH+40hdE56pwdHujCIoK52m1EgFV2/ACPbJxlzG2PzESpzIL9TS6A43pOTOj13JIIdQtXvjnGZkaho0EJN7EydOgo5/jAh1FYXhMJIet6WD4uXUQ1W3ouXzld5VSCQp+mZyUMq7/twjW1j6nCc3pPl21vaVU=
+matrix:
+  allow_failures:
+    - env: CMD=lint
+script:
+- yarn $CMD
+after_success:
+- '[ "$CMD" == "test" ] && yarn coverage'
+- echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
+- openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
+- cp deploy.key ~/.ssh/
+- chmod 600 ~/.ssh/deploy.key
+- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$CMD" == "test" ] && yarn deploy'
+notifications:
+  email: false
+  slack:
+    secure: qDisnttj7h7QGW85NRYOOX+Mj+y5QSd4k6JtmdqPNkneE7CNH4phJLyOaOwjvMMknEwvBdhSww6e1Z/tnUDA69J1wxzMmO7U1mHpUq6jj38dVb3C4rPh3toyGD2hjtJl/F069R1e3jeqESzz/dBTh+oWq/ZTgS758qfP3YdkF11CG/5N6ERoWSv+Dk5MY6EU3HglklqApUTKLDEz6cqae7nfcngR610JkykjIr6neDgmFnGKvtX0BaWmjl69DmB0/98yzNWWgdSrjTQKp/auiNOy8BVdVe6HlPIoJaJxKzUTi7WYTTIBiRfpMOOR5ZCs6Ek4p4BnR7Rs/er/sVrhrfWjMvRl0LY3LOTnEhtocBWWNZ+5J6blNbqEViokyoFLGAFR4B5y+PZUMC4NqayRy4BwmAp3P1kgVl/gWoRz5mQ84xZCS9779SvCK4xf0ZbKau6yUcVBJNvyV7IW0403A/DR8i4Le44e+YAV25W5/w+HrJ5jGhCruV10/kNtjbVq2mcn6BTIGyayLSTnAG51NkNmioCuAUiLHzCd2rbmOHoamEPiZX/dMWmnuj2qQno2HyOPAIKnJOttm21tEpXzS+IHwvbo2TMrQnNIvZAm9aSpv+Ku08AWGxVY6ZdYlGyuKwmUIo7jWAoGMIyCRaYeEJSDsGUsPX9Ghorb13dUIfs=
