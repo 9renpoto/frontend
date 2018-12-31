@@ -29,7 +29,7 @@
     "style-loader": "0.23.1",
     "ts-loader": "5.3.2",
     "ts-node": "7.0.1",
-    "typescript": "3.2.2",
+    "typescript": "3.1.1",
     "typescript-eslint-parser": "21.0.2",
     "vnu-jar": "18.11.5",
     "webpack": "4.28.3",
@@ -38,12 +38,7 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "*.ts": [
-      "prettier-eslint --parser typescript --write",
-      "eslint --fix",
-      "eslint",
-      "git add"
-    ],
+    "*.ts": ["prettier-eslint --write", "eslint --fix", "eslint", "git add"],
     "*.pug": ["pug-lint"],
     "*.{md,json}": ["prettier --write", "git add"]
   },
