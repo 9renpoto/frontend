@@ -22,7 +22,7 @@
     "@types/storybook__addon-storyshots": "3.4.4",
     "@types/storybook__react": "4.0.0",
     "babel-jest": "23.6.0",
-    "babel-loader": "8.0.4",
+    "babel-loader": "8.0.5",
     "babel-plugin-require-context-hook": "1.0.0",
     "cssnano": "4.1.8",
     "enzyme": "3.8.0",
