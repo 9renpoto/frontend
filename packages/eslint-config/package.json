@@ -13,9 +13,11 @@
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-standard": "4.0.0"
   },
-  "homepage":
-    "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
-  "keywords": ["config", "eslint"],
+  "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
+  "keywords": [
+    "config",
+    "eslint"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -23,6 +25,6 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "test": "eslint . --cache"
+    "lint": "eslint . --cache"
   }
 }
