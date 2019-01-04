@@ -10,7 +10,9 @@
     "stylelint-config-standard": "18.2.0"
   },
   "homepage": "https://github.com/9renpoto/stylelint-config#readme",
-  "keywords": ["stylelint-config"],
+  "keywords": [
+    "stylelint-config"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -18,6 +20,6 @@
     "url": "git+ssh://git@github.com/9renpoto/stylelint-config.git"
   },
   "scripts": {
-    "test": "stylelint \"examples/*.css\""
+    "lint": "stylelint \"examples/*.css\""
   }
 }

@@ -6,6 +6,9 @@
     "@types/impress": "0.5.29",
     "impress.js": "1.0.0"
   },
+  "devDependencies": {
+    "@types/vnu-jar": "17.11.0"
+  },
   "main": "n/a",
   "private": true,
   "scripts": {
@@ -19,7 +22,6 @@
     "lint:html": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
     "lint:pug": "pug-lint src",
     "start": "concurrently --kill-others 'npm run w:pug' 'npm run dev'",
-    "test": "npm run lint",
     "w:pug": "npm run build:html -- -w"
   }
 }

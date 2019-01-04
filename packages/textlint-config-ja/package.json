@@ -24,10 +24,13 @@
   "devDependencies": {
     "textlint": "11.2.1"
   },
-  "keywords": ["ja", "textlint"],
+  "keywords": [
+    "ja",
+    "textlint"
+  ],
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "textlint README.md --cache"
+    "lint": "textlint README.md --cache"
   }
 }

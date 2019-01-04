@@ -11,7 +11,10 @@
     "eslint-plugin-react": "7.12.2"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
-  "keywords": ["eslint", "react"],
+  "keywords": [
+    "eslint",
+    "react"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -19,6 +22,6 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "test": "eslint . --cache --ext=js,jsx"
+    "lint": "eslint . --cache --ext=js,jsx"
   }
 }

@@ -17,9 +17,11 @@
   "engine": {
     "node": "> 5"
   },
-  "homepage":
-    "https://github.com/9renpoto/eslint-config/packages/flowtype#readme",
-  "keywords": ["eslint", "flowtype"],
+  "homepage": "https://github.com/9renpoto/eslint-config/packages/flowtype#readme",
+  "keywords": [
+    "eslint",
+    "flowtype"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -27,6 +29,6 @@
     "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
   },
   "scripts": {
-    "test": "eslint . --cache --ext=js,jsx"
+    "lint": "eslint . --cache --ext=js,jsx"
   }
 }

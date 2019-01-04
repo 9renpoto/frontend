@@ -85,6 +85,7 @@
     "deploy": "npm run build && gh-pages -d .storybook/build",
     "prepare": "npm run build",
     "prestart": "run-s clean build:css",
+    "pretest": "run-s clean build:css",
     "start": "start-storybook -p 9001 -s ./lib",
     "test": "jest",
     "tsc": "tsc"

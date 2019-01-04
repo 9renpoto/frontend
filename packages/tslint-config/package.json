@@ -10,7 +10,9 @@
     "tslint-config-standard": "8.0.1"
   },
   "homepage": "https://github.com/9renpoto/tslint-config#readme",
-  "keywords": ["tslint"],
+  "keywords": [
+    "tslint"
+  ],
   "license": "MIT",
   "main": "tslint.json",
   "repository": {
@@ -18,6 +20,6 @@
     "url": "git+ssh://git@github.com/9renpoto/tslint-config.git"
   },
   "scripts": {
-    "test": "tslint test/*.ts"
+    "lint": "tslint test/*.ts"
   }
 }
