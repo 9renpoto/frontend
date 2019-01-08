@@ -1,0 +1,48 @@
+{
+  "name": "@9renpoto-examples/mui",
+  "version": "0.0.0",
+  "dependencies": {
+    "@material-ui/core": "3.8.2",
+    "prop-types": "15.6.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "4.1.4",
+    "@storybook/react": "4.1.4",
+    "@types/storybook__addon-storyshots": "3.4.4",
+    "@types/storybook__react": "4.0.0",
+    "react-test-renderer": "16.7.0",
+    "storybook-addon-material-ui": "0.9.0-alpha.16"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "setupFiles": [
+      "./setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "collectCoverage": true
+  },
+  "license": "MIT",
+  "main": "n/a",
+  "private": true,
+  "scripts": {
+    "build": "run-s clean build:*",
+    "build:storybook": "build-storybook -o ./.storybook/build",
+    "clean": "rimraf coverage .stoybook/build",
+    "prepare": "npm run build",
+    "start": "start-storybook -p 9001",
+    "test": "jest",
+    "tsc": "tsc"
+  }
+}

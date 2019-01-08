@@ -68,6 +68,7 @@
   },
   "workspaces": [
     "packages/*",
+    "examples/*",
     "apps/*"
   ]
 }
