@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CardActionArea default 1`] = `
+<button
+  className="MuiButtonBase-root-4 MuiCardActionArea-root-1"
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiCardActionArea-focusHighlight-3"
+  />
+  <span
+    className="MuiTouchRipple-root-7"
+  />
+</button>
+`;
