@@ -39,7 +39,6 @@
     "clean": "rimraf coverage .stoybook/build",
     "prepare": "npm run build",
     "start": "start-storybook -p 9001",
-    "test": "jest",
-    "tsc": "tsc"
+    "test": "jest"
   }
 }
