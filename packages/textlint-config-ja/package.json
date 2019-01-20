@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/textlint-config-ja",
   "description": "Configrations for Japanese text linter",
-  "version": "4.7.0",
+  "version": "5.0.0-beta.0",
   "author": "9renpoto",
   "dependencies": {
     "textlint-rule-incremental-headers": "0.2.0",
