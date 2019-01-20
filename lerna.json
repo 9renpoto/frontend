@@ -1,5 +1,9 @@
 {
-  "packages": ["packages/*", "examples/*", "apps/*"],
+  "packages": [
+    "packages/*",
+    "examples/*",
+    "apps/*"
+  ],
   "changelog": {
     "labels": {
       "enhancement": ":rocket: Enhancement",
@@ -9,5 +13,5 @@
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "4.7.0"
+  "version": "5.0.0-beta.0"
 }
