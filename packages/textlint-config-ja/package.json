@@ -19,7 +19,7 @@
     "textlint-rule-no-mix-dearu-desumasu": "3.0.3",
     "textlint-rule-no-nfd": "1.0.1",
     "textlint-rule-preset-ja-spacing": "2.0.1",
-    "textlint-rule-preset-jtf-style": "2.3.2"
+    "textlint-rule-preset-jtf-style": "2.3.3"
   },
   "devDependencies": {
     "textlint": "11.2.1"
