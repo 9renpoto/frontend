@@ -2142,10 +2142,10 @@
   resolved "https://registry.yarnpkg.com/@types/impress/-/impress-0.5.29.tgz#d7353b0aed47dd04e0e0e5544129c26a68a44fd8"
   integrity sha512-ZnHOGwcKdAGsc/IcT12J2lDqlaOEP2zmW4rovyssBO5oGlIfnMRF0S9j5iII16Xme96lpa/1t+jGaRpz8xG+zA==
 
-"@types/jest@23.3.13":
-  version "23.3.13"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.13.tgz#c81484b6f4ca007bb09887ed15ecb3286d58f928"
-  integrity sha512-ePl4l+7dLLmCucIwgQHAgjiepY++qcI6nb8eAwGNkB6OxmTe3Z9rQU3rSpomqu42PCCnlThZbOoxsf+qylJsLA==
+"@types/jest@23.3.14":
+  version "23.3.14"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.14.tgz#37daaf78069e7948520474c87b80092ea912520a"
+  integrity sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
 
 "@types/mini-css-extract-plugin@0.2.0":
   version "0.2.0"
