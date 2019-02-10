@@ -22,7 +22,7 @@
     "textlint-rule-preset-jtf-style": "2.3.3"
   },
   "devDependencies": {
-    "textlint": "11.2.1"
+    "textlint": "11.2.2"
   },
   "keywords": [
     "ja",
