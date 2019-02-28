@@ -12,12 +12,12 @@
     "react-calendar-heatmap": "1.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
+    "@babel/core": "7.3.4",
     "@storybook/addon-storyshots": "4.1.9",
     "@storybook/react": "4.1.9",
     "@types/classnames": "2.2.7",
     "@types/faker": "4.1.5",
-    "@types/jest": "24.0.4",
+    "@types/jest": "24.0.9",
     "@types/react-calendar-heatmap": "1.6.2",
     "@types/storybook__addon-storyshots": "3.4.5",
     "@types/storybook__react": "4.0.0",
@@ -25,22 +25,21 @@
     "babel-loader": "8.0.5",
     "babel-plugin-require-context-hook": "1.0.0",
     "cssnano": "4.1.9",
-    "enzyme": "3.8.0",
+    "enzyme": "3.9.0",
     "faker": "4.1.0",
     "file-loader": "3.0.1",
     "jest": "24.1.0",
     "postcss-cli": "6.1.1",
     "postcss-import": "12.0.1",
     "postcss-nested": "4.1.1",
-    "react": "16.8.1",
-    "react-dom": "16.8.1",
-    "react-test-renderer": "16.8.1",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-test-renderer": "16.8.3",
     "svg-inline-loader": "0.8.0",
-    "ts-jest": "23.10.5"
+    "ts-jest": "24.0.0"
   },
   "files": [
-    "lib/",
-    "esm/"
+    "lib/"
   ],
   "homepage": "https://9renpoto.github.io/style/",
   "jest": {
@@ -68,7 +67,6 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "module": "esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/style.git"
@@ -76,9 +74,8 @@
   "scripts": {
     "assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
     "build": "run-s clean build:* && npm run assets",
-    "build:cjs": "tsc --module commonjs",
     "build:css": "postcss src/index.css -o lib/bundle.css",
-    "build:esm": "tsc --module es2015 --outDir esm",
+    "build:ts": "tsc -p .",
     "build:storybook": "build-storybook -o ./.storybook/build -s ./lib",
     "clean": "rimraf coverage .stoybook/build lib esm",
     "coverage": "codecov -f ./coverage/lcov.info",
@@ -86,9 +83,8 @@
     "prepare": "npm run build",
     "prestart": "run-s clean build:css",
     "pretest": "run-s clean build:css",
-    "start": "start-storybook -p 9001 -s ./lib",
-    "test": "jest",
-    "tsc": "tsc"
+    "start": "start-storybook -s ./lib",
+    "test": "jest"
   },
   "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
