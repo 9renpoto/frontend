@@ -18,6 +18,9 @@
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
+    "lib": [
+      "esnext"
+    ],
     "strictNullChecks": true,
     "target": "esnext"
   },
