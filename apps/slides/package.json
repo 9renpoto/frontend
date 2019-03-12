@@ -7,7 +7,7 @@
     "impress.js": "1.0.0"
   },
   "devDependencies": {
-    "@types/node": "11.11.2",
+    "@types/node": "11.11.3",
     "@types/vnu-jar": "17.11.0"
   },
   "main": "n/a",
