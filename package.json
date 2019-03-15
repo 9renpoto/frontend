@@ -33,7 +33,7 @@
     "typescript": "3.3.3333",
     "vnu-jar": "18.11.5",
     "webpack": "4.29.6",
-    "webpack-cli": "3.2.3",
+    "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.2.1"
   },
   "husky": {
