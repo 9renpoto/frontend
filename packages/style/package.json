@@ -32,9 +32,9 @@
     "postcss-cli": "6.1.2",
     "postcss-import": "12.0.1",
     "postcss-nested": "4.1.2",
-    "react": "16.8.5",
-    "react-dom": "16.8.5",
-    "react-test-renderer": "16.8.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-test-renderer": "16.8.6",
     "svg-inline-loader": "0.8.0",
     "ts-jest": "24.0.0"
   },
