@@ -1,15 +1,13 @@
-module.exports = async ({ config }) => {
-  config.module.rules.push({
+module.exports = async ({ config: defaultConfig }) => {
+  defaultConfig.module.rules.push({
     test: /\.(ts|tsx)$/,
-    use: [
-      {
-        loader: require.resolve('ts-loader')
-      },
-      {
-        loader: require.resolve('react-docgen-typescript-loader')
-      }
-    ]
+    loader: require.resolve('ts-loader'),
+    options: {
+      transpileOnly: true
+    }
   })
-  config.resolve.extensions.push('.ts', '.tsx')
-  return config
+
+  defaultConfig.resolve.extensions.push('.ts', '.tsx', '.jsx', '.js')
+
+  return defaultConfig
 }

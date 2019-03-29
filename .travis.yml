@@ -5,6 +5,7 @@ node_js:
 env:
   matrix:
   - CMD=build
+  - CMD=lint
   - CMD=test
 script:
 - yarn $CMD

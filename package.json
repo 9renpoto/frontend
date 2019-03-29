@@ -34,7 +34,6 @@
     "pug-cli": "1.0.0-alpha6",
     "pug-lint": "2.5.0",
     "pug-lint-config-clock": "2.0.0",
-    "react-docgen-typescript-loader": "3.0.1",
     "react-docgen-typescript-webpack-plugin": "1.1.0",
     "rimraf": "2.6.3",
     "style-loader": "0.23.1",
@@ -58,10 +57,14 @@
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
+    "globals": {
+      "ts-jest": {
+        "babelConfig": {
+          "plugins": ["require-context-hook"]
+        }
+      }
+    },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "setupFiles": [
-      "<rootDir>/.storybook/jestSetup.js"
-    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
