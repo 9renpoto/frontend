@@ -1,4 +1,5 @@
 const { configure } = require('@storybook/react')
+
 const req = require.context('..', true, /story.tsx?$/)
 
 configure(() => {
