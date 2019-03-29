@@ -21,5 +21,8 @@
   },
   "scripts": {
     "lint": "tslint test/*.ts"
+  },
+  "devDependencies": {
+    "tslint": "5.14.0"
   }
 }

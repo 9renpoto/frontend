@@ -1,19 +1,11 @@
-module.exports = {
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
-    enforceExtension: false
-  },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        loader: 'ts-loader'
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      }
-    ]
-  }
+module.exports = ({ config, mode }) => {
+  config.module.rules.push({
+    test: /\.(ts|tsx)$/,
+    loader: require.resolve('babel-loader'),
+    options: {
+      presets: [['react-app', { flow: false, typescript: true }]]
+    }
+  })
+  config.resolve.extensions.push('.ts', '.tsx')
+  return config
 }

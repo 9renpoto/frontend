@@ -9,58 +9,15 @@
   "dependencies": {
     "bulma": "0.7.4",
     "classnames": "2.2.6",
-    "react-calendar-heatmap": "1.8.0"
+    "@types/classnames": "2.2.7"
   },
   "devDependencies": {
-    "@babel/core": "7.4.0",
-    "@storybook/addon-storyshots": "4.1.9",
-    "@storybook/react": "4.1.9",
-    "@types/classnames": "2.2.7",
-    "@types/faker": "4.1.5",
-    "@types/jest": "24.0.11",
-    "@types/react-calendar-heatmap": "1.6.2",
-    "@types/storybook__addon-storyshots": "3.4.8",
-    "@types/storybook__react": "4.0.1",
-    "babel-jest": "24.5.0",
-    "babel-loader": "8.0.5",
-    "babel-plugin-require-context-hook": "1.0.0",
-    "cssnano": "4.1.10",
-    "enzyme": "3.9.0",
-    "faker": "4.1.0",
-    "file-loader": "3.0.1",
-    "jest": "24.5.0",
-    "postcss-cli": "6.1.2",
-    "postcss-import": "12.0.1",
-    "postcss-nested": "4.1.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-test-renderer": "16.8.6",
-    "svg-inline-loader": "0.8.0",
-    "ts-jest": "24.0.0"
+    "@types/faker": "4.1.5"
   },
   "files": [
     "lib/"
   ],
   "homepage": "https://9renpoto.github.io/style/",
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "setupFiles": [
-      "<rootDir>/setup.js"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "collectCoverage": true
-  },
   "keywords": [
     "react",
     "styleguide"
@@ -72,19 +29,9 @@
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
-    "assets": "cpx 'assets/**/*.{css,png,jpg}' lib",
     "build": "run-s clean build:* && npm run assets",
-    "build:css": "postcss src/index.css -o lib/bundle.css",
     "build:ts": "tsc -p .",
-    "build:storybook": "build-storybook -o ./.storybook/build -s ./lib",
-    "clean": "rimraf coverage .stoybook/build lib esm",
-    "coverage": "codecov -f ./coverage/lcov.info",
-    "deploy": "npm run build && gh-pages -d .storybook/build",
-    "prepare": "npm run build",
-    "prestart": "run-s clean build:css",
-    "pretest": "run-s clean build:css",
-    "start": "start-storybook -s ./lib",
-    "test": "jest"
+    "clean": "rimraf coverage .stoybook/build lib esm"
   },
   "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
