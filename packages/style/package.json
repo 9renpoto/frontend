@@ -26,7 +26,7 @@
     "url": "git+ssh://git@github.com/9renpoto/style.git"
   },
   "scripts": {
-    "build": "run-s clean build:* && npm run assets",
+    "build": "run-s clean build:*",
     "build:ts": "tsc -p .",
     "clean": "rimraf coverage .stoybook/build lib esm"
   },
