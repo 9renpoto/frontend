@@ -1,7 +1,7 @@
-import { storiesOf } from '@storybook/react'
+import { storiesOf } from '@storybook/preact'
 import { random } from 'faker'
-import React from 'react'
 import { Header } from '.'
+import { h } from 'preact'
 
 export function DefaultHeader () {
   return (

@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import React from 'react'
+import { h, Component } from 'preact'
 
 export type Props = {
   Logo: Function
@@ -14,12 +14,9 @@ export type State = {
 const NAVBAR = 'navbar'
 const ID = `navMenu`
 
-export class Header extends React.PureComponent<Props, State> {
-  constructor (props: Props) {
-    super(props)
-    this.state = {
-      isActive: false
-    }
+export class Header extends Component<Props, State> {
+  state: State = {
+    isActive: false
   }
   render () {
     const { Logo, titles, baseUrl } = this.props
