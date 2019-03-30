@@ -1,4 +1,4 @@
-const { configure } = require('@storybook/react')
+const { configure } = require('@storybook/preact')
 
 const req = require.context('..', true, /story.tsx?$/)
 

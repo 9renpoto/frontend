@@ -18,6 +18,7 @@
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
+    "jsxFactory": "h",
     "lib": [
       "esnext"
     ],
@@ -25,7 +26,6 @@
     "target": "esnext"
   },
   "exclude": [
-    "stories",
     "node_modules",
     "__tests__/**/*.tsx?"
   ]
