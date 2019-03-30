@@ -2,7 +2,6 @@ import classnames from 'classnames'
 import { h, Component } from 'preact'
 
 export type Props = {
-  Logo: Function
   titles: Array<string>
   baseUrl: string
 }
@@ -19,11 +18,10 @@ export class Header extends Component<Props, State> {
     isActive: false
   }
   render () {
-    const { Logo, titles, baseUrl } = this.props
+    const { titles, baseUrl } = this.props
     return (
       <header className={`${NAVBAR}`}>
         <div className={`${NAVBAR}-brand`}>
-          {Logo(`${NAVBAR}-item`)}
           <div
             className={classnames({
               [`${NAVBAR}-burger burger`]: true,

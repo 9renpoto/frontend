@@ -6,6 +6,11 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "jsx": "react",
+    "jsxFactory": "h",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
@@ -18,10 +23,6 @@
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
-    "jsxFactory": "h",
-    "lib": [
-      "esnext"
-    ],
     "strictNullChecks": true,
     "target": "esnext"
   },

@@ -10,7 +10,6 @@
     "@types/faker": "4.1.5",
     "@types/mini-css-extract-plugin": "0.2.0",
     "@types/node": "11.12.1",
-    "@types/storybook__addon-storyshots": "3.4.8",
     "@types/storybook__preact": "5.0.0",
     "@types/webpack": "4.4.26",
     "@typescript-eslint/parser": "1.5.0",
@@ -42,7 +41,7 @@
     "ts-jest": "24.0.0",
     "ts-loader": "5.3.3",
     "ts-node": "8.0.3",
-    "typescript": "3.3.4000",
+    "typescript": "3.0.1",
     "vnu-jar": "18.11.5",
     "webpack": "4.29.6",
     "webpack-cli": "3.3.0",
@@ -58,15 +57,13 @@
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
-    "globals": {
-      "ts-jest": {
-        "babelConfig": {
-          "plugins": [
-            "require-context-hook"
-          ]
-        }
-      }
-    },
+    "cacheDirectory": ".cache/jest",
+    "coverageReporters": [
+      "lcov"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupJest.js"
+    ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",

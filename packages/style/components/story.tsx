@@ -1,20 +1,9 @@
 import { storiesOf } from '@storybook/preact'
-import { random } from 'faker'
 import { Header } from '.'
 import { h } from 'preact'
 
 export function DefaultHeader () {
-  return (
-    <Header
-      Logo={(className: string) => (
-        <a href='#' className={className}>
-          {random.word()}
-        </a>
-      )}
-      titles={['blog', 'profile', 'slides']}
-      baseUrl='#'
-    />
-  )
+  return <Header titles={['blog', 'profile', 'slides']} baseUrl='#' />
 }
 
 storiesOf('Content', module)
