@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header render 1`] = `"<header class=\\"navbar\\"><div class=\\"navbar-brand\\"><div class=\\"navbar-burger burger\\" data-target=\\"navMenu\\"><span></span><span></span><span></span></div></div><div class=\\"navbar-menu\\" id=\\"navMenu\\"><div class=\\"navbar-end\\"><a class=\\"navbar-item\\" href=\\"/hello/\\">hello</a></div></div></header>"`;

@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/9renpoto/frontend.svg?branch=master)](https://travis-ci.org/9renpoto/frontend)
 [![Build status](https://ci.appveyor.com/api/projects/status/5xq89tahkefidkwq/branch/master?svg=true)](https://ci.appveyor.com/project/9renpoto/frontend/branch/master)
 [![codecov](https://codecov.io/gh/9renpoto/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/9renpoto/frontend)
-[![codebeat badge](https://codebeat.co/badges/4c9ffaf6-58d0-4718-85f5-4c19dc03e6b2)](https://codebeat.co/projects/github-com-9renpoto-frontend-master)
+[![codebeat badge](https://codebeat.co/badges/869816f5-3e68-4c71-a7dc-e62ab9c982dd)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-d6e093af-48fc-4688-9bc8-476727971317)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b62a6e447664031ac915052d02b8d78)](https://www.codacy.com/app/9renpoto/frontend?utm_source=github.com&utm_medium=referral&utm_content=9renpoto/frontend&utm_campaign=Badge_Grade)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
@@ -12,12 +12,12 @@
 
 ## Table of Contents
 
-* [Packages](#packages)
-* [Installation](#install)
-* [Usage](#usage)
-* [Tests](#tests)
-* [Contribute](#contribute)
-* [License](#license)
+- [Packages](#packages)
+- [Installation](#install)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Packages
 

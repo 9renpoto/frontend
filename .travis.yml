@@ -7,9 +7,6 @@ env:
   - CMD=build
   - CMD=lint
   - CMD=test
-matrix:
-  allow_failures:
-    - env: CMD=test
 script:
 - yarn $CMD
 after_success:
