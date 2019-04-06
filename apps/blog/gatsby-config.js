@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-preact`,
+    `my-gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
