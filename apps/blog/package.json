@@ -8,7 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "my-gatsby-plugin-preact": "^2.0.11",
+    "@9renpoto/gatsby-plugin-preact": "^2.0.11",
     "gatsby": "^2.3.14",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-feed": "^2.1.0",
@@ -27,8 +27,6 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
-    "preact": "8.4.2",
-    "preact-render-to-string": "4.1.0",
     "prismjs": "^1.16.0",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",

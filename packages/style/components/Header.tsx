@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import { h, Component } from 'preact'
+import preact from 'preact'
 
 export type Props = {
   titles: Array<string>
@@ -13,7 +13,7 @@ export type State = {
 const NAVBAR = 'navbar'
 const ID = `navMenu`
 
-export class Header extends Component<Props, State> {
+export class Header extends preact.Component<Props, State> {
   state: State = {
     isActive: false
   }

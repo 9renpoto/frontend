@@ -1,5 +1,5 @@
 {
-  "name": "my-gatsby-plugin-preact",
+  "name": "@9renpoto/gatsby-plugin-preact",
   "description": "A Gatsby plugin which replaces React with Preact",
   "version": "2.0.11",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
@@ -29,7 +29,7 @@
   "repository": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-preact",
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
-    "prepare": "cross-env NODE_ENV=production npm run build",
+    "postinstall": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir . --ignore **/__tests__"
   }
 }
