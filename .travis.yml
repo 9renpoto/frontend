@@ -11,6 +11,7 @@ env:
 matrix:
   allow_failures:
     - env: CMD=build
+    - node_js: stable
 script:
 - yarn $CMD
 after_success:
