@@ -19,7 +19,7 @@
     "css-loader": "2.1.1",
     "eslint-plugin-jest": "22.5.1",
     "faker": "4.1.0",
-    "gatsby": "2.3.32",
+    "gatsby": "2.3.33",
     "husky": "2.1.0",
     "jest": "24.7.1",
     "lerna": "3.13.4",
