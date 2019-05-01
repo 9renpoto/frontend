@@ -28,7 +28,7 @@
     "gatsby-transformer-remark": "2.3.12",
     "gatsby-transformer-sharp": "2.1.18",
     "prismjs": "1.16.0",
-    "react-helmet": "5.2.0",
+    "react-helmet": "5.2.1",
     "react-typography": "0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
