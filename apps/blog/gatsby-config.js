@@ -9,7 +9,6 @@ module.exports = {
     }
   },
   plugins: [
-    `@9renpoto/gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -74,6 +73,7 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`
       }
-    }
+    },
+    `gatsby-plugin-preact`
   ]
 }
