@@ -8,13 +8,13 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@9renpoto/gatsby-plugin-preact": "^2.0.11",
     "gatsby": "2.5.5",
     "gatsby-image": "2.1.0",
     "gatsby-plugin-feed": "2.2.0",
     "gatsby-plugin-google-analytics": "2.0.20",
     "gatsby-plugin-manifest": "2.1.1",
     "gatsby-plugin-offline": "2.1.1",
+    "gatsby-plugin-preact": "3.0.0",
     "gatsby-plugin-react-helmet": "3.0.12",
     "gatsby-plugin-sharp": "2.0.37",
     "gatsby-plugin-typescript": "2.0.14",
@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "2.0.36",
     "gatsby-transformer-remark": "2.3.12",
     "gatsby-transformer-sharp": "2.1.19",
+    "preact": "10.0.0-beta.1",
     "prismjs": "1.16.0",
     "react-helmet": "5.2.1",
     "react-typography": "0.16.19",
@@ -47,5 +48,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "devDependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   }
 }
