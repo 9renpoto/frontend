@@ -19,7 +19,6 @@
     "css-loader": "2.1.1",
     "eslint-plugin-jest": "22.5.1",
     "faker": "4.1.0",
-    "gatsby": "2.5.5",
     "husky": "2.3.0",
     "jest": "24.8.0",
     "lerna": "3.13.4",
@@ -92,7 +91,6 @@
   "scripts": {
     "build": "run-s build:*",
     "build:pkg": "lerna run build --parallel",
-    "build:webpack": "webpack --mode production",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "coverage": "codecov -f ./coverage/lcov.info",
