@@ -20,7 +20,7 @@
     "eslint-plugin-jest": "22.5.1",
     "faker": "4.1.0",
     "gatsby": "2.4.6",
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "jest": "24.8.0",
     "lerna": "3.13.4",
     "lerna-changelog": "0.8.2",
