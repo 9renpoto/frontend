@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { Link } from 'gatsby'
-
 import { rhythm, scale } from '../utils/typography'
 
-class Layout extends React.Component {
+type Props = {
+  children: React.ReactNode
+  title: string
+  location: Location
+}
+
+let var __PATH_PREFIX__: string
+
+export default class Layout extends PureComponent<Props> {
   render () {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -71,5 +78,3 @@ class Layout extends React.Component {
     )
   }
 }
-
-export default Layout
