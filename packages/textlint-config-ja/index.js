@@ -1,4 +1,7 @@
 module.exports = {
+  filters: {
+    comments: true
+  },
   rules: {
     'incremental-headers': true,
     'ja-no-mixed-period': true,
