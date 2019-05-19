@@ -71,7 +71,7 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "*.{css,scss,ts,tsx,md}": [
+    "*.{css,scss,ts,tsx}": [
       "prettier --write",
       "git add"
     ],
@@ -85,6 +85,12 @@
     ],
     "*.pug": [
       "pug-lint"
+    ],
+    "*.md": [
+      "prettier --write",
+      "textlint --fix",
+      "textlint",
+      "git add"
     ]
   },
   "prettier": {
