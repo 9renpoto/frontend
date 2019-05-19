@@ -87,6 +87,10 @@
       "pug-lint"
     ]
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "private": true,
   "scripts": {
     "build": "run-s build:*",
