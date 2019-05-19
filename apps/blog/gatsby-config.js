@@ -76,6 +76,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-typescript`,
-    'gatsby-plugin-typescript-checker'
+    "gatsby-plugin-typescript-checker"
   ]
-}
+};
