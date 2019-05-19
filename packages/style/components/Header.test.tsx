@@ -1,6 +1,6 @@
 import { render } from 'preact-render-to-string'
 import { Header } from './Header'
-import preact from 'preact'
+import { h } from 'preact'
 
 describe('Header', () => {
   xit('render', () => {

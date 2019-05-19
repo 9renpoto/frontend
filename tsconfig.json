@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "jsx": "react",
-    "jsxFactory": "preact.h",
+    "jsxFactory": "h",
     "lib": [
       "esnext",
       "dom"

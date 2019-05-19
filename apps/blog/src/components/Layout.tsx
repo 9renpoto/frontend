@@ -1,13 +1,20 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, { PureComponent } from "react";
+import { Link } from "gatsby";
+import { rhythm, scale } from "../utils/typography";
 
-import { rhythm, scale } from '../utils/typography'
+type Props = {
+  children: React.ReactNode;
+  title: string;
+  location: Location;
+};
 
-class Layout extends React.Component {
-  render () {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+declare const __PATH_PREFIX__: string;
+
+export default class Layout extends PureComponent<Props> {
+  render() {
+    const { location, title, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
@@ -29,7 +36,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
-      )
+      );
     } else {
       header = (
         <h3
@@ -49,7 +56,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h3>
-      )
+      );
     }
     return (
       <div
@@ -65,11 +72,9 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href='https://www.gatsbyjs.org'>Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    )
+    );
   }
 }
-
-export default Layout
