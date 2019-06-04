@@ -38,7 +38,7 @@
     "ts-jest": "24.0.2",
     "ts-loader": "6.0.2",
     "ts-node": "8.2.0",
-    "typescript": "3.4.5",
+    "typescript": "3.5.1",
     "vnu-jar": "18.11.5",
     "webpack": "4.32.2",
     "webpack-cli": "3.3.2",
