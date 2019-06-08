@@ -16,6 +16,8 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -26,8 +28,5 @@
     "strictNullChecks": true,
     "target": "esnext"
   },
-  "exclude": [
-    "node_modules",
-    "__tests__/**/*.tsx?"
-  ]
+  "exclude": ["node_modules", "__tests__/**/*.tsx?"]
 }
