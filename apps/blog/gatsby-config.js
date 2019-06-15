@@ -1,4 +1,4 @@
-const title = `:-)`
+const title = `:-) 🏕`
 const author = 'Keisuke Kan'
 
 module.exports = {
