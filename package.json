@@ -37,7 +37,7 @@
     "style-loader": "0.23.1",
     "stylelint": "10.1.0",
     "ts-jest": "24.0.2",
-    "ts-loader": "6.0.2",
+    "ts-loader": "6.0.3",
     "ts-node": "8.3.0",
     "typescript": "3.5.2",
     "vnu-jar": "19.6.7",
