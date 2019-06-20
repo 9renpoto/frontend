@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['standard'],
+  extends: [
+    'prettier',
+    'prettier/standard',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript'
+  ],
   rules: {
     'no-else-return': 2,
     'no-var': 2,
