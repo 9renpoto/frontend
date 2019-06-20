@@ -1,7 +1,14 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": ["@9renpoto/eslint-config", "@9renpoto/eslint-config-react"],
-  "plugins": ["jest"],
+  "extends": [
+    "@9renpoto/eslint-config",
+    "@9renpoto/eslint-config-react",
+    "prettier/@typescript-eslint",
+    "plugin:import/typescript"
+  ],
+  "plugins": [
+    "jest"
+  ],
   "env": {
     "jest/globals": true
   }
