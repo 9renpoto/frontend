@@ -14947,7 +14947,7 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
     safe-buffer "^5.1.2"
 
-pug-attrs@^2.0.1, pug-attrs@^2.0.3:
+pug-attrs@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/pug-attrs/-/pug-attrs-2.0.3.tgz#a3095f970e64151f7bdad957eef55fb5d7905d15"
   integrity sha1-owlflw5kFR972tlX7vVftdeQXRU=
@@ -14980,7 +14980,7 @@ pug-code-gen@^2.0.1:
     void-elements "^2.0.1"
     with "^5.0.0"
 
-pug-error@^1.3.0, pug-error@^1.3.2:
+pug-error@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/pug-error/-/pug-error-1.3.2.tgz#53ae7d9d29bb03cf564493a026109f54c47f5f26"
   integrity sha1-U659nSm7A89WRJOgJhCfVMR/XyY=
@@ -14997,15 +14997,6 @@ pug-filters@^3.1.0:
     pug-walk "^1.1.7"
     resolve "^1.1.6"
     uglify-js "^2.6.1"
-
-pug-lexer@^2.0.1:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/pug-lexer/-/pug-lexer-2.3.2.tgz#68b19d96ea5dc0e4a86148b01cb966c17815a614"
-  integrity sha1-aLGdlupdwOSoYUiwHLlmwXgVphQ=
-  dependencies:
-    character-parser "^2.1.1"
-    is-expression "^3.0.0"
-    pug-error "^1.3.2"
 
 pug-lexer@^4.0.0:
   version "4.0.0"
@@ -15029,10 +15020,10 @@ pug-lint-config-clock@2.0.0:
   resolved "https://registry.yarnpkg.com/pug-lint-config-clock/-/pug-lint-config-clock-2.0.0.tgz#77db919cd76c40d9dcdc22e079d202cb6c507f50"
   integrity sha1-d9uRnNdsQNnc3CLgedICy2xQf1A=
 
-pug-lint@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/pug-lint/-/pug-lint-2.5.0.tgz#4419ee301aeca45f54061b0eca4a9a471f3aa9a9"
-  integrity sha1-RBnuMBrspF9UBhsOykqaRx86qak=
+pug-lint@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/pug-lint/-/pug-lint-2.6.0.tgz#3964f11bbe6d5a5cb1cf5a20206d7b2fa79907d1"
+  integrity sha512-bCENAUT0grCSlUBIfX1USjpZPQWs5QccxVZoCIT4S+IevTn9NqJyzhrcyq/CFVSCOp9Z+pdwPQIkzdCvZ1pGlQ==
   dependencies:
     acorn "^4.0.1"
     commander "^2.9.0"
@@ -15041,9 +15032,9 @@ pug-lint@2.5.0:
     glob "^7.0.3"
     minimatch "^3.0.3"
     path-is-absolute "^1.0.0"
-    pug-attrs "^2.0.1"
-    pug-error "^1.3.0"
-    pug-lexer "^2.0.1"
+    pug-attrs "^2.0.3"
+    pug-error "^1.3.2"
+    pug-lexer "^4.0.0"
     resolve "^1.1.7"
     strip-json-comments "^2.0.1"
     void-elements "^2.0.1"
