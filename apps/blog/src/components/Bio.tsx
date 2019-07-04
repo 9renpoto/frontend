@@ -23,7 +23,7 @@ const bioQuery = graphql`
   }
 `
 
-export default () => (
+export const Bio = () => (
   <StaticQuery
     query={bioQuery}
     render={data => {

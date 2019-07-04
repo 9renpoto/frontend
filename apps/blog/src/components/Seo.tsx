@@ -20,7 +20,7 @@ type Props = {
   title: string
 }
 
-function SEO ({
+export function SEO({
   description = '',
   lang = 'ja',
   meta = [],
@@ -87,14 +87,12 @@ function SEO ({
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `)
-            }
+                name: `keywords`,
+                content: keywords.join(`, `)
+              }
             : []
         )
         .concat(meta)}
     />
   )
 }
-
-export default SEO

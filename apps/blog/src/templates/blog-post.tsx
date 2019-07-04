@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
 import { Link, graphql } from 'gatsby'
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/Seo'
 import { rhythm, scale } from '../utils/typography'
 import { Query, MarkdownRemarkEdge } from '../graphqlTypes'
+import { Layout } from '../components/Layout'
+import { SEO } from '../components/Seo'
+import { Bio } from '../components/Bio'
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -32,18 +32,15 @@ type Props = {
   pageContext: MarkdownRemarkEdge
 }
 
-export default class BlogPostTemplate extends PureComponent<Props> {
-  render () {
+export const BlogPostTemplate = class extends PureComponent<Props> {
+  render() {
     const post = this.props.data.markdownRemark!
     const siteTitle = this.props.data.site!.siteMetadata!.title!
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter!.title!}
-          description={post.frontmatter!.description || post.excerpt!}
-        />
+        <SEO title={post.frontmatter!.title!} description={post.excerpt!} />
         <h1>{post.frontmatter!.title}</h1>
         <p
           style={{
@@ -74,14 +71,14 @@ export default class BlogPostTemplate extends PureComponent<Props> {
         >
           <li>
             {previous && (
-              <Link to={previous.fields!.slug!} rel='prev'>
+              <Link to={previous.fields!.slug!} rel="prev">
                 ← {previous.frontmatter!.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields!.slug!} rel='next'>
+              <Link to={next.fields!.slug!} rel="next">
                 {next.frontmatter!.title} →
               </Link>
             )}
