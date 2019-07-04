@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/textlint-config-ja",
   "description": "Configrations for Japanese text linter",
-  "version": "5.0.0-beta.3",
+  "version": "5.0.0",
   "author": "9renpoto",
   "dependencies": {
     "textlint-filter-rule-comments": "1.2.2",
