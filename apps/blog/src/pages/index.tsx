@@ -41,7 +41,7 @@ export const BlogIndex = class extends PureComponent<Props> {
     const posts = this.props.data.allMarkdownRemark!.edges
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
