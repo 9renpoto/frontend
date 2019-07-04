@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { graphql } from 'gatsby'
 import { Query } from '../graphqlTypes'
 import { Layout } from '../components/Layout'
@@ -19,14 +19,16 @@ type Props = {
   data: Query
 }
 
-export const NotFoundPage = ({ data, location }: Props) => {
-  const siteTitle = data.site!.siteMetadata!.title!
+export const NotFoundPage = class extends PureComponent<Props> {
+  render() {
+    const siteTitle = this.props.data.site!.siteMetadata!.title!
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
-      <h1>Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
-  )
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="404: Not Found" />
+        <h1>Not Found</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </Layout>
+    )
+  }
 }
