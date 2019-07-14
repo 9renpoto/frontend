@@ -10861,7 +10861,7 @@ isobject@^4.0.0:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-4.0.0.tgz#3f1c9155e73b192022a80819bacd0343711697b0"
   integrity sha512-S/2fF5wH8SJA/kmwr6HYhK/RI/OkhD84k8ntalo0iJjZikgq1XFvR5M8NPT1x5F7fBwCG3qHfnzeP/Vh/ZxCUA==
 
-isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
+isomorphic-fetch@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
@@ -18197,15 +18197,15 @@ textlint-rule-max-ten@2.0.3:
     structured-source "^3.0.2"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-dead-link@4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.4.2.tgz#14d29411171075e687d5d2429ca1a0b0039505b0"
-  integrity sha512-O8iq8M8e+rC8k+phhaDyb3qHULmlPk3AqBYZI/tskT0zdEGoVgvixGBk17IoGk9bbk1AmzpzgEFSHVBUyQ6T3A==
+textlint-rule-no-dead-link@4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.4.3.tgz#079e93169b1a48aeab3a581eda5c647a6b18e061"
+  integrity sha512-DfN2ELxCV3J0yD4/t4wRdj9gDZvivJAX45ajs9NEPcbG4w1Jop2V87FaPlW4qrpzK+Ds3p3RCsnpiRHY4X7mRA==
   dependencies:
     fs-extra "^8.0.1"
     get-url-origin "^1.0.1"
-    isomorphic-fetch "^2.2.1"
     minimatch "^3.0.4"
+    node-fetch "^2.6.0"
     textlint-rule-helper "^2.1.1"
 
 textlint-rule-no-double-negative-ja@1.0.5:
