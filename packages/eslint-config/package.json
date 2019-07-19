@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-import": "2.18.1"
+    "eslint-plugin-import": "2.18.2"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
   "keywords": [
