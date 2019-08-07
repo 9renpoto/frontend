@@ -39,8 +39,8 @@
     "typography-theme-github": "0.16.19"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.4.0",
-    "@graphql-codegen/typescript": "1.4.0",
+    "@graphql-codegen/cli": "1.5.0",
+    "@graphql-codegen/typescript": "1.5.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "tslint": "5.18.0",
