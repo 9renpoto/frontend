@@ -100,6 +100,7 @@
     "singleQuote": true
   },
   "private": true,
+  "repository": "ssh://git@github.com/9renpoto/frontend.git",
   "scripts": {
     "build": "run-s build:*",
     "build:pkg": "lerna run build --parallel",
