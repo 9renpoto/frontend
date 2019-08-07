@@ -67,3 +67,11 @@ typings/
 
 # dotenv environment variables file
 .env
+
+
+#Added by cargo
+#
+#already existing elements are commented out
+
+/target
+**/*.rs.bk
