@@ -6,5 +6,5 @@ jobs:
 
     steps:
       - checkout
-      - run: cargo install
+      - run: cargo install mdbook
       - run: cd sandbox/mdbook && mdbook build
