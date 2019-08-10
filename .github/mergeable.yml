@@ -18,3 +18,10 @@ mergeable:
         must_include:
           regex: ^Thinking
           message: must include project
+      - do: assignee
+        max:
+          count: 1 # There should not be more than 2 assignees
+          message: 'test string' # this is optional
+        min:
+          count: 1 # min number of assignees
+          message: 'test string' # this is optional
