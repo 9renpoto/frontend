@@ -26,14 +26,14 @@ export const pageQuery = graphql`
   }
 `
 
-type Props = {
+interface Props {
   location: Location
   data: Query
   pageContext: MarkdownRemarkEdge
 }
 
 export default class BlogPostTemplate extends PureComponent<Props> {
-  render () {
+  render() {
     const post = this.props.data.markdownRemark!
     const siteTitle = this.props.data.site!.siteMetadata!.title!
     const { previous, next } = this.props.pageContext
@@ -74,14 +74,14 @@ export default class BlogPostTemplate extends PureComponent<Props> {
         >
           <li>
             {previous && (
-              <Link to={previous.fields!.slug!} rel='prev'>
+              <Link to={previous.fields!.slug!} rel="prev">
                 ← {previous.frontmatter!.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields!.slug!} rel='next'>
+              <Link to={next.fields!.slug!} rel="next">
                 {next.frontmatter!.title} →
               </Link>
             )}

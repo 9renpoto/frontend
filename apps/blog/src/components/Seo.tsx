@@ -2,17 +2,17 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-type Content = {
+interface Content {
   name: string
   content: string
 }
 
-type Property = {
+interface Property {
   property: string
   content: string
 }
 
-type Props = {
+interface Props {
   lang?: string
   meta?: Array<Content | Property>
   keywords?: string[]
@@ -20,7 +20,7 @@ type Props = {
   title: string
 }
 
-function SEO ({
+function SEO({
   description = '',
   lang = 'ja',
   meta = [],
@@ -87,9 +87,9 @@ function SEO ({
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `)
-            }
+                name: `keywords`,
+                content: keywords.join(`, `)
+              }
             : []
         )
         .concat(meta)}
