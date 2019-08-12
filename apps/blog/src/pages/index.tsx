@@ -30,13 +30,13 @@ export const pageQuery = graphql`
   }
 `
 
-type Props = {
+interface Props {
   location: Location
   data: Query
 }
 
 export default class BlogIndex extends PureComponent<Props> {
-  render () {
+  render() {
     const { data } = this.props
     const siteTitle = data.site!.siteMetadata!.title!
     const posts = data.allMarkdownRemark!.edges
@@ -44,7 +44,7 @@ export default class BlogIndex extends PureComponent<Props> {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title='All posts'
+          title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
