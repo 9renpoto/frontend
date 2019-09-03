@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-prettier": "6.1.0"
+    "eslint-config-prettier": "6.2.0"
   },
   "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
   "keywords": [
