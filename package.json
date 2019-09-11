@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "preact": "10.0.0-rc.1",
+    "preact": "10.0.0-rc.3",
     "preact-render-to-string": "4.1.0"
   },
   "devDependencies": {
