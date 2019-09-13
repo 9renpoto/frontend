@@ -42,7 +42,7 @@
     "ts-node": "8.3.0",
     "typescript": "3.6.3",
     "vnu-jar": "19.9.4",
-    "webpack": "4.40.1",
+    "webpack": "4.40.2",
     "webpack-cli": "3.3.8",
     "webpack-dev-server": "3.8.0"
   },
