@@ -2474,15 +2474,15 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/cli@6.7.2":
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.7.2.tgz#335d2e75a3fa8d31d40fcee438472df3d1f6c124"
-  integrity sha512-pAPqObbXzZWvpc5osqQao4LivWiff9CZ6oGU5BcOM6/tRaYoXPAUpWUqq3BE0+CxVANSYHGaiS2MG/whJkrWow==
+"@nestjs/cli@6.8.0":
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.8.0.tgz#937de018f9be18dac6b4dc02fcbc57bd63c76a82"
+  integrity sha512-Kh/E3YUvEQcTctVkiq6b2h3uOzqN0SWsCtNNVRTc1vt9BIJSdEmiu2Vm9NLZyqgD57vzLlWJ355RadAzrr23Gg==
   dependencies:
     "@angular-devkit/core" "8.3.4"
     "@angular-devkit/schematics" "8.3.4"
     "@angular-devkit/schematics-cli" "0.803.4"
-    "@nestjs/schematics" "^6.5.1"
+    "@nestjs/schematics" "^6.6.3"
     "@types/webpack" "4.39.1"
     chalk "2.4.2"
     cli-table3 "0.5.1"
@@ -2527,10 +2527,10 @@
     express "4.17.1"
     multer "1.4.2"
 
-"@nestjs/schematics@^6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-6.5.1.tgz#74bd41a012421f0015757b65e22a11151505979e"
-  integrity sha512-eFPr/o29iTk5bzABDRVef3mRdzT+11jLYPcivdHUqddwdnaJyRoslPx0OF0xx/nea4o/+HEie84pmqyewUY1+Q==
+"@nestjs/schematics@^6.6.3":
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-6.6.3.tgz#65540d6ef78e52aa6daac25ad96e7e30ceaf54d5"
+  integrity sha512-sghyd70+7TjqVJRdm7PjGIG/o/YVPZVZfJk9MZPnCFo/cNAv6BIVofCHMJU3TIvsHU5AYTOuKuq/3+I4aM8wvg==
   dependencies:
     "@angular-devkit/core" "8.3.5"
     "@angular-devkit/schematics" "8.3.5"
