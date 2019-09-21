@@ -35,7 +35,7 @@
     "gatsby-source-filesystem": "2.1.24",
     "gatsby-transformer-remark": "2.6.23",
     "gatsby-transformer-sharp": "2.2.15",
-    "graphql": "14.5.6",
+    "graphql": "14.5.7",
     "preact": "10.0.0-rc.1",
     "prismjs": "1.17.1",
     "react-helmet": "5.2.1",
