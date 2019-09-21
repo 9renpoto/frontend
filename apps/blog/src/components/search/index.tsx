@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from 'react'
+import React, { useState, useEffect, createRef, Fragment } from 'react'
 import {
   InstantSearch,
   Index,
@@ -11,22 +11,31 @@ import Input from './Input'
 import * as hitComps from './HitComps'
 
 const Results = connectStateResults(
-  ({ searchState: state, searchResults: res, children }) =>
-    res && res.nbHits > 0 ? children : `No results for '${state.query}'`
+  ({ searchState: state, searchResults: res, children }) => (
+    <Fragment>
+      {res && res.nbHits > 0 ? children : `No results for '${state.query}'`}
+    </Fragment>
+  )
 )
 
-const Stats = connectStateResults(
-  ({ searchResults: res }) =>
-    res && res.nbHits > 0 && `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`
-)
+const Stats = connectStateResults(({ searchResults: res }) => (
+  <Fragment>
+    {res &&
+      res.nbHits > 0 &&
+      `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`}
+  </Fragment>
+))
 
 const useClickOutside = (
-  ref: React.RefObject<unknown>,
+  ref: React.RefObject<any>,
   handler: { (): void; (): void },
-  events: string[] | undefined
+  originalEvents: string[] | undefined
 ) => {
-  if (!events) events = [`mousedown`, `touchstart`]
-  const detectClickOutside = event =>
+  let events: string[] = [`mousedown`, `touchstart`]
+  if (originalEvents) {
+    events = originalEvents
+  }
+  const detectClickOutside = (event: any) =>
     !ref.current.contains(event.target) && handler()
   useEffect(() => {
     for (const event of events)
@@ -38,7 +47,9 @@ const useClickOutside = (
   })
 }
 
-export default function Search({ indices, collapse, hitsAsGrid }) {
+type Props = any
+
+export default function Search({ indices, collapse }: Props) {
   const ref = createRef()
   const [query, setQuery] = useState(``)
   const [focus, setFocus] = useState(false)
@@ -55,15 +66,17 @@ export default function Search({ indices, collapse, hitsAsGrid }) {
       root={{ Root, props: { ref } }}
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
-      <HitsWrapper show={query.length > 0 && focus} asGrid={hitsAsGrid}>
-        {indices.map(({ name, title, hitComp }) => (
+      <HitsWrapper show={query.length > 0 && focus}>
+        {indices.map(({ name, title, hitComp }: any) => (
           <Index key={name} indexName={name}>
             <header>
               <h3>{title}</h3>
               <Stats />
             </header>
             <Results>
-              <Hits hitComponent={hitComps[hitComp](() => setFocus(false))} />
+              <Hits
+                hitComponent={(hitComps as any)[hitComp](() => setFocus(false))}
+              />
             </Results>
           </Index>
         ))}

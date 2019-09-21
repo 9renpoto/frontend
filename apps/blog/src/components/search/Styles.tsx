@@ -67,7 +67,7 @@ export const Form = styled.form`
 `
 
 export const HitsWrapper = styled.div`
-  display: ${(props: any) => (props.show ? `grid` : `none`)};
+  display: ${(props: { show: boolean }) => (props.show ? `grid` : `none`)};
   max-height: 80vh;
   overflow: scroll;
   z-index: 2;
@@ -120,11 +120,17 @@ export const HitsWrapper = styled.div`
   }
 `
 
+const Wrap = styled.span`
+  font-size: 0.6em;
+  text-align: end;
+  padding: 0;
+`
+
 export const PoweredBy = () => (
-  <span css="font-size: 0.6em; text-align: end; padding: 0;">
+  <Wrap>
     Powered by{` `}
     <a href="https://algolia.com">
       <Algolia size="1em" /> Algolia
     </a>
-  </span>
+  </Wrap>
 )
