@@ -19,9 +19,7 @@
     "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
     "copy": "cpx \"src/**/*.png\" dist",
     "dev": "webpack-dev-server --content-base dist/",
-    "lint": "run-p lint:*",
-    "lint:html": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
-    "lint:pug": "pug-lint src",
+    "lint": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
     "start": "concurrently --kill-others 'npm run w:pug' 'npm run dev'",
     "w:pug": "npm run build:html -- -w"
   }
