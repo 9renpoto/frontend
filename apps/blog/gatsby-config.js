@@ -1,3 +1,5 @@
+const queries = require('./src/utils/algoria')
+
 const title = `:-) 🏕`
 const author = 'Keisuke Kan'
 
@@ -78,14 +80,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-algolia`,
-    //   options: {
-    //     appId: process.env.GATSBY_ALGOLIA_APP_ID,
-    //     apiKey: process.env.ALGOLIA_ADMIN_KEY,
-    //     queries
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries
+      }
+    },
     `gatsby-plugin-typescript`,
     'gatsby-plugin-typescript-checker'
   ]
