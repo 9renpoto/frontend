@@ -5,6 +5,11 @@
     "jsxFactory": "React.createElement",
     "declaration": false,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
   }
 }

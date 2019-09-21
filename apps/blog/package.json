@@ -4,12 +4,18 @@
   "version": "5.0.1",
   "author": "github.com/9renpoto",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
+    "@types/algoliasearch": "3.30.17",
     "@types/react-helmet": "5.0.10",
+    "@types/react-instantsearch-dom": "5.2.5",
+    "@types/styled-components": "4.1.18",
+    "@types/typography": "0.16.2",
+    "algoliasearch": "3.33.0",
     "gatsby": "2.15.18",
     "gatsby-image": "2.2.19",
+    "gatsby-plugin-algolia": "0.3.2",
     "gatsby-plugin-feed": "2.3.12",
     "gatsby-plugin-google-analytics": "2.1.16",
     "gatsby-plugin-manifest": "2.2.17",
@@ -17,6 +23,7 @@
     "gatsby-plugin-preact": "3.1.10",
     "gatsby-plugin-react-helmet": "3.1.7",
     "gatsby-plugin-sharp": "2.2.24",
+    "gatsby-plugin-styled-components": "3.1.2",
     "gatsby-plugin-typescript": "2.1.8",
     "gatsby-plugin-typescript-checker": "1.1.1",
     "gatsby-plugin-typography": "2.3.7",
@@ -32,7 +39,10 @@
     "preact": "10.0.0-rc.1",
     "prismjs": "1.17.1",
     "react-helmet": "5.2.1",
+    "react-instantsearch-dom": "5.7.0",
     "react-typography": "0.16.19",
+    "styled-components": "4.3.2",
+    "styled-icons": "8.3.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "0.16.19",
@@ -41,12 +51,16 @@
   "devDependencies": {
     "@graphql-codegen/cli": "1.7.0",
     "@graphql-codegen/typescript": "1.7.0",
+    "@graphql-codegen/typescript-operations": "1.7.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "tslint": "5.20.0",
-    "typescript": "3.6.3"
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.8.0",
+    "typescript": "3.6.3",
+    "typescript-styled-plugin": "0.14.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/9renpoto/frontend/tree/master/apps/blog",
   "keywords": [
     "gatsby"
   ],
@@ -55,10 +69,12 @@
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "build:types": "graphql-codegen --config codegen.yml",
+    "lint": "run-p lint:*",
+    "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
+    "lint:types": "tsc -p . --noEmit",
     "serve": "gatsby serve",
-    "start": "npm run develop",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "start": "gatsby develop",
+    "test": "yarn lint"
   }
 }
