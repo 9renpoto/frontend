@@ -6,7 +6,6 @@ import {
   connectStateResults
 } from 'react-instantsearch-dom'
 import algoliasearch from 'algoliasearch/lite'
-
 import { Root, HitsWrapper, PoweredBy } from './Styles'
 import Input from './Input'
 import * as hitComps from './HitComps'

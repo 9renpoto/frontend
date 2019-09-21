@@ -1,3 +1,5 @@
+import { MarkdownRemarkEdge } from '../graphqlTypes'
+
 const pageQuery = `{
   pages: allMarkdownRemark(
     filter: {
@@ -36,7 +38,7 @@ const postQuery = `{
   }
 }`
 
-const flatten = arr =>
+const flatten = (arr: MarkdownRemarkEdge[]) =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     ...rest
@@ -45,13 +47,13 @@ const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
   {
     query: pageQuery,
-    transformer: ({ data }) => flatten(data.pages.edges),
+    transformer: ({ data }: any) => flatten(data.pages.edges),
     indexName: `Pages`,
     settings
   },
   {
     query: postQuery,
-    transformer: ({ data }) => flatten(data.posts.edges),
+    transformer: ({ data }: any) => flatten(data.posts.edges),
     indexName: `Posts`,
     settings
   }
