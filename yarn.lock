@@ -2390,19 +2390,19 @@
     webpack "4.40.2"
     webpack-node-externals "1.7.2"
 
-"@nestjs/common@6.7.1":
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.7.1.tgz#a3ec48d0f82556f5779dac1c278633c206ee97a6"
-  integrity sha512-3g4XqXmQxi+jjdi1ieoErwNjj1MbjxUumXug2xbF0Qkc1P+IkBNNktaBFTNRPHx6Se4qIcxj7p1vv6mAX6jAYQ==
+"@nestjs/common@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.7.2.tgz#4485539992a7aa6824e1993ed20d74159eeaf645"
+  integrity sha512-ASwS8tCSnHRVUFmERfnTKPLR3MLGsrDd+LYVOjwvXtNBPOJ2rBleZqCQrPh+UxGvygzBHH0Dn3Q+60br5kEvjQ==
   dependencies:
     axios "0.19.0"
     cli-color "1.4.0"
     uuid "3.3.3"
 
-"@nestjs/core@6.7.1":
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.7.1.tgz#c786db762157dce7e4f72df9c2ef71693ea7361d"
-  integrity sha512-qk1LBF37VQhiFw0FGY8e3Q90lJ1i7+vjlVOBpCQVL1qCWB2AZldiB9uscoDYkn1Ugf310LOylnlV+ghtwrfeng==
+"@nestjs/core@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.7.2.tgz#f7734df269e5089987ca81ff425829f0b30a69f1"
+  integrity sha512-sXjuwlHaaiILK29/CLXS/iEeiD2Exzc+HdfPaOx95NstSON1CXuzn17J18c0w6j8Wlkt/fmPpmJQyq7HhU1g5A==
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.7"
@@ -2411,10 +2411,10 @@
     optional "0.1.4"
     uuid "3.3.3"
 
-"@nestjs/platform-express@6.7.1":
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.7.1.tgz#236681d1dc96db68db06ef4660c27028fdb2adc0"
-  integrity sha512-il6ckjXx3vqNBkCD1lCn3zMEIMx5ygS5dAxlvdliYTJaPlZmKIQ+ERhUgRJR4yteV2NFjd6vcO++m6W2BCbPHw==
+"@nestjs/platform-express@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.7.2.tgz#7d8498998b95441468553b121471241da62365ca"
+  integrity sha512-B6YNrNWNmHfObtwzrkOfaV/Bv/ZPj80mFl3a1Va40AQsJNG3VCgRWf96mTDhNWaD1mvN21z5sWvfOAUNKh3kmQ==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
@@ -2432,10 +2432,10 @@
     ts-morph "^4.0.0"
     typescript "3.4.5"
 
-"@nestjs/testing@6.7.1":
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.7.1.tgz#111bea47eb9a949cb6c6edd512026cb0c1d75627"
-  integrity sha512-5SrS/YSC46qVuw+rjvFSoaokCzIqtyTixSsrgbOc9x0yBYuWAw9HbMAPgAzTkpKkztjOW96ITbGx7P5r6+G1rg==
+"@nestjs/testing@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.7.2.tgz#3e654f010fd7deb401aee96b4c17dbb5f5ade7ea"
+  integrity sha512-tZzAgBMsxYBrxZ4tpOsBlnixdoWsptca6W5sUi71if4Bq0LjLF+ETH59Nl4t5eG0Jj9vNXUTRqH6/5bbaOoR0w==
   dependencies:
     optional "0.1.4"
 
