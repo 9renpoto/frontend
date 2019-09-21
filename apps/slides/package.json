@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/slides",
   "description": "my slides",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "dependencies": {
     "@types/impress": "0.5.29",
     "impress.js": "1.0.0"
