@@ -4,7 +4,7 @@
   "version": "5.0.0",
   "author": "github.com/9renpoto",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
     "@types/algoliasearch": "3.30.17",
@@ -53,10 +53,13 @@
     "@graphql-codegen/typescript": "1.7.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "tslint": "5.20.0",
-    "typescript": "3.6.3"
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.8.0",
+    "typescript": "3.6.3",
+    "typescript-styled-plugin": "0.14.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/9renpoto/frontend/tree/master/apps/blog",
   "keywords": [
     "gatsby"
   ],
@@ -66,9 +69,11 @@
   "scripts": {
     "build": "gatsby build",
     "build:types": "graphql-codegen --config codegen.yml",
-    "develop": "gatsby develop",
+    "lint": "run-p lint:*",
+    "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
+    "lint:types": "tsc -p . --noEmit",
     "serve": "gatsby serve",
-    "start": "npm run develop",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "start": "gatsby develop",
+    "test": "yarn lint"
   }
 }
