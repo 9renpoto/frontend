@@ -12,8 +12,6 @@ env:
   - CMD=lint
   - CMD=test
 script:
-- cat .envrc.tmpl >> $BASH_ENV
-- source $BASH_ENV
 - yarn $CMD
 after_success:
 - '[ "$CMD" == "test" ] && yarn coverage'
