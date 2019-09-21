@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/eslint-config",
   "description": "my eslint config",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"

@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/nest",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "dependencies": {
     "@nestjs/common": "6.7.1",
     "@nestjs/core": "6.7.1",
