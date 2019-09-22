@@ -47,7 +47,16 @@ const useClickOutside = (
   })
 }
 
-type Props = any
+type Indice = {
+  name: string
+  title: string
+  hitComp: 'PageHit' | 'PostHit'
+}
+
+interface Props {
+  indices: Indice[]
+  collapse?: boolean
+}
 
 export default function Search({ indices, collapse }: Props) {
   const ref = createRef()
@@ -55,7 +64,7 @@ export default function Search({ indices, collapse }: Props) {
   const [focus, setFocus] = useState(false)
   const searchClient = algoliasearch(
     process.env.GATSBY_ALGOLIA_APP_ID!,
-    process.env.GATSBY_ALGOLIA_SEARCH_KEY!
+    process.env.ALGOLIA_ADMIN_KEY!
   )
   useClickOutside(ref, () => setFocus(false), undefined)
   return (
@@ -67,16 +76,14 @@ export default function Search({ indices, collapse }: Props) {
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
       <HitsWrapper show={query.length > 0 && focus}>
-        {indices.map(({ name, title, hitComp }: any) => (
+        {indices.map(({ name, title, hitComp }) => (
           <Index key={name} indexName={name}>
             <header>
               <h3>{title}</h3>
               <Stats />
             </header>
             <Results>
-              <Hits
-                hitComponent={(hitComps as any)[hitComp](() => setFocus(false))}
-              />
+              <Hits hitComponent={hitComps[hitComp](() => setFocus(false))} />
             </Results>
           </Index>
         ))}

@@ -89,6 +89,12 @@ module.exports = {
         queries
       }
     },
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ['GATSBY_ALGOLIA_APP_ID', 'ALGOLIA_ADMIN_KEY']
+      }
+    },
     `gatsby-plugin-typescript`,
     'gatsby-plugin-typescript-checker'
   ]
