@@ -1,13 +1,13 @@
 {
   "name": "@9renpoto/eslint-config-flowtype",
   "description": "flowtype with eslint",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/eslint-config/issues"
   },
   "dependencies": {
-    "@9renpoto/eslint-config": "^5.0.1",
+    "@9renpoto/eslint-config": "^5.1.0",
     "babel-eslint": "10.0.3",
     "eslint-plugin-flowtype": "4.3.0"
   },
