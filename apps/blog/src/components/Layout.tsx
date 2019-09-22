@@ -1,6 +1,14 @@
 import React, { PureComponent } from 'react'
-import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Link as OriginalLink } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
+import Search from './search'
+
+const Link = styled(OriginalLink)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
 
 interface Props {
   children: React.ReactNode
@@ -9,6 +17,11 @@ interface Props {
 }
 
 declare const __PATH_PREFIX__: string
+
+const searchIndices = [
+  { name: `Pages`, title: `Pages`, hitComp: `PageHit` } as const,
+  { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` } as const
+]
 
 export default class Layout extends PureComponent<Props> {
   render() {
@@ -25,16 +38,7 @@ export default class Layout extends PureComponent<Props> {
             marginTop: 0
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          <Link to="/">{title}</Link>
         </h1>
       )
     } else {
@@ -45,16 +49,7 @@ export default class Layout extends PureComponent<Props> {
             marginTop: 0
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          <Link to="/">{title}</Link>
         </h3>
       )
     }
@@ -67,7 +62,10 @@ export default class Layout extends PureComponent<Props> {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >
-        <header>{header}</header>
+        <header>
+          {header}
+          <Search indices={searchIndices} />
+        </header>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

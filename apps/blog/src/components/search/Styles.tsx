@@ -57,7 +57,7 @@ export const Input = styled.input`
   background: transparent;
   transition: ${(props: any) => props.theme.shortTrans};
   border-radius: ${(props: any) => props.theme.smallBorderRadius};
-  ${(props: any) => (props.collapse ? collapse : expand)};
+  ${(props: { collapse?: boolean }) => (props.collapse ? collapse : expand)};
 `
 
 export const Form = styled.form`
