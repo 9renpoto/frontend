@@ -1,18 +1,19 @@
 {
-  "name": "@9renpoto/eslint-config-react",
-  "description": "my react eslint-config",
-  "version": "5.1.0",
-  "author": "9renpoto",
+  "name": "@9renpoto/eslint-config-typescript",
+  "description": "TypeScript with eslint",
+  "version": "5.0.0",
+  "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
-    "eslint-config-prettier": "6.3.0"
+    "@9renpoto/eslint-config": "^5.1.0",
+    "@typescript-eslint/parser": "2.3.0"
   },
   "homepage": "https://github.com/9renpoto/frontend",
   "keywords": [
     "eslint",
-    "react"
+    "TypeScript"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -21,6 +22,6 @@
     "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
   "scripts": {
-    "lint": "eslint . -c index.js --ext=js,jsx"
+    "lint": "eslint . --ext=ts,tsx -c index.js"
   }
 }

@@ -4,13 +4,14 @@
   "version": "5.1.0",
   "author": "github.com/9renpoto",
   "bugs": {
-    "url": "https://github.com/9renpoto/eslint-config/issues"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
     "eslint-config-prettier": "6.3.0",
-    "eslint-plugin-import": "2.18.2"
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.1"
   },
-  "homepage": "https://github.com/9renpoto/eslint-config/packages/standard/#readme",
+  "homepage": "https://github.com/9renpoto/frontend",
   "keywords": [
     "config",
     "eslint"
@@ -19,9 +20,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
+    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
   "scripts": {
-    "lint": "eslint . --cache"
+    "lint": "eslint . -c index.js"
   }
 }
