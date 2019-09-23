@@ -4,12 +4,12 @@
   "version": "5.1.0",
   "author": "9renpoto",
   "bugs": {
-    "url": "https://github.com/9renpoto/eslint-config/issues"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
     "eslint-config-prettier": "6.3.0"
   },
-  "homepage": "https://github.com/9renpoto/eslint-config/packages/react#readme",
+  "homepage": "https://github.com/9renpoto/frontend",
   "keywords": [
     "eslint",
     "react"
@@ -18,9 +18,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/eslint-config.git"
+    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
   "scripts": {
-    "lint": "eslint . --cache --ext=js,jsx"
+    "lint": "eslint . -c index.js --ext=js,jsx"
   }
 }
