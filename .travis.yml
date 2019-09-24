@@ -12,7 +12,6 @@ env:
   - CMD=test
 script:
 - yarn build
-- '[ "$CMD" == "lint" ] && npx eslint . --ext=ts,tsx'
 - yarn $CMD
 after_success:
 - '[ "$CMD" == "test" ] && yarn coverage'
