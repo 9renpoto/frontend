@@ -39,6 +39,8 @@
     "graphql": "14.5.7",
     "preact": "10.0.0-rc.1",
     "prismjs": "1.17.1",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
     "react-helmet": "5.2.1",
     "react-instantsearch-dom": "5.7.0",
     "react-typography": "0.16.19",
@@ -46,6 +48,8 @@
     "styled-icons": "8.4.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
+    "typescript": "3.6.3",
+    "typescript-styled-plugin": "0.14.0",
     "typography": "0.16.19",
     "typography-theme-github": "0.16.19"
   },
@@ -53,13 +57,9 @@
     "@graphql-codegen/cli": "1.7.0",
     "@graphql-codegen/typescript": "1.7.0",
     "@graphql-codegen/typescript-operations": "1.7.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.8.0",
-    "typescript": "3.6.3",
-    "typescript-styled-plugin": "0.14.0"
+    "stylelint-processor-styled-components": "1.8.0"
   },
   "homepage": "https://github.com/9renpoto/frontend/tree/master/apps/blog",
   "keywords": [

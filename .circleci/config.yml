@@ -8,3 +8,20 @@ jobs:
       - checkout
       - run: cargo install mdbook
       - run: cd sandbox/mdbook && mdbook build
+  build:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: yarn install --production
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: yarn workspace @9renpoto/blog
+      - store_artifacts:
+          path: apps/web/public
