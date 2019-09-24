@@ -36,7 +36,7 @@
     "ts-jest": "24.1.0",
     "ts-loader": "6.1.2",
     "ts-node": "8.4.1",
-    "typescript": "3.6.3",
+    "typescript": "3.5.3",
     "vnu-jar": "19.9.4",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9",
@@ -49,14 +49,13 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
     "cacheDirectory": ".cache/jest",
     "coverageReporters": [
       "lcov"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -70,7 +69,7 @@
   "license": "MIT",
   "lint-staged": {
     "*.{css,scss}": [
-      "prettier --write",
+      "prettier-stylelint --write",
       "git add"
     ],
     "*.{js,jsx}": [
@@ -87,10 +86,6 @@
       "textlint",
       "git add"
     ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   },
   "private": true,
   "repository": "ssh://git@github.com/9renpoto/frontend.git",

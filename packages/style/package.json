@@ -28,7 +28,7 @@
   "scripts": {
     "build": "run-s clean build:*",
     "build:ts": "tsc -p .",
-    "clean": "rimraf coverage .stoybook/build lib esm"
+    "clean": "rimraf lib"
   },
   "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
