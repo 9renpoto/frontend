@@ -8,10 +8,10 @@ matrix:
   - node_js: stable
 env:
   matrix:
-  - CMD=build
   - CMD=lint
   - CMD=test
 script:
+- yarn build
 - '[ "$CMD" == "lint" ] && npx eslint . --ext=ts,tsx'
 - yarn $CMD
 after_success:
