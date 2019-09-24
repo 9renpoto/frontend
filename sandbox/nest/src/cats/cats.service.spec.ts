@@ -21,7 +21,27 @@ describe('CatsService', () => {
       age: random.number(),
       breed: random.word(),
     };
-    expect(service.create(cat)).toBeUndefined();
-    expect(service.findAll()).toEqual([cat]);
+    expect(service.create(cat)).toEqual(cat);
+    expect(service.findAll()).toMatchInlineSnapshot(`
+      Array [
+        Object {
+          "age": 5,
+          "id": 1,
+          "name": "Cat",
+        },
+        Object {
+          "age": 54325,
+          "breed": "e-tailers",
+          "name": "Table",
+        },
+      ]
+    `);
+    expect(service.findOneById(1)).toMatchInlineSnapshot(`
+      Object {
+        "age": 5,
+        "id": 1,
+        "name": "Cat",
+      }
+    `);
   });
 });

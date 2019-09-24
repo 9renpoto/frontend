@@ -24,6 +24,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "build": "ts-node src/generate-typings",
     "lint": "tsc -p . --noEmit",
     "start": "ts-node -r tsconfig-paths/register src/main.ts"
   }
