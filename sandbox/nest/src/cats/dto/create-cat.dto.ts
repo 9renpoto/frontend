@@ -1,11 +1,7 @@
-import { IsNotEmpty } from 'class-validator';
-import { Cat } from '../interfaces/cat.interface';
+import { Min } from 'class-validator';
+import { CreateCatInput } from '../../graphql.schema';
 
-export class CreateCatDto implements Cat {
-  @IsNotEmpty()
-  readonly name: string;
-  @IsNotEmpty()
-  readonly age: number;
-  @IsNotEmpty()
-  readonly breed: string;
+export class CreateCatDto extends CreateCatInput {
+  @Min(1)
+  age: number;
 }

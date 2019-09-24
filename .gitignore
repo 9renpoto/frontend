@@ -1,6 +1,7 @@
 .changelog
 .envrc
 .textlintcache
+graphql.schema.ts
 dist/
 lib/
 esm/

@@ -80,6 +80,10 @@
       "prettier-eslint --write",
       "git add"
     ],
+    "*.graphql": [
+      "prettier --write",
+      "git add"
+    ],
     "*.md": [
       "prettier --write",
       "textlint --fix",
