@@ -30,9 +30,9 @@ describe('CatsService', () => {
           "name": "Cat",
         },
         Object {
-          "age": 54325,
-          "breed": "e-tailers",
-          "name": "Table",
+          "age": 28613,
+          "breed": "eyeballs",
+          "name": "Swedish Krona",
         },
       ]
     `);
