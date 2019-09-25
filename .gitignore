@@ -1,12 +1,10 @@
 .changelog
 .envrc
 .textlintcache
-dist/
+graphql.schema.ts
 lib/
-esm/
-apps/blog/public/
 
-### https://raw.github.com/github/gitignore/e92f8db7a027af8cc25da2dc0758317e39697684/Node.gitignore
+### https://raw.github.com/github/gitignore/086eacaaa2b9fde537315141e154631b945e1369/Node.gitignore
 
 # Logs
 logs
@@ -63,6 +61,12 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
 # Optional REPL history
 .node_repl_history
 
@@ -84,6 +88,10 @@ typings/
 
 # nuxt.js build output
 .nuxt
+
+# gatsby files
+.cache/
+public
 
 # vuepress build output
 .vuepress/dist

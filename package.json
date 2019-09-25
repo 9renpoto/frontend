@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "lerna": "3.16.4",
+    "npm-run-all": "4.1.5",
     "preact": "10.0.0-rc.1",
     "preact-render-to-string": "5.0.6"
   },
@@ -9,13 +11,9 @@
     "@types/faker": "4.1.5",
     "@types/jest": "24.0.18",
     "@types/mini-css-extract-plugin": "0.8.0",
-    "@types/node": "11.13.20",
-    "@types/webpack": "4.39.1",
-    "@typescript-eslint/parser": "2.3.1",
     "babel-loader": "8.0.6",
     "can-npm-publish": "1.3.1",
     "codecov": "3.6.1",
-    "concurrently": "4.1.2",
     "cpx": "1.5.0",
     "css-loader": "3.2.0",
     "eslint": "6.4.0",
@@ -23,12 +21,10 @@
     "faker": "4.1.0",
     "husky": "3.0.5",
     "jest": "24.9.0",
-    "lerna": "3.16.4",
     "lerna-changelog": "0.8.2",
     "lint-staged": "9.3.0",
     "markdownlint-cli": "0.18.0",
     "mini-css-extract-plugin": "0.8.0",
-    "npm-run-all": "4.1.5",
     "prettier-eslint-cli": "5.0.0",
     "prettier-stylelint": "0.4.2",
     "pug-cli": "1.0.0-alpha6",
@@ -38,7 +34,6 @@
     "ts-jest": "24.1.0",
     "ts-loader": "6.1.2",
     "ts-node": "8.4.1",
-    "typescript": "3.6.3",
     "vnu-jar": "19.9.4",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9",
@@ -51,14 +46,13 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
     "cacheDirectory": ".cache/jest",
     "coverageReporters": [
       "lcov"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -72,7 +66,7 @@
   "license": "MIT",
   "lint-staged": {
     "*.{css,scss}": [
-      "prettier --write",
+      "prettier-stylelint --write",
       "git add"
     ],
     "*.{js,jsx}": [
@@ -83,16 +77,15 @@
       "prettier-eslint --write",
       "git add"
     ],
+    "*.graphql": [
+      "prettier --write",
+      "git add"
+    ],
     "*.md": [
       "prettier --write",
       "textlint --fix",
-      "textlint",
       "git add"
     ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   },
   "private": true,
   "repository": "ssh://git@github.com/9renpoto/frontend.git",
@@ -102,7 +95,7 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "coverage": "codecov -f ./coverage/lcov.info",
-    "lint": "lerna run lint --parallel",
+    "lint": "npx eslint . --ext=ts,tsx && lerna run lint --parallel",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "start": "storybook-server",
     "test": "jest"

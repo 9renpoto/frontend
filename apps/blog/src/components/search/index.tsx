@@ -83,7 +83,9 @@ export default function Search({ indices, collapse }: Props) {
               <Stats />
             </header>
             <Results>
-              <Hits hitComponent={hitComps[hitComp](() => setFocus(false))} />
+              <Hits
+                hitComponent={(hitComps as any)[hitComp](() => setFocus(false))}
+              />
             </Results>
           </Index>
         ))}
