@@ -10,7 +10,7 @@ jobs:
       - run: cd sandbox/mdbook && mdbook build
   build:
     docker:
-      - image: circleci/node:stable
+      - image: circleci/node:latest
     steps:
       - checkout
       - run: yarn install --production
