@@ -14,6 +14,7 @@ before_install:
 - export TZ=Asia/Tokyo
 script:
 - yarn workspace @9renpoto/nest start &
+- sleep 15
 - yarn build
 - yarn $CMD
 after_success:
