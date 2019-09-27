@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common'
+import { random } from 'faker'
 import { NewRecipeInput } from './dto/new-recipe.input'
 import { RecipesArgs } from './dto/recipes.args'
 import { Recipe } from './models/recipe'
@@ -9,7 +10,7 @@ export class RecipesService {
 
   async create(data: NewRecipeInput): Promise<Recipe> {
     const r: Recipe = {
-      id: btoa(Math.random().toString()),
+      id: random.uuid(),
       createdAt: new Date(),
       ...data,
     }
