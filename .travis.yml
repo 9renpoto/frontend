@@ -10,6 +10,8 @@ env:
   matrix:
   - CMD=lint
   - CMD=test
+before_install:
+- export TZ=Asia/Tokyo
 script:
 - yarn build
 - yarn $CMD

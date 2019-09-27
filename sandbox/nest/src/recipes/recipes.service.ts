@@ -5,7 +5,7 @@ import { Recipe } from './models/recipe'
 
 @Injectable()
 export class RecipesService {
-  private recipes: Recipe[]
+  private recipes: Recipe[] = []
 
   async create(data: NewRecipeInput): Promise<Recipe> {
     const r: Recipe = {
