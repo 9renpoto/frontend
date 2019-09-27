@@ -10,8 +10,8 @@ module.exports = {
     description: `Have fun, good luck`,
     siteUrl: `https://9renpoto.netlify.com/`,
     social: {
-      twitter: `9renpoto`
-    }
+      twitter: `9renpoto`,
+    },
   },
   plugins: [
     `gatsby-plugin-preact`,
@@ -19,15 +19,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`
-      }
+        name: `blog`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`
-      }
+        name: `assets`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -36,28 +36,28 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`
-            }
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
-        ]
-      }
+          `gatsby-remark-smartypants`,
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-39548809-3'
-      }
+        trackingId: 'UA-39548809-3',
+      },
     },
     `gatsby-plugin-feed`,
     {
@@ -69,16 +69,16 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`
-      }
+        icon: `content/assets/gatsby-icon.png`,
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`
-      }
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
     {
       resolve: `gatsby-plugin-algolia`,
@@ -86,16 +86,16 @@ module.exports = {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME,
-        queries
-      }
+        queries,
+      },
     },
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ['GATSBY_ALGOLIA_APP_ID', 'ALGOLIA_ADMIN_KEY']
-      }
+        whitelist: ['GATSBY_ALGOLIA_APP_ID', 'ALGOLIA_ADMIN_KEY'],
+      },
     },
     `gatsby-plugin-typescript`,
-    'gatsby-plugin-typescript-checker'
-  ]
+    'gatsby-plugin-typescript-checker',
+  ],
 }

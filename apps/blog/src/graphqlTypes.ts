@@ -276,7 +276,7 @@ export enum DirectoryFieldsEnum {
   atime = 'atime',
   mtime = 'mtime',
   ctime = 'ctime',
-  birthtime = 'birthtime'
+  birthtime = 'birthtime',
 }
 
 export type DirectoryFilterInput = {
@@ -731,7 +731,7 @@ export enum FileFieldsEnum {
   childImageSharp___internal___ignoreType = 'childImageSharp___internal___ignoreType',
   childImageSharp___internal___mediaType = 'childImageSharp___internal___mediaType',
   childImageSharp___internal___owner = 'childImageSharp___internal___owner',
-  childImageSharp___internal___type = 'childImageSharp___internal___type'
+  childImageSharp___internal___type = 'childImageSharp___internal___type',
 }
 
 export type FileFilterInput = {
@@ -814,20 +814,20 @@ export enum ImageCropFocus {
   WEST = 'WEST',
   NORTHWEST = 'NORTHWEST',
   ENTROPY = 'ENTROPY',
-  ATTENTION = 'ATTENTION'
+  ATTENTION = 'ATTENTION',
 }
 
 export enum ImageFit {
   COVER = 'COVER',
   CONTAIN = 'CONTAIN',
-  FILL = 'FILL'
+  FILL = 'FILL',
 }
 
 export enum ImageFormat {
   NO_CHANGE = 'NO_CHANGE',
   JPG = 'JPG',
   PNG = 'PNG',
-  WEBP = 'WEBP'
+  WEBP = 'WEBP',
 }
 
 export type ImageSharp = Node & {
@@ -1109,7 +1109,7 @@ export enum ImageSharpFieldsEnum {
   internal___ignoreType = 'internal___ignoreType',
   internal___mediaType = 'internal___mediaType',
   internal___owner = 'internal___owner',
-  internal___type = 'internal___type'
+  internal___type = 'internal___type',
 }
 
 export type ImageSharpFilterInput = {
@@ -1334,7 +1334,7 @@ export type JsonQueryOperatorInput = {
 export enum MarkdownExcerptFormats {
   PLAIN = 'PLAIN',
   HTML = 'HTML',
-  MARKDOWN = 'MARKDOWN'
+  MARKDOWN = 'MARKDOWN',
 }
 
 export type MarkdownHeading = {
@@ -1358,7 +1358,7 @@ export enum MarkdownHeadingLevels {
   h3 = 'h3',
   h4 = 'h4',
   h5 = 'h5',
-  h6 = 'h6'
+  h6 = 'h6',
 }
 
 export type MarkdownRemark = Node & {
@@ -1541,7 +1541,7 @@ export enum MarkdownRemarkFieldsEnum {
   internal___ignoreType = 'internal___ignoreType',
   internal___mediaType = 'internal___mediaType',
   internal___owner = 'internal___owner',
-  internal___type = 'internal___type'
+  internal___type = 'internal___type',
 }
 
 export type MarkdownRemarkFieldsFilterInput = {
@@ -1668,7 +1668,7 @@ export enum PotraceTurnPolicy {
   TURNPOLICY_LEFT = 'TURNPOLICY_LEFT',
   TURNPOLICY_RIGHT = 'TURNPOLICY_RIGHT',
   TURNPOLICY_MINORITY = 'TURNPOLICY_MINORITY',
-  TURNPOLICY_MAJORITY = 'TURNPOLICY_MAJORITY'
+  TURNPOLICY_MAJORITY = 'TURNPOLICY_MAJORITY',
 }
 
 export type Query = {
@@ -2042,7 +2042,7 @@ export enum SiteFieldsEnum {
   host = 'host',
   polyfill = 'polyfill',
   pathPrefix = 'pathPrefix',
-  buildTime = 'buildTime'
+  buildTime = 'buildTime',
 }
 
 export type SiteFilterInput = {
@@ -2378,7 +2378,7 @@ export enum SitePageFieldsEnum {
   pluginCreator___packageJson___peerDependencies___version = 'pluginCreator___packageJson___peerDependencies___version',
   pluginCreator___packageJson___keywords = 'pluginCreator___packageJson___keywords',
   pluginCreatorId = 'pluginCreatorId',
-  componentPath = 'componentPath'
+  componentPath = 'componentPath',
 }
 
 export type SitePageFilterInput = {
@@ -2614,7 +2614,7 @@ export enum SitePluginFieldsEnum {
   packageJson___peerDependencies = 'packageJson___peerDependencies',
   packageJson___peerDependencies___name = 'packageJson___peerDependencies___name',
   packageJson___peerDependencies___version = 'packageJson___peerDependencies___version',
-  packageJson___keywords = 'packageJson___keywords'
+  packageJson___keywords = 'packageJson___keywords',
 }
 
 export type SitePluginFilterInput = {
@@ -2898,7 +2898,7 @@ export type SiteSortInput = {
 
 export enum SortOrderEnum {
   ASC = 'ASC',
-  DESC = 'DESC'
+  DESC = 'DESC',
 }
 
 export type StringQueryOperatorInput = {

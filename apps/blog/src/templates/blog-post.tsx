@@ -50,7 +50,7 @@ export default class BlogPostTemplate extends PureComponent<Props> {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1)
+            marginTop: rhythm(-1),
           }}
         >
           {post.frontmatter!.date}
@@ -58,7 +58,7 @@ export default class BlogPostTemplate extends PureComponent<Props> {
         <div dangerouslySetInnerHTML={{ __html: post.html! }} />
         <hr
           style={{
-            marginBottom: rhythm(1)
+            marginBottom: rhythm(1),
           }}
         />
         <Bio />
@@ -69,7 +69,7 @@ export default class BlogPostTemplate extends PureComponent<Props> {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0
+            padding: 0,
           }}
         >
           <li>

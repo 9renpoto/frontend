@@ -97,7 +97,10 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "coverage": "codecov -f ./coverage/lcov.info",
-    "lint": "npx eslint . --ext=ts,tsx && lerna run lint --parallel",
+    "lint": "run-s -l lint:*",
+    "lint:pkg": "lerna run lint --parallel",
+    "lint:eslint": "npx eslint . --ext=ts,tsx",
+    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "start": "storybook-server",
     "test": "jest"

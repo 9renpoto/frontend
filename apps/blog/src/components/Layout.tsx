@@ -20,7 +20,7 @@ declare const __PATH_PREFIX__: string
 
 const searchIndices = [
   { name: `Pages`, title: `Pages`, hitComp: `PageHit` } as const,
-  { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` } as const
+  { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` } as const,
 ]
 
 export default class Layout extends PureComponent<Props> {
@@ -35,7 +35,7 @@ export default class Layout extends PureComponent<Props> {
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
-            marginTop: 0
+            marginTop: 0,
           }}
         >
           <Link to="/">{title}</Link>
@@ -46,7 +46,7 @@ export default class Layout extends PureComponent<Props> {
         <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0
+            marginTop: 0,
           }}
         >
           <Link to="/">{title}</Link>
@@ -59,7 +59,7 @@ export default class Layout extends PureComponent<Props> {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <header>

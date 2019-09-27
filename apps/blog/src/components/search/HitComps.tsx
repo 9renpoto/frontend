@@ -7,7 +7,7 @@ import { Tags } from 'styled-icons/fa-solid/Tags'
 export const PageHit = (
   clickHandler:
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
-    | undefined
+    | undefined,
 ) => ({ hit }: any) => {
   return (
     <div>
@@ -24,7 +24,7 @@ export const PageHit = (
 export const PostHit = (
   clickHandler:
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
-    | undefined
+    | undefined,
 ) => ({ hit }: any) => (
   <div>
     <Link to={`/blog` + hit.slug} onClick={clickHandler}>
