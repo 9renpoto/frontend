@@ -1,3 +1,5 @@
+dist/
+lib/
 sandbox/nest/src/graphql.schema.ts
 sandbox/nest/src/schema.gql
 
