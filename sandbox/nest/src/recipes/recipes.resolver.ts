@@ -8,7 +8,7 @@ import { RecipesService } from './recipes.service'
 
 const pubSub = new PubSub()
 
-@Resolver((_: any) => Recipe)
+@Resolver((_: unknown) => Recipe)
 export class RecipesResolver {
   constructor(private readonly recipesService: RecipesService) {}
 

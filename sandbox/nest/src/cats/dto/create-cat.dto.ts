@@ -1,7 +1,9 @@
-import { Min } from 'class-validator';
-import { CreateCatInput } from '../../graphql.schema';
+import { Min } from 'class-validator'
+import { Field, Int, InputType } from 'type-graphql'
 
-export class CreateCatDto extends CreateCatInput {
+@InputType()
+export class CreateCatDto {
+  @Field(_ => Int)
   @Min(1)
-  age: number;
+  age: number
 }

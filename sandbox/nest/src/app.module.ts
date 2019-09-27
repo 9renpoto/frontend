@@ -3,14 +3,16 @@ import { GraphQLModule } from '@nestjs/graphql'
 import { CatsModule } from './cats/cats.module'
 import { RecipesModule } from './recipes/recipes.module'
 
+const file = 'schema.gql'
+
 @Module({
   imports: [
     CatsModule,
     RecipesModule,
     GraphQLModule.forRoot({
-      typePaths: ['./**/*.graphql', './*.graphql'],
+      typePaths: [`./${file}`],
       installSubscriptionHandlers: true,
-      // autoSchemaFile: './src/schema.graphql',
+      autoSchemaFile: `./src/${file}`,
     }),
   ],
 })

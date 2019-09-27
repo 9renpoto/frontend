@@ -1,17 +1,17 @@
-import { Test } from '@nestjs/testing';
-import { CatsResolver } from './cats.resolver';
-import { CatsService } from './cats.service';
+import { Test } from '@nestjs/testing'
+import { CatsResolver } from './cats.resolver'
+import { CatsService } from './cats.service'
 
 describe('CatsResolver', () => {
-  let resolver: CatsResolver;
+  let resolver: CatsResolver
 
   beforeEach(async () => {
     const module = await Test.createTestingModule({
       providers: [CatsResolver, CatsService],
-    }).compile();
+    }).compile()
 
-    resolver = module.get(CatsResolver);
-  });
+    resolver = module.get(CatsResolver)
+  })
 
-  it('should be defined', () => expect(resolver).toBeDefined());
-});
+  it('should be defined', () => expect(resolver).toBeDefined())
+})
