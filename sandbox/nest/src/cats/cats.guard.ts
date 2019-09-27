@@ -1,11 +1,8 @@
-import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
-import { Observable } from 'rxjs';
+import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'
 
 @Injectable()
 export class CatsGuard implements CanActivate {
-  canActivate(
-    _: ExecutionContext,
-  ): boolean | Promise<boolean> | Observable<boolean> {
-    return true;
+  canActivate(_: ExecutionContext) {
+    return true
   }
 }

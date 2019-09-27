@@ -1,6 +1,6 @@
 module.exports = {
   filters: {
-    comments: true
+    comments: true,
   },
   rules: {
     'incremental-headers': true,
@@ -9,7 +9,7 @@ module.exports = {
     'ja-no-weak-phrase': true,
     'max-ten': { max: 3 },
     'no-dead-link': {
-      ignore: ['https://badge.fury.io/js/**/*']
+      ignore: ['https://badge.fury.io/js/**/*'],
     },
     'no-double-negative-ja': true,
     'no-doubled-conjunction': true,
@@ -20,6 +20,6 @@ module.exports = {
     'no-mix-dearu-desumasu': true,
     'no-nfd': true,
     'preset-ja-spacing': true,
-    'preset-jtf-style': true
-  }
+    'preset-jtf-style': true,
+  },
 }

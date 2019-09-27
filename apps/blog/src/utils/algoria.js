@@ -19,7 +19,7 @@ const postQuery = `{
 const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
-    ...rest
+    ...rest,
   }))
 const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
@@ -27,8 +27,8 @@ const queries = [
     query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
     indexName: `Posts`,
-    settings
-  }
+    settings,
+  },
 ]
 
 module.exports = queries

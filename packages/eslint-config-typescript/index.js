@@ -3,20 +3,20 @@ module.exports = {
   extends: [
     '@9renpoto/eslint-config',
     'prettier/@typescript-eslint',
-    'plugin:import/typescript'
+    'plugin:import/typescript',
   ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
-      modules: true
-    }
+      modules: true,
+    },
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx']
-      }
-    }
-  }
+        extensions: ['.ts', '.tsx'],
+      },
+    },
+  },
 }

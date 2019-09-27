@@ -15,9 +15,9 @@ const ID = `navMenu`
 
 export class Header extends Component<Props, State> {
   state: State = {
-    isActive: false
+    isActive: false,
   }
-  render () {
+  render() {
     const { titles, baseUrl } = this.props
     return (
       <header className={`${NAVBAR}`}>
@@ -25,7 +25,7 @@ export class Header extends Component<Props, State> {
           <div
             className={classnames({
               [`${NAVBAR}-burger burger`]: true,
-              'is-active': this.state.isActive
+              'is-active': this.state.isActive,
             })}
             data-target={ID}
             onClick={_ => this.setState({ isActive: !this.state.isActive })}
@@ -38,7 +38,7 @@ export class Header extends Component<Props, State> {
         <div
           className={classnames({
             [`${NAVBAR}-menu`]: true,
-            'is-active': this.state.isActive
+            'is-active': this.state.isActive,
           })}
           id={ID}
         >

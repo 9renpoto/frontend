@@ -3,7 +3,7 @@ import {
   InstantSearch,
   Index,
   Hits,
-  connectStateResults
+  connectStateResults,
 } from 'react-instantsearch-dom'
 import algoliasearch from 'algoliasearch/lite'
 import { Root, HitsWrapper, PoweredBy } from './Styles'
@@ -15,7 +15,7 @@ const Results = connectStateResults(
     <Fragment>
       {res && res.nbHits > 0 ? children : `No results for '${state.query}'`}
     </Fragment>
-  )
+  ),
 )
 
 const Stats = connectStateResults(({ searchResults: res }) => (
@@ -29,7 +29,7 @@ const Stats = connectStateResults(({ searchResults: res }) => (
 const useClickOutside = (
   ref: React.RefObject<any>,
   handler: { (): void; (): void },
-  originalEvents: string[] | undefined
+  originalEvents: string[] | undefined,
 ) => {
   let events: string[] = [`mousedown`, `touchstart`]
   if (originalEvents) {
@@ -64,7 +64,7 @@ export default function Search({ indices, collapse }: Props) {
   const [focus, setFocus] = useState(false)
   const searchClient = algoliasearch(
     process.env.GATSBY_ALGOLIA_APP_ID!,
-    process.env.ALGOLIA_ADMIN_KEY!
+    process.env.ALGOLIA_ADMIN_KEY!,
   )
   useClickOutside(ref, () => setFocus(false), undefined)
   return (

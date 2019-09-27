@@ -1,7 +1,7 @@
-import { CatsGuard } from './cats.guard';
+import { CatsGuard } from './cats.guard'
 
 describe('CatsGuard', () => {
   it('should be defined', () => {
-    expect(new CatsGuard()).toBeDefined();
-  });
-});
+    expect(new CatsGuard()).toBeDefined()
+  })
+})

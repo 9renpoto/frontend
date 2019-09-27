@@ -1,2 +1,2 @@
-import "impress.js";
-import "impress.js/css/impress-demo.css";
+import 'impress.js'
+import 'impress.js/css/impress-demo.css'

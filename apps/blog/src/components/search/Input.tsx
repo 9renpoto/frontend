@@ -15,5 +15,5 @@ export default connectSearchBox(
       />
       <SearchIcon />
     </Form>
-  )
+  ),
 )
