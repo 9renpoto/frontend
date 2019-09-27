@@ -15,7 +15,7 @@ export class CatsResolver {
   @Query(_ => [Cat])
   @UseGuards(CatsGuard)
   async getCats() {
-    return await this.catsService.findAll()
+    return this.catsService.findAll()
   }
 
   @Query(_ => Cat)
@@ -23,7 +23,7 @@ export class CatsResolver {
     @Args('id', ParseIntPipe)
     id: number,
   ) {
-    return await this.catsService.findOneById(id)
+    return this.catsService.findOneById(id)
   }
 
   @Mutation(_ => Cat)
