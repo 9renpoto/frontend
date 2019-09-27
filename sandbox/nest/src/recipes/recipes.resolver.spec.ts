@@ -13,7 +13,5 @@ describe('RecipesResolver', () => {
     resolver = module.get<RecipesResolver>(RecipesResolver)
   })
 
-  it('should be defined', () => {
-    expect(resolver).toBeDefined()
-  })
+  it('should be defined', () => expect(resolver).toBeDefined())
 })
