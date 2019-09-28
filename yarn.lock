@@ -13,14 +13,25 @@
     rxjs "6.4.0"
     source-map "0.7.3"
 
-"@angular-devkit/schematics-cli@0.803.5":
-  version "0.803.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics-cli/-/schematics-cli-0.803.5.tgz#e468a5c847fea4c7fea799c82876b795b79cf587"
-  integrity sha512-URF0js+5DVc4FPRJanLhtDHcNhQ1Ed60+Zjh4/i1kbMs9Y8oq0YpuW2DiLlpW/Y9XTaNNe2I0ROhklAxVKIQ/A==
+"@angular-devkit/core@8.3.6":
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.6.tgz#6ad4787e3cb8b03234a194dd53e12cf054a4169c"
+  integrity sha512-kf4ViwjxERlyAnnrbenaUzPr0muixCyupzyiJ2RIuenK3ob9t1fnAsaugZt+Gfo54i3NgfBMKu1xNwnTR7HnAw==
   dependencies:
-    "@angular-devkit/core" "8.3.5"
-    "@angular-devkit/schematics" "8.3.5"
-    "@schematics/schematics" "0.803.5"
+    ajv "6.10.2"
+    fast-json-stable-stringify "2.0.0"
+    magic-string "0.25.3"
+    rxjs "6.4.0"
+    source-map "0.7.3"
+
+"@angular-devkit/schematics-cli@0.803.6":
+  version "0.803.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics-cli/-/schematics-cli-0.803.6.tgz#edf16a8c3b8a733f9e38d2a0b28b9e158b7a679e"
+  integrity sha512-1EeUwp6fU6Cz0XrCkoS/kYvKGAzNafCBJk0VexmPKgaHBdxjsUQNmc0F1Kk33cEf5bd/gkQ43HIovqZOFcsYXA==
+  dependencies:
+    "@angular-devkit/core" "8.3.6"
+    "@angular-devkit/schematics" "8.3.6"
+    "@schematics/schematics" "0.803.6"
     inquirer "6.5.1"
     minimist "1.2.0"
     rxjs "6.4.0"
@@ -32,6 +43,14 @@
   integrity sha512-RMtM10kS+Docg90jzFMa4HQ+UzX95Gi5rCT/kSydEkBhp+Jeu/B0K2y67Fm2/qTdVNRCujrCpEmtiRcp1qsOQg==
   dependencies:
     "@angular-devkit/core" "8.3.5"
+    rxjs "6.4.0"
+
+"@angular-devkit/schematics@8.3.6":
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.6.tgz#9a21a090208398a70e87d24a66e8d147f14713e0"
+  integrity sha512-5I4WDIMHw8zuajhXdy2xjtJLglMWE2Bo1Ri4wFR8cmj8nXUQ1fdPMWg3CqiepcNls2c8xXXMBMHZb/FhC32sBw==
+  dependencies:
+    "@angular-devkit/core" "8.3.6"
     rxjs "6.4.0"
 
 "@apollographql/apollo-tools@^0.4.0":
@@ -2208,19 +2227,19 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/cli@6.9.0":
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.9.0.tgz#13a18d645a5482237f0b17e12140da6837a21eea"
-  integrity sha512-VpxEsOIr3dJUW64tLBNMcHx90Ply/rRptTiGIq59xLmSdso0QyPDFjfWJ9Dd8sCeDitTMAX0e07n74EggbuHxg==
+"@nestjs/cli@6.9.1":
+  version "6.9.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.9.1.tgz#655d5ac10909cb354935222f75a1dfc64968dc97"
+  integrity sha512-9+cbhOpZHL/BG/xfNX4umESHAxg5Ib8k1Nsmoiiklf32c82yMNYF4g6K96dxYxRdu91j2LMZfubS46SmV0dZrQ==
   dependencies:
-    "@angular-devkit/core" "8.3.5"
-    "@angular-devkit/schematics" "8.3.5"
-    "@angular-devkit/schematics-cli" "0.803.5"
+    "@angular-devkit/core" "8.3.6"
+    "@angular-devkit/schematics" "8.3.6"
+    "@angular-devkit/schematics-cli" "0.803.6"
     "@nestjs/schematics" "^6.6.3"
     "@types/webpack" "4.39.1"
     chalk "2.4.2"
     cli-table3 "0.5.1"
-    commander "3.0.1"
+    commander "3.0.2"
     fork-ts-checker-webpack-plugin "^1.5.0"
     inquirer "7.0.0"
     node-emoji "1.10.0"
@@ -2466,13 +2485,13 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@schematics/schematics@0.803.5":
-  version "0.803.5"
-  resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.803.5.tgz#2f4a3589ace9d24fd56a13cb3b80c51d1562a2aa"
-  integrity sha512-OpC5LkjPMKJyZOg5dX7NbboHMF89h9OArCBXZKQ6+r3tNxyE8GOw+Of91C0C5QpMP7czC8XKEo1IjxtpQxf6Gw==
+"@schematics/schematics@0.803.6":
+  version "0.803.6"
+  resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.803.6.tgz#628fe91dfe596945cc7f50c14b4d2f6a7dc125dd"
+  integrity sha512-HfUEdfl2VITO0gl0unAEyqbg3EWKdOeHodUTRVRI6yrOPcQeySLkffyviR7cUG4VSHX6slTPSUcRmii+vRgdfQ==
   dependencies:
-    "@angular-devkit/core" "8.3.5"
-    "@angular-devkit/schematics" "8.3.5"
+    "@angular-devkit/core" "8.3.6"
+    "@angular-devkit/schematics" "8.3.6"
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
@@ -5886,6 +5905,11 @@ commander@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.1.tgz#4595aec3530525e671fb6f85fb173df8ff8bf57a"
   integrity sha512-UNgvDd+csKdc9GD4zjtkHKQbT8Aspt2jCBqNSPp53vAS0L1tS9sXB2TCEOPHJ7kt9bN/niWkYj8T3RQSoMXdSQ==
+
+commander@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
+  integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
 commander@^2.11.0, commander@^2.12.1, commander@^2.20.0, commander@^2.8.1, commander@~2.20.0:
   version "2.20.0"
