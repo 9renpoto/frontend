@@ -2356,6 +2356,7 @@ export enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___queries = 'pluginCreator___pluginOptions___queries',
   pluginCreator___pluginOptions___queries___query = 'pluginCreator___pluginOptions___queries___query',
   pluginCreator___pluginOptions___queries___indexName = 'pluginCreator___pluginOptions___queries___indexName',
+  pluginCreator___pluginOptions___whitelist = 'pluginCreator___pluginOptions___whitelist',
   pluginCreator___pluginOptions___pathCheck = 'pluginCreator___pluginOptions___pathCheck',
   pluginCreator___nodeAPIs = 'pluginCreator___nodeAPIs',
   pluginCreator___browserAPIs = 'pluginCreator___browserAPIs',
@@ -2594,6 +2595,7 @@ export enum SitePluginFieldsEnum {
   pluginOptions___queries___query = 'pluginOptions___queries___query',
   pluginOptions___queries___indexName = 'pluginOptions___queries___indexName',
   pluginOptions___queries___settings___attributesToSnippet = 'pluginOptions___queries___settings___attributesToSnippet',
+  pluginOptions___whitelist = 'pluginOptions___whitelist',
   pluginOptions___pathCheck = 'pluginOptions___pathCheck',
   nodeAPIs = 'nodeAPIs',
   browserAPIs = 'browserAPIs',
@@ -2743,6 +2745,7 @@ export type SitePluginPluginOptions = {
   appId?: Maybe<Scalars['String']>
   apiKey?: Maybe<Scalars['String']>
   queries?: Maybe<Array<Maybe<SitePluginPluginOptionsQueries>>>
+  whitelist?: Maybe<Array<Maybe<Scalars['String']>>>
   pathCheck?: Maybe<Scalars['Boolean']>
 }
 
@@ -2773,6 +2776,7 @@ export type SitePluginPluginOptionsFilterInput = {
   appId?: Maybe<StringQueryOperatorInput>
   apiKey?: Maybe<StringQueryOperatorInput>
   queries?: Maybe<SitePluginPluginOptionsQueriesFilterListInput>
+  whitelist?: Maybe<StringQueryOperatorInput>
   pathCheck?: Maybe<BooleanQueryOperatorInput>
 }
 
