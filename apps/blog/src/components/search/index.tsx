@@ -9,6 +9,7 @@ import algoliasearch from 'algoliasearch/lite'
 import { Root, HitsWrapper, PoweredBy } from './Styles'
 import Input from './Input'
 import * as hitComps from './HitComps'
+import { HitCompProps } from './HitComps'
 
 const Results = connectStateResults(
   ({ searchState: state, searchResults: res, children }) => (
@@ -47,14 +48,14 @@ const useClickOutside = (
   })
 }
 
-type Indice = {
+type IndexType = {
   name: string
   title: string
   hitComp: 'PageHit' | 'PostHit'
 }
 
 interface Props {
-  indices: Indice[]
+  indices: IndexType[]
   collapse?: boolean
 }
 
@@ -76,14 +77,14 @@ export default function Search({ indices, collapse }: Props) {
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
       <HitsWrapper show={query.length > 0 && focus}>
-        {indices.map(({ name, title, hitComp }) => (
+        {indices.map(({ name, title, hitComp }: IndexType) => (
           <Index key={name} indexName={name}>
             <header>
               <h3>{title}</h3>
               <Stats />
             </header>
             <Results>
-              <Hits
+              <Hits<HitCompProps>
                 hitComponent={(hitComps as any)[hitComp](() => setFocus(false))}
               />
             </Results>
