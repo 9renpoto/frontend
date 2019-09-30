@@ -3,12 +3,20 @@ import { Highlight, Snippet } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
 import { Calendar } from 'styled-icons/octicons/Calendar'
 import { Tags } from 'styled-icons/fa-solid/Tags'
+import { Hit } from 'react-instantsearch-core'
+
+export interface HitCompProps {
+  hit: {
+    slug: string
+    tags: string[]
+  }
+}
 
 export const PageHit = (
   clickHandler:
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
     | undefined,
-) => ({ hit }: any) => {
+) => ({ hit }: Hit<HitCompProps>) => {
   return (
     <div>
       <Link to={hit.slug} onClick={clickHandler}>
@@ -25,7 +33,7 @@ export const PostHit = (
   clickHandler:
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
     | undefined,
-) => ({ hit }: any) => (
+) => ({ hit }: Hit<HitCompProps>) => (
   <div>
     <Link to={`/blog` + hit.slug} onClick={clickHandler}>
       <h4>
