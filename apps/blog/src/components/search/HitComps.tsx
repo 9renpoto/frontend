@@ -17,7 +17,6 @@ export const PageHit = (
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
     | undefined,
 ) => ({ hit }: Hit<HitCompProps>) => {
-  console.warn(hit)
   return (
     <div>
       <Link to={hit.slug} onClick={clickHandler}>
