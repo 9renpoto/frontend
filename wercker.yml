@@ -16,11 +16,5 @@ build:
       name: set yarn cache
       code: export YARN_CACHE=$WERCKER_CACHE_DIR/yarn
     - script:
-        name: echo nodejs information
-        code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
-    - script:
-        name: migrate
-        code: |
-          yarn migrate:generate
+      name: migrate
+      code: npm run migrate:generate
