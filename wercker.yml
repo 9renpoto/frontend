@@ -16,5 +16,8 @@ build:
       name: set yarn cache
       code: export YARN_CACHE=$WERCKER_CACHE_DIR/yarn
     - script:
+      name: install dependencies
+      code: HOME=$YARN_CACHE yarn
+    - script:
       name: migrate
       code: npm run migrate:generate
