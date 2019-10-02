@@ -1,37 +1,7 @@
-# nest-next
+# @9renpoto/nest sandbox
+
+[![wercker status](https://app.wercker.com/status/b68d271fbe3f17e6524b137a9de33799/m/master 'wercker status')](https://app.wercker.com/applications/5d942ccadc67170800889748)
 
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```

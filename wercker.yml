@@ -1,12 +1,18 @@
 box: node
 services:
-    - postgres
+   - id: postgres
+     env:
+       POSTGRES_PASSWORD: password
+       POSTGRES_USER: postgres
 build:
   steps:
-    - npm-install
-    - npm-test
+    - yarn
     - script:
         name: echo nodejs information
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+    - script:
+        name: migrate
+        code: |
+          echo "yarn migrate:generate"

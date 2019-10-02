@@ -2,7 +2,7 @@ const path = require('path')
 const TypeOrmNamingStrategy = require('./sandbox/nest/src/TypeOrmNamingStrategy')
 
 const rootDir = ``
-const host = process.env.DATABASE_HOST || `db`
+const host = process.env.DATABASE_HOST || `127.0.0.1`
 
 module.exports = {
   type: 'postgres',
@@ -12,7 +12,7 @@ module.exports = {
   password: 'password',
   database: 'thinking_face',
   charset: 'utf8mb4',
-  entities: [path.join(rootDir, 'src/**/*.entity{.ts,.js}')],
+  entities: [path.join(rootDir, 'src/**/*.entity.ts')],
   synchronize: false,
   migrations: [path.join(rootDir, 'db/migrations/**/*.ts')],
   subscribers: [path.join(rootDir, 'db/subscribers/**/*.ts')],
