@@ -60,6 +60,14 @@ function SEO({
           content: title,
         },
         {
+          property: `og:image`,
+          content: `https://pbs.twimg.com/profile_images/583632411977613312/f9u76num_400x400.png`,
+        },
+        {
+          property: `og:locale`,
+          conetnt: `ja_JP`,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
