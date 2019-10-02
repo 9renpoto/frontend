@@ -13,22 +13,22 @@ export interface HitCompProps {
   }
 }
 
-export const PageHit = (
-  clickHandler:
-    | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
-    | undefined,
-) => ({ hit }: Hit<HitCompProps>) => {
-  return (
-    <div>
-      <Link to={hit.fields.slug} onClick={clickHandler}>
-        <h4>
-          <Highlight attribute="title" hit={hit} tagName="mark" />
-        </h4>
-      </Link>
-      <Snippet attribute="excerpt" hit={hit} tagName="mark" />
-    </div>
-  )
-}
+// export const PageHit = (
+//   clickHandler:
+//     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
+//     | undefined,
+// ) => ({ hit }: Hit<HitCompProps>) => {
+//   return (
+//     <div>
+//       <Link to={hit.fields.slug} onClick={clickHandler}>
+//         <h4>
+//           <Highlight attribute="title" hit={hit} tagName="mark" />
+//         </h4>
+//       </Link>
+//       <Snippet attribute="excerpt" hit={hit} tagName="mark" />
+//     </div>
+//   )
+// }
 
 export const PostHit = (
   clickHandler:

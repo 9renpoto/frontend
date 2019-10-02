@@ -1,27 +1,27 @@
-const pageQuery = `{
-  pages: allMarkdownRemark(
-    filter: {
-    }
-  ) {
-    edges {
-      node {
-        objectID: id
-        fields {
-          slug
-        }
-        frontmatter {
-          title
-        }
-      }
-    }
-  }
-}`
+// const pageQuery = `{
+//   pages: allMarkdownRemark(
+//     filter: {
+//     }
+//   ) {
+//     edges {
+//       node {
+//         objectID: id
+//         frontmatter {
+//           title
+//         }
+//       }
+//     }
+//   }
+// }`
 
 const postQuery = `{
   posts: allMarkdownRemark(filter: {}) {
     edges {
       node {
         id
+        fields {
+          slug
+        }
         excerpt(pruneLength: 5000)
         fields {
           slug
@@ -38,12 +38,12 @@ const flatten = arr =>
   }))
 const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
-  {
-    query: pageQuery,
-    transformer: ({ data }) => flatten(data.pages.edges),
-    indexName: `Pages`,
-    settings,
-  },
+  // {
+  //   query: pageQuery,
+  //   transformer: ({ data }) => flatten(data.pages.edges),
+  //   indexName: `Pages`,
+  //   settings,
+  // },
   {
     query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
