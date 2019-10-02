@@ -1,30 +1,32 @@
-// const pageQuery = `{
-//   pages: allMarkdownRemark(
-//     filter: {
-//     }
-//   ) {
-//     edges {
-//       node {
-//         objectID: id
-//         frontmatter {
-//           title
-//         }
-//       }
-//     }
-//   }
-// }`
-
-const postQuery = `{
-  posts: allMarkdownRemark(filter: {}) {
+const pageQuery = `{
+  pages: allMarkdownRemark(filter: {
+    fileAbsolutePath: { regex: "/pages/" }
+  }) {
     edges {
       node {
-        id
-        fields {
-          slug
+        objectID: id
+        excerpt(pruneLength: 5000)
+        frontmatter {
+          title
         }
+      }
+    }
+  }
+}`
+
+const postQuery = `{
+  posts: allMarkdownRemark(filter: {
+  }) {
+    edges {
+      node {
+        objectID: id
         excerpt(pruneLength: 5000)
         fields {
           slug
+        }
+        frontmatter {
+          title
+          date
         }
       }
     }
@@ -38,12 +40,12 @@ const flatten = arr =>
   }))
 const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
-  // {
-  //   query: pageQuery,
-  //   transformer: ({ data }) => flatten(data.pages.edges),
-  //   indexName: `Pages`,
-  //   settings,
-  // },
+  {
+    query: pageQuery,
+    transformer: ({ data }) => flatten(data.pages.edges),
+    indexName: `Pages`,
+    settings,
+  },
   {
     query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
