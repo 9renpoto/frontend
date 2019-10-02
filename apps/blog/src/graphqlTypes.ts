@@ -62,7 +62,7 @@ export type Directory = Node & {
   gid?: Maybe<Scalars['Int']>
   rdev?: Maybe<Scalars['Int']>
   blksize?: Maybe<Scalars['Int']>
-  ino?: Maybe<Scalars['Int']>
+  ino?: Maybe<Scalars['Float']>
   blocks?: Maybe<Scalars['Int']>
   atimeMs?: Maybe<Scalars['Float']>
   mtimeMs?: Maybe<Scalars['Float']>
@@ -307,7 +307,7 @@ export type DirectoryFilterInput = {
   gid?: Maybe<IntQueryOperatorInput>
   rdev?: Maybe<IntQueryOperatorInput>
   blksize?: Maybe<IntQueryOperatorInput>
-  ino?: Maybe<IntQueryOperatorInput>
+  ino?: Maybe<FloatQueryOperatorInput>
   blocks?: Maybe<IntQueryOperatorInput>
   atimeMs?: Maybe<FloatQueryOperatorInput>
   mtimeMs?: Maybe<FloatQueryOperatorInput>
@@ -367,7 +367,7 @@ export type File = Node & {
   gid?: Maybe<Scalars['Int']>
   rdev?: Maybe<Scalars['Int']>
   blksize?: Maybe<Scalars['Int']>
-  ino?: Maybe<Scalars['Int']>
+  ino?: Maybe<Scalars['Float']>
   blocks?: Maybe<Scalars['Int']>
   atimeMs?: Maybe<Scalars['Float']>
   mtimeMs?: Maybe<Scalars['Float']>
@@ -760,7 +760,7 @@ export type FileFilterInput = {
   gid?: Maybe<IntQueryOperatorInput>
   rdev?: Maybe<IntQueryOperatorInput>
   blksize?: Maybe<IntQueryOperatorInput>
-  ino?: Maybe<IntQueryOperatorInput>
+  ino?: Maybe<FloatQueryOperatorInput>
   blocks?: Maybe<IntQueryOperatorInput>
   atimeMs?: Maybe<FloatQueryOperatorInput>
   mtimeMs?: Maybe<FloatQueryOperatorInput>
@@ -1715,7 +1715,7 @@ export type QueryFileArgs = {
   gid?: Maybe<IntQueryOperatorInput>
   rdev?: Maybe<IntQueryOperatorInput>
   blksize?: Maybe<IntQueryOperatorInput>
-  ino?: Maybe<IntQueryOperatorInput>
+  ino?: Maybe<FloatQueryOperatorInput>
   blocks?: Maybe<IntQueryOperatorInput>
   atimeMs?: Maybe<FloatQueryOperatorInput>
   mtimeMs?: Maybe<FloatQueryOperatorInput>
@@ -1879,7 +1879,7 @@ export type QueryDirectoryArgs = {
   gid?: Maybe<IntQueryOperatorInput>
   rdev?: Maybe<IntQueryOperatorInput>
   blksize?: Maybe<IntQueryOperatorInput>
-  ino?: Maybe<IntQueryOperatorInput>
+  ino?: Maybe<FloatQueryOperatorInput>
   blocks?: Maybe<IntQueryOperatorInput>
   atimeMs?: Maybe<FloatQueryOperatorInput>
   mtimeMs?: Maybe<FloatQueryOperatorInput>
@@ -2332,17 +2332,7 @@ export enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___path = 'pluginCreator___pluginOptions___path',
   pluginCreator___pluginOptions___name = 'pluginCreator___pluginOptions___name',
   pluginCreator___pluginOptions___maxWidth = 'pluginCreator___pluginOptions___maxWidth',
-  pluginCreator___pluginOptions___pathPrefix = 'pluginCreator___pluginOptions___pathPrefix',
   pluginCreator___pluginOptions___wrapperStyle = 'pluginCreator___pluginOptions___wrapperStyle',
-  pluginCreator___pluginOptions___backgroundColor = 'pluginCreator___pluginOptions___backgroundColor',
-  pluginCreator___pluginOptions___linkImagesToOriginal = 'pluginCreator___pluginOptions___linkImagesToOriginal',
-  pluginCreator___pluginOptions___showCaptions = 'pluginCreator___pluginOptions___showCaptions',
-  pluginCreator___pluginOptions___markdownCaptions = 'pluginCreator___pluginOptions___markdownCaptions',
-  pluginCreator___pluginOptions___withWebp = 'pluginCreator___pluginOptions___withWebp',
-  pluginCreator___pluginOptions___tracedSVG = 'pluginCreator___pluginOptions___tracedSVG',
-  pluginCreator___pluginOptions___loading = 'pluginCreator___pluginOptions___loading',
-  pluginCreator___pluginOptions___disableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
-  pluginCreator___pluginOptions___ignoreFileExtensions = 'pluginCreator___pluginOptions___ignoreFileExtensions',
   pluginCreator___pluginOptions___trackingId = 'pluginCreator___pluginOptions___trackingId',
   pluginCreator___pluginOptions___short_name = 'pluginCreator___pluginOptions___short_name',
   pluginCreator___pluginOptions___start_url = 'pluginCreator___pluginOptions___start_url',
@@ -2351,8 +2341,6 @@ export enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___display = 'pluginCreator___pluginOptions___display',
   pluginCreator___pluginOptions___icon = 'pluginCreator___pluginOptions___icon',
   pluginCreator___pluginOptions___pathToConfigModule = 'pluginCreator___pluginOptions___pathToConfigModule',
-  pluginCreator___pluginOptions___appId = 'pluginCreator___pluginOptions___appId',
-  pluginCreator___pluginOptions___apiKey = 'pluginCreator___pluginOptions___apiKey',
   pluginCreator___pluginOptions___queries = 'pluginCreator___pluginOptions___queries',
   pluginCreator___pluginOptions___queries___query = 'pluginCreator___pluginOptions___queries___query',
   pluginCreator___pluginOptions___queries___indexName = 'pluginCreator___pluginOptions___queries___indexName',
@@ -2553,34 +2541,14 @@ export enum SitePluginFieldsEnum {
   pluginOptions___plugins___name = 'pluginOptions___plugins___name',
   pluginOptions___plugins___version = 'pluginOptions___plugins___version',
   pluginOptions___plugins___pluginOptions___maxWidth = 'pluginOptions___plugins___pluginOptions___maxWidth',
-  pluginOptions___plugins___pluginOptions___pathPrefix = 'pluginOptions___plugins___pluginOptions___pathPrefix',
   pluginOptions___plugins___pluginOptions___wrapperStyle = 'pluginOptions___plugins___pluginOptions___wrapperStyle',
-  pluginOptions___plugins___pluginOptions___backgroundColor = 'pluginOptions___plugins___pluginOptions___backgroundColor',
-  pluginOptions___plugins___pluginOptions___linkImagesToOriginal = 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal',
-  pluginOptions___plugins___pluginOptions___showCaptions = 'pluginOptions___plugins___pluginOptions___showCaptions',
-  pluginOptions___plugins___pluginOptions___markdownCaptions = 'pluginOptions___plugins___pluginOptions___markdownCaptions',
-  pluginOptions___plugins___pluginOptions___withWebp = 'pluginOptions___plugins___pluginOptions___withWebp',
-  pluginOptions___plugins___pluginOptions___tracedSVG = 'pluginOptions___plugins___pluginOptions___tracedSVG',
-  pluginOptions___plugins___pluginOptions___loading = 'pluginOptions___plugins___pluginOptions___loading',
-  pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha = 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha',
-  pluginOptions___plugins___pluginOptions___ignoreFileExtensions = 'pluginOptions___plugins___pluginOptions___ignoreFileExtensions',
   pluginOptions___plugins___browserAPIs = 'pluginOptions___plugins___browserAPIs',
   pluginOptions___plugins___ssrAPIs = 'pluginOptions___plugins___ssrAPIs',
   pluginOptions___plugins___pluginFilepath = 'pluginOptions___plugins___pluginFilepath',
   pluginOptions___path = 'pluginOptions___path',
   pluginOptions___name = 'pluginOptions___name',
   pluginOptions___maxWidth = 'pluginOptions___maxWidth',
-  pluginOptions___pathPrefix = 'pluginOptions___pathPrefix',
   pluginOptions___wrapperStyle = 'pluginOptions___wrapperStyle',
-  pluginOptions___backgroundColor = 'pluginOptions___backgroundColor',
-  pluginOptions___linkImagesToOriginal = 'pluginOptions___linkImagesToOriginal',
-  pluginOptions___showCaptions = 'pluginOptions___showCaptions',
-  pluginOptions___markdownCaptions = 'pluginOptions___markdownCaptions',
-  pluginOptions___withWebp = 'pluginOptions___withWebp',
-  pluginOptions___tracedSVG = 'pluginOptions___tracedSVG',
-  pluginOptions___loading = 'pluginOptions___loading',
-  pluginOptions___disableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
-  pluginOptions___ignoreFileExtensions = 'pluginOptions___ignoreFileExtensions',
   pluginOptions___trackingId = 'pluginOptions___trackingId',
   pluginOptions___short_name = 'pluginOptions___short_name',
   pluginOptions___start_url = 'pluginOptions___start_url',
@@ -2589,8 +2557,6 @@ export enum SitePluginFieldsEnum {
   pluginOptions___display = 'pluginOptions___display',
   pluginOptions___icon = 'pluginOptions___icon',
   pluginOptions___pathToConfigModule = 'pluginOptions___pathToConfigModule',
-  pluginOptions___appId = 'pluginOptions___appId',
-  pluginOptions___apiKey = 'pluginOptions___apiKey',
   pluginOptions___queries = 'pluginOptions___queries',
   pluginOptions___queries___query = 'pluginOptions___queries___query',
   pluginOptions___queries___indexName = 'pluginOptions___queries___indexName',
@@ -2723,17 +2689,7 @@ export type SitePluginPluginOptions = {
   path?: Maybe<Scalars['String']>
   name?: Maybe<Scalars['String']>
   maxWidth?: Maybe<Scalars['Int']>
-  pathPrefix?: Maybe<Scalars['String']>
   wrapperStyle?: Maybe<Scalars['String']>
-  backgroundColor?: Maybe<Scalars['String']>
-  linkImagesToOriginal?: Maybe<Scalars['Boolean']>
-  showCaptions?: Maybe<Scalars['Boolean']>
-  markdownCaptions?: Maybe<Scalars['Boolean']>
-  withWebp?: Maybe<Scalars['Boolean']>
-  tracedSVG?: Maybe<Scalars['Boolean']>
-  loading?: Maybe<Scalars['String']>
-  disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>
-  ignoreFileExtensions?: Maybe<Array<Maybe<Scalars['String']>>>
   trackingId?: Maybe<Scalars['String']>
   short_name?: Maybe<Scalars['String']>
   start_url?: Maybe<Scalars['String']>
@@ -2742,8 +2698,6 @@ export type SitePluginPluginOptions = {
   display?: Maybe<Scalars['String']>
   icon?: Maybe<Scalars['String']>
   pathToConfigModule?: Maybe<Scalars['String']>
-  appId?: Maybe<Scalars['String']>
-  apiKey?: Maybe<Scalars['String']>
   queries?: Maybe<Array<Maybe<SitePluginPluginOptionsQueries>>>
   whitelist?: Maybe<Array<Maybe<Scalars['String']>>>
   pathCheck?: Maybe<Scalars['Boolean']>
@@ -2754,17 +2708,7 @@ export type SitePluginPluginOptionsFilterInput = {
   path?: Maybe<StringQueryOperatorInput>
   name?: Maybe<StringQueryOperatorInput>
   maxWidth?: Maybe<IntQueryOperatorInput>
-  pathPrefix?: Maybe<StringQueryOperatorInput>
   wrapperStyle?: Maybe<StringQueryOperatorInput>
-  backgroundColor?: Maybe<StringQueryOperatorInput>
-  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>
-  showCaptions?: Maybe<BooleanQueryOperatorInput>
-  markdownCaptions?: Maybe<BooleanQueryOperatorInput>
-  withWebp?: Maybe<BooleanQueryOperatorInput>
-  tracedSVG?: Maybe<BooleanQueryOperatorInput>
-  loading?: Maybe<StringQueryOperatorInput>
-  disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>
-  ignoreFileExtensions?: Maybe<StringQueryOperatorInput>
   trackingId?: Maybe<StringQueryOperatorInput>
   short_name?: Maybe<StringQueryOperatorInput>
   start_url?: Maybe<StringQueryOperatorInput>
@@ -2773,8 +2717,6 @@ export type SitePluginPluginOptionsFilterInput = {
   display?: Maybe<StringQueryOperatorInput>
   icon?: Maybe<StringQueryOperatorInput>
   pathToConfigModule?: Maybe<StringQueryOperatorInput>
-  appId?: Maybe<StringQueryOperatorInput>
-  apiKey?: Maybe<StringQueryOperatorInput>
   queries?: Maybe<SitePluginPluginOptionsQueriesFilterListInput>
   whitelist?: Maybe<StringQueryOperatorInput>
   pathCheck?: Maybe<BooleanQueryOperatorInput>
@@ -2810,32 +2752,12 @@ export type SitePluginPluginOptionsPluginsFilterListInput = {
 export type SitePluginPluginOptionsPluginsPluginOptions = {
   __typename?: 'SitePluginPluginOptionsPluginsPluginOptions'
   maxWidth?: Maybe<Scalars['Int']>
-  pathPrefix?: Maybe<Scalars['String']>
   wrapperStyle?: Maybe<Scalars['String']>
-  backgroundColor?: Maybe<Scalars['String']>
-  linkImagesToOriginal?: Maybe<Scalars['Boolean']>
-  showCaptions?: Maybe<Scalars['Boolean']>
-  markdownCaptions?: Maybe<Scalars['Boolean']>
-  withWebp?: Maybe<Scalars['Boolean']>
-  tracedSVG?: Maybe<Scalars['Boolean']>
-  loading?: Maybe<Scalars['String']>
-  disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>
-  ignoreFileExtensions?: Maybe<Array<Maybe<Scalars['String']>>>
 }
 
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   maxWidth?: Maybe<IntQueryOperatorInput>
-  pathPrefix?: Maybe<StringQueryOperatorInput>
   wrapperStyle?: Maybe<StringQueryOperatorInput>
-  backgroundColor?: Maybe<StringQueryOperatorInput>
-  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>
-  showCaptions?: Maybe<BooleanQueryOperatorInput>
-  markdownCaptions?: Maybe<BooleanQueryOperatorInput>
-  withWebp?: Maybe<BooleanQueryOperatorInput>
-  tracedSVG?: Maybe<BooleanQueryOperatorInput>
-  loading?: Maybe<StringQueryOperatorInput>
-  disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>
-  ignoreFileExtensions?: Maybe<StringQueryOperatorInput>
 }
 
 export type SitePluginPluginOptionsQueries = {
