@@ -2227,25 +2227,27 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/cli@6.9.1":
-  version "6.9.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.9.1.tgz#655d5ac10909cb354935222f75a1dfc64968dc97"
-  integrity sha512-9+cbhOpZHL/BG/xfNX4umESHAxg5Ib8k1Nsmoiiklf32c82yMNYF4g6K96dxYxRdu91j2LMZfubS46SmV0dZrQ==
+"@nestjs/cli@6.10.1":
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.10.1.tgz#013767d0f9f1208e391892c3f076d1ddb5f2649e"
+  integrity sha512-KYBjZEx1GmCYl4TPW5dFZBKbkimlImLGsJZmQ2uHyquj5OgKCbbezT5f18/o7DKmcmO24t1vZOils9fUlUiINw==
   dependencies:
     "@angular-devkit/core" "8.3.6"
     "@angular-devkit/schematics" "8.3.6"
     "@angular-devkit/schematics-cli" "0.803.6"
     "@nestjs/schematics" "^6.6.3"
-    "@types/webpack" "4.39.1"
+    "@types/webpack" "4.39.2"
     chalk "2.4.2"
     cli-table3 "0.5.1"
     commander "3.0.2"
-    fork-ts-checker-webpack-plugin "^1.5.0"
+    copyfiles "2.1.1"
+    fork-ts-checker-webpack-plugin "1.5.0"
     inquirer "7.0.0"
     node-emoji "1.10.0"
-    ora "4.0.1"
+    ora "4.0.2"
     os-name "3.1.0"
     path-to-regexp "3.1.0"
+    rimraf "3.0.0"
     tree-kill "1.2.1"
     tsconfig-paths-webpack-plugin "3.2.0"
     webpack "4.41.0"
@@ -3223,10 +3225,22 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
-"@types/webpack@*", "@types/webpack@4.39.1":
+"@types/webpack@*":
   version "4.39.1"
   resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.39.1.tgz#d76cd551cc851198f67f75ff3e26551d204530e9"
   integrity sha512-rgO9ihNu/l72Sjx3shqwc9r6gi+tOMsqxhMEZhOEVIZt82GFOeUyEdpTk1BO2HqEHLS/XJW8ldUTIIfIMMyYFQ==
+  dependencies:
+    "@types/anymatch" "*"
+    "@types/node" "*"
+    "@types/tapable" "*"
+    "@types/uglify-js" "*"
+    "@types/webpack-sources" "*"
+    source-map "^0.6.0"
+
+"@types/webpack@4.39.2":
+  version "4.39.2"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.39.2.tgz#fcaa85607a9bdd0e8f86a350f239ff08aede8584"
+  integrity sha512-3c7+vcmyyIi3RBoOdXs8k3E9rQVIy6yOBqK0DFk6lnJ76JUfbDBWbEf1JflzyPQf56W4ToE+2YPnbxbucniW5w==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
@@ -6375,6 +6389,18 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
+copyfiles@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-2.1.1.tgz#d430e122d7880f92c45d372208b0af03b0c39db6"
+  integrity sha512-y6DZHve80whydXzBal7r70TBgKMPKesVRR1Sn/raUu7Jh/i7iSLSyGvYaq0eMJ/3Y/CKghwzjY32q1WzEnpp3Q==
+  dependencies:
+    glob "^7.0.5"
+    minimatch "^3.0.3"
+    mkdirp "^0.5.1"
+    noms "0.0.0"
+    through2 "^2.0.1"
+    yargs "^13.2.4"
+
 copyfiles@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-1.2.0.tgz#a8da3ac41aa2220ae29bd3c58b6984294f2c593c"
@@ -8973,7 +8999,7 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
-fork-ts-checker-webpack-plugin@^1.3.4, fork-ts-checker-webpack-plugin@^1.5.0:
+fork-ts-checker-webpack-plugin@1.5.0, fork-ts-checker-webpack-plugin@^1.3.4:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-1.5.0.tgz#ce1d77190b44d81a761b10b6284a373795e41f0c"
   integrity sha512-zEhg7Hz+KhZlBhILYpXy+Beu96gwvkROWJiTXOCyOOMMrdBIRPvsBpBqgTI4jfJGrJXcqGwJR8zsBGDmzY0jsA==
@@ -14737,10 +14763,10 @@ optionator@^0.8.0, optionator@^0.8.1, optionator@^0.8.2:
     type-check "~0.3.2"
     wordwrap "~1.0.0"
 
-ora@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.1.tgz#e0ddf8fcdcf28cf714f742f06a493cc84819621c"
-  integrity sha512-yQv2q0GO8rqP2wzdOxpu0FxUmRg4z/Lw0m6uSpukPJXoOMaQzrIpl+STKHzjryFP5ExQC56+y8+yXPar2iezaw==
+ora@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.2.tgz#0e1e68fd45b135d28648b27cf08081fa6e8a297d"
+  integrity sha512-YUOZbamht5mfLxPmk4M35CD/5DuOkAacxlEUbStVXpBAt4fyhBf+vZHI/HRkI++QUp3sNoeA2Gw4C+hi4eGSig==
   dependencies:
     chalk "^2.4.2"
     cli-cursor "^3.1.0"
