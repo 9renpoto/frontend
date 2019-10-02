@@ -15,6 +15,7 @@ env:
   - CMD=migrate:generate
 before_install:
 - export TZ=Asia/Tokyo
+- psql -c 'create database thinking_face;' -U postgres
 script:
 - yarn workspace @9renpoto/nest start &
 - sleep 15
