@@ -19,5 +19,8 @@ build:
       name: install dependencies
       code: HOME=$YARN_CACHE yarn
     - script:
+      name: create database
+      code: sudo -i -u postgres psql -c "create database thinking_face"
+    - script:
       name: migrate
       code: npm run migrate:generate
