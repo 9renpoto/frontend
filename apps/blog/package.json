@@ -23,6 +23,7 @@
     "gatsby-plugin-offline": "3.0.11",
     "gatsby-plugin-preact": "3.1.13",
     "gatsby-plugin-react-helmet": "3.1.10",
+    "gatsby-plugin-sentry": "1.0.1",
     "gatsby-plugin-sharp": "2.2.27",
     "gatsby-plugin-styled-components": "3.1.8",
     "gatsby-plugin-typescript": "2.1.11",
