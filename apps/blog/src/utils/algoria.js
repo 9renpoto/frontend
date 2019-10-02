@@ -1,7 +1,6 @@
 const pageQuery = `{
   pages: allMarkdownRemark(
     filter: {
-      fileAbsolutePath: { regex: "/pages/" },
     }
   ) {
     edges {
@@ -13,7 +12,6 @@ const pageQuery = `{
         frontmatter {
           title
         }
-        excerpt(pruneLength: 5000)
       }
     }
   }
@@ -27,9 +25,6 @@ const postQuery = `{
         excerpt(pruneLength: 5000)
         fields {
           slug
-        }
-        frontmatter {
-          title
         }
       }
     }

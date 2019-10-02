@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Highlight, Snippet } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
 import { Calendar } from 'styled-icons/octicons/Calendar'
-import { Tags } from 'styled-icons/fa-solid/Tags'
 import { Hit } from 'react-instantsearch-core'
 
 export interface HitCompProps {
   hit: {
-    slug: string
+    fields: {
+      slug: string
+    }
     tags: string[]
   }
 }
@@ -19,7 +20,7 @@ export const PageHit = (
 ) => ({ hit }: Hit<HitCompProps>) => {
   return (
     <div>
-      <Link to={hit.slug} onClick={clickHandler}>
+      <Link to={hit.fields.slug} onClick={clickHandler}>
         <h4>
           <Highlight attribute="title" hit={hit} tagName="mark" />
         </h4>
@@ -35,7 +36,7 @@ export const PostHit = (
     | undefined,
 ) => ({ hit }: Hit<HitCompProps>) => (
   <div>
-    <Link to={`/blog` + hit.slug} onClick={clickHandler}>
+    <Link to={hit.fields.slug} onClick={clickHandler}>
       <h4>
         <Highlight attribute="title" hit={hit} tagName="mark" />
       </h4>
@@ -45,14 +46,6 @@ export const PostHit = (
       &nbsp;
       <Highlight attribute="date" hit={hit} tagName="mark" />
       &emsp;
-      <Tags size="1em" />
-      &nbsp;
-      {hit.tags.map((tag: string, index: number) => (
-        <Fragment key={tag}>
-          {index > 0 && `, `}
-          {tag}
-        </Fragment>
-      ))}
     </div>
     <Snippet attribute="excerpt" hit={hit} tagName="mark" />
   </div>
