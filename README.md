@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [@9renpoto frontend playground](#9renpoto-frontend-playground)
+  - [Packages](#packages)
+  - [Apps](#apps)
+  - [Install](#install)
+  - [Tests](#tests)
+  - [Contribute](#contribute)
+  - [license](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # @9renpoto frontend playground
 
 [![Build Status](https://travis-ci.org/9renpoto/frontend.svg?branch=master)](https://travis-ci.org/9renpoto/frontend)
@@ -8,15 +23,6 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://standardjs.com/)
-
-## Table of Contents
-
-- [Packages](#packages)
-- [Installation](#install)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Contribute](#contribute)
-- [License](#license)
 
 ## Packages
 
@@ -53,8 +59,6 @@ This repository is managed as monorepo.
 ## Contribute
 
 PRs accepted.
-
-Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## license
 
