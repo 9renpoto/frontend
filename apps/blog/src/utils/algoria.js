@@ -1,35 +1,32 @@
 const pageQuery = `{
-  pages: allMarkdownRemark(
-    filter: {
-      fileAbsolutePath: { regex: "/pages/" },
-    }
-  ) {
+  pages: allMarkdownRemark(filter: {
+    fileAbsolutePath: { regex: "/pages/" }
+  }) {
     edges {
       node {
         objectID: id
-        fields {
-          slug
-        }
+        excerpt(pruneLength: 5000)
         frontmatter {
           title
         }
-        excerpt(pruneLength: 5000)
       }
     }
   }
 }`
 
 const postQuery = `{
-  posts: allMarkdownRemark(filter: {}) {
+  posts: allMarkdownRemark(filter: {
+  }) {
     edges {
       node {
-        id
+        objectID: id
         excerpt(pruneLength: 5000)
         fields {
           slug
         }
         frontmatter {
           title
+          date
         }
       }
     }
