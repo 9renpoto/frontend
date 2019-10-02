@@ -20,21 +20,17 @@ const pageQuery = `{
 }`
 
 const postQuery = `{
-  posts: allMarkdownRemark(
-    filter: { fileAbsolutePath: { regex: "/posts/" } }
-  ) {
+  posts: allMarkdownRemark(filter: {}) {
     edges {
       node {
-        objectID: id
+        id
+        excerpt(pruneLength: 5000)
         fields {
           slug
         }
         frontmatter {
           title
-          date(formatString: "MMM D, YYYY")
-          tags
         }
-        excerpt(pruneLength: 5000)
       }
     }
   }
