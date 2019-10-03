@@ -9,6 +9,7 @@
     "@nestjs/typeorm": "6.2.0",
     "apollo-server-express": "2.9.4",
     "class-transformer": "0.2.3",
+    "dayjs": "1.8.16",
     "graphql": "14.5.8",
     "graphql-tools": "4.0.5",
     "pg": "7.12.1",

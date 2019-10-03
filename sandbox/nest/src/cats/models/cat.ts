@@ -1,9 +1,10 @@
 import { Field, ID, ObjectType } from 'type-graphql'
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
+import { TimeStamp } from '../../timestamp.interface'
 
 @Entity('Cats')
 @ObjectType()
-export class Cat {
+export class Cat extends TimeStamp {
   @PrimaryGeneratedColumn()
   @Field(_ => ID)
   id: number

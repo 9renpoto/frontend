@@ -22,8 +22,10 @@ describe('CatsResolver', () => {
       Array [
         Object {
           "age": 5,
+          "createdAt": 1568780709,
           "id": 1,
           "name": "Cat",
+          "updatedAt": 1550779881,
         },
       ]
     `)
@@ -34,8 +36,10 @@ describe('CatsResolver', () => {
     expect(res).toMatchInlineSnapshot(`
       Object {
         "age": 5,
+        "createdAt": 1570650411,
         "id": 1,
         "name": "Cat",
+        "updatedAt": 1534228910,
       }
     `)
   })
@@ -44,9 +48,11 @@ describe('CatsResolver', () => {
     const res = await resolver.create({ age: random.number() })
     expect(res).toMatchInlineSnapshot(`
       Object {
-        "age": 69646,
-        "id": 71295,
-        "name": "global",
+        "age": 71946,
+        "createdAt": 1577804400,
+        "id": 49111,
+        "name": "users",
+        "updatedAt": 1577804400,
       }
     `)
   })
