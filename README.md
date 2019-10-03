@@ -15,7 +15,7 @@
 
 # @9renpoto frontend playground
 
-[![Build Status](https://travis-ci.org/9renpoto/frontend.svg?branch=master)](https://travis-ci.org/9renpoto/frontend)
+[![Build Status](https://travis-ci.com/9renpoto/frontend.svg?branch=master)](https://travis-ci.com/9renpoto/frontend)
 [![CircleCI](https://circleci.com/gh/9renpoto/frontend.svg?style=svg)](https://circleci.com/gh/9renpoto/frontend)
 [![codecov](https://codecov.io/gh/9renpoto/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/9renpoto/frontend)
 [![codebeat badge](https://codebeat.co/badges/869816f5-3e68-4c71-a7dc-e62ab9c982dd)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-d6e093af-48fc-4688-9bc8-476727971317)
