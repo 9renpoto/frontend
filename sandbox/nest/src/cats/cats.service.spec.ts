@@ -23,32 +23,40 @@ describe('CatsService', () => {
     }
     expect(service.create(cat)).toMatchInlineSnapshot(`
       Object {
-        "age": 28613,
-        "breed": "eyeballs",
-        "id": 69088,
-        "name": "Swedish Krona",
+        "age": 55131,
+        "breed": "monitor",
+        "createdAt": 1577804400,
+        "id": 49111,
+        "name": "Quality-focused",
+        "updatedAt": 1577804400,
       }
     `)
     expect(service.findAll()).toMatchInlineSnapshot(`
       Array [
         Object {
           "age": 5,
+          "createdAt": 1568780709,
           "id": 1,
           "name": "Cat",
+          "updatedAt": 1550779881,
         },
         Object {
-          "age": 28613,
-          "breed": "eyeballs",
-          "id": 69088,
-          "name": "Swedish Krona",
+          "age": 55131,
+          "breed": "monitor",
+          "createdAt": 1577804400,
+          "id": 49111,
+          "name": "Quality-focused",
+          "updatedAt": 1577804400,
         },
       ]
     `)
     expect(service.findOneById(1)).toMatchInlineSnapshot(`
       Object {
         "age": 5,
+        "createdAt": 1568780709,
         "id": 1,
         "name": "Cat",
+        "updatedAt": 1550779881,
       }
     `)
   })
