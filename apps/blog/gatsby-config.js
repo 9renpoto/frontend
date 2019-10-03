@@ -78,7 +78,11 @@ const plugins = [
   'gatsby-plugin-typescript-checker',
 ]
 
-if (process.env.GATSBY_ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY) {
+if (
+  process.env.GATSBY_ALGOLIA_APP_ID &&
+  process.env.ALGOLIA_ADMIN_KEY &&
+  process.env.CONTEXT === 'production'
+) {
   plugins.concat([
     {
       resolve: `gatsby-plugin-algolia`,

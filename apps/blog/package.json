@@ -65,7 +65,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "main": "n/a",
   "private": true,
   "scripts": {
