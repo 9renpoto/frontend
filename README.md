@@ -56,6 +56,8 @@ This repository is managed as monorepo.
 
     yarn test
 
+[![Impacted file tree graph](https://codecov.io/gh/9renpoto/frontend/graphs/tree.svg?width=650&height=150)](https://codecov.io/gh/9renpoto/frontend)
+
 ## Contribute
 
 PRs accepted.
