@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@9renpoto/eslint-config": "^5.2.0",
-    "@typescript-eslint/parser": "2.3.2"
+    "@typescript-eslint/parser": "2.3.3"
   },
   "homepage": "https://github.com/9renpoto/frontend",
   "keywords": [
