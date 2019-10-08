@@ -9361,10 +9361,10 @@ gatsby-plugin-page-creator@^2.1.24:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-preact@3.1.14:
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-3.1.14.tgz#d6b82c157273ecba792b82b76794e65098ccabc7"
-  integrity sha512-ve2AyDGbyWVDLC8nBKCuy8AlIkYuevOh3HV+loteFSDw3rMdgs+/USYQS/tXmBvm31SRyN0bN5I8WJnet7PIfQ==
+gatsby-plugin-preact@3.1.15:
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-3.1.15.tgz#db5b781408ffa24a68eb9ea1ba818510afd292a5"
+  integrity sha512-zrOr76NPLiydVizDfDmM2+Ti5YWigdKq2X6f8yhh6ljuX6rXeWiKKPSsVnYV+Fin7OqImML8g9yCoZ+xhB8NUw==
   dependencies:
     "@babel/runtime" "^7.6.2"
 
@@ -9591,10 +9591,10 @@ gatsby-transformer-sharp@2.2.20:
     semver "^5.7.1"
     sharp "^0.23.1"
 
-gatsby@2.15.32:
-  version "2.15.32"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.15.32.tgz#85eb426d1db9720451bec92a4aef215466656c21"
-  integrity sha512-es8ulSkdrfJzsecKuBVW4ljRoZXXt8fC1PP2cMIPc2q/FVx+5Kp+sZ0fW5PZ8fbbdXmqty7YFQe4vYNiLoDUUQ==
+gatsby@2.15.33:
+  version "2.15.33"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.15.33.tgz#ff32aea93fadeb4734fdafc329e005fc8c2d3317"
+  integrity sha512-VPaEY6xZaKURTg2tFGxhRngfV84kCyCmgRwH1Hwyd4P7l7zl5BuADHyJxnJYvBWMYdF4/7QLbwbvzVnrwWCOKA==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.6.2"
