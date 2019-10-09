@@ -956,7 +956,7 @@
   resolved "https://registry.yarnpkg.com/@emmetio/extract-abbreviation/-/extract-abbreviation-0.1.6.tgz#e4a9856c1057f0aff7d443b8536477c243abe28c"
   integrity sha512-Ce3xE2JvTSEbASFbRbA1gAIcMcZWdS2yUYRaQbeM0nbOzaZrUYfa3ePtcriYRZOZmr+CkKA+zbjhvTpIOAYVcw==
 
-"@emotion/is-prop-valid@^0.8.1", "@emotion/is-prop-valid@^0.8.2":
+"@emotion/is-prop-valid@^0.8.1", "@emotion/is-prop-valid@^0.8.3":
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.3.tgz#cbe62ddbea08aa022cdf72da3971570a33190d29"
   integrity sha512-We7VBiltAJ70KQA0dWkdPMXnYoizlxOXpvtjmu5/MBnExd+u0PGgV27WCYanmLAbCwAU30Le/xA0CQs/F/Otig==
@@ -19163,12 +19163,12 @@ styled-components@4.4.0:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
-styled-icons@8.4.2:
-  version "8.4.2"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-8.4.2.tgz#508c5072e513b84afe03b9af21541bd591af3f72"
-  integrity sha512-S4l7zG8/siBxw0sU4x9rgjUqcMzlU0kYQe6P58BxiDvIVXnTSlYsvmSRC5eMU1BIHW0s/aoRn+50jQUEKuRohQ==
+styled-icons@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-8.5.1.tgz#efd656bc309b12d06f12c0a1042d3410448dccd9"
+  integrity sha512-zvOYsS72z/kcK647SYWYltxjYrWKVjfvzgkm5X6G3oFzd8cP8sqV/hGGQGbZIkOkmVycGaG3hpJf/ohvKX2eiQ==
   dependencies:
-    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/is-prop-valid" "^0.8.3"
     tslib "^1.9.3"
 
 stylehacks@^4.0.0:
