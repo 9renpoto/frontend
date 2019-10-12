@@ -1,38 +1,25 @@
 import { Injectable } from '@nestjs/common'
-import { random, date } from 'faker'
-import dayjs from 'dayjs'
 import { Cat } from './models/cat'
 import { CreateCatDto } from './dto/create-cat.dto'
+import { InjectRepository } from '@nestjs/typeorm'
+import { Repository } from 'typeorm'
 
 @Injectable()
 export class CatsService {
-  private readonly cats: Cat[] = [
-    {
-      id: 1,
-      name: 'Cat',
-      age: 5,
-      createdAt: dayjs(date.past(1)).unix(),
-      updatedAt: dayjs(date.past(2)).unix(),
-    },
-  ]
+  constructor(
+    @InjectRepository(Cat)
+    private readonly cats: Repository<Cat>,
+  ) {}
 
-  create(cat: CreateCatDto): Cat {
-    const newCat = {
-      id: random.number(),
-      name: random.word(),
-      ...cat,
-      createdAt: dayjs().unix(),
-      updatedAt: dayjs().unix(),
-    }
-    this.cats.push(newCat)
-    return newCat
+  async create(cat: CreateCatDto) {
+    return this.cats.save(cat)
   }
 
-  findAll(): Cat[] {
-    return this.cats
+  async findAll() {
+    return this.cats.find()
   }
 
-  findOneById(id: number) {
-    return this.cats.find(cat => cat.id === id)
+  async findOneById(id: number) {
+    return this.cats.findOne(id)
   }
 }

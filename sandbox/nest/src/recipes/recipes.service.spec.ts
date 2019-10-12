@@ -1,17 +1,20 @@
-import { Test, TestingModule } from '@nestjs/testing'
 import { random } from 'faker'
 import { RecipesService } from './recipes.service'
+import { Connection, getRepository } from 'typeorm'
+import { createConnection, cleanDB } from '../testing/testing.utils'
+import { Recipe } from './models/recipe'
 
 describe('RecipesService', () => {
   let service: RecipesService
+  let connection: Connection
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [RecipesService],
-    }).compile()
-
-    service = module.get<RecipesService>(RecipesService)
+  beforeAll(async () => {
+    connection = await createConnection()
+    service = new RecipesService(getRepository(Recipe))
   })
+
+  afterAll(() => connection.close())
+  afterEach(() => cleanDB(connection))
 
   it('should be defined', () => expect(service).toBeDefined())
 
@@ -34,7 +37,7 @@ describe('RecipesService', () => {
       }
     `)
 
-    expect(await service.findAll({ take: 1, skip: 0 })).toMatchInlineSnapshot(`
+    expect(await service.findAll()).toMatchInlineSnapshot(`
       Array [
         Object {
           "createdAt": 2019-12-31T15:00:00.000Z,

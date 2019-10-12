@@ -6,10 +6,9 @@ import { CatsService } from './cats.service'
 import { CreateCatDto } from './dto/create-cat.dto'
 import { Cat } from './models/cat'
 
-const pubSub = new PubSub()
-
-@Resolver((_: unknown) => Cat)
+@Resolver(() => Cat)
 export class CatsResolver {
+  private readonly pubSub = new PubSub()
   constructor(private readonly catsService: CatsService) {}
 
   @Query(_ => [Cat])
@@ -26,15 +25,15 @@ export class CatsResolver {
     return this.catsService.findOneById(id)
   }
 
-  @Mutation(_ => Cat)
+  @Mutation(() => Cat)
   async create(@Args('createCatInput') args: CreateCatDto) {
     const createdCat = await this.catsService.create(args)
-    pubSub.publish('catCreated', { catCreated: createdCat })
+    this.pubSub.publish('catCreated', { catCreated: createdCat })
     return createdCat
   }
 
-  @Subscription(_ => Cat)
+  @Subscription(() => Cat)
   catCreated() {
-    return pubSub.asyncIterator('catCreated')
+    return this.pubSub.asyncIterator('catCreated')
   }
 }
