@@ -11,7 +11,6 @@ module.exports = {
   username: 'postgres',
   password: 'password',
   database: 'thinking_face',
-  charset: 'utf8mb4',
   entities: [path.join(rootDir, 'src/**/models/*.ts')],
   synchronize: false,
   migrations: [path.join(rootDir, 'db/migrations/**/*.ts')],
