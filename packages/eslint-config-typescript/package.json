@@ -1,13 +1,13 @@
 {
   "name": "@9renpoto/eslint-config-typescript",
   "description": "TypeScript with eslint",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "author": "github.com/9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
-    "@9renpoto/eslint-config": "^5.2.0",
+    "@9renpoto/eslint-config": "^5.2.1",
     "@typescript-eslint/parser": "2.3.3"
   },
   "homepage": "https://github.com/9renpoto/frontend",
