@@ -9,25 +9,25 @@ import { Cat } from './models/cat'
 @Resolver(() => Cat)
 export class CatsResolver {
   private readonly pubSub = new PubSub()
-  constructor(private readonly catsService: CatsService) {}
+  constructor(private readonly service: CatsService) {}
 
-  @Query(_ => [Cat])
+  @Query(() => [Cat])
   @UseGuards(CatsGuard)
-  async getCats() {
-    return this.catsService.findAll()
+  async cats() {
+    return this.service.findAll()
   }
 
-  @Query(_ => Cat)
-  async findOneById(
+  @Query(() => Cat)
+  async cat(
     @Args('id', ParseIntPipe)
     id: number,
   ) {
-    return this.catsService.findOneById(id)
+    return this.service.findOneById(id)
   }
 
   @Mutation(() => Cat)
   async create(@Args('createCatInput') args: CreateCatDto) {
-    const createdCat = await this.catsService.create(args)
+    const createdCat = await this.service.create(args)
     this.pubSub.publish('catCreated', { catCreated: createdCat })
     return createdCat
   }

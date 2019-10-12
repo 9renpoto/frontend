@@ -24,32 +24,13 @@ describe('RecipesService', () => {
       ingredients: random.words().split(' '),
     })
 
-    expect(res).toMatchInlineSnapshot(`
-      Object {
-        "createdAt": 2019-12-31T15:00:00.000Z,
-        "id": "a972665a-b573-40b6-9ba2-7218b86a4d7b",
-        "ingredients": Array [
-          "sensor",
-          "users",
-          "Administrator",
-        ],
-        "title": "port eyeballs Rufiyaa",
-      }
-    `)
-
-    expect(await service.findAll()).toMatchInlineSnapshot(`
+    expect(res.ingredients).toMatchInlineSnapshot(`
       Array [
-        Object {
-          "createdAt": 2019-12-31T15:00:00.000Z,
-          "id": "a972665a-b573-40b6-9ba2-7218b86a4d7b",
-          "ingredients": Array [
-            "sensor",
-            "users",
-            "Administrator",
-          ],
-          "title": "port eyeballs Rufiyaa",
-        },
+        "sensor",
+        "users",
+        "Administrator",
       ]
     `)
+    expect(await service.findAll()).toHaveLength(1)
   })
 })

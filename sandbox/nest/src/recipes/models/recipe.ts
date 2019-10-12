@@ -10,7 +10,7 @@ import {
 @ObjectType()
 @Entity('recipes')
 export class Recipe {
-  @Field(_ => ID)
+  @Field(() => ID)
   @PrimaryGeneratedColumn()
   id: string
 
@@ -19,7 +19,7 @@ export class Recipe {
   title: string
 
   @Field({ nullable: true })
-  @Column()
+  @Column({ nullable: true })
   description?: string
 
   @Field()
@@ -30,6 +30,6 @@ export class Recipe {
   @UpdateDateColumn()
   updatedAt: Date
 
-  @Field(_ => [String])
+  @Field(() => [String])
   ingredients: string[]
 }

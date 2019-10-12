@@ -2,7 +2,6 @@ import {
   getRepository,
   Connection,
   createConnection as createDBConnection,
-  getConnection,
 } from 'typeorm'
 import { Recipe } from '../recipes/models/recipe'
 import { Cat } from '../cats/models/cat'
@@ -10,17 +9,14 @@ import { Cat } from '../cats/models/cat'
 const entities = [Cat, Recipe]
 
 export function createConnection() {
-  try {
-    return createDBConnection({
-      type: 'postgres',
-      database: 'thinking_face',
-      username: 'postgres',
-      password: 'password',
-      entities,
-    })
-  } catch {
-    return getConnection()
-  }
+  return createDBConnection({
+    type: 'postgres',
+    database: 'thinking_face',
+    username: 'postgres',
+    password: 'password',
+    synchronize: true,
+    entities,
+  })
 }
 
 export async function cleanDB(connection: Connection) {

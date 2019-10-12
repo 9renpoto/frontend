@@ -7,7 +7,7 @@ import { Recipe } from './models/recipe'
 describe('RecipesResolver', () => {
   let resolver: RecipesResolver
 
-  beforeEach(async () => {
+  beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         RecipesResolver,
