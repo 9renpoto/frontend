@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing'
+import { getRepositoryToken } from '@nestjs/typeorm'
 import { RecipesResolver } from './recipes.resolver'
 import { RecipesService } from './recipes.service'
-import { getRepositoryToken } from '@nestjs/typeorm'
 import { Recipe } from './models/recipe'
 
 describe('RecipesResolver', () => {

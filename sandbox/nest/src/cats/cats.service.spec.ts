@@ -1,6 +1,6 @@
-import { CatsService } from './cats.service'
 import { Connection, getRepository } from 'typeorm'
 import { createConnection, cleanDB } from '../testing/testing.utils'
+import { CatsService } from './cats.service'
 import { Cat } from './models/cat'
 import { CatFactory } from './models/cat.factory'
 

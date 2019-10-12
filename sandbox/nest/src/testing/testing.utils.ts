@@ -13,7 +13,7 @@ export function createConnection() {
   try {
     return createDBConnection({
       type: 'postgres',
-      database: 'postgres',
+      database: 'thinking_face',
       username: 'postgres',
       password: 'password',
       entities,

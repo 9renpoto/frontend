@@ -1,7 +1,7 @@
 import { random } from 'faker'
-import { RecipesService } from './recipes.service'
 import { Connection, getRepository } from 'typeorm'
 import { createConnection, cleanDB } from '../testing/testing.utils'
+import { RecipesService } from './recipes.service'
 import { Recipe } from './models/recipe'
 
 describe('RecipesService', () => {

@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+import { Repository } from 'typeorm'
 import { NewRecipeInput } from './dto/new-recipe.input'
 import { Recipe } from './models/recipe'
-import { Repository } from 'typeorm'
 
 @Injectable()
 export class RecipesService {
