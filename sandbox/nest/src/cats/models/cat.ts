@@ -1,12 +1,17 @@
 import { Field, ID, ObjectType } from 'type-graphql'
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
-import { TimeStamp } from '../../timestamp.interface'
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm'
 
-@Entity('Cats')
+@Entity('cats')
 @ObjectType()
-export class Cat extends TimeStamp {
+export class Cat {
   @PrimaryGeneratedColumn()
-  @Field(_ => ID)
+  @Field(() => ID)
   id: number
 
   @Column('varchar')
@@ -16,4 +21,10 @@ export class Cat extends TimeStamp {
   @Column('smallint')
   @Field()
   age: number
+
+  @CreateDateColumn()
+  createdAt: Date
+
+  @UpdateDateColumn()
+  updatedAt: Date
 }

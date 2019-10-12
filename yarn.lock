@@ -20489,6 +20489,11 @@ typeface-montserrat@0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
   integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
 
+typeorm-factory@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/typeorm-factory/-/typeorm-factory-0.0.13.tgz#c1ca2dd928c0d24df5f3e8155be163c6e08ea20b"
+  integrity sha512-2rUsSPHnA1xG9oNdk1sW7pvb0cl3j8AQCIkDOgOKFblJb3aK4dp8zK0GkA6/uEUDzXpN0mCOk3sgnCFCMkD2WQ==
+
 typeorm-naming-strategies@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/typeorm-naming-strategies/-/typeorm-naming-strategies-1.1.0.tgz#29ce8ce1804bc0e4a56302d54e6a746561a94088"

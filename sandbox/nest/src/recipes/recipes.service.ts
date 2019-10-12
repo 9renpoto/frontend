@@ -1,34 +1,21 @@
 import { Injectable } from '@nestjs/common'
-import { random } from 'faker'
+import { InjectRepository } from '@nestjs/typeorm'
+import { Repository } from 'typeorm'
 import { NewRecipeInput } from './dto/new-recipe.input'
-import { RecipesArgs } from './dto/recipes.args'
 import { Recipe } from './models/recipe'
 
 @Injectable()
 export class RecipesService {
-  private recipes: Recipe[] = []
+  constructor(
+    @InjectRepository(Recipe)
+    private readonly recipes: Repository<Recipe>,
+  ) {}
 
-  async create(data: NewRecipeInput): Promise<Recipe> {
-    const r: Recipe = {
-      id: random.uuid(),
-      createdAt: new Date(),
-      ...data,
-    }
-
-    this.recipes.push(r)
-    return r
+  async create(data: NewRecipeInput) {
+    return this.recipes.save(data)
   }
 
-  async findOneById(id: string): Promise<Recipe | undefined> {
-    return this.recipes.find(r => r.id === id)
-  }
-
-  async findAll({ take }: RecipesArgs): Promise<Recipe[]> {
-    return this.recipes.slice(0, take)
-  }
-
-  async remove(id: string): Promise<boolean> {
-    this.recipes = this.recipes.filter(r => r.id === id)
-    return true
+  async findOneById(id: string) {
+    return this.recipes.findOne(id)
   }
 }

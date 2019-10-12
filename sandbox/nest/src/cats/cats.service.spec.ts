@@ -1,63 +1,34 @@
-import { Test, TestingModule } from '@nestjs/testing'
-import { random } from 'faker'
+import { Connection, getRepository } from 'typeorm'
+import { createConnection, cleanDB } from '../testing/testing.utils'
 import { CatsService } from './cats.service'
+import { Cat } from './models/cat'
+import { CatFactory } from './models/cat.factory'
 
 describe('CatsService', () => {
   let service: CatsService
+  let connection: Connection
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [CatsService],
-    }).compile()
-
-    service = module.get(CatsService)
+  beforeAll(async () => {
+    connection = await createConnection()
+    service = new CatsService(getRepository(Cat))
   })
+
+  afterAll(() => connection.close())
+  afterEach(() => cleanDB(connection))
 
   it('should be defined', () => expect(service).toBeDefined())
 
-  it('create / findAll', () => {
-    const cat = {
-      name: random.word(),
-      age: random.number(),
-      breed: random.word(),
-    }
-    expect(service.create(cat)).toMatchInlineSnapshot(`
-      Object {
-        "age": 55131,
-        "breed": "monitor",
-        "createdAt": 1577804400,
-        "id": 49111,
-        "name": "Quality-focused",
-        "updatedAt": 1577804400,
-      }
-    `)
-    expect(service.findAll()).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "age": 5,
-          "createdAt": 1568780709,
-          "id": 1,
-          "name": "Cat",
-          "updatedAt": 1550779881,
-        },
-        Object {
-          "age": 55131,
-          "breed": "monitor",
-          "createdAt": 1577804400,
-          "id": 49111,
-          "name": "Quality-focused",
-          "updatedAt": 1577804400,
-        },
-      ]
-    `)
-    expect(service.findOneById(1)).toMatchInlineSnapshot(`
-      Object {
-        "age": 5,
-        "createdAt": 1568780709,
-        "id": 1,
-        "name": "Cat",
-        "updatedAt": 1550779881,
-      }
-    `)
+  it('CatFactory', async () => {
+    const cat = await CatFactory.create()
+    expect(cat.name).toMatchInlineSnapshot(`"陸斗 小林"`)
+  })
+
+  it('create / findAll', async () => {
+    const cat = await service.create(CatFactory.build())
+    expect(cat.name).toMatchInlineSnapshot(`"陸斗 小林"`)
+    expect(await service.findAll()).toHaveLength(1)
+    expect(await service.findOneById(1)).toMatchInlineSnapshot(`undefined`)
+    const res = (await service.findOneById(cat.id)) as Cat
+    expect(res.name).toEqual(cat.name)
   })
 })
