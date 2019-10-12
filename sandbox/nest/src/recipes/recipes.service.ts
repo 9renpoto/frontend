@@ -18,12 +18,4 @@ export class RecipesService {
   async findOneById(id: string) {
     return this.recipes.findOne(id)
   }
-
-  async findAll() {
-    return this.recipes.find()
-  }
-
-  async remove(id: string) {
-    return this.recipes.delete(id)
-  }
 }

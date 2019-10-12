@@ -31,6 +31,5 @@ describe('RecipesService', () => {
         "Administrator",
       ]
     `)
-    expect(await service.findAll()).toHaveLength(1)
   })
 })

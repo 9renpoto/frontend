@@ -19,11 +19,6 @@ export class RecipesResolver {
     return recipe
   }
 
-  @Query(() => [Recipe])
-  recipes(): Promise<Recipe[]> {
-    return this.recipesService.findAll()
-  }
-
   @Mutation(() => Recipe)
   async addRecipe(
     @Args('newRecipeData') newRecipeData: NewRecipeInput,
@@ -31,11 +26,6 @@ export class RecipesResolver {
     const recipe = await this.recipesService.create(newRecipeData)
     this.pubSub.publish('recipeAdded', { recipeAdded: recipe })
     return recipe
-  }
-
-  @Mutation(() => Boolean)
-  async removeRecipe(@Args('id') id: string) {
-    return this.recipesService.remove(id)
   }
 
   @Subscription(() => Recipe)
