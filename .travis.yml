@@ -10,7 +10,6 @@ matrix:
   - node_js: stable
 env:
   matrix:
-  - CMD=lint
   - CMD=test
   - CMD=migrate:generate
 before_install:
