@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
-    "@types/algoliasearch": "3.34.3",
+    "@types/algoliasearch": "3.34.5",
     "@types/react-helmet": "5.0.10",
     "@types/react-instantsearch-dom": "5.2.6",
     "@types/styled-components": "4.1.19",
