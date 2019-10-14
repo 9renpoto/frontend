@@ -3,7 +3,8 @@ extends ../base.pug
 block head
   meta(name='viewport', content='width=1024')
   meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
-  link(href='../impress.bundle.css', rel='stylesheet')
+  link(href='https://raw.githubusercontent.com/impress/impress.js/master/css/impress-demo.css', rel='stylesheet')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js')
 block body
   body.impress-not-supported(onload='prettyPrint()')
     .fallback-message
