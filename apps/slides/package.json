@@ -2,12 +2,10 @@
   "name": "@9renpoto/slides",
   "description": "my slides",
   "version": "5.2.1",
-  "dependencies": {
-    "@types/impress": "0.5.29",
-    "impress.js": "1.0.0"
-  },
   "devDependencies": {
-    "@types/vnu-jar": "17.11.0"
+    "@types/vnu-jar": "17.11.0",
+    "lite-server": "2.5.4",
+    "vnu-jar": "19.9.4"
   },
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "main": "n/a",
@@ -18,9 +16,8 @@
     "clean": "rimraf dist",
     "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
     "copy": "cpx \"src/**/*.png\" dist",
-    "dev": "webpack-dev-server --content-base dist/",
-    "lint": "npm run build:html -- -P && npm run clean:html &&  ts-node validate.ts",
-    "start": "concurrently --kill-others 'npm run w:pug' 'npm run dev'",
+    "lint": "npm run build:html -- -P && npm run clean:html && ts-node validate.ts",
+    "start": "lite-server --baseDir='dist'",
     "w:pug": "npm run build:html -- -w"
   }
 }

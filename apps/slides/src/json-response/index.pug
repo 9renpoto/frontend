@@ -3,7 +3,7 @@ extends ../base.pug
 block head
   meta(name='viewport', content='width=1024')
   meta(name='description', content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.')
-  link(href='../impress.bundle.css', rel='stylesheet')
+  link(href='https://impress.js.org/css/impress-demo.css', rel='stylesheet')
 block body
   body.impress-not-supported
     include ../fallback.pug
@@ -95,6 +95,6 @@ block body
       if ('ontouchstart' in document.documentElement) {
         document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
       }
-    script(src='../impress.bundle.js')
+    script(src='https://impress.js.org/js/impress.js')
     script.
       impress().init();
