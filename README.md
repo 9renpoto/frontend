@@ -16,13 +16,12 @@
 # @9renpoto frontend playground
 
 [![Build Status](https://travis-ci.com/9renpoto/frontend.svg?branch=master)](https://travis-ci.com/9renpoto/frontend)
-[![CircleCI](https://circleci.com/gh/9renpoto/frontend.svg?style=svg)](https://circleci.com/gh/9renpoto/frontend)
 [![codecov](https://codecov.io/gh/9renpoto/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/9renpoto/frontend)
 [![codebeat badge](https://codebeat.co/badges/869816f5-3e68-4c71-a7dc-e62ab9c982dd)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-d6e093af-48fc-4688-9bc8-476727971317)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://standardjs.com/)
+[![Supports React and Preact](<https://img.shields.io/badge/%e2%9a%9b%ef%b8%8f-(p)react-00d8ff.svg?style=flat-square>)](https://facebook.github.io/react/)
 
 ## Packages
 
@@ -56,7 +55,7 @@ This repository is managed as monorepo.
 
     yarn test
 
-[![Impacted file tree graph](https://codecov.io/gh/9renpoto/frontend/graphs/tree.svg?width=650&height=150)](https://codecov.io/gh/9renpoto/frontend)
+[![Impacted file tree graph](https://codecov.io/gh/9renpoto/frontend/branch/master/graphs/icicle.svg)](https://codecov.io/gh/9renpoto/frontend)
 
 ## Contribute
 
