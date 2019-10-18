@@ -5,7 +5,7 @@
     "preact": "10.0.1",
     "preact-render-to-string": "5.0.7",
     "reflect-metadata": "0.1.13",
-    "typeorm": "0.2.19"
+    "typeorm": "0.2.20"
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
