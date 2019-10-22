@@ -7,6 +7,8 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
+    "@types/material__base": "0.35.2",
+    "@types/material__ripple": "0.35.2",
     "preact-material-components": "1.6.1"
   },
   "files": [

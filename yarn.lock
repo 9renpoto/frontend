@@ -3872,6 +3872,18 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
   integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
 
+"@types/material__base@*", "@types/material__base@0.35.2":
+  version "0.35.2"
+  resolved "https://registry.yarnpkg.com/@types/material__base/-/material__base-0.35.2.tgz#6caab5ba63b851b076a824107cf8fde9a8e21633"
+  integrity sha512-bjEy0o2t+bb1xs9U7UeqtqnzRvPo9zR1ugj61wmGYwFwNRowS8yaj4cSkfIKfAH1piDxFHdvJ5d8W57TIHuLEQ==
+
+"@types/material__ripple@0.35.2":
+  version "0.35.2"
+  resolved "https://registry.yarnpkg.com/@types/material__ripple/-/material__ripple-0.35.2.tgz#25b02c563e2a0122fa67656364a6370ffdb954a0"
+  integrity sha512-E+E0O92NNBvGG78F4lPtfX6+VJ7fqQrMiHXI7VlzZOzWtbrvSngJ9L+6WvenC6ccNH83qjDzR+hEsG8KmevWPw==
+  dependencies:
+    "@types/material__base" "*"
+
 "@types/mime@*":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
