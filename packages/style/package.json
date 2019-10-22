@@ -1,35 +1,33 @@
 {
   "name": "@9renpoto/style",
-  "description": "simple components",
+  "description": "thinking web",
   "version": "5.2.1",
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "dependencies": {
-    "@types/classnames": "2.2.9",
-    "bulma": "0.7.5",
-    "classnames": "2.2.6"
+    "@types/material__base": "0.35.2",
+    "@types/material__ripple": "0.35.2",
+    "preact-material-components": "1.6.1"
   },
   "files": [
     "lib/"
   ],
-  "homepage": "https://9renpoto.github.io/style/",
   "keywords": [
-    "react",
+    "preact",
     "styleguide"
   ],
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/style.git"
+    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
   "scripts": {
     "build": "run-s clean build:*",
     "build:ts": "tsc -p .",
     "clean": "rimraf lib"
   },
-  "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
 }

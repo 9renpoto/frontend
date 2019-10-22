@@ -1,15 +1,16 @@
 {
   "dependencies": {
+    "file-loader": "4.2.0",
     "lerna": "3.18.2",
     "npm-run-all": "4.1.5",
     "preact": "10.0.1",
-    "preact-render-to-string": "5.1.0",
     "reflect-metadata": "0.1.13",
     "typeorm": "0.2.20"
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
     "@nestjs/cli": "6.10.5",
+    "@storybook/preact": "5.2.5",
     "@types/faker": "4.1.6",
     "@types/jest": "24.0.19",
     "@types/mockdate": "2.0.0",
@@ -32,6 +33,7 @@
     "rimraf": "3.0.0",
     "stylelint": "11.1.1",
     "ts-jest": "24.1.0",
+    "ts-loader": "6.2.0",
     "ts-node": "8.4.1"
   },
   "husky": {
