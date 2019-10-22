@@ -84,7 +84,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@7.6.4", "@babel/core@^7.6.4":
+"@babel/core@7.6.4", "@babel/core@^7.0.0", "@babel/core@^7.6.4":
   version "7.6.4"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.4.tgz#6ebd9fe00925f6c3e177bb726a188b5f578088ff"
   integrity sha512-Rm0HGw101GY8FTzpWSyRbki/jzq+/PkNQJ+nSulrdY6gFGOsNseCqD6KHRYe2E+EdzuBdr2pxCp6s4Uk6eJ+XQ==
@@ -104,7 +104,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@>=7.2.2", "@babel/core@^7.0.0", "@babel/core@^7.1.0":
+"@babel/core@>=7.2.2", "@babel/core@^7.1.0":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.2.tgz#069a776e8d5e9eefff76236bc8845566bd31dd91"
   integrity sha512-l8zto/fuoZIbncm+01p8zPSDZu/VuuJhAfA7d/AbzM09WR7iVhavvfNDYCNpo1VvLk6E6xgAoP9P+/EMJHuRkQ==
@@ -347,20 +347,20 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/parser@7.6.2", "@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.4.4", "@babel/parser@^7.6.0", "@babel/parser@^7.6.2":
+"@babel/parser@7.6.2", "@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.6.0", "@babel/parser@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.2.tgz#205e9c95e16ba3b8b96090677a67c9d6075b70a1"
   integrity sha512-mdFqWrSPCmikBoaBYMuBulzTIKuXVPtEISFbRRVNwMWpCms/hmE2kRq0bblUHaNRKrjRlmVbx1sDHmjmRgD2Xg==
+
+"@babel/parser@^7.4.4", "@babel/parser@^7.6.4":
+  version "7.6.4"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.4.tgz#cb9b36a7482110282d5cb6dd424ec9262b473d81"
+  integrity sha512-D8RHPW5qd0Vbyo3qb+YjO5nvUVRTXFLQ/FsDxJU2Nqz4uB5EnUN0ZQSEYpvTIbRuttig1XbHWU5oMeQwQSAA+A==
 
 "@babel/parser@^7.6.3":
   version "7.6.3"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.3.tgz#9eff8b9c3eeae16a74d8d4ff30da2bd0d6f0487e"
   integrity sha512-sUZdXlva1dt2Vw2RqbMkmfoImubO0D0gaCrNngV6Hi0DA4x3o4mlrq0tbfY0dZEUIccH8I6wQ4qgEtwcpOR6Qg==
-
-"@babel/parser@^7.6.4":
-  version "7.6.4"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.4.tgz#cb9b36a7482110282d5cb6dd424ec9262b473d81"
-  integrity sha512-D8RHPW5qd0Vbyo3qb+YjO5nvUVRTXFLQ/FsDxJU2Nqz4uB5EnUN0ZQSEYpvTIbRuttig1XbHWU5oMeQwQSAA+A==
 
 "@babel/plugin-proposal-async-generator-functions@^7.2.0":
   version "7.2.0"
@@ -3648,9 +3648,9 @@
     "@types/babel-types" "*"
 
 "@types/bluebird@^3.5.18":
-  version "3.5.27"
-  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.27.tgz#61eb4d75dc6bfbce51cf49ee9bbebe941b2cb5d0"
-  integrity sha512-6BmYWSBea18+tSjjSC3QIyV93ZKAeNWGM7R6aYt1ryTZXrlHF+QLV0G2yV0viEGVyRkyQsWfMoJ0k/YghBX5sQ==
+  version "3.5.28"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.28.tgz#04c1a520ff076649236bc8ca21198542ce2bdb09"
+  integrity sha512-0Vk/kqkukxPKSzP9c8WJgisgGDx5oZDbsLLWIP5t70yThO/YleE+GEm2S1GlRALTaack3O7U5OS5qEm7q2kciA==
 
 "@types/body-parser@*", "@types/body-parser@1.17.1":
   version "1.17.1"
@@ -7352,12 +7352,12 @@ commander@3.0.2:
   resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
   integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
-commander@^2.11.0, commander@^2.12.1, commander@^2.20.0, commander@^2.8.1, commander@~2.20.0:
+commander@^2.11.0, commander@^2.20.0, commander@^2.8.1, commander@~2.20.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
-commander@^2.19.0, commander@^2.2.0, commander@~2.20.3:
+commander@^2.12.1, commander@^2.19.0, commander@^2.2.0, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -10292,6 +10292,14 @@ file-entry-cache@^5.0.1:
   integrity sha512-bCg29ictuBaKUwwArK4ouCaqDgLZcysCFLmM/Yn/FDoqndh/9vNuQfXRDvTuXKLxfD/JtZQGKFT8MGcJBK644g==
   dependencies:
     flat-cache "^2.0.1"
+
+file-loader@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-4.2.0.tgz#5fb124d2369d7075d70a9a5abecd12e60a95215e"
+  integrity sha512-+xZnaK5R8kBJrHK0/6HRlrKNamvVS5rjyuju+rnyxRGuwUJwpAMsVzUl5dz6rK8brkzjV6JpcFNjp6NqV0g1OQ==
+  dependencies:
+    loader-utils "^1.2.3"
+    schema-utils "^2.0.0"
 
 file-loader@^1.1.11:
   version "1.1.11"
