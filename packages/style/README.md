@@ -5,21 +5,15 @@
 
 ## install
 
-```sh
-yarn
-```
+    yarn
 
 ## usage
 
-```sh
-npm start
-```
+    npm start
 
 ## tests
 
-```sh
-npm test
-```
+    npm test
 
 ## license
 

@@ -1,7 +1,4 @@
-const { configure } = require('@storybook/preact')
-
+import 'preact-material-components/Theme/style.css'
+import { configure } from '@storybook/preact'
 const req = require.context('..', true, /story.tsx?$/)
-
-configure(() => {
-  req.keys().forEach(filename => req(filename))
-}, module)
+configure(req, module)
