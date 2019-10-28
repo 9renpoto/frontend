@@ -43,7 +43,7 @@
     "react": "16.10.2",
     "react-dom": "16.10.2",
     "react-helmet": "5.2.1",
-    "react-instantsearch-dom": "5.7.0",
+    "react-instantsearch-dom": "6.0.0",
     "react-typography": "0.16.19",
     "styled-components": "4.4.0",
     "styled-icons": "8.6.0",
