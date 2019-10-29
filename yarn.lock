@@ -18387,10 +18387,10 @@ preact-material-components@1.6.1:
     bind-decorator "^1.0.11"
     material-components-web "0.39.3"
 
-preact@10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.0.2.tgz#fd65b1cdd3c864ce482749466dfb97fb4f363bea"
-  integrity sha512-itBKz7eM5DFpwzsO/XVb9MM0BJwhsZadPnXRAZwrs31I07gcWMS61QKrjzz69At2L4wBIkRneyx5AnlxHfrgVw==
+preact@10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.0.3.tgz#01e037240334aa7b478dbaa693ee2cb378da3757"
+  integrity sha512-PpoOHxUd550lxSXu2iE2PRKuz/Jm0MSCCiThXEj4DsAWSRg7lCb76YFrNEenFDlEPy0RmDT5xeJPsIueaFAplw==
 
 prebuild-install@^5.3.2:
   version "5.3.2"
