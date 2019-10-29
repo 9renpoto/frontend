@@ -20,6 +20,8 @@
     "typeorm-naming-strategies": "1.1.0"
   },
   "devDependencies": {
+    "@graphql-codegen/typescript-react-apollo": "1.8.2",
+    "@graphql-codegen/typescript-resolvers": "1.8.2",
     "@nestjs/testing": "6.8.5",
     "@types/express": "4.17.1",
     "@types/supertest": "2.0.8",
@@ -30,7 +32,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "ts-node src/generate-typings",
+    "build": "run-p -l build:*",
+    "build:types": "graphql-codegen --config codegen.yml",
+    "build:interface": "ts-node src/generate-typings",
     "lint": "tsc -p . --noEmit",
     "start": "ts-node -r tsconfig-paths/register src/main.ts"
   }

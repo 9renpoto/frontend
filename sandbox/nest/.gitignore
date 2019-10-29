@@ -1,2 +1,3 @@
 src/schema.gql
+src/graphqlTypes.tsx
 db/
