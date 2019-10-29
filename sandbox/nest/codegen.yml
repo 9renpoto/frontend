@@ -1,8 +1,11 @@
 schema: http://localhost:3000/graphql
 generates:
-  ./src/graphqlTypes.tsx:
+  ./src/graphqlTypes.ts:
     plugins:
       - typescript
       - typescript-operations
       - typescript-resolvers
       - typescript-react-apollo
+    config:
+      withComponent: false
+      withHooks: true
