@@ -9,6 +9,9 @@
   "dependencies": {
     "stylelint-config-prettier": "6.0.0"
   },
+  "devDependencies": {
+    "stylelint": "11.1.1"
+  },
   "homepage": "https://github.com/9renpoto/stylelint-config#readme",
   "keywords": [
     "stylelint-config"
