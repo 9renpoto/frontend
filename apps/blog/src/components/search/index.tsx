@@ -9,7 +9,6 @@ import algoliasearch from 'algoliasearch/lite'
 import { Root, HitsWrapper, PoweredBy } from './Styles'
 import Input from './Input'
 import * as hitComps from './HitComps'
-import { HitCompProps } from './HitComps'
 
 const Results = connectStateResults(
   ({ searchState: state, searchResults: res, children }) => (
@@ -30,20 +29,19 @@ const Stats = connectStateResults(({ searchResults: res }) => (
 const useClickOutside = (
   ref: React.RefObject<any>,
   handler: { (): void; (): void },
-  originalEvents: string[] | undefined,
+  events: string[] | undefined = [`mousedown`, `touchstart`],
 ) => {
-  let events: string[] = [`mousedown`, `touchstart`]
-  if (originalEvents) {
-    events = originalEvents
-  }
   const detectClickOutside = (event: any) =>
     !ref.current.contains(event.target) && handler()
+
   useEffect(() => {
-    for (const event of events)
+    for (const event of events) {
       document.addEventListener(event, detectClickOutside)
+    }
     return () => {
-      for (const event of events)
+      for (const event of events) {
         document.removeEventListener(event, detectClickOutside)
+      }
     }
   })
 }
@@ -64,6 +62,7 @@ export default function Search({ indices, collapse }: Props) {
   const [query, setQuery] = useState(``)
   const [focus, setFocus] = useState(false)
 
+  useClickOutside(ref, () => setFocus(false))
   if (!process.env.GATSBY_ALGOLIA_APP_ID || !process.env.ALGOLIA_ADMIN_KEY) {
     return null
   }
@@ -72,7 +71,6 @@ export default function Search({ indices, collapse }: Props) {
     process.env.GATSBY_ALGOLIA_APP_ID,
     process.env.ALGOLIA_ADMIN_KEY,
   )
-  useClickOutside(ref, () => setFocus(false), undefined)
   return (
     <InstantSearch
       searchClient={searchClient}
@@ -89,7 +87,7 @@ export default function Search({ indices, collapse }: Props) {
               <Stats />
             </header>
             <Results>
-              <Hits<HitCompProps>
+              <Hits<hitComps.HitCompProps>
                 hitComponent={(hitComps as any)[hitComp](() => setFocus(false))}
               />
             </Results>

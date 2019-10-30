@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'stylelint-config-standard',
+  extends: ['stylelint-config-prettier'],
   rules: {
     'block-closing-brace-newline-before': 'always',
     'selector-pseudo-class-no-unknown': [
