@@ -1,7 +1,10 @@
 {
   "extends": [
-    "config:base"
+    "config:js-lib"
   ],
+  "patch":{
+    "automerge": true
+  },
   "devDependencies": {
     "automerge": true
   }
