@@ -10,7 +10,7 @@
     "tslint-config-standard": "9.0.0"
   },
   "devDependencies": {
-    "tslint": "5.20.0"
+    "tslint": "5.20.1"
   },
   "homepage": "https://github.com/9renpoto/tslint-config#readme",
   "keywords": [
