@@ -4358,7 +4358,12 @@
   resolved "https://registry.yarnpkg.com/@types/algoliasearch/-/algoliasearch-3.34.2.tgz#f3daed26185a21b77632c28835e340147532f575"
   integrity sha512-a+ztY3iL+Dpor7wYaF4CO6obUYcVEyXue1ppQklP1VCUP+VGZyzMcYiZodNs9DFV1HEOW5VCLTIqiZ4ikQpKzA==
 
-"@types/algoliasearch@3.34.5", "@types/algoliasearch@^3.30.16":
+"@types/algoliasearch@3.34.6":
+  version "3.34.6"
+  resolved "https://registry.yarnpkg.com/@types/algoliasearch/-/algoliasearch-3.34.6.tgz#520522d9e405429e17d404fda165e1197055ab39"
+  integrity sha512-MX9hdBbDCp0b85GhMrubIR2Zsk4KTwUVb9C3at0MejbcvzSGqBoWSdktUOmsI7LGP/4kiaQ0Hbg302xq2U4sMg==
+
+"@types/algoliasearch@^3.30.16":
   version "3.34.5"
   resolved "https://registry.yarnpkg.com/@types/algoliasearch/-/algoliasearch-3.34.5.tgz#c40e346a6c5526f9b27af7863117d1200456e7d2"
   integrity sha512-JS+5KT9SfwzGIkoCsj7EyYHzhrsagj321BEPH3oroHYnuKUfPVoei58qLsBPo9RRa27Vb79WJssSSPBicnaAng==
