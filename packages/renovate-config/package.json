@@ -1,13 +1,12 @@
 {
   "name": "@9renpoto/renovate-config",
-  "version": "1.0.0",
+  "version": "5.4.0",
   "devDependencies": {
     "renovate": "19.71.5"
   },
   "keywords": [
     "renovate"
   ],
-  "private": true,
   "license": "MIT",
   "renovate-config": {
     "default": {
