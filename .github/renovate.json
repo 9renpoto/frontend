@@ -1,11 +1,3 @@
 {
-  "extends": [
-    "config:js-lib"
-  ],
-  "patch":{
-    "automerge": true
-  },
-  "devDependencies": {
-    "automerge": true
-  }
+  "extends": ["@9renpoto"]
 }

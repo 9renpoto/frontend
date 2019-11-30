@@ -1,0 +1,30 @@
+{
+  "name": "@9renpoto/renovate-config",
+  "version": "1.0.0",
+  "devDependencies": {
+    "renovate": "19.71.5"
+  },
+  "keywords": [
+    "renovate"
+  ],
+  "private": true,
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "automerge": true,
+      "extends": [
+        "config:js-lib"
+      ],
+      "assignees": [
+        "9renpoto"
+      ],
+      "labels": [
+        "Type: Dependencies"
+      ],
+      "semanticCommits": true
+    }
+  },
+  "scripts": {
+    "test": "renovate-config-validator"
+  }
+}
