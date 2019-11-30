@@ -43,10 +43,10 @@ This repository is managed as monorepo.
 
 This repository is managed as monorepo.
 
-| Package                               | status                                                                                                                                                               |
-| :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[@9renpoto/blog](./apps/blog)**     | [![Netlify Status](https://api.netlify.com/api/v1/badges/62aa27ca-8826-45bd-9f9d-211bd2fe0299/deploy-status)](https://app.netlify.com/sites/9renpoto/deploys)        |
-| **[@9renpoto/slides](./apps/slides)** | [![Netlify Status](https://api.netlify.com/api/v1/badges/bbe335ba-04ba-4ba7-9419-b00d89194a6e/deploy-status)](https://app.netlify.com/sites/9renpoto-slides/deploys) |
+| Package                                   | status                                                                                                                                                        |
+| :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[@9renpoto-app/blog](./apps/blog)**     | [![Netlify Status](https://api.netlify.com/api/v1/badges/62aa27ca-8826-45bd-9f9d-211bd2fe0299/deploy-status)](https://app.netlify.com/sites/9renpoto/deploys) |
+| **[@9renpoto-app/slides](./apps/slides)** | RBA                                                                                                                                                           |
 
 ## Install
 
