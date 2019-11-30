@@ -1,3 +1,13 @@
 {
-  "extends": ["@9renpoto"]
+      "automerge": true,
+      "extends": [
+        "config:js-lib"
+      ],
+      "assignees": [
+        "9renpoto"
+      ],
+      "labels": [
+        "Type: Dependencies"
+      ],
+      "semanticCommits": true
 }
