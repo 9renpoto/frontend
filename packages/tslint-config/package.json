@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/tslint-config/issues"
   },
   "dependencies": {
-    "tslint-config-standard": "9.0.0"
+    "tslint-config-standard": "^9.0.0"
   },
   "devDependencies": {
     "tslint": "5.20.1"
