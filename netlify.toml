@@ -1,5 +1,4 @@
 [build]
   base = ""
   publish = "apps/blog/public"
-  command = "yarn install --production && yarn build:app"
-
+  command = "npm run build:app"
