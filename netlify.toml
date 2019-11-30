@@ -1,0 +1,4 @@
+[build]
+  base = ""
+  publish = "apps/blog/public"
+  command = "npm run build:apps"
