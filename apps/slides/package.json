@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/slides",
   "description": "my slides",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "devDependencies": {
     "@types/vnu-jar": "17.11.0",
     "lite-server": "2.5.4",
