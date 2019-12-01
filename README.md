@@ -1,8 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
 - [@9renpoto frontend playground](#9renpoto-frontend-playground)
   - [Packages](#packages)
   - [Apps](#apps)
@@ -42,10 +40,10 @@ This repository is managed as monorepo.
 
 This repository is managed as monorepo.
 
-| Package                                   | status                                                                                                                                                        |
-| :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[@9renpoto-app/blog](./apps/blog)**     | [![Netlify Status](https://api.netlify.com/api/v1/badges/62aa27ca-8826-45bd-9f9d-211bd2fe0299/deploy-status)](https://app.netlify.com/sites/9renpoto/deploys) |
-| **[@9renpoto-app/slides](./apps/slides)** | TBA                                                                                                                                                           |
+| Package                               | status                                                                                                                                                        |
+| :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[@9renpoto/blog](./apps/blog)**     | [![Netlify Status](https://api.netlify.com/api/v1/badges/62aa27ca-8826-45bd-9f9d-211bd2fe0299/deploy-status)](https://app.netlify.com/sites/9renpoto/deploys) |
+| **[@9renpoto/slides](./apps/slides)** | TBA                                                                                                                                                           |
 
 ## Install
 
