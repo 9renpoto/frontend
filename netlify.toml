@@ -11,6 +11,6 @@
   NODE_ENV = "development"
 
 [[redirects]]
-  from = "/*"
-  to = "https://9renpto.dev"
+  from = "https://9renpoto.netlify.com/*"
+  to = "https://9renpoto.dev/:splat"
   status = 301
