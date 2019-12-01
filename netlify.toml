@@ -2,3 +2,9 @@
   base = ""
   publish = "apps/blog/public"
   command = "npm run build:apps"
+
+[[redirects]]
+  from = "/"
+  to = "https://blog.9renpto.dev"
+  status = 200
+  force = true
