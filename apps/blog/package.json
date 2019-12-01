@@ -71,6 +71,7 @@
   "scripts": {
     "build": "gatsby build",
     "build:types": "graphql-codegen --config codegen.yml",
+    "clean": "rimraf public",
     "lint": "run-p lint:*",
     "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
     "lint:types": "tsc -p . --noEmit",
