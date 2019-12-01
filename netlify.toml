@@ -1,7 +1,7 @@
 [build]
   base = ""
   publish = "apps/blog/public"
-  command = "npm run build:apps"
+  command = "npx lerna run build --scope @9renpoto/blog"
 
 [build.environment]
   SENTRY_DSN = "https://d015230c36134266a77a5b6f0c57cad3@sentry.io/103445"
