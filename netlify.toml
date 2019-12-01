@@ -11,6 +11,6 @@
   NODE_ENV = "development"
 
 [[redirects]]
-  from = "/*"
-  to = "https://9renpto.dev"
+  from = "/"
+  to = "https://9renpoto.dev"
   status = 301
