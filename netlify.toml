@@ -5,5 +5,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://blog.9renpto.dev/:splat"
+  to = "https://9renpto.dev"
   status = 301
