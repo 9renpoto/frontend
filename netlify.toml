@@ -3,6 +3,13 @@
   publish = "apps/blog/public"
   command = "npm run build:apps"
 
+[build.environment]
+  SENTRY_DSN = "https://d015230c36134266a77a5b6f0c57cad3@sentry.io/103445"
+[context.production.environment]
+  NODE_ENV = "production"
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
+
 [[redirects]]
   from = "/*"
   to = "https://9renpto.dev"
