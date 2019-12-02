@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@babel/core": "^7.7.4",
-    "@storybook/preact": "5.2.7",
+    "@storybook/preact": "5.2.8",
     "babel-loader": "^8.0.6",
     "file-loader": "5.0.2",
     "lerna": "3.19.0",
