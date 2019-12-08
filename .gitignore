@@ -1,11 +1,8 @@
 .changelog
-.envrc
-.textlintcache
-graphql.schema.ts
-lib/
-storybook-static/
 
-### https://raw.github.com/github/gitignore/086eacaaa2b9fde537315141e154631b945e1369/Node.gitignore
+gibo 2.2.3 by Simon Whitaker <sw@netcetera.org>
+https://github.com/simonwhitaker/gibo
+### https://raw.github.com/github/gitignore/21e9f06539cdbc1ccbbb2ce59cd667be3e172fc8/Node.gitignore
 
 # Logs
 logs
@@ -84,15 +81,18 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# next.js build output
+# Next.js build output
 .next
 
-# nuxt.js build output
+# Nuxt.js build / generate output
 .nuxt
+dist
 
-# gatsby files
+# Gatsby files
 .cache/
-public
+# Comment in the public line in if your project uses Gatsby and *not* Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
 
 # vuepress build output
 .vuepress/dist
@@ -106,4 +106,5 @@ public
 # DynamoDB Local files
 .dynamodb/
 
-
+# TernJS port file
+.tern-port
