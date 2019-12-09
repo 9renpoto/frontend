@@ -10,7 +10,7 @@
     "@types/algoliasearch": "3.34.7",
     "@types/react-helmet": "5.0.14",
     "@types/react-instantsearch-dom": "5.2.6",
-    "@types/styled-components": "4.4.0",
+    "@types/styled-components": "4.4.1",
     "@types/typography": "0.16.3",
     "algoliasearch": "3.35.1",
     "gatsby": "2.18.0",
