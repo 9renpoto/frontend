@@ -1,15 +1,24 @@
 {
   "name": "@9renpoto/style",
-  "description": "thinking web",
   "version": "5.4.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "description": "thinking web",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
+  },
   "author": "@9renpoto",
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
-  "dependencies": {
-    "@types/material__base": "^0.35.2",
-    "@types/material__ripple": "^0.35.2",
-    "preact-material-components": "^1.6.1"
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "run-s clean build:*",
+    "build:ts": "tsc -p .",
+    "clean": "rimraf lib"
   },
   "files": [
     "lib/"
@@ -18,16 +27,10 @@
     "preact",
     "styleguide"
   ],
-  "license": "MIT",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
-  },
-  "scripts": {
-    "build": "run-s clean build:*",
-    "build:ts": "tsc -p .",
-    "clean": "rimraf lib"
+  "dependencies": {
+    "@types/material__base": "^0.35.2",
+    "@types/material__ripple": "^0.35.2",
+    "preact-material-components": "^1.6.1"
   },
   "types": "lib/index.d.ts"
 }

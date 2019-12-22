@@ -1,27 +1,27 @@
 {
   "name": "@9renpoto/eslint-config-react",
-  "description": "my react eslint-config",
   "version": "5.4.0",
-  "author": "9renpoto",
-  "bugs": {
-    "url": "https://github.com/9renpoto/frontend/issues"
-  },
-  "dependencies": {
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-react-hooks": "^2.2.0"
-  },
-  "homepage": "https://github.com/9renpoto/frontend",
-  "keywords": [
-    "eslint",
-    "react"
-  ],
+  "description": "my react eslint-config",
   "license": "MIT",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
+  "author": "9renpoto",
+  "homepage": "https://github.com/9renpoto/frontend",
+  "bugs": {
+    "url": "https://github.com/9renpoto/frontend/issues"
+  },
+  "main": "index.js",
   "scripts": {
     "lint": "eslint . -c index.js --ext=js,jsx"
+  },
+  "keywords": [
+    "eslint",
+    "react"
+  ],
+  "dependencies": {
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-react-hooks": "^2.2.0"
   }
 }

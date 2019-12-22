@@ -1,28 +1,31 @@
 {
   "name": "@9renpoto/stylelint-config",
-  "description": "@9renpoto stylelint config",
   "version": "5.4.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "description": "@9renpoto stylelint config",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/stylelint-config.git"
+  },
   "author": "@9renpoto",
+  "homepage": "https://github.com/9renpoto/stylelint-config#readme",
   "bugs": {
     "url": "https://github.com/9renpoto/stylelint-config/pulls"
   },
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint \"examples/*.css\""
+  },
+  "keywords": [
+    "stylelint-config"
+  ],
   "dependencies": {
     "stylelint-config-prettier": "^8.0.0"
   },
   "devDependencies": {
     "stylelint": "12.0.0"
-  },
-  "homepage": "https://github.com/9renpoto/stylelint-config#readme",
-  "keywords": [
-    "stylelint-config"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/stylelint-config.git"
-  },
-  "scripts": {
-    "lint": "stylelint \"examples/*.css\""
   }
 }
