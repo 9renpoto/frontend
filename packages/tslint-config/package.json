@@ -1,28 +1,31 @@
 {
   "name": "@9renpoto/tslint-config",
-  "description": "@9nrepoto Linter Settings",
   "version": "5.4.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "description": "@9nrepoto Linter Settings",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/tslint-config.git"
+  },
   "author": "@9renpoto",
+  "homepage": "https://github.com/9renpoto/tslint-config#readme",
   "bugs": {
     "url": "https://github.com/9renpoto/tslint-config/issues"
   },
+  "main": "tslint.json",
+  "scripts": {
+    "lint": "tslint test/*.ts"
+  },
+  "keywords": [
+    "tslint"
+  ],
   "dependencies": {
     "tslint-config-standard": "^9.0.0"
   },
   "devDependencies": {
     "tslint": "5.20.1"
-  },
-  "homepage": "https://github.com/9renpoto/tslint-config#readme",
-  "keywords": [
-    "tslint"
-  ],
-  "license": "MIT",
-  "main": "tslint.json",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/tslint-config.git"
-  },
-  "scripts": {
-    "lint": "tslint test/*.ts"
   }
 }

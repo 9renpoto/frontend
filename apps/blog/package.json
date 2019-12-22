@@ -1,11 +1,29 @@
 {
   "name": "@9renpoto/blog",
-  "description": "my blogs",
   "version": "5.4.0",
+  "private": true,
+  "description": "my blogs",
+  "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "author": "github.com/9renpoto",
+  "homepage": "https://github.com/9renpoto/frontend/tree/master/apps/blog",
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "build:types": "graphql-codegen --config codegen.yml",
+    "clean": "rimraf public",
+    "lint": "run-p lint:*",
+    "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
+    "lint:types": "tsc -p . --noEmit",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "test": "yarn lint"
+  },
+  "keywords": [
+    "gatsby"
+  ],
   "dependencies": {
     "@types/algoliasearch": "3.34.7",
     "@types/react-helmet": "5.0.14",
@@ -60,23 +78,5 @@
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.9.0"
-  },
-  "homepage": "https://github.com/9renpoto/frontend/tree/master/apps/blog",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
-  "main": "n/a",
-  "private": true,
-  "scripts": {
-    "build": "gatsby build",
-    "build:types": "graphql-codegen --config codegen.yml",
-    "clean": "rimraf public",
-    "lint": "run-p lint:*",
-    "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
-    "lint:types": "tsc -p . --noEmit",
-    "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "test": "yarn lint"
   }
 }

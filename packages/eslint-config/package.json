@@ -1,28 +1,31 @@
 {
   "name": "@9renpoto/eslint-config",
-  "description": "my eslint config",
   "version": "5.4.0",
-  "author": "github.com/9renpoto",
-  "bugs": {
-    "url": "https://github.com/9renpoto/frontend/issues"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
-  "dependencies": {
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.1"
-  },
-  "homepage": "https://github.com/9renpoto/frontend",
-  "keywords": [
-    "config",
-    "eslint"
-  ],
+  "description": "my eslint config",
   "license": "MIT",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
+  "author": "github.com/9renpoto",
+  "homepage": "https://github.com/9renpoto/frontend",
+  "bugs": {
+    "url": "https://github.com/9renpoto/frontend/issues"
+  },
+  "main": "index.js",
   "scripts": {
     "lint": "eslint . -c index.js"
+  },
+  "keywords": [
+    "config",
+    "eslint"
+  ],
+  "dependencies": {
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1"
   }
 }

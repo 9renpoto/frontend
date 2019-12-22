@@ -1,18 +1,10 @@
 {
   "name": "@9renpoto/slides",
-  "description": "my slides",
   "version": "5.4.0",
-  "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
-  },
-  "devDependencies": {
-    "@types/vnu-jar": "17.11.0",
-    "lite-server": "2.5.4",
-    "vnu-jar": "19.9.4"
-  },
+  "private": true,
+  "description": "my slides",
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "main": "n/a",
-  "private": true,
   "scripts": {
     "build": "run-s clean build:* copy clean:html",
     "build:html": "pug src --out dist",
@@ -22,5 +14,13 @@
     "lint": "npm run build:html -- -P && npm run clean:html && ts-node validate.ts",
     "start": "lite-server --baseDir='dist'",
     "w:pug": "npm run build:html -- -w"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "@types/vnu-jar": "17.11.0",
+    "lite-server": "2.5.4",
+    "vnu-jar": "19.9.4"
   }
 }
