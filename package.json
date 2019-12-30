@@ -10,7 +10,7 @@
     "lint:eslint": "npx eslint . --ext=ts,tsx",
     "lint:md": "remark .",
     "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
+    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql,pug,elm,toml}'",
     "migrate:generate": "ts-node --project sandbox/nest/tsconfig.json $(npm bin)/typeorm migration:generate -n thinking",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
     "test": "lerna run test"
@@ -25,6 +25,7 @@
     "preact": "^10.1.1"
   },
   "devDependencies": {
+    "@prettier/plugin-pug": "^1.1.1",
     "@types/faker": "4.1.8",
     "@types/jest": "24.0.25",
     "@types/mockdate": "2.0.0",
@@ -64,7 +65,7 @@
       "prettier-eslint --write",
       "git add"
     ],
-    "*.{graphql,css,scss,json,toml,elm}": [
+    "*.{graphql,css,scss,json,toml,elm,pug}": [
       "prettier --write",
       "git add"
     ],
