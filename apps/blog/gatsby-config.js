@@ -106,7 +106,7 @@ module.exports = {
     title,
     author,
     description: `Have fun, good luck`,
-    siteUrl: `https://9renpoto.netlify.com/`,
+    siteUrl: `https://9renpoto.dev/`,
     social: {
       twitter: `9renpoto`,
     },
