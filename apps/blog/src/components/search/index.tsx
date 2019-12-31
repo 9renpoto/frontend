@@ -29,8 +29,8 @@ const Stats = connectStateResults(({ searchResults: res }) => (
 const useClickOutside = (
   ref: React.RefObject<any>,
   handler: { (): void; (): void },
-  events: string[] | undefined = [`mousedown`, `touchstart`],
 ) => {
+  const events = [`mousedown`, `touchstart`]
   const detectClickOutside = (event: any) =>
     !ref.current.contains(event.target) && handler()
 
