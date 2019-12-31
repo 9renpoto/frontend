@@ -1,4 +1,10 @@
-import React, { useState, useEffect, createRef, Fragment } from 'react'
+import React, {
+  useState,
+  useEffect,
+  createRef,
+  Fragment,
+  RefObject,
+} from 'react'
 import {
   InstantSearch,
   Index,
@@ -27,12 +33,12 @@ const Stats = connectStateResults(({ searchResults: res }) => (
 ))
 
 const useClickOutside = (
-  ref: React.RefObject<any>,
+  ref: RefObject<HTMLElement>,
   handler: { (): void; (): void },
 ) => {
   const events = [`mousedown`, `touchstart`]
   const detectClickOutside = (event: any) =>
-    !ref.current.contains(event.target) && handler()
+    !(ref.current && ref.current.contains(event.target)) && handler()
 
   useEffect(() => {
     for (const event of events) {
@@ -58,7 +64,7 @@ interface Props {
 }
 
 export default function Search({ indices, collapse }: Props) {
-  const ref = createRef()
+  const ref = createRef<HTMLElement>()
   const [query, setQuery] = useState(``)
   const [focus, setFocus] = useState(false)
 
