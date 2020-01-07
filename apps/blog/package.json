@@ -56,7 +56,7 @@
     "gatsby-transformer-remark": "2.6.37",
     "gatsby-transformer-sharp": "2.3.5",
     "graphql": "14.5.8",
-    "preact": "10.1.1",
+    "preact": "10.2.0",
     "prismjs": "1.18.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
