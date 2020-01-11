@@ -14,7 +14,7 @@
 # @9renpoto frontend playground
 
 [![codecov](https://codecov.io/gh/9renpoto/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/9renpoto/frontend)
-[![codebeat badge](https://codebeat.co/badges/869816f5-3e68-4c71-a7dc-e62ab9c982dd)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-d6e093af-48fc-4688-9bc8-476727971317)
+[![codebeat badge](https://codebeat.co/badges/3955e242-14da-407d-92e5-7294a0482f86)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-e4b2b4fa-24d5-40e5-b6c5-17fa32312e85)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -39,10 +39,10 @@ This repository is managed as monorepo.
 
 This repository is managed as monorepo.
 
-| Package                               | status                                                                                                                                                        |
-| :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[@9renpoto/blog](./apps/blog)**     | [![Netlify Status](https://api.netlify.com/api/v1/badges/62aa27ca-8826-45bd-9f9d-211bd2fe0299/deploy-status)](https://app.netlify.com/sites/9renpoto/deploys) |
-| **[@9renpoto/slides](./apps/slides)** | TBA                                                                                                                                                           |
+| Package                               | url                          |
+| :------------------------------------ | :--------------------------- |
+| **[@9renpoto/blog](./apps/blog)**     | <https://9renpoto.dev>       |
+| **[@9renpoto/slides](./apps/slides)** | <https://slide.9renpoto.dev> |
 
 ## Install
 
