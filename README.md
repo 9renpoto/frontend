@@ -51,8 +51,8 @@ This repository is managed as monorepo.
 ## Tests
 
     yarn test
-
-[![Impacted file tree graph](https://codecov.io/gh/9renpoto/frontend/branch/master/graphs/icicle.svg)](https://codecov.io/gh/9renpoto/frontend)
+     
+<figure><embed src="https://wakatime.com/share/@9renpoto/dc33f655-fbbb-4375-8182-d7059f550ef0.svg"></embed></figure>
 
 ## Contribute
 
