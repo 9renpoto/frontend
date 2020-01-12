@@ -12,7 +12,7 @@
     "lint:pkg": "lerna run lint --parallel",
     "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql,pug,elm,toml}'",
     "migrate:generate": "ts-node --project sandbox/nest/tsconfig.json $(npm bin)/typeorm migration:generate -n thinking",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
+    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish'",
     "test": "lerna run test"
   },
   "dependencies": {

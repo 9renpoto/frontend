@@ -1,9 +1,6 @@
 {
   "name": "@9renpoto/style",
-  "version": "5.5.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "version": "5.5.1",
   "description": "thinking web",
   "license": "MIT",
   "repository": {

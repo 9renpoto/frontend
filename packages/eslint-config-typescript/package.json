@@ -1,9 +1,6 @@
 {
   "name": "@9renpoto/eslint-config-typescript",
-  "version": "5.5.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "version": "5.5.1",
   "description": "TypeScript with eslint",
   "license": "MIT",
   "repository": {
@@ -24,7 +21,7 @@
     "TypeScript"
   ],
   "dependencies": {
-    "@9renpoto/eslint-config": "^5.5.0",
+    "@9renpoto/eslint-config": "^5.5.1",
     "@typescript-eslint/parser": "^2.15.0"
   }
 }
