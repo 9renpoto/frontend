@@ -1,8 +1,7 @@
+.firebase
 .changelog
 
-gibo 2.2.3 by Simon Whitaker <sw@netcetera.org>
-https://github.com/simonwhitaker/gibo
-### https://raw.github.com/github/gitignore/21e9f06539cdbc1ccbbb2ce59cd667be3e172fc8/Node.gitignore
+### https://raw.github.com/github/gitignore/6c87d249af5f2b3f8ab65ae0a2648682ee4e8a2d/Node.gitignore
 
 # Logs
 logs
@@ -90,7 +89,7 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
+# Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
@@ -108,3 +107,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+

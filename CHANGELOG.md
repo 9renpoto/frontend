@@ -1,3 +1,20 @@
+## v5.5.0 (2020-01-12)
+
+#### :rocket: Type: Feature
+
+- [#1362](https://github.com/9renpoto/frontend/pull/1362) feat(apps): Added 2019-end entry ([@9renpoto](https://github.com/9renpoto))
+- [#1329](https://github.com/9renpoto/frontend/pull/1329) chore: Added domains ([@9renpoto](https://github.com/9renpoto))
+
+#### :bug: Type: Bug
+
+- `eslint-config-flowtype`, `eslint-config-react`, `eslint-config-typescript`, `eslint-config`, `textlint-config-ja`
+  - [#1386](https://github.com/9renpoto/frontend/pull/1386) fix: deps ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 2
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+- [@imgbot[bot]](https://github.com/apps/imgbot)
+
 ## v5.4.0 (2019-11-30)
 
 #### :rocket: Type: Feature
