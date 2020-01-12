@@ -1,9 +1,6 @@
 {
   "name": "@9renpoto/stylelint-config",
-  "version": "5.5.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "version": "5.5.1",
   "description": "@9renpoto stylelint config",
   "license": "MIT",
   "repository": {
