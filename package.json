@@ -52,6 +52,15 @@
     "ts-loader": "6.2.1",
     "ts-node": "8.6.1"
   },
+  "eslintConfig": {
+    "extends": [
+      "@9renpoto/eslint-config-react",
+      "@9renpoto/eslint-config-typescript"
+    ],
+    "plugins": [
+      "jest"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -85,6 +94,9 @@
     "plugins": [
       "remark-preset-lint-recommended"
     ]
+  },
+  "stylelint": {
+    "extends": "@9renpoto/stylelint-config"
   },
   "workspaces": [
     "packages/*",

@@ -1,6 +1,9 @@
 {
   "name": "@9renpoto/eslint-config-react",
-  "version": "5.4.0",
+  "version": "5.5.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "description": "my react eslint-config",
   "license": "MIT",
   "repository": {

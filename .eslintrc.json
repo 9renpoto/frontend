@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "@9renpoto/eslint-config-react",
-    "@9renpoto/eslint-config-typescript"
-  ],
-  "plugins": [
-    "jest"
-  ]
-}
