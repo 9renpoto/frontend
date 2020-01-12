@@ -12,4 +12,4 @@ jobs:
     - name: install
       run: cargo install mkbook
     - name: Build
-      run: cd sandbox/mdbook && mdbook buil
+      run: cd sandbox/mdbook && mdbook build
