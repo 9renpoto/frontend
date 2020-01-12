@@ -1,0 +1,15 @@
+name: Rust
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: install
+      run: cargo install mkbook
+    - name: Build
+      run: cd sandbox/mdbook && mdbook buil
