@@ -3087,10 +3087,10 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@prettier/plugin-pug@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.4.tgz#9086b18a3a05bfba35e248fb2fe39bbd785392cd"
-  integrity sha512-CPyDk+FIHUc/Q5aZfKS00GOywDOcyVCZjgoqenUPUKtpgEKQN6FfaFWgSxCxrTgImmyvctHw6y3+h6XnIm9veQ==
+"@prettier/plugin-pug@1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.5.tgz#6e84e0a105d70f60389913d07be79c9cfbd1a1e3"
+  integrity sha512-MHqXRj006dJoGbWZWmNGedBIkOybEnFDIJTUtcXNzJcO9uhy9rBoP5dJ61QpFEIb7ufgFgA9qd2Di29RD87eKw==
   dependencies:
     pug-lexer "~4.1.0"
 
