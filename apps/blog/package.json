@@ -25,7 +25,7 @@
     "gatsby"
   ],
   "dependencies": {
-    "@types/algoliasearch": "3.34.8",
+    "@types/algoliasearch": "3.34.9",
     "@types/react-helmet": "5.0.15",
     "@types/react-instantsearch-dom": "5.2.6",
     "@types/styled-components": "4.4.2",
