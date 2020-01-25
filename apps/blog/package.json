@@ -18,8 +18,7 @@
     "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
     "lint:types": "tsc -p . --noEmit",
     "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "test": "yarn lint"
+    "start": "gatsby develop"
   },
   "keywords": [
     "gatsby"
@@ -70,7 +69,7 @@
     "typescript-styled-plugin": "0.15.0",
     "typography": "0.16.19",
     "typography-theme-github": "0.16.19",
-    "vfile-message": "^2.0.2"
+    "vfile-message": "2.0.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.11.2",

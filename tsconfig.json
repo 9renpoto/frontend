@@ -9,10 +9,7 @@
     "importHelpers": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -30,8 +27,5 @@
     "strictPropertyInitialization": false,
     "target": "esnext"
   },
-  "exclude": [
-    "node_modules",
-    "__tests__/**/*.tsx?"
-  ]
+  "exclude": ["__tests__/**/*.tsx?"]
 }

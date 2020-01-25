@@ -13,11 +13,10 @@
     "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql,pug,elm,toml}'",
     "migrate:generate": "ts-node --project sandbox/nest/tsconfig.json $(npm bin)/typeorm migration:generate -n thinking",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
-    "test": "lerna run test"
+    "test": "jest"
   },
   "dependencies": {
     "@babel/core": "^7.7.7",
-    "@storybook/preact": "^5.2.8",
     "babel-loader": "^8.0.6",
     "cpx": "^1.5.0",
     "file-loader": "^5.0.2",
@@ -28,16 +27,19 @@
   },
   "devDependencies": {
     "@prettier/plugin-pug": "1.1.5",
+    "@storybook/addon-storyshots": "5.2.8",
+    "@storybook/preact": "^5.2.8",
     "@types/faker": "4.1.9",
     "@types/jest": "24.9.1",
     "@types/mockdate": "2.0.0",
+    "@types/storybook__addon-storyshots": "5.1.2",
     "can-npm-publish": "1.3.2",
-    "codecov": "3.6.2",
     "doctoc": "1.4.0",
     "eslint-plugin-jest": "23.6.0",
     "faker": "4.1.0",
     "husky": "4.2.1",
     "jest": "25.1.0",
+    "jest-css-modules": "^2.1.0",
     "lerna-changelog": "1.0.0",
     "lint-staged": "10.0.2",
     "mockdate": "2.0.5",
@@ -66,23 +68,34 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "verbose": true,
+    "collectCoverage": true
+  },
   "lint-staged": {
     "*.{js,jsx}": [
-      "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js",
-      "git add"
+      "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js"
     ],
     "*.{ts,tsx}": [
-      "prettier-eslint --write",
-      "git add"
+      "prettier-eslint --write"
     ],
     "*.{graphql,css,scss,json,toml,elm,pug}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.md": [
       "prettier --write",
-      "textlint --fix",
-      "git add"
+      "textlint --fix"
     ]
   },
   "prettier": {

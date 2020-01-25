@@ -16,7 +16,7 @@
     "w:pug": "npm run build:html -- -w"
   },
   "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "1.0.0-alpha6"
   },
   "devDependencies": {
     "@types/vnu-jar": "17.11.0",

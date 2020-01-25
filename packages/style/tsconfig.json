@@ -1,14 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "allowJs": true,
     "outDir": "./lib",
     "noEmit": false,
-    "types": [],
+    "types": []
   },
-  "exclude": [
-    "../../node_modules/@types/react/global.d.ts"
-  ],
-  "include": [
-    "../../node_modules/preact/src/index.d.ts"
-  ]
+  "exclude": ["../../node_modules/@types/react/global.d.ts"],
+  "include": ["../../node_modules/preact/src/index.d.ts"]
 }
