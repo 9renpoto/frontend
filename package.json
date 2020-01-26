@@ -68,21 +68,17 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js",
-      "git add"
+      "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js"
     ],
     "*.{ts,tsx}": [
-      "prettier-eslint --write",
-      "git add"
+      "prettier-eslint --write"
     ],
     "*.{graphql,css,scss,json,toml,elm,pug}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.md": [
       "prettier --write",
-      "textlint --fix",
-      "git add"
+      "textlint --fix"
     ]
   },
   "prettier": {
