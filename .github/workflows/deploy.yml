@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install --production --frozen-lockfile
       - name: Build
-        run: yarn workspace @9renpoto/blog
+        run: yarn workspace @9renpoto/blog build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
