@@ -20,8 +20,8 @@ jobs:
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
-          name: apps/blogs/public
-          path: apps/blogs/public
+          name: blog
+          path: apps/blog/public
 
   deploy:
     name: Deploy
@@ -33,7 +33,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: apps/blogs/public
+          name: blog
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
