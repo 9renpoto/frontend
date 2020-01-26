@@ -43,7 +43,7 @@ export const PostHit = (
   }
   return (
     <div>
-      <Link to={hit.fields?.slug} onClick={clickHandler}>
+      <Link to={hit.fields.slug} onClick={clickHandler}>
         <h4>
           <Highlight attribute="title" hit={hit} tagName="mark" />
         </h4>

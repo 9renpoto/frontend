@@ -1,6 +1,8 @@
 const title = `:-) 🏕`
 const author = 'Keisuke Kan'
 
+const GATSBY_ALGOLIA_APP_ID = `GATSBY_ALGOLIA_APP_ID`
+
 const plugins = [
   `gatsby-plugin-preact`,
   {
@@ -79,7 +81,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-env-variables`,
     options: {
-      whitelist: ['GATSBY_ALGOLIA_APP_ID', 'GATSBY_ALGOLIA_SEARCH_KEY'],
+      whitelist: [GATSBY_ALGOLIA_APP_ID, 'GATSBY_ALGOLIA_SEARCH_KEY'],
     },
   },
 ]
@@ -88,7 +90,7 @@ if (process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY) {
   plugins.push({
     resolve: `gatsby-plugin-algolia`,
     options: {
-      appId: process.env.ALGOLIA_APP_ID,
+      appId: process.env[GATSBY_ALGOLIA_APP_ID],
       apiKey: process.env.ALGOLIA_ADMIN_KEY,
       queries: require('./src/utils/algolia'),
     },
