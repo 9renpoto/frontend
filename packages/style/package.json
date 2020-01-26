@@ -31,6 +31,6 @@
   },
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "@storybook/preact": "5.2.8"
+    "@storybook/preact": "5.3.9"
   }
 }
