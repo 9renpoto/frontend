@@ -43,6 +43,7 @@ function SEO({
 
   const metaDescription = description || site.siteMetadata.description
 
+  const avator = `https://avatars3.githubusercontent.com/u/520693?s=460&v=4`
   return (
     <Helmet
       htmlAttributes={{
@@ -61,7 +62,7 @@ function SEO({
         },
         {
           property: `og:image`,
-          content: `https://pbs.twimg.com/profile_images/583632411977613312/f9u76num_400x400.png`,
+          content: avator,
         },
         {
           property: `og:locale`,
@@ -90,6 +91,10 @@ function SEO({
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image:src`,
+          content: avator,
         },
       ]
         .concat(

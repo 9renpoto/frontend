@@ -18,8 +18,7 @@
     "lint:stylelint": "stylelint --config .stylelintrc.json 'src/**/*.tsx' ",
     "lint:types": "tsc -p . --noEmit",
     "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "test": "yarn lint"
+    "start": "gatsby develop"
   },
   "keywords": [
     "gatsby"
