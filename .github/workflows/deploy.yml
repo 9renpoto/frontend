@@ -38,6 +38,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: blog
+          path: apps/blog/public
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
