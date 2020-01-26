@@ -13,12 +13,13 @@
 
 # @9renpoto frontend playground
 
-[![codecov](https://codecov.io/gh/9renpoto/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/9renpoto/frontend)
+![Node CI](https://github.com/9renpoto/frontend/workflows/Node%20CI/badge.svg)
+![Update gist with WakaTime stats](https://github.com/9renpoto/frontend/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg)
 [![codebeat badge](https://codebeat.co/badges/3955e242-14da-407d-92e5-7294a0482f86)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-e4b2b4fa-24d5-40e5-b6c5-17fa32312e85)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Supports React and Preact](<https://img.shields.io/badge/%e2%9a%9b%ef%b8%8f-(p)react-00d8ff.svg?style=flat-square>)](https://reactjs.org/)
+[![Supports React and Preact][react-badge]][react]
 
 ## Packages
 
@@ -59,3 +60,6 @@ PRs accepted.
 ## license
 
 MIT
+
+[react-badge]: https://img.shields.io/badge/%E2%9A%9B%EF%B8%8F-(p)react-00d8ff.svg?style=flat-square
+[react]: https://facebook.github.io/react/
