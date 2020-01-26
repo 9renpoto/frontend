@@ -29,5 +29,8 @@
     "@types/material__ripple": "^0.35.2",
     "preact-material-components": "^1.6.1"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@storybook/preact": "5.2.8"
+  }
 }
