@@ -19,16 +19,14 @@ import * as hitComps from './HitComps'
 const Results = connectStateResults(
   ({ searchState: state, searchResults: res, children }) => (
     <Fragment>
-      {res && res.nbHits > 0 ? children : `No results for '${state.query}'`}
+      {res?.nbHits > 0 ? children : `No results for '${state.query}'`}
     </Fragment>
   ),
 )
 
 const Stats = connectStateResults(({ searchResults: res }) => (
   <Fragment>
-    {res &&
-      res.nbHits > 0 &&
-      `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`}
+    {res?.nbHits > 0 && `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`}
   </Fragment>
 ))
 
@@ -69,13 +67,10 @@ export default function Search({ indices, collapse }: Props) {
   const [focus, setFocus] = useState(false)
 
   useClickOutside(ref, () => setFocus(false))
-  if (!process.env.GATSBY_ALGOLIA_APP_ID || !process.env.ALGOLIA_ADMIN_KEY) {
-    return null
-  }
 
   const searchClient = algoliasearch(
-    process.env.GATSBY_ALGOLIA_APP_ID,
-    process.env.ALGOLIA_ADMIN_KEY,
+    process.env.GATSBY_ALGOLIA_APP_ID!,
+    process.env.GATSBY_ALGOLIA_SEARCH_KEY!,
   )
   return (
     <InstantSearch

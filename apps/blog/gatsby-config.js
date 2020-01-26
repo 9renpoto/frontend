@@ -76,29 +76,23 @@ const plugins = [
   },
   `gatsby-plugin-typescript`,
   'gatsby-plugin-typescript-checker',
+  {
+    resolve: `gatsby-plugin-env-variables`,
+    options: {
+      whitelist: ['GATSBY_ALGOLIA_APP_ID', 'GATSBY_ALGOLIA_SEARCH_KEY'],
+    },
+  },
 ]
 
-if (
-  process.env.GATSBY_ALGOLIA_APP_ID &&
-  process.env.ALGOLIA_ADMIN_KEY &&
-  process.env.CONTEXT === 'production'
-) {
-  plugins.concat([
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require('./src/utils/algoria'),
-      },
+if (process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY) {
+  plugins.push({
+    resolve: `gatsby-plugin-algolia`,
+    options: {
+      appId: process.env.ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_ADMIN_KEY,
+      queries: require('./src/utils/algolia'),
     },
-    {
-      resolve: `gatsby-plugin-env-variables`,
-      options: {
-        whitelist: ['GATSBY_ALGOLIA_APP_ID', 'ALGOLIA_ADMIN_KEY'],
-      },
-    },
-  ])
+  })
 }
 
 module.exports = {

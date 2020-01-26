@@ -6,8 +6,8 @@ import { Hit } from 'react-instantsearch-core'
 
 export interface HitCompProps {
   hit: {
-    fields: {
-      slug: string
+    fields?: {
+      slug?: string
     }
     tags: string[]
   }
@@ -18,6 +18,9 @@ export const PageHit = (
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
     | undefined,
 ) => ({ hit }: Hit<HitCompProps>) => {
+  if (!hit?.fields?.slug) {
+    return null
+  }
   return (
     <div>
       <Link to={hit.fields.slug} onClick={clickHandler}>
@@ -34,19 +37,24 @@ export const PostHit = (
   clickHandler:
     | ((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void)
     | undefined,
-) => ({ hit }: Hit<HitCompProps>) => (
-  <div>
-    <Link to={hit.fields.slug} onClick={clickHandler}>
-      <h4>
-        <Highlight attribute="title" hit={hit} tagName="mark" />
-      </h4>
-    </Link>
+) => ({ hit }: Hit<HitCompProps>) => {
+  if (!hit?.fields?.slug) {
+    return null
+  }
+  return (
     <div>
-      <Calendar size="1em" />
-      &nbsp;
-      <Highlight attribute="date" hit={hit} tagName="mark" />
-      &emsp;
+      <Link to={hit.fields?.slug} onClick={clickHandler}>
+        <h4>
+          <Highlight attribute="title" hit={hit} tagName="mark" />
+        </h4>
+      </Link>
+      <div>
+        <Calendar size="1em" />
+        &nbsp;
+        <Highlight attribute="date" hit={hit} tagName="mark" />
+        &emsp;
+      </div>
+      <Snippet attribute="excerpt" hit={hit} tagName="mark" />
     </div>
-    <Snippet attribute="excerpt" hit={hit} tagName="mark" />
-  </div>
-)
+  )
+}
