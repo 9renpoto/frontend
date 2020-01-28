@@ -72,7 +72,7 @@
     "vfile-message": "^2.0.2"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.12.0",
+    "@graphql-codegen/cli": "1.11.3-alpha-ff2bee10.32",
     "@graphql-codegen/typescript": "1.12.0",
     "@graphql-codegen/typescript-operations": "1.12.0",
     "stylelint-config-recommended": "3.0.0",
