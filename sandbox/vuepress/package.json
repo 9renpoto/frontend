@@ -1,0 +1,12 @@
+{
+  "name": "@9renpoto/vuepress",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}

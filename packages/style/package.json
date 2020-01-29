@@ -15,6 +15,7 @@
   "scripts": {
     "build": "run-s clean build:*",
     "build:ts": "tsc -p .",
+    "build:storybook": "build-storybook",
     "clean": "rimraf lib"
   },
   "files": [
