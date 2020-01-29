@@ -1,7 +1,8 @@
 .firebase
 .changelog
+storybook-static
 
-### https://raw.github.com/github/gitignore/6c87d249af5f2b3f8ab65ae0a2648682ee4e8a2d/Node.gitignore
+### https://raw.github.com/github/gitignore/7ab549fcae8269fdd4004065470176f829d88200/Node.gitignore
 
 # Logs
 logs
@@ -110,5 +111,26 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+
+### https://raw.github.com/github/gitignore/7ab549fcae8269fdd4004065470176f829d88200/community/JavaScript/Vue.gitignore
+
+# gitignore template for Vue.js projects
+#
+# Recommended template: Node.gitignore
+
+# TODO: where does this rule come from?
+docs/_book
+
+# TODO: where does this rule come from?
+test/
+
+
+### https://raw.github.com/github/gitignore/7ab549fcae8269fdd4004065470176f829d88200/Elm.gitignore
+
+# elm-package generated files
+elm-stuff
+# elm-repl generated files
+repl-temp-*
 
 
