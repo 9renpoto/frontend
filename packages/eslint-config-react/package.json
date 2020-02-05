@@ -21,7 +21,7 @@
     "react"
   ],
   "dependencies": {
-    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-react-hooks": "^2.2.0"
   }
 }
