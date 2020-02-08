@@ -4081,10 +4081,10 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@prettier/plugin-pug@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.5.tgz#6e84e0a105d70f60389913d07be79c9cfbd1a1e3"
-  integrity sha512-MHqXRj006dJoGbWZWmNGedBIkOybEnFDIJTUtcXNzJcO9uhy9rBoP5dJ61QpFEIb7ufgFgA9qd2Di29RD87eKw==
+"@prettier/plugin-pug@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.6.tgz#33289f1dc7e97693ea7e4ea3150089477b87b569"
+  integrity sha512-XGNNH2URC0Muupn/GytGhkP5AGv5Y6MK4pXZV0y9IHN2T3TMwPMSgUzyMjqI6Cn9Fnf/9Kzw1u3E8h7efaIacg==
   dependencies:
     pug-lexer "~4.1.0"
 
