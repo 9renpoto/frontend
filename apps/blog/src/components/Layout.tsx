@@ -1,9 +1,8 @@
-import React, { Suspense, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 import styled from 'styled-components'
 import { Link as OriginalLink } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
-
-const Search = React.lazy(() => import('./search'))
+import Search from './search'
 
 const Link = styled(OriginalLink)`
   box-shadow: none;
@@ -64,9 +63,7 @@ export default class Layout extends PureComponent<Props> {
       >
         <header>
           {header}
-          <Suspense fallback={null}>
-            <Search indices={searchIndices} />
-          </Suspense>
+          <Search indices={searchIndices} />
         </header>
         <main>{children}</main>
         <footer>
