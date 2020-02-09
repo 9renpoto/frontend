@@ -6,5 +6,40 @@ jobs:
 
     steps:
       - checkout
+      - run: npm i moxci
       - run: cargo install mdbook
       - run: cd sandbox/mdbook && mdbook build
+      - store_artifacts:
+          path: sandbox/mdbook/book
+      - run: npx moxci sandbox/mdbook/book/index.html
+
+  build:
+    docker:
+      - image: circleci/node:lts
+        environment:
+          TZ: Asia/Tokyo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: npx build
+
+      - store_artifacts:
+          path: packages/style/storybook-static
+      - run: npx moxci packages/style/storybook-static/index.html
+
+      - store_artifacts:
+          path: sandbox/sapper/__sapper__/export
+      - run: npx moxci sandbox/sapper/__sapper__/export/index.html
+
+      - store_artifacts:
+          path: sandbox/vuepress/docs/.vuepress/dist
+      - run: npx moxci sandbox/vuepress/docs/.vuepress/index.html
