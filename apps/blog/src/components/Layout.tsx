@@ -1,8 +1,9 @@
-import React, { PureComponent } from 'react'
+import React, { Suspense, PureComponent } from 'react'
 import styled from 'styled-components'
 import { Link as OriginalLink } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
-import Search from './search'
+
+const Search = React.lazy(() => import('./search'))
 
 const Link = styled(OriginalLink)`
   box-shadow: none;
@@ -26,10 +27,9 @@ const searchIndices = [
 export default class Layout extends PureComponent<Props> {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
+    if (location.pathname === `${__PATH_PREFIX__}/`) {
       header = (
         <h1
           style={{
@@ -64,7 +64,9 @@ export default class Layout extends PureComponent<Props> {
       >
         <header>
           {header}
-          <Search indices={searchIndices} />
+          <Suspense fallback={null}>
+            <Search indices={searchIndices} />
+          </Suspense>
         </header>
         <main>{children}</main>
         <footer>
