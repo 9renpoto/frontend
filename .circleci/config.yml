@@ -13,7 +13,7 @@ jobs:
           path: sandbox/mdbook/book
       - run: npx moxci sandbox/mdbook/book/index.html
 
-  build:
+  static:
     docker:
       - image: circleci/node:lts
         environment:
