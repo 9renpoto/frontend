@@ -3,8 +3,8 @@ module.exports = async ({ config: defaultConfig }) => {
     test: /\.(ts|tsx)$/,
     loader: require.resolve('ts-loader'),
     options: {
-      transpileOnly: true
-    }
+      transpileOnly: true,
+    },
   })
 
   defaultConfig.resolve.extensions.push('.ts', '.tsx', '.jsx', '.js')
