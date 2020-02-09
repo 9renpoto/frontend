@@ -59,7 +59,7 @@ const plugins = [
       background_color: `#ffffff`,
       theme_color: `#663399`,
       display: `minimal-ui`,
-      icon: `content/assets/gatsby-icon.png`,
+      icon: `content/assets/profile-pic.jpg`,
     },
   },
   `gatsby-plugin-offline`,
