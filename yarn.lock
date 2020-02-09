@@ -20068,6 +20068,13 @@ prettier-plugin-package@0.3.1:
   resolved "https://registry.yarnpkg.com/prettier-plugin-package/-/prettier-plugin-package-0.3.1.tgz#dbb78fa0408c2ab18045ac23868bad4560607a93"
   integrity sha512-aCx+dVwRwgzsqulCFZcLTS7gTMmn+TXhRIDTbn8ev50n0abIlvukHLLZ9qiJN+6tdSZtd40rlqMx5oQ/mvw1+w==
 
+prettier-plugin-svelte@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-0.7.0.tgz#5ac0b9f194e0450c88ff1e167cbf3b32d2642df2"
+  integrity sha512-SuZSeMh48rx42kCFEpI/xE1XgjxQcS3r22Yo7jIhBYRhwbAa8laNxiIHsfeWWkX8BdyELkEayaTQp4ricckwTQ==
+  dependencies:
+    tslib "^1.9.3"
+
 prettier-plugin-toml@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/prettier-plugin-toml/-/prettier-plugin-toml-0.3.1.tgz#71b5291ef9c2a20865d2dfe1dbc24435bcb596b5"
