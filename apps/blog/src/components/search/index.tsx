@@ -68,15 +68,26 @@ export default function Search({ indices, collapse }: Props) {
 
   useClickOutside(ref, () => setFocus(false))
 
+  if (
+    !process.env.GATSBY_ALGOLIA_APP_ID ||
+    !process.env.GATSBY_ALGOLIA_SEARCH_KEY
+  ) {
+    return null
+  }
+
   const searchClient = algoliasearch(
-    process.env.GATSBY_ALGOLIA_APP_ID!,
-    process.env.GATSBY_ALGOLIA_SEARCH_KEY!,
+    process.env.GATSBY_ALGOLIA_APP_ID,
+    process.env.GATSBY_ALGOLIA_SEARCH_KEY,
   )
   return (
     <InstantSearch
       searchClient={searchClient}
       indexName={indices[0].name}
-      onSearchStateChange={({ query }) => setQuery(query)}
+      onSearchStateChange={({ query: q }) => {
+        if (q) {
+          setQuery(q)
+        }
+      }}
       root={{ Root, props: { ref } }}
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
