@@ -30,7 +30,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npx build
+      - run: yarn build
 
       - store_artifacts:
           path: packages/style/storybook-static
