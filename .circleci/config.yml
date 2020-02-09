@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  mdbook:
     docker:
       - image: circleci/rust:latest-node
 
@@ -43,3 +43,10 @@ jobs:
       - store_artifacts:
           path: sandbox/vuepress/docs/.vuepress/dist
       - run: npx moxci sandbox/vuepress/docs/.vuepress/index.html
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - mdbook
+      - static
