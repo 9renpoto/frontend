@@ -42,7 +42,7 @@ jobs:
 
       - store_artifacts:
           path: sandbox/vuepress/docs/.vuepress/dist
-      - run: npx moxci sandbox/vuepress/docs/.vuepress/index.html
+      - run: npx moxci sandbox/vuepress/docs/.vuepress/dist/index.html
 
 workflows:
   version: 2
