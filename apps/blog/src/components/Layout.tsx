@@ -26,10 +26,9 @@ const searchIndices = [
 export default class Layout extends PureComponent<Props> {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
+    if (location.pathname === `${__PATH_PREFIX__}/`) {
       header = (
         <h1
           style={{
