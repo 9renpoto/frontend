@@ -4240,10 +4240,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.11.tgz#aeb16f50649a91af79dbe36574b66d0f9e4d9f71"
   integrity sha512-3NsZsJIA/22P3QUyrEDNA2D133H4j224twJrdipXN38dpnIOzAbUDtOwkcJ5pXmn75w7LSQDjA4tO9dm1XlqlA==
 
-"@prettier/plugin-pug@1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.6.tgz#33289f1dc7e97693ea7e4ea3150089477b87b569"
-  integrity sha512-XGNNH2URC0Muupn/GytGhkP5AGv5Y6MK4pXZV0y9IHN2T3TMwPMSgUzyMjqI6Cn9Fnf/9Kzw1u3E8h7efaIacg==
+"@prettier/plugin-pug@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.1.7.tgz#5495b6e1c793f7a504d66066f0e8ec9c99f19c5a"
+  integrity sha512-g2R2jIof64vPCZhDHortwQQPj+h6HpYqB3batYNtdmvKGIutviRAewMcHTcPRbxqbTy9dDDmnW38UC+gpJES9Q==
   dependencies:
     pug-lexer "~4.1.0"
 
