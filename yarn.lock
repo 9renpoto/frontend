@@ -26152,10 +26152,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vnu-jar@20.1.2:
-  version "20.1.2"
-  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-20.1.2.tgz#98558dd7de00d5b9fa23aa11d25568972aa6feb7"
-  integrity sha512-j2ZVSIlDug2vpzBwbZqDrVmM2sh49a36vaqJorX1P2DT71/LW9stS4Cpeh+qih5FWQmuNkZAopIzbOmlXJjs9Q==
+vnu-jar@20.2.25:
+  version "20.2.25"
+  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-20.2.25.tgz#6ace598eed1de1a55bf48155b1bdeaafdedd23a3"
+  integrity sha512-yFZCiKRrgo2K7WRcVrsjisuq6sSSNbtC/RgXRfB4CKZKS8bf4CVhJEvoPXu/WrvR5pED9X6sNrPvWYGXP+rpxQ==
 
 void-elements@^2.0.1:
   version "2.0.1"
