@@ -36,7 +36,7 @@
     "faker": "4.1.0",
     "husky": "4.2.3",
     "jest": "25.1.0",
-    "lerna-changelog": "1.0.0",
+    "lerna-changelog": "1.0.1",
     "lint-staged": "10.0.8",
     "mockdate": "2.0.5",
     "moxci": "0.2.0",
