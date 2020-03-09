@@ -1,7 +1,9 @@
+apps/blog/src/graphqlTypes.ts
+__sapper__/
 dist/
 lib/
-apps/blog/src/graphqlTypes.ts
 sandbox/mdbook/book/
+storybook-static/
 
 ### https://raw.github.com/github/gitignore/086eacaaa2b9fde537315141e154631b945e1369/Node.gitignore
 
