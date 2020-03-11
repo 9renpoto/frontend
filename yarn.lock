@@ -20511,10 +20511,10 @@ preact-material-components@^1.6.1:
     bind-decorator "^1.0.11"
     material-components-web "0.39.3"
 
-preact@10.1.1:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.1.1.tgz#1fd12e3ed6b74993ed8805f68e9d953cc914889a"
-  integrity sha512-mKW7Cdn68XMhdes0FjyIbA8+IVPsj3aIuAEQlZVkj9E2VhujWcXZEfwirBoXK6qZYfj1djaTBDCFKjAu1sK93w==
+preact@10.3.4:
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.3.4.tgz#e1542a4d3eba3e7a37f312a2c331231b97052024"
+  integrity sha512-wMgzs/RGYf0I1PZf8ZFJdyU/3kCcwepJyVYe+N9FGajyQWarMoPrPfrQajcG0psPj6ySYv2cSuLYFCihvV/Qrw==
 
 prebuild-install@^5.3.3:
   version "5.3.3"
