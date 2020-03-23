@@ -42,7 +42,7 @@
     "moxci": "0.2.0",
     "prettier-eslint-cli": "5.0.0",
     "prettier-plugin-elm": "0.6.0",
-    "prettier-plugin-package": "0.3.1",
+    "prettier-plugin-package": "1.0.0",
     "prettier-plugin-svelte": "0.7.0",
     "prettier-plugin-toml": "0.3.1",
     "remark-cli": "7.0.1",
