@@ -28,7 +28,7 @@ const focus = css`
 const collapse = css`
   width: 0;
   cursor: pointer;
-  color: ${props => props.theme.lightBlue};
+  color: ${(props) => props.theme.lightBlue};
   + ${SearchIcon} {
     color: white;
   }
@@ -41,7 +41,7 @@ const collapse = css`
 `
 
 const expand = css`
-  background: ${props => props.theme.veryLightGray};
+  background: ${(props) => props.theme.veryLightGray};
   width: 6em;
   margin-left: -1.6em;
   padding-left: 1.6em;

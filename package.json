@@ -10,7 +10,7 @@
     "lint:eslint": "npx eslint . --ext=ts,tsx",
     "lint:md": "remark .",
     "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql,pug,elm,toml,svelte}'",
+    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
     "migrate:generate": "ts-node --project sandbox/nest/tsconfig.json $(npm bin)/typeorm migration:generate -n thinking",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test"
@@ -25,7 +25,7 @@
     "typescript": "3.8.3"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "1.1.7",
+    "@prettier/plugin-pug": "1.1.10",
     "@types/faker": "4.1.10",
     "@types/jest": "25.1.4",
     "@types/mockdate": "2.0.0",
@@ -40,11 +40,9 @@
     "lint-staged": "10.0.9",
     "mockdate": "2.0.5",
     "moxci": "0.2.0",
-    "prettier-eslint-cli": "5.0.0",
+    "prettier": "^2.0.2",
     "prettier-plugin-elm": "0.6.0",
-    "prettier-plugin-package": "0.3.1",
-    "prettier-plugin-svelte": "0.7.0",
-    "prettier-plugin-toml": "0.3.1",
+    "prettier-plugin-package": "1.0.0",
     "remark-cli": "7.0.1",
     "remark-preset-lint-recommended": "3.0.3",
     "rimraf": "3.0.2",
@@ -67,18 +65,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier-eslint --write --eslint-config-path ./packages/eslint-config/index.js"
-    ],
-    "*.{ts,tsx}": [
-      "prettier-eslint --write"
-    ],
-    "*.{graphql,css,scss,json,toml,elm,pug,svelte}": [
+    "*.{md,js,jsx,ts,tsx,graphql,css,scss,json,toml,elm,pug,svelte}": [
       "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write",
-      "textlint --fix"
     ]
   },
   "prettier": {
