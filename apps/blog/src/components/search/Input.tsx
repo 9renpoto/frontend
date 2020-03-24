@@ -10,7 +10,7 @@ export default connectSearchBox(
         type="text"
         placeholder="Search"
         aria-label="Search"
-        onChange={e => refine(e.target.value)}
+        onChange={(e) => refine(e.target.value)}
         {...rest}
       />
       <SearchIcon />
