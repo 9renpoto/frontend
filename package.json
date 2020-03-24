@@ -44,7 +44,7 @@
     "prettier-plugin-elm": "0.6.0",
     "prettier-plugin-package": "1.0.0",
     "remark-cli": "7.0.1",
-    "remark-preset-lint-recommended": "3.0.3",
+    "remark-preset-lint-recommended": "3.0.4",
     "rimraf": "3.0.2",
     "ts-jest": "25.2.1",
     "ts-loader": "6.2.2",
