@@ -41,7 +41,7 @@
     "mockdate": "2.0.5",
     "moxci": "0.2.0",
     "prettier": "2.0.2",
-    "prettier-plugin-elm": "0.6.0",
+    "prettier-plugin-elm": "0.7.0",
     "prettier-plugin-package": "1.0.0",
     "remark-cli": "7.0.1",
     "remark-preset-lint-recommended": "3.0.4",
