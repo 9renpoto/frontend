@@ -40,7 +40,7 @@
     "lint-staged": "10.1.7",
     "mockdate": "2.0.5",
     "moxci": "0.2.0",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "prettier-plugin-elm": "0.7.0",
     "prettier-plugin-package": "1.0.0",
     "remark-cli": "8.0.0",
