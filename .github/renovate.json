@@ -2,5 +2,6 @@
   "extends": ["config:js-lib"],
   "assignees": ["9renpoto"],
   "labels": ["Type: Dependencies"],
+  "automerge": true,
   "semanticCommits": true
 }
