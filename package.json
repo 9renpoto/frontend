@@ -35,7 +35,7 @@
     "eslint-plugin-jest": "23.9.0",
     "faker": "4.1.0",
     "husky": "4.2.5",
-    "jest": "25.5.4",
+    "jest": "26.0.1",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.2.2",
     "mockdate": "2.0.5",
