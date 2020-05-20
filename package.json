@@ -38,7 +38,7 @@
     "jest": "26.0.1",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.2.4",
-    "mockdate": "2.0.5",
+    "mockdate": "3.0.0",
     "moxci": "0.2.0",
     "prettier": "2.0.5",
     "prettier-plugin-elm": "0.7.0",
