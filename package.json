@@ -37,7 +37,7 @@
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna-changelog": "1.0.1",
-    "lint-staged": "10.2.6",
+    "lint-staged": "10.2.7",
     "mockdate": "3.0.2",
     "moxci": "0.2.0",
     "prettier": "2.0.5",
