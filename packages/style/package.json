@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/style",
-  "version": "5.5.1",
+  "version": "6.0.0",
   "description": "thinking web",
   "license": "MIT",
   "repository": {
@@ -14,8 +14,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "run-s clean build:*",
-    "build:ts": "tsc -p .",
     "build:storybook": "build-storybook",
+    "build:ts": "tsc -p .",
     "clean": "rimraf lib"
   },
   "files": [
@@ -30,8 +30,8 @@
     "@types/material__ripple": "^0.35.2",
     "preact-material-components": "^1.6.1"
   },
-  "types": "lib/index.d.ts",
   "devDependencies": {
     "@storybook/preact": "5.3.19"
-  }
+  },
+  "types": "lib/index.d.ts"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/eslint-config-flowtype",
-  "version": "5.5.1",
+  "version": "6.0.0",
   "description": "flowtype with eslint",
   "license": "MIT",
   "repository": {
@@ -21,7 +21,7 @@
     "flowtype"
   ],
   "dependencies": {
-    "@9renpoto/eslint-config": "^5.5.1",
+    "@9renpoto/eslint-config": "^6.0.0",
     "babel-eslint": "^10.0.3",
     "eslint-plugin-flowtype": "^5.1.3"
   },
