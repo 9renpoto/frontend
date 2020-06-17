@@ -23,6 +23,6 @@
     "stylelint-config-prettier": "^8.0.1"
   },
   "devDependencies": {
-    "stylelint": "13.6.0"
+    "stylelint": "13.6.1"
   }
 }
