@@ -16,7 +16,7 @@
     "test": "lerna run test"
   },
   "dependencies": {
-    "@babel/core": "7.10.4",
+    "@babel/core": "7.10.5",
     "babel-loader": "8.1.0",
     "cpx": "1.5.0",
     "file-loader": "6.0.0",
