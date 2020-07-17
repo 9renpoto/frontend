@@ -43,7 +43,7 @@
     "prettier": "2.0.5",
     "prettier-plugin-elm": "0.7.0",
     "prettier-plugin-package": "1.0.0",
-    "remark-cli": "8.0.0",
+    "remark-cli": "8.0.1",
     "remark-preset-lint-recommended": "4.0.1",
     "rimraf": "3.0.2",
     "ts-jest": "26.1.3",
