@@ -43,7 +43,7 @@
     "gatsby-plugin-preact": "4.0.9",
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-sentry": "1.0.1",
-    "gatsby-plugin-sharp": "2.6.19",
+    "gatsby-plugin-sharp": "2.6.20",
     "gatsby-plugin-styled-components": "3.3.10",
     "gatsby-plugin-typescript": "2.4.15",
     "gatsby-plugin-typescript-checker": "1.1.1",
