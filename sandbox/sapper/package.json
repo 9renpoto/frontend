@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/sapper",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "TODO",
   "scripts": {
     "build": "run-s build:*",

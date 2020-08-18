@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/style",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "thinking web",
   "license": "MIT",
   "repository": {
@@ -31,7 +31,7 @@
     "preact-material-components": "^1.6.1"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^6.0.12",
+    "@storybook/addon-essentials": "6.0.12",
     "@storybook/preact": "6.0.12"
   },
   "types": "lib/index.d.ts"
