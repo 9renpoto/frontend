@@ -1,3 +1,14 @@
+## v7.0.0 (2020-08-18)
+
+#### :rocket: Type: Feature
+
+- `eslint-config-flowtype`, `eslint-config-react`, `eslint-config-typescript`, `eslint-config`, `style`, `stylelint-config`, `textlint-config-ja`, `tslint-config`
+  - [#2001](https://github.com/9renpoto/frontend/pull/2001) chore: update deps ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v5.5.0 (2020-01-12)
 
 #### :rocket: Type: Feature
