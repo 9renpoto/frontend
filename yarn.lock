@@ -6351,13 +6351,6 @@
     "@types/react" "*"
     "@types/reactcss" "*"
 
-"@types/react-dom@^16.9.8":
-  version "16.9.8"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
-  integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
-  dependencies:
-    "@types/react" "*"
-
 "@types/react-helmet@5.0.15":
   version "5.0.15"
   resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.15.tgz#af0370617307e9f062c6aee0f1f5588224ce646e"
@@ -6402,14 +6395,6 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
-
-"@types/react@^16.9.46":
-  version "16.9.46"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.46.tgz#f0326cd7adceda74148baa9bff6e918632f5069e"
-  integrity sha512-dbHzO3aAq1lB3jRQuNpuZ/mnu+CdD3H0WVaaBQA8LTT3S33xhVBUj232T8M3tAhSWJs/D/UqORYUlJNl/8VQZg==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^3.0.2"
 
 "@types/reactcss@*":
   version "1.2.3"
@@ -12465,10 +12450,10 @@ eslint-plugin-react-hooks@^1.7.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react-hooks@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.4.tgz#aed33b4254a41b045818cacb047b81e6df27fa58"
-  integrity sha512-equAdEIsUETLFNCmmCkiCGq6rkSK5MoJhXFPFYeUebcjKgBmWWcgVOqZyQC8Bv1BwVCnTq9tBxgJFgAJTWoJtA==
+eslint-plugin-react-hooks@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.0.tgz#6323fbd5e650e84b2987ba76370523a60f4e7925"
+  integrity sha512-36zilUcDwDReiORXmcmTc6rRumu9JIM3WjSvV0nclHoUQ0CNrX866EwONvLR/UqaeqFutbAnVu8PEmctdo2SRQ==
 
 eslint-plugin-react@^7.20.2:
   version "7.20.3"
