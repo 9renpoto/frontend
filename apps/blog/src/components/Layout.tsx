@@ -1,6 +1,6 @@
+import { Link as OriginalLink } from 'gatsby'
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
-import { Link as OriginalLink } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
 import Search from './search'
 

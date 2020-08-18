@@ -12,11 +12,4 @@ module.exports = {
       modules: true,
     },
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx'],
-      },
-    },
-  },
 }

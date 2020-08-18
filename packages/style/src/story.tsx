@@ -1,7 +1,6 @@
+import { random } from 'faker'
 import Button from 'preact-material-components/Button'
 import 'preact-material-components/Button/style.css'
-import { h } from 'preact'
-import { random } from 'faker'
 
 export default { title: 'material' }
 

@@ -13,9 +13,6 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint . --ext=ts,tsx -c index.js"
-  },
   "keywords": [
     "eslint",
     "TypeScript"

@@ -13,16 +13,12 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint . -c index.js"
-  },
   "keywords": [
     "config",
     "eslint"
   ],
   "dependencies": {
     "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-prettier": "^3.1.2"
+    "eslint-plugin-prettier": "^3.1.4"
   }
 }

@@ -25,13 +25,6 @@
     "gatsby"
   ],
   "dependencies": {
-    "@types/algoliasearch": "3.34.10",
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-helmet": "5.0.15",
-    "@types/react-instantsearch-dom": "5.2.6",
-    "@types/styled-components": "5.1.2",
-    "@types/typography": "0.16.3",
     "gatsby": "2.24.47",
     "gatsby-image": "2.4.16",
     "gatsby-plugin-algolia": "0.11.2",
@@ -77,6 +70,12 @@
     "@graphql-codegen/cli": "1.17.8",
     "@graphql-codegen/typescript": "1.17.8",
     "@graphql-codegen/typescript-operations": "1.17.8",
+    "@types/algoliasearch": "3.34.10",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "5.0.15",
+    "@types/react-instantsearch-dom": "5.2.6",
+    "@types/styled-components": "5.1.2",
+    "@types/typography": "0.16.3",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0"

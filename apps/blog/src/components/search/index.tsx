@@ -1,20 +1,20 @@
+import algoliasearch from 'algoliasearch/lite'
 import React, {
-  useState,
-  useEffect,
   createRef,
   Fragment,
   RefObject,
+  useEffect,
+  useState,
 } from 'react'
 import {
-  InstantSearch,
-  Index,
-  Hits,
   connectStateResults,
+  Hits,
+  Index,
+  InstantSearch,
 } from 'react-instantsearch-dom'
-import algoliasearch from 'algoliasearch/lite'
-import { Root, HitsWrapper, PoweredBy } from './Styles'
-import Input from './Input'
 import * as hitComps from './HitComps'
+import Input from './Input'
+import { HitsWrapper, PoweredBy, Root } from './Styles'
 
 const Results = connectStateResults(
   ({ searchState: state, searchResults: res, children }) => (
