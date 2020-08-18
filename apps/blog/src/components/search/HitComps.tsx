@@ -1,8 +1,8 @@
-import React from 'react'
-import { Highlight, Snippet } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
-import { Calendar } from 'styled-icons/octicons/Calendar'
+import React from 'react'
 import { Hit } from 'react-instantsearch-core'
+import { Highlight, Snippet } from 'react-instantsearch-dom'
+import { Calendar } from 'styled-icons/octicons/Calendar'
 
 export interface HitCompProps {
   hit: {

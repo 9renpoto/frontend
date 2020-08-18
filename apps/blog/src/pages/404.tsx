@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react'
 import { graphql } from 'gatsby'
+import React, { PureComponent } from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 import { Query } from '../graphqlTypes'

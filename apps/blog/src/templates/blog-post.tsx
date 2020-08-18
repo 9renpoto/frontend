@@ -1,10 +1,10 @@
+import { graphql, Link } from 'gatsby'
 import React, { PureComponent } from 'react'
-import { Link, graphql } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
+import { MarkdownRemarkEdge, Query } from '../graphqlTypes'
 import { rhythm, scale } from '../utils/typography'
-import { Query, MarkdownRemarkEdge } from '../graphqlTypes'
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

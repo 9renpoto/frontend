@@ -1,7 +1,7 @@
 import React from 'react'
-import { connectSearchBox } from 'react-instantsearch-dom'
 import { SearchBoxProvided } from 'react-instantsearch-core'
-import { SearchIcon, Form, Input } from './Styles'
+import { connectSearchBox } from 'react-instantsearch-dom'
+import { Form, Input, SearchIcon } from './Styles'
 
 export default connectSearchBox(
   ({ refine, ...rest }: SearchBoxProvided & { onFocus: () => void }) => (
