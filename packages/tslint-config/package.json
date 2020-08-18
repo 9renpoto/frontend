@@ -8,9 +8,9 @@
     "url": "git+ssh://git@github.com/9renpoto/tslint-config.git"
   },
   "author": "@9renpoto",
-  "homepage": "https://github.com/9renpoto/tslint-config#readme",
+  "homepage": "https://github.com/9renpoto/frontend/tslint-config",
   "bugs": {
-    "url": "https://github.com/9renpoto/tslint-config/issues"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "tslint.json",
   "scripts": {

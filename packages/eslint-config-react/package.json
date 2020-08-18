@@ -13,15 +13,12 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint . -c index.js --ext=js,jsx"
-  },
   "keywords": [
     "eslint",
     "react"
   ],
   "dependencies": {
     "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-react-hooks": "^4.0.4"
+    "eslint-plugin-react-hooks": "^4.1.0"
   }
 }

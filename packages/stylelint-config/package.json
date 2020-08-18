@@ -5,17 +5,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/stylelint-config.git"
+    "url": "git+ssh://git@github.com/9renpoto/frontend.git"
   },
   "author": "@9renpoto",
-  "homepage": "https://github.com/9renpoto/stylelint-config#readme",
+  "homepage": "https://github.com/9renpoto/frontend/packages/stylelint-config",
   "bugs": {
-    "url": "https://github.com/9renpoto/stylelint-config/pulls"
+    "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "lint": "stylelint \"examples/*.css\""
-  },
   "keywords": [
     "stylelint-config"
   ],
