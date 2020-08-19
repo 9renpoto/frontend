@@ -22232,7 +22232,7 @@ remark-preset-lint-recommended@4.0.1:
     remark-lint-no-unused-definitions "^2.0.0"
     remark-lint-ordered-list-marker-style "^2.0.0"
 
-remark-preset-prettier@^0.4.0:
+remark-preset-prettier@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/remark-preset-prettier/-/remark-preset-prettier-0.4.0.tgz#b0edae6b46286c255ca897d44901145867585ab3"
   integrity sha512-Y0lwBg/xRyE8/yF4IYJVJxrUHSVE8WThbsnKS5/fE4lSAoX/s0yuiEl7gv/+OWA1G7r5o0xKLZPW3rJjhvfvpw==
