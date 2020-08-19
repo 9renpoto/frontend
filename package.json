@@ -11,6 +11,7 @@
     "lint:md": "remark .",
     "lint:pkg": "lerna run lint --parallel",
     "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
+    "lint:style": "stylelint --syntax css-in-js '{packages,apps}/**/*.tsx'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test"
   },
@@ -41,6 +42,7 @@
     "prettier-plugin-package": "1.0.0",
     "remark-cli": "8.0.1",
     "remark-preset-lint-recommended": "4.0.1",
+    "remark-preset-prettier": "^0.4.0",
     "rimraf": "3.0.2",
     "ts-jest": "26.2.0",
     "ts-loader": "8.0.2",
@@ -64,6 +66,13 @@
   "lint-staged": {
     "*.{md,js,jsx,ts,tsx,graphql,css,scss,json,toml,elm,pug,svelte}": [
       "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.tsx": [
+      "stylelint --fix"
     ]
   },
   "prettier": {
@@ -73,7 +82,8 @@
   },
   "remarkConfig": {
     "plugins": [
-      "remark-preset-lint-recommended"
+      "preset-lint-recommended",
+      "preset-prettier"
     ]
   },
   "stylelint": {

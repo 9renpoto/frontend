@@ -1,15 +1,6 @@
 module.exports = {
-  extends: [
-    'prettier',
-    'prettier/standard',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-  ],
+  extends: ['prettier', 'prettier/standard'],
   rules: {
-    'import/order': [
-      'error',
-      { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] },
-    ],
     'no-else-return': 2,
     'no-var': 2,
     'no-console': 2,
