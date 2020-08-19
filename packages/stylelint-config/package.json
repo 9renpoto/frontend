@@ -17,7 +17,8 @@
     "stylelint-config"
   ],
   "dependencies": {
-    "stylelint-config-prettier": "^8.0.1"
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recess-order": "^2.1.0"
   },
   "devDependencies": {
     "stylelint": "13.6.1"
