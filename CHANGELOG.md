@@ -1,3 +1,14 @@
+## v7.0.1 (2020-08-19)
+
+#### :bug: Type: Bug
+
+- `eslint-config`, `stylelint-config`
+  - [#2005](https://github.com/9renpoto/frontend/pull/2005) fix: remove import plugin ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v7.0.0 (2020-08-18)
 
 #### :rocket: Type: Feature
