@@ -64,6 +64,13 @@
   "lint-staged": {
     "*.{md,js,jsx,ts,tsx,graphql,css,scss,json,toml,elm,pug,svelte}": [
       "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.tsx": [
+      "stylelint --fix"
     ]
   },
   "prettier": {
