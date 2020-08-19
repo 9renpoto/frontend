@@ -1,6 +1,7 @@
 {
   "name": "@9renpoto/tslint-config",
-  "version": "7.0.0",
+  "version": "7.0.1",
+  "private": true,
   "description": "@9nrepoto Linter Settings",
   "license": "MIT",
   "repository": {
