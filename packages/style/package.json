@@ -31,8 +31,8 @@
     "preact-material-components": "^1.6.1"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "6.0.12",
-    "@storybook/preact": "6.0.12"
+    "@storybook/addon-essentials": "6.0.13",
+    "@storybook/preact": "6.0.13"
   },
   "types": "lib/index.d.ts"
 }
