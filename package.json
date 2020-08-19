@@ -86,11 +86,6 @@
       "preset-prettier"
     ]
   },
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ]
-  },
   "stylelint": {
     "extends": "@9renpoto/stylelint-config"
   },
