@@ -11,6 +11,7 @@
     "lint:md": "remark .",
     "lint:pkg": "lerna run lint --parallel",
     "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
+    "lint:style": "stylelint --syntax css-in-js '{packages,apps}/**/*.tsx'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test"
   },
