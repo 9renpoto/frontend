@@ -1,3 +1,14 @@
+## v7.0.3 (2020-08-20)
+
+#### :bug: Type: Bug
+
+- `eslint-config-react`
+  - [#2012](https://github.com/9renpoto/frontend/pull/2012) fix: added eslint-config-react ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v7.0.1 (2020-08-19)
 
 #### :bug: Type: Bug
