@@ -15,7 +15,6 @@
 
 ![Node CI](https://github.com/9renpoto/frontend/workflows/Node%20CI/badge.svg)
 ![Update gist with WakaTime stats](https://github.com/9renpoto/frontend/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg)
-[![codebeat badge](https://codebeat.co/badges/3955e242-14da-407d-92e5-7294a0482f86)](https://codebeat.co/projects/github-com-9renpoto-frontend-master-e4b2b4fa-24d5-40e5-b6c5-17fa32312e85)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -34,7 +33,6 @@ This repository is managed as monorepo.
 | **[@9renpoto/style](./packages/style)**                                       | [![NPM version](https://badge.fury.io/js/%409renpoto%2Fstyle.svg)](https://badge.fury.io/js/%409renpoto%2Fstyle)                                       |
 | **[@9renpoto/stylelint-config](./packages/stylelint-config)**                 | [![NPM version](https://badge.fury.io/js/%409renpoto%2Fstylelint-config.svg)](https://badge.fury.io/js/%409renpoto%2Fstylelint-config)                 |
 | **[@9renpoto/textlint-config-ja](./packages/textlint-config-ja)**             | [![npm version](https://badge.fury.io/js/%409renpoto%2Ftextlint-config-ja.svg)](https://badge.fury.io/js/%409renpoto%2Ftextlint-config-ja)             |
-| **[@9renpoto/tslint-config](./packages/tslint-config)**                       | [![npm version](https://badge.fury.io/js/%409renpoto%2Ftslint-config.svg)](https://badge.fury.io/js/%409renpoto%2Ftslint-config)                       |
 
 ## Apps
 
