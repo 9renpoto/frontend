@@ -3,13 +3,22 @@ on:
   schedule:
     - cron: "0 0 * * *"
 jobs:
-  update-gist:
+  waka-box:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Update gist
-        uses: matchai/waka-box@master
+      - name: waka-box
+        uses: matchai/waka-box@v4.0.3
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 95a6308934c189cbc1db424c014f529e
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+  productive-box:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: productive-box
+        uses: maxam2017/productive-box@v1.1.0
+        env:
+          GIST_ID: b5c387b417293ccb63e839f22f1c747c
+          TIMEZONE: Asia/Tokyo
