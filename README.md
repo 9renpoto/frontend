@@ -14,7 +14,6 @@
 # @9renpoto frontend playground
 
 ![Node CI](https://github.com/9renpoto/frontend/workflows/Node%20CI/badge.svg)
-![Update gist with WakaTime stats](https://github.com/9renpoto/frontend/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
 [![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
