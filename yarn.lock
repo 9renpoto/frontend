@@ -23059,10 +23059,10 @@ sanitize-html@^1.27.0:
     parse-srcset "^1.0.2"
     postcss "^7.0.27"
 
-sapper@0.28.3:
-  version "0.28.3"
-  resolved "https://registry.yarnpkg.com/sapper/-/sapper-0.28.3.tgz#23370f4f805386f573e7b84e601aebe46b03ad59"
-  integrity sha512-4hQv6ApLWbYy8OPy3f9Pdxsu8eHivIFh+VAb5UZMY811aTPb20SudxZAMpdJaNYwgR3rHqRDCRllfO134XT6Nw==
+sapper@0.28.4:
+  version "0.28.4"
+  resolved "https://registry.yarnpkg.com/sapper/-/sapper-0.28.4.tgz#e2486dfd40decb0b8ee70639ac9ae0ce1a946dab"
+  integrity sha512-+6nw10RiMylt8SEXFbY49TWv37TX7x6clTeBKGsAfdlWmIXha8q/Mu9ruVK/Kwsiupv62MREU9vvwtuvLWBtqg==
   dependencies:
     html-minifier "^4.0.0"
     http-link-header "^1.0.2"
