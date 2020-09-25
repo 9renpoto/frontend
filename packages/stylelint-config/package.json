@@ -21,6 +21,6 @@
     "stylelint-config-recess-order": "^2.1.0"
   },
   "devDependencies": {
-    "stylelint": "13.7.1"
+    "stylelint": "13.7.2"
   }
 }
