@@ -1,4 +1,4 @@
-name: Update gist with WakaTime stats
+name: pinned-gists
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -6,7 +6,7 @@ jobs:
   waka-box:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
       - name: waka-box
         uses: matchai/waka-box@v4.0.3
         env:
@@ -16,7 +16,7 @@ jobs:
   productive-box:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
       - name: productive-box
         uses: maxam2017/productive-box@v1.1.0
         env:

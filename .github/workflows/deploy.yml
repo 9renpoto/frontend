@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v1
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Build
@@ -21,7 +21,7 @@ jobs:
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v1
         with:
           name: blog
           path: apps/blog/public
@@ -32,14 +32,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v1
       - name: Download Artifact
-        uses: actions/download-artifact@master
+        uses: actions/download-artifact@v1
         with:
           name: blog
           path: apps/blog/public
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: w9jds/firebase-action@v1.5.0
         with:
           args: deploy --only hosting
         env:
