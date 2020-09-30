@@ -44,9 +44,18 @@ const plugins = [
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
   {
-    resolve: `gatsby-plugin-google-analytics`,
+    resolve: `gatsby-plugin-google-gtag`,
     options: {
-      trackingId: 'UA-39548809-3',
+      trackingIds: ['G-5SVZ0B41GD'],
+      gtagConfig: {
+        anonymize_ip: true,
+        cookie_expires: 0,
+      },
+      pluginConfig: {
+        head: false,
+        respectDNT: true,
+        exclude: [],
+      },
     },
   },
   {

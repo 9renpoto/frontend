@@ -12762,13 +12762,13 @@ gatsby-plugin-feed@2.5.12:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@2.3.14:
-  version "2.3.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.14.tgz#61b3517a9bdc2548101440d1c2803f33bed97136"
-  integrity sha512-KgOIRbIULeMMyGBCY5WQVOM1AmB/1HgY1ypH1UZYxS15riTO6WSTfp+5hcxCS75Xc/6HgAOjZlNibCH02Tz1mQ==
+gatsby-plugin-google-gtag@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.1.12.tgz#c2072b233cca06c985baed213bc8b0e25d6a57b3"
+  integrity sha512-ic2HQ+xxAjJuLd8aSgtB/I3IPzfGLgH4XP4HqHJ6/yAv9J6QhN04ImWCeKCB/hF3aatkmeO0hkz/vwJ/UXNF/Q==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    minimatch "3.0.4"
+    minimatch "^3.0.4"
 
 gatsby-plugin-manifest@2.4.31:
   version "2.4.31"
@@ -12852,13 +12852,6 @@ gatsby-plugin-sharp@2.6.36:
     sharp "^0.25.4"
     svgo "1.3.2"
     uuid "3.4.0"
-
-gatsby-plugin-styled-components@3.3.11:
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.11.tgz#fc9af659edcd623fd3bebeb826979ee773b86ec0"
-  integrity sha512-pO7WIXG8TbjkYybVG47WtRXulqvX8nYOeDQD/dD0cRxoyFVyFNoWC5Audyg5IuJWCXPgAG/CmEXM/b+2JQEveQ==
-  dependencies:
-    "@babel/runtime" "^7.11.2"
 
 gatsby-plugin-typescript-checker@1.1.1:
   version "1.1.1"
