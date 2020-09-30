@@ -46,7 +46,16 @@ const plugins = [
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
-      trackingId: ['G-5SVZ0B41GD'],
+      trackingIds: ['G-5SVZ0B41GD'],
+      gtagConfig: {
+        anonymize_ip: true,
+        cookie_expires: 0,
+      },
+      pluginConfig: {
+        head: false,
+        respectDNT: true,
+        exclude: [],
+      },
     },
   },
   {
