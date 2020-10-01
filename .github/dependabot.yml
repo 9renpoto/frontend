@@ -7,7 +7,7 @@ updates:
       time: '03:00'
       timezone: 'Asia/Tokyo'
     open-pull-requests-limit: 99
-    reviewers:
+    assignees:
       - 9renpoto
     labels:
       - 'Type: dependencies'
