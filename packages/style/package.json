@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@types/material__base": "^0.35.2",
-    "@types/material__ripple": "^0.35.2",
+    "@types/material__ripple": "^1.0.0",
     "preact-material-components": "^1.6.1"
   },
   "devDependencies": {
