@@ -1,3 +1,13 @@
+## Unreleased (2020-10-01)
+
+#### :bug: Type: Bug
+* [#2131](https://github.com/9renpoto/frontend/pull/2131) fix: downgrade typescript ([@9renpoto](https://github.com/9renpoto))
+* [#2057](https://github.com/9renpoto/frontend/pull/2057) fix(deps): update dependency @typescript-eslint/parser to v4
+
+#### Committers: 2
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v7.0.3 (2020-08-20)
 
 #### :bug: Type: Bug
