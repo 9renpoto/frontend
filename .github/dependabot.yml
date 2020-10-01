@@ -17,7 +17,7 @@ updates:
       interval: daily
       time: '03:00'
       timezone: 'Asia/Tokyo'
-    reviewers:
+    assignees:
       - 9renpoto
     labels:
       - 'Type: dependencies'
