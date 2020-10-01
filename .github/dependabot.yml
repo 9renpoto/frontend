@@ -9,8 +9,6 @@ updates:
     open-pull-requests-limit: 99
     reviewers:
       - 9renpoto
-    assignees:
-      - 9renpoto
     labels:
       - 'Type: dependencies'
   - package-ecosystem: 'npm'
@@ -19,3 +17,7 @@ updates:
       interval: daily
       time: '3:00'
       timezone: 'Asia/Tokyo'
+    reviewers:
+      - 9renpoto
+    labels:
+      - 'Type: dependencies'
