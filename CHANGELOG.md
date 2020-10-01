@@ -1,4 +1,4 @@
-## Unreleased (2020-10-01)
+## v7.1.0 (2020-10-01)
 
 #### :bug: Type: Bug
 * [#2131](https://github.com/9renpoto/frontend/pull/2131) fix: downgrade typescript ([@9renpoto](https://github.com/9renpoto))
