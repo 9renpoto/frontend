@@ -3,7 +3,7 @@
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "repository": "ssh://git@github.com/9renpoto/frontend.git",
   "scripts": {
-    "build": "lerna run build --include-dependents",
+    "build": "lerna run build --include-dependencies",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "run-s -l lint:*",
