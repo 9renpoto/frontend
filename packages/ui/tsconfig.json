@@ -1,0 +1,15 @@
+{
+  "extends": "@9renpoto/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "jsxFactory": "React.createElement",
+    "declaration": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  }
+}
