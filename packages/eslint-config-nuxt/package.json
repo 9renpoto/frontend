@@ -1,0 +1,7 @@
+{
+  "name": "@9renpoto/eslint-config-nuxt",
+  "version": "7.1.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -5,9 +5,9 @@ import { rhythm, scale } from '../utils/typography'
 import Search from './search'
 
 const Link = styled(OriginalLink)`
-  box-shadow: none;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+  box-shadow: none;
 `
 
 interface Props {
