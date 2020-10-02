@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { Algolia } from 'styled-icons/fa-brands/Algolia'
 
 const Wrap = styled.span`
+  padding: 0;
   font-size: 0.6em;
   text-align: end;
-  padding: 0;
 `
 
 export const PoweredBy = () => (
