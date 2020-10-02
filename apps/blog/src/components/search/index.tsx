@@ -14,7 +14,9 @@ import {
 } from 'react-instantsearch-dom'
 import * as hitComps from './HitComps'
 import Input from './Input'
-import { HitsWrapper, PoweredBy, Root } from './Styles'
+import { HitsWrapper } from '@9renpoto/ui/react/HitsWrapper'
+import { PoweredBy } from '@9renpoto/ui/react/PoweredByAlgolia'
+import { Root } from '@9renpoto/ui/react/Root'
 
 const Results = connectStateResults(
   ({ searchState: state, searchResults: res, children }) => (

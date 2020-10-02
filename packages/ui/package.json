@@ -3,6 +3,11 @@
   "version": "7.1.0",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "build": "run-s clean build:*",
+    "build:ts": "tsc -p .",
+    "clean": "rimraf react index*"
+  },
   "dependencies": {
     "@types/styled-components": "^5.1.3",
     "linaria": "^1.3.3",
