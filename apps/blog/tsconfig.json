@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@9renpoto/tsconfig",
   "compilerOptions": {
     "allowJs": true,
     "jsxFactory": "React.createElement",
