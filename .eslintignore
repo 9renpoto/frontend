@@ -1,4 +1,1 @@
 apps/blog/src/graphqlTypes.ts
-.cache/
-public/
-node_modules/
