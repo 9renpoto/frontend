@@ -1,11 +1,12 @@
+__sapper__/
+apps/blog/src/graphqlTypes.ts
 dist/
 lib/
-apps/blog/src/graphqlTypes.ts
-sandbox/mdbook/book/
-__sapper__/
-storybook-static/
-packages/ui/react
 packages/ui/index.js
+packages/ui/react
+sandbox/mdbook/book/
+sandbox/nuxt/static/sw.js
+storybook-static/
 
 ### https://raw.github.com/github/gitignore/086eacaaa2b9fde537315141e154631b945e1369/Node.gitignore
 
@@ -107,5 +108,3 @@ public
 
 # DynamoDB Local files
 .dynamodb/
-
-
