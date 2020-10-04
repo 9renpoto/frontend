@@ -3,5 +3,8 @@
   "version": "7.1.0",
   "private": true,
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-nuxt": "^1.0.0"
+  }
 }

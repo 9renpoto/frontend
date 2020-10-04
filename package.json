@@ -47,7 +47,8 @@
   "eslintConfig": {
     "extends": [
       "@9renpoto/eslint-config-react",
-      "@9renpoto/eslint-config-typescript"
+      "@9renpoto/eslint-config-typescript",
+      "@9renpoto/eslint-config-nuxt"
     ],
     "plugins": [
       "jest"
