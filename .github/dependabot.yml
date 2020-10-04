@@ -1,23 +1,28 @@
 version: 2
 updates:
-  - package-ecosystem: github-actions
-    directory: '/'
-    schedule:
-      interval: daily
-      time: '03:00'
-      timezone: 'Asia/Tokyo'
-    open-pull-requests-limit: 99
-    assignees:
-      - 9renpoto
-    labels:
-      - 'Type: dependencies'
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: daily
-      time: '03:00'
-      timezone: 'Asia/Tokyo'
-    assignees:
-      - 9renpoto
-    labels:
-      - 'Type: dependencies'
+- package-ecosystem: github-actions
+  directory: '/'
+  schedule:
+    interval: daily
+    time: '03:00'
+    timezone: 'Asia/Tokyo'
+  open-pull-requests-limit: 99
+  assignees:
+    - 9renpoto
+  labels:
+    - 'Type: Dependencies'
+- package-ecosystem: 'npm'
+  directory: '/'
+  schedule:
+    interval: daily
+    time: '03:00'
+    timezone: 'Asia/Tokyo'
+  open-pull-requests-limit: 99
+  assignees:
+    - 9renpoto
+  labels:
+    - 'Type: Dependencies'
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
