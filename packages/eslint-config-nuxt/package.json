@@ -2,9 +2,13 @@
   "name": "@9renpoto/eslint-config-nuxt",
   "version": "7.1.0",
   "private": true,
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
   "dependencies": {
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "eslint-plugin-nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0"
   }
 }

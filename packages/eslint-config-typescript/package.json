@@ -20,5 +20,8 @@
   "dependencies": {
     "@9renpoto/eslint-config": "^7.1.0",
     "@typescript-eslint/parser": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "3.8"
   }
 }
