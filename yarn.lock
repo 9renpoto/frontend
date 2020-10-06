@@ -1849,7 +1849,7 @@
     jest-runner "^26.5.2"
     jest-runtime "^26.5.2"
 
-"@jest/transform@^26.5.0", "@jest/transform@^26.5.2":
+"@jest/transform@^26.5.2":
   version "26.5.2"
   resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-26.5.2.tgz#6a0033a1d24316a1c75184d010d864f2c681bef5"
   integrity sha512-AUNjvexh+APhhmS8S+KboPz+D3pCxPvEAGduffaAJYxIFxGi/ytZQkrqcKDUU0ERBAo5R7087fyOYr2oms1seg==
@@ -6526,21 +6526,7 @@ babel-extract-comments@^1.0.0:
   dependencies:
     babylon "^6.18.0"
 
-babel-jest@26.5.0:
-  version "26.5.0"
-  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-26.5.0.tgz#afe11a083b4e584f63e9de29d2075cb96f42d2a4"
-  integrity sha512-Cy16ZJrds81C+JASaOIGNlpCeqW3PTOq36owv+Zzwde5NiWz+zNduwxUNF57vxc/3SnIWo8HHqTczhN8GLoXTw==
-  dependencies:
-    "@jest/transform" "^26.5.0"
-    "@jest/types" "^26.5.0"
-    "@types/babel__core" "^7.1.7"
-    babel-plugin-istanbul "^6.0.0"
-    babel-preset-jest "^26.5.0"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.4"
-    slash "^3.0.0"
-
-babel-jest@^26.5.2:
+babel-jest@26.5.2, babel-jest@^26.5.2:
   version "26.5.2"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-26.5.2.tgz#164f367a35946c6cf54eaccde8762dec50422250"
   integrity sha512-U3KvymF3SczA3vOL/cgiUFOznfMET+XDIXiWnoJV45siAp2pLMG8i2+/MGZlAC3f/F6Q40LR4M4qDrWZ9wkK8A==
