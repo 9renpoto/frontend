@@ -15,7 +15,16 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types", "@types/jest"]
   },
+  "files": ["shims-vue.d.ts"],
+  "include": [
+    "components/**/*.ts",
+    "components/**/*.vue",
+    "layouts/**/*.ts",
+    "layouts/**/*.vue",
+    "pages/**/*.ts",
+    "pages/**/*.vue"
+  ],
   "exclude": ["node_modules", ".nuxt", "dist"]
 }
