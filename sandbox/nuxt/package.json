@@ -18,13 +18,13 @@
     "nuxt": "^2.14.5"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.5",
+    "@nuxt/types": "2.14.6",
     "@nuxt/typescript-build": "1.0.3",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^3.0.2",
-    "@vue/test-utils": "^1.1.0",
+    "@nuxtjs/eslint-module": "2.0.0",
+    "@nuxtjs/tailwindcss": "3.1.0",
+    "@vue/test-utils": "1.1.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^26.3.0",
-    "vue-jest": "^3.0.4"
+    "babel-jest": "26.5.0",
+    "vue-jest": "3.0.7"
   }
 }
