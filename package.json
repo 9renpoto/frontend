@@ -7,11 +7,11 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "run-s -l lint:*",
-    "lint:eslint": "eslint . --ext=ts,tsx",
+    "lint:eslint": "eslint . --ext=ts,tsx,vue",
     "lint:md": "remark .",
     "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql}'",
-    "lint:style": "stylelint --syntax css-in-js '{packages,apps}/**/*.tsx'",
+    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{js,jsx,ts,tsx,gql,graphql,vue}'",
+    "lint:style": "stylelint --syntax css-in-js '{packages,apps}/**/*.{tsx,vue}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test"
   },
@@ -24,6 +24,7 @@
     "cpx": "1.5.0",
     "cypress": "5.3.0",
     "doctoc": "1.4.0",
+    "eslint": "^7.10.0",
     "eslint-plugin-jest": "24.1.0",
     "husky": "4.3.0",
     "jest": "26.5.2",
@@ -42,13 +43,13 @@
     "stylelint-config-styled-components": "0.1.1",
     "ts-jest": "26.4.1",
     "ts-loader": "8.0.4",
-    "ts-node": "9.0.0",
-    "typescript": "3.9.7"
+    "ts-node": "9.0.0"
   },
   "eslintConfig": {
     "extends": [
       "@9renpoto/eslint-config-react",
-      "@9renpoto/eslint-config-typescript"
+      "@9renpoto/eslint-config-typescript",
+      "@9renpoto/eslint-config-nuxt"
     ],
     "plugins": [
       "jest"
