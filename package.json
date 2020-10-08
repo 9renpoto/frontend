@@ -35,7 +35,7 @@
     "prettier": "2.1.2",
     "prettier-plugin-elm": "0.7.0",
     "prettier-plugin-organize-imports": "1.1.1",
-    "prettier-plugin-package": "1.1.0",
+    "prettier-plugin-package": "1.2.0",
     "remark-cli": "8.0.1",
     "remark-preset-lint-recommended": "4.0.1",
     "remark-preset-prettier": "0.4.0",
