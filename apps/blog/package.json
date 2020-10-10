@@ -50,7 +50,7 @@
     "graphql": "^15.0.0",
     "preact": "10.5.4",
     "preact-render-to-string": "^5.1.10",
-    "prismjs": "1.21.0",
+    "prismjs": "1.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
