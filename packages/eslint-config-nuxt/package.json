@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-config-typescript": "^4.0.0",
     "eslint-plugin-nuxt": "^1.0.0"
   },
   "devDependencies": {
