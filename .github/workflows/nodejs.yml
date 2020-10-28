@@ -38,6 +38,5 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           build: |
             yarn install --frozen-lockfile
-            yarn build --scope @9renpoto/style
-            yarn workspace @9renpoto/style build-storybook
-          dist: packages/style/storybook-static
+            yarn build --scope @9renpoto/sapper
+          dist: sandbox/sapper/__sapper__/export

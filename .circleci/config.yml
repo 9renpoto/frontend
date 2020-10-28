@@ -33,10 +33,6 @@ jobs:
       - run: yarn build
 
       - store_artifacts:
-          path: sandbox/sapper/__sapper__/export
-      - run: npx moxci sandbox/sapper/__sapper__/export/index.html
-
-      - store_artifacts:
           path: sandbox/vuepress/docs/.vuepress/dist
       - run: npx moxci sandbox/vuepress/docs/.vuepress/dist/index.html
 
