@@ -28,3 +28,16 @@ jobs:
         GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
         GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
         SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+
+  style-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3
+      - uses: afc163/surge-preview@v1
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
+          build: |
+            yarn install --frozen-lockfile
+            yarn build --scope @9renpoto/style
+          dist: packages/style/storybook-static
