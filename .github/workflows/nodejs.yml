@@ -28,7 +28,7 @@ jobs:
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
 
-  style-storybook:
+          9renpoto-sapper:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.3
