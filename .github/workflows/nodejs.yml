@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -12,22 +11,22 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2.3.3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2.1.2
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        yarn install --frozen-lockfile
-        yarn build
-        yarn lint
-        yarn test
-      env:
-        CI: true
-        GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
-        GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
-        SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+      - uses: actions/checkout@v2.3.3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, build, and test
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+          yarn lint
+          yarn test
+        env:
+          CI: true
+          GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
+          GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
 
   style-storybook:
     runs-on: ubuntu-latest
