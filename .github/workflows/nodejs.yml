@@ -40,4 +40,5 @@ jobs:
           build: |
             yarn install --frozen-lockfile
             yarn build --scope @9renpoto/style
+            yarn workspace @9renpoto/style build-storybook
           dist: packages/style/storybook-static
