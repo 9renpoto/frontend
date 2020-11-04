@@ -42,7 +42,7 @@
     "rimraf": "3.0.2",
     "stylelint-config-styled-components": "0.1.1",
     "ts-jest": "26.4.3",
-    "ts-loader": "8.0.7",
+    "ts-loader": "8.0.8",
     "ts-node": "9.0.0"
   },
   "eslintConfig": {
