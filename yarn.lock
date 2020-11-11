@@ -17339,10 +17339,10 @@ listr@^0.14.3:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
-lite-server@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/lite-server/-/lite-server-2.6.0.tgz#6c6e010231911fe0fb7731767cd0e0be37c6a9cf"
-  integrity sha512-Y27ySwN7ApV34wEYrnhXivcZey1lzTQ/DvS28LK/UgI/BMc0Qw0vVZMWRhFtSqr2bNuo08jhDY7MczzwkkMYqA==
+lite-server@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/lite-server/-/lite-server-2.6.1.tgz#27281022c77c99673d0a820b998bc7e125cdbaa0"
+  integrity sha512-d3oyB/C8AU4EwYQHlLxcu6vTQDnCaLb81v1KKNYABmFS5oeJ11A+YxlqtpbTclID1AFddJfcB5klf0q98vYIMw==
   dependencies:
     browser-sync "^2.26.13"
     connect-history-api-fallback "^1.6.0"
