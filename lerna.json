@@ -1,21 +1,11 @@
 {
-  "packages": [
-    "packages/*",
-    "examples/*",
-    "apps/*"
-  ],
+  "packages": ["packages/*", "examples/*", "apps/*"],
   "command": {
     "version": {
-      "allowBranch": [
-        "master"
-      ]
+      "allowBranch": ["main"]
     }
   },
-  "ignoreChanges": [
-    "**/__fixtures__/**",
-    "**/__tests__/**",
-    "**/*.md"
-  ],
+  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"],
   "changelog": {
     "labels": {
       "enhancement": ":rocket: Enhancement",
@@ -29,5 +19,5 @@
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "7.1.0"
+  "version": "7.2.0"
 }
