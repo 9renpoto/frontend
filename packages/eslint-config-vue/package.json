@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/eslint-config-vue",
-  "version": "7.1.0",
-  "main": "index.js",
+  "version": "7.2.0",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js"
 }

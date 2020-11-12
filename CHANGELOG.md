@@ -1,10 +1,23 @@
+## v7.2.0 (2020-11-12)
+
+#### :rocket: Type: Feature
+
+- `eslint-config-nuxt`, `eslint-config-react`, `eslint-config-typescript`, `eslint-config`
+  - [#2154](https://github.com/9renpoto/frontend/pull/2154) feat(sandbox): added nuxt ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v7.1.0 (2020-10-01)
 
 #### :bug: Type: Bug
-* [#2131](https://github.com/9renpoto/frontend/pull/2131) fix: downgrade typescript ([@9renpoto](https://github.com/9renpoto))
-* [#2057](https://github.com/9renpoto/frontend/pull/2057) fix(deps): update dependency @typescript-eslint/parser to v4
+
+- [#2131](https://github.com/9renpoto/frontend/pull/2131) fix: downgrade typescript ([@9renpoto](https://github.com/9renpoto))
+- [#2057](https://github.com/9renpoto/frontend/pull/2057) fix(deps): update dependency @typescript-eslint/parser to v4
 
 #### Committers: 2
+
 - Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
 - [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
 
