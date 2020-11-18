@@ -8,13 +8,8 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "jsx": "preserve",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
     "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
+    "noEmit": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -27,10 +22,7 @@
     "strict": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
+    "strictFunctionTypes": true,
     "target": "esnext"
-  },
-  "exclude": [
-    "node_modules",
-    "__tests__/**/*.tsx?"
-  ]
+  }
 }
