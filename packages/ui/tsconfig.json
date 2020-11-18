@@ -1,9 +1,8 @@
 {
-  "extends": "@9renpoto/tsconfig",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": ".",
     "noEmit": false,
-    "declaration": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"

@@ -1,3 +1,9 @@
 {
-  "extends": "@9renpoto/tsconfig"
+  "extends": "@9renpoto/tsconfig",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "noEmit": true,
+    "lib": ["esnext", "dom"]
+  },
+  "exclude": ["node_modules", "__tests__/**/*.tsx?"]
 }
