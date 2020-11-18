@@ -32,6 +32,7 @@ This repository is managed as monorepo.
 | **[@9renpoto/style](./packages/style)**                                       | [![NPM version](https://badge.fury.io/js/%409renpoto%2Fstyle.svg)](https://badge.fury.io/js/%409renpoto%2Fstyle)                                       |
 | **[@9renpoto/stylelint-config](./packages/stylelint-config)**                 | [![NPM version](https://badge.fury.io/js/%409renpoto%2Fstylelint-config.svg)](https://badge.fury.io/js/%409renpoto%2Fstylelint-config)                 |
 | **[@9renpoto/textlint-config-ja](./packages/textlint-config-ja)**             | [![npm version](https://badge.fury.io/js/%409renpoto%2Ftextlint-config-ja.svg)](https://badge.fury.io/js/%409renpoto%2Ftextlint-config-ja)             |
+| **[@9renpoto/tsconfig](./packages/tsconfig)**                                 | [![NPM version](https://badge.fury.io/js/%409renpoto%2Ftsconfig.svg)](https://badge.fury.io/js/%409renpoto%2Ftsconfig)                                 |
 
 ## Apps
 
