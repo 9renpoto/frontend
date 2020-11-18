@@ -1,6 +1,7 @@
 {
   "extends": "@9renpoto/tsconfig",
   "compilerOptions": {
+    "moduleResolution": "node",
     "noEmit": true,
     "lib": ["esnext", "dom"]
   },
