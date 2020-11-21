@@ -23,3 +23,16 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: b5c387b417293ccb63e839f22f1c747c
           TIMEZONE: Asia/Tokyo
+  github-status-box:
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/setup-node@v1
+            with:
+                node-version: 12
+          - run: npx github-stats-box
+            env:
+                GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
+
+                GIST_ID: f23f21fbb26f805b1c9e75497fa8434a
+                ALL_COMMITS: true # If `true` it will count all commits, if `false` it will count your last year commits
+                K_FORMAT: false # If `true`, large numbers will be formatted with a "k", for example "1.5k"
