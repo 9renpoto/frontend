@@ -12359,11 +12359,11 @@ gatsby-plugin-feed@2.8.0:
     rss "^1.2.2"
 
 gatsby-plugin-google-gtag@^2.1.12:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.2.0.tgz#5d7290ffa31f4d59b429d6c97e73c557e14a1513"
-  integrity sha512-pX0UyOaHFA20WwdVbqjx6+lFLq/XYZ5Z8vxlvuEBGjoXAfjBFkCU9x/e1WciNTbNbwZ+GLWTC6h8vsF9flwnNQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.3.0.tgz#88d600cba77fc38aa4284a3dbd555073d658ddf1"
+  integrity sha512-zlV1u6V7QI3VWBDe/zQrVVZVdDCrCTc/6c5kYEuOZjF5SjE5HqBsYhveLza1ddtZl/GJGv6o800rwUIgYeo+HA==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
 
 gatsby-plugin-manifest@2.7.0:
