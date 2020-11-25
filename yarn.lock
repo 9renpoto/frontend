@@ -3383,13 +3383,13 @@
     ts-loader "^7.0.5"
     typescript "~3.8"
 
-"@nuxt/typescript-runtime@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-1.0.0.tgz#8f6a737e8cbde589c95c64f5053dc0131e9ed557"
-  integrity sha512-NGP1uIRgwfcTxrvktPtRcA2bRsrydNqiyVJkboW5bEMA5Yh9ixw/JPawJFBFwKPiT+GE+hjp5EDyW9T7+dcdGQ==
+"@nuxt/typescript-runtime@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-2.0.0.tgz#57b1f0aeabe49c7548fa412b7ffd46ae424afefa"
+  integrity sha512-jF//aTclzhdaExENtLbWFpBAGcg9Aj0V4rEWnNGTdWfqurMMdzC96U+oa8UJIMMZgTp9MW3vaqbKuzTq8btz/A==
   dependencies:
-    ts-node "^8.10.2"
-    typescript "~3.9"
+    ts-node "^9.0.0"
+    typescript "~4.0"
 
 "@nuxt/utils@2.14.7":
   version "2.14.7"
@@ -25460,21 +25460,10 @@ ts-log@^2.2.3:
   resolved "https://registry.yarnpkg.com/ts-log/-/ts-log-2.2.3.tgz#4da5640fe25a9fb52642cd32391c886721318efb"
   integrity sha512-XvB+OdKSJ708Dmf9ore4Uf/q62AYDTzFcAdxc8KNML1mmAWywRFVt/dn1KYJH8Agt5UJNujfM3znU5PxgAzA2w==
 
-ts-node@9.0.0, ts-node@^9:
+ts-node@9.0.0, ts-node@^9, ts-node@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"
   integrity sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
-  dependencies:
-    arg "^4.1.0"
-    diff "^4.0.1"
-    make-error "^1.1.1"
-    source-map-support "^0.5.17"
-    yn "3.1.1"
-
-ts-node@^8.10.2:
-  version "8.10.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.10.2.tgz#eee03764633b1234ddd37f8db9ec10b75ec7fb8d"
-  integrity sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
@@ -25707,7 +25696,7 @@ typescript-template-language-service-decorator@^2.2.0:
   resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-2.2.0.tgz#4ee6d580f307fb9239978e69626f2775b8a59b2a"
   integrity sha512-xiolqt1i7e22rpqMaprPgSFVgU64u3b9n6EJlAaUYE61jumipKAdI1+O5khPlWslpTUj80YzjUKjJ2jxT0D74w==
 
-typescript@3.9.7, typescript@^3.9.7, typescript@~3.8, typescript@~3.9:
+typescript@3.9.7, typescript@^3.9.7, typescript@~3.8, typescript@~4.0:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
