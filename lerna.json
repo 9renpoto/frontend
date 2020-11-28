@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*", "examples/*", "apps/*"],
+  "packages": ["packages/*", "sandbox/*", "apps/*"],
   "command": {
     "version": {
       "allowBranch": ["main"]

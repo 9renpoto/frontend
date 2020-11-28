@@ -24,7 +24,8 @@
     "styleguide"
   ],
   "dependencies": {
-    "@headlessui/react": "^0.2.0"
+    "@headlessui/react": "^0.2.0",
+    "heroicons": "^0.4.2"
   },
   "types": "lib/index.d.ts"
 }
