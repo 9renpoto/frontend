@@ -1,0 +1,19 @@
+{
+  "name": "@9renpoto/react",
+  "version": "7.3.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build .",
+    "start-storybook": "node ../../node_modules/@storybook/react/bin/index.js",
+    "build-storybook": "node ../../node_modules/@storybook/react/bin/build.js"
+  },
+  "dependencies": {
+    "@9renpoto/style": "^7.3.0",
+    "@linaria/react": "^3.0.0-beta.0",
+    "heroicons-react": "^1.3.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.1.8"
+  }
+}

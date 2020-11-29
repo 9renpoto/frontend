@@ -1,6 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Algolia } from 'styled-icons/fa-brands/Algolia'
+import { styled } from '@linaria/react'
 
 const Wrap = styled.span`
   padding: 0;
@@ -12,7 +11,7 @@ export const PoweredBy = () => (
   <Wrap>
     Powered by{` `}
     <a href="https://algolia.com">
-      <Algolia size="1em" /> Algolia
+      Algolia
     </a>
   </Wrap>
 )

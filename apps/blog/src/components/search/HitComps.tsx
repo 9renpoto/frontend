@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { Hit } from 'react-instantsearch-core'
 import { Highlight, Snippet } from 'react-instantsearch-dom'
-import { Calendar } from 'styled-icons/octicons/Calendar'
+import { Calendar } from 'heroicons-react'
 
 export interface HitCompProps {
   hit: {

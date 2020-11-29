@@ -1,27 +1,28 @@
-import styled, { css } from 'styled-components'
+import { css } from '@linaria/core'
+import { styled } from '@linaria/react'
 import { SearchIcon } from './SearchIcon'
 
 const focus = css`
   width: 5em;
-  color: ${(props: any) => props.theme.darkBlue};
+  color: ${(props) => props.theme.darkBlue};
   cursor: text;
   background: white;
   + ${SearchIcon} {
     margin: 0.3em;
-    color: ${(props: any) => props.theme.darkBlue};
+    color: ${(props) => props.theme.darkBlue};
   }
 `
 
 const collapse = css`
   width: 0;
-  padding-left: ${(props: any) => (props.focus ? `1.6em` : `1em`)};
-  margin-left: ${(props: any) => (props.focus ? `-1.6em` : `-1em`)};
+  padding-left: ${(props) => (props.focus ? `1.6em` : `1em`)};
+  margin-left: ${(props) => (props.focus ? `-1.6em` : `-1em`)};
   color: ${(props) => props.theme.lightBlue};
   cursor: pointer;
   + ${SearchIcon} {
     color: white;
   }
-  ${(props: any) => props.focus && focus}
+  ${(props) => props.focus && focus}
   ::placeholder {
     color: ${(props: any) => props.theme.gray};
   }

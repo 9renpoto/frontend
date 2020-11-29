@@ -1,6 +1,6 @@
 import { Link as OriginalLink } from 'gatsby'
 import React, { PureComponent } from 'react'
-import styled from 'styled-components'
+import { styled } from '@linaria/react'
 import { rhythm, scale } from '../utils/typography'
 import Search from './search'
 

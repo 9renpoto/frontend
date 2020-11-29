@@ -1,6 +1,6 @@
-import { HitsWrapper } from '@9renpoto/ui/react/HitsWrapper'
-import { PoweredBy } from '@9renpoto/ui/react/PoweredByAlgolia'
-import { Root } from '@9renpoto/ui/react/Root'
+import { HitsWrapper } from '@9renpoto/react/HitsWrapper'
+import { PoweredBy } from '@9renpoto/react/PoweredByAlgolia'
+import { Root } from '@9renpoto/react/Root'
 import algoliasearch from 'algoliasearch/lite'
 import React, {
   createRef,
