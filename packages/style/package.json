@@ -1,7 +1,7 @@
 {
   "name": "@9renpoto/style",
   "version": "7.3.0",
-  "description": "thinking web",
+  "description": "css",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,21 +11,11 @@
   "bugs": {
     "url": "https://github.com/9renpoto/frontend/issues"
   },
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "run-s clean build:*",
-    "build:ts": "tsc -p .",
-    "clean": "rimraf lib"
-  },
-  "files": [
-    "lib/"
-  ],
   "keywords": [
-    "styleguide"
+    "StyleGuide"
   ],
   "dependencies": {
     "@headlessui/react": "^0.2.0",
     "heroicons": "^0.4.2"
-  },
-  "types": "lib/index.d.ts"
+  }
 }

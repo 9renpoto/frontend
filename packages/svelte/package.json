@@ -1,0 +1,15 @@
+{
+  "name": "@9renpoto/svelte",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@9renpoto/style": "^7.3.0"
+  },
+  "devDependencies": {
+    "@storybook/svelte": "^6.1.8",
+    "@tsconfig/svelte": "^1.0.10",
+    "svelte-check": "^1.1.17",
+    "svelte-loader": "^2.13.6"
+  }
+}

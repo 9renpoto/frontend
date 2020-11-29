@@ -1,0 +1,9 @@
+{
+  "name": "@9renpoto/preact",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/preact": "^6.1.8"
+  }
+}
