@@ -12482,9 +12482,9 @@ gatsby-plugin-feed@2.9.0:
     rss "^1.2.2"
 
 gatsby-plugin-google-gtag@^2.1.12:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.3.0.tgz#88d600cba77fc38aa4284a3dbd555073d658ddf1"
-  integrity sha512-zlV1u6V7QI3VWBDe/zQrVVZVdDCrCTc/6c5kYEuOZjF5SjE5HqBsYhveLza1ddtZl/GJGv6o800rwUIgYeo+HA==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.4.0.tgz#b805e9c625765549a7d878cbb8a34100f2689eed"
+  integrity sha512-0Dm+P8pTxLApZdCEN4XoSgQRyqBgAyt+hn4CJVLAHesK3OMAFM/tABkRNS4CYKQKpFFzS4QgKtQhmopcUpcBBQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
