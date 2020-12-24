@@ -16,17 +16,16 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          yarn install --frozen-lockfile
-          yarn build
-          yarn lint
-          yarn test
+      - run: npm ci
+      - run: npm run build --if-present
         env:
-          CI: true
           GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+      - run: npm run lint
+      - run: npm test
+        env:
+          CI: true
 
   sandbox-sapper:
     runs-on: ubuntu-latest
@@ -37,6 +36,7 @@ jobs:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GH_TOKEN }}
           build: |
-            yarn install --frozen-lockfile
-            yarn build --scope @9renpoto/sapper
+            npm install
+            npm run build --if-present
+            npm run build -- --scope @9renpoto/sapper
           dist: sandbox/sapper/__sapper__/export
