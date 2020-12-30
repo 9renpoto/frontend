@@ -51,8 +51,6 @@
     "preact": "10.5.7",
     "preact-render-to-string": "^5.1.10",
     "prismjs": "1.22.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
     "react-instantsearch-dom": "6.8.2",
     "react-typography": "0.16.19",
