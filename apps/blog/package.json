@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "@9renpoto/ui": "^7.3.0",
-    "gatsby": "2.30.0",
+    "gatsby": "2.30.1",
     "gatsby-image": "2.9.0",
     "gatsby-plugin-algolia": "0.16.2",
     "gatsby-plugin-env-variables": "2.0.0",
