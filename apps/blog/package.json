@@ -59,6 +59,8 @@
     "typescript-styled-plugin": "0.15.0",
     "typography": "0.16.19",
     "typography-theme-github": "0.16.19",
+    "react": "npm:@preact/compat@^0.0.4",
+    "react-dom": "npm:@preact/compat@^0.0.4",
     "vfile-message": "^2.0.2"
   },
   "devDependencies": {
