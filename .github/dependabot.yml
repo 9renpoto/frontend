@@ -10,7 +10,7 @@ updates:
   assignees:
     - 9renpoto
   labels:
-    - 'Type: Dependencies'
+    - 'Type: Maintenance'
 - package-ecosystem: 'npm'
   directory: '/'
   schedule:
@@ -21,7 +21,7 @@ updates:
   assignees:
     - 9renpoto
   labels:
-    - 'Type: Dependencies'
+    - 'Type: Maintenance'
   commit-message:
     prefix: fix
     prefix-development: chore
