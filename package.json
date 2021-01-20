@@ -46,6 +46,8 @@
     "ts-node": "9.1.1"
   },
   "resolutions": {
+    "react": "npm:@preact/compat@^0.0.4",
+    "react-dom": "npm:@preact/compat@^0.0.4",
     "typescript": "^3.9.7"
   },
   "eslintConfig": {

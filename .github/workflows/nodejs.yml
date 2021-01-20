@@ -27,16 +27,3 @@ jobs:
           GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-
-  sandbox-sapper:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.3.4
-      - uses: afc163/surge-preview@v1.5.5
-        with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
-          github_token: ${{ secrets.GH_TOKEN }}
-          build: |
-            yarn install --frozen-lockfile
-            yarn build --scope @9renpoto/sapper
-          dist: sandbox/sapper/__sapper__/export
