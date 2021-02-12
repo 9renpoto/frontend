@@ -68,7 +68,7 @@
     "@graphql-codegen/typescript": "1.21.0",
     "@graphql-codegen/typescript-operations": "1.17.14",
     "@types/algoliasearch": "3.34.11",
-    "@types/react-dom": "17.0.0",
+    "@types/react-dom": "17.0.1",
     "@types/react-helmet": "6.1.0",
     "@types/react-instantsearch-dom": "5.2.6",
     "@types/styled-components": "5.1.7",
