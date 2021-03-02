@@ -13014,10 +13014,10 @@ gatsby-plugin-page-creator@^2.10.1:
     globby "^11.0.2"
     lodash "^4.17.20"
 
-gatsby-plugin-preact@4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.7.0.tgz#2a4097db2eb8d859e1711a39d85ce662318c1b97"
-  integrity sha512-GkHr9hx2Kd5GvJbQREEN016+LTIBrHK3thfwI0muEpckISJXtLLaPD+4bjClLG51zy6y4JzLdSOw+wxt6BYG6Q==
+gatsby-plugin-preact@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-5.0.0.tgz#aabc6c7625855454d0a5d94703776c405391d97b"
+  integrity sha512-snW1+lXk0LoZjkmeUpMAhQVNw47IGxqOtvnAwAVqqMAMuj9jFx6cJy6TP63/f2yXXHi+LfcJxPK34iV/t+ddJw==
   dependencies:
     "@prefresh/babel-plugin" "^0.4.0"
     "@prefresh/webpack" "^1.1.0"
