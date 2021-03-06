@@ -15,6 +15,6 @@
     "configuration"
   ],
   "peerDependencies": {
-    "typescript": "^3.9.7 || ^4.0.0"
+    "typescript": "^3.9.7"
   }
 }
