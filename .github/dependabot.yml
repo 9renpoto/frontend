@@ -11,18 +11,3 @@ updates:
     - 9renpoto
   labels:
     - 'Type: Maintenance'
-- package-ecosystem: 'npm'
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '03:00'
-    timezone: 'Asia/Tokyo'
-  open-pull-requests-limit: 99
-  assignees:
-    - 9renpoto
-  labels:
-    - 'Type: Maintenance'
-  commit-message:
-    prefix: fix
-    prefix-development: chore
-    include: scope
