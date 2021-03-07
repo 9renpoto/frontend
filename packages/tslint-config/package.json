@@ -21,7 +21,7 @@
     "tslint"
   ],
   "dependencies": {
-    "tslint-config-standard": "^9.0.0"
+    "tslint-config-standard": "9.0.0"
   },
   "devDependencies": {
     "tslint": "6.1.3"

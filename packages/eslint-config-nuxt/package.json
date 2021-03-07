@@ -5,8 +5,8 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@nuxtjs/eslint-config-typescript": "^6.0.0",
-    "eslint-plugin-nuxt": "^2.0.0"
+    "@nuxtjs/eslint-config-typescript": "6.0.0",
+    "eslint-plugin-nuxt": "2.0.0"
   },
   "devDependencies": {
     "eslint": "7.21.0"
