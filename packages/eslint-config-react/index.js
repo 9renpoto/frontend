@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['prettier', 'prettier/react'],
+  extends: ['prettier'],
   plugins: ['react', 'react-hooks'],
   rules: {
     'react/jsx-uses-react': [1],

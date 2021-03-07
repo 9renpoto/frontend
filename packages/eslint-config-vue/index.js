@@ -4,5 +4,5 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['@9renpoto/eslint-config', 'prettier/vue'],
+  extends: ['@9renpoto/eslint-config'],
 }

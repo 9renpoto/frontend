@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['prettier', 'prettier/standard'],
+  extends: ['prettier'],
   rules: {
     'no-else-return': 2,
     'no-var': 2,
