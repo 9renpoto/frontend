@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/blog",
-  "version": "7.3.0",
+  "version": "7.4.0",
   "private": true,
   "description": "my blogs",
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
@@ -23,7 +23,7 @@
     "gatsby"
   ],
   "dependencies": {
-    "@9renpoto/ui": "^7.3.0",
+    "@9renpoto/ui": "^7.4.0",
     "gatsby": "2.32.9",
     "gatsby-image": "2.11.0",
     "gatsby-plugin-algolia": "0.16.3",
@@ -51,6 +51,8 @@
     "preact": "10.5.12",
     "preact-render-to-string": "^5.1.10",
     "prismjs": "1.23.0",
+    "react": "npm:@preact/compat@^0.0.4",
+    "react-dom": "npm:@preact/compat@^0.0.4",
     "react-helmet": "6.1.0",
     "react-instantsearch-dom": "6.10.3",
     "react-typography": "0.16.19",
@@ -59,8 +61,6 @@
     "typescript-styled-plugin": "0.15.0",
     "typography": "0.16.19",
     "typography-theme-github": "0.16.19",
-    "react": "npm:@preact/compat@^0.0.4",
-    "react-dom": "npm:@preact/compat@^0.0.4",
     "vfile-message": "^2.0.2"
   },
   "devDependencies": {
