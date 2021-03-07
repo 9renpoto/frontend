@@ -13,11 +13,12 @@
       "Type: Documentation ": ":memo: Documentation",
       "Type: Feature": ":rocket: Type: Feature",
       "Type: Bug": ":bug: Type: Bug",
-      "Type: Breaking Change": ":boom: Type: Breaking Change"
+      "Type: Breaking Change": ":boom: Type: Breaking Change",
+      "Type: Maintenance": ":house: Maintenance"
     },
     "cacheDir": ".changelog"
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "7.3.0"
+  "version": "7.4.0"
 }
