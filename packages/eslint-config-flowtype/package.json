@@ -24,8 +24,5 @@
   },
   "devDependencies": {
     "flow-bin": "0.146.0"
-  },
-  "engine": {
-    "node": "> 5"
   }
 }
