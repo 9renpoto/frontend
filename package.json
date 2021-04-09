@@ -24,7 +24,7 @@
     "cpx": "1.5.0",
     "cypress": "7.0.1",
     "doctoc": "2.0.0",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-plugin-jest": "24.3.4",
     "husky": "6.0.0",
     "jest": "26.6.3",
@@ -46,7 +46,7 @@
     "ts-node": "9.1.1"
   },
   "resolutions": {
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "react": "npm:@preact/compat@^0.0.4",
     "react-dom": "npm:@preact/compat@^0.0.4",
     "typescript": "^3.9.7"
