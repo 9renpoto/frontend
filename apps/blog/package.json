@@ -26,7 +26,7 @@
     "@9renpoto/ui": "^7.4.0",
     "gatsby": "2.32.12",
     "gatsby-image": "2.11.0",
-    "gatsby-plugin-algolia": "0.18.0",
+    "gatsby-plugin-algolia": "0.18.1",
     "gatsby-plugin-env-variables": "2.0.0",
     "gatsby-plugin-feed": "2.13.1",
     "gatsby-plugin-google-gtag": "2.8.0",
