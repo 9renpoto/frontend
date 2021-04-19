@@ -20,7 +20,7 @@
   "dependencies": {
     "@9renpoto/eslint-config": "^7.4.0",
     "babel-eslint": "^10.0.3",
-    "eslint-plugin-flowtype": "^5.2.0"
+    "eslint-plugin-flowtype": "^5.3.1"
   },
   "devDependencies": {
     "flow-bin": "0.149.0"
