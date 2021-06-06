@@ -1,7 +1,7 @@
-import { graphql, StaticQuery } from 'gatsby'
-import Image from 'gatsby-image'
-import React from 'react'
-import { rhythm } from '../utils/typography'
+import { graphql, StaticQuery } from "gatsby";
+import Image from "gatsby-image";
+import React from "react";
+import { rhythm } from "../utils/typography";
 
 const bioQuery = graphql`
   query BioQuery {
@@ -21,13 +21,13 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default () => (
   <StaticQuery
     query={bioQuery}
     render={(data) => {
-      const { author, social } = data.site.siteMetadata
+      const { author, social } = data.site.siteMetadata;
       return (
         <div
           style={{
@@ -57,7 +57,7 @@ export default () => (
             </a>
           </p>
         </div>
-      )
+      );
     }}
   />
-)
+);

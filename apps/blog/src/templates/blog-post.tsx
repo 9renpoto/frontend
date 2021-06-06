@@ -1,10 +1,10 @@
-import { graphql, Link } from 'gatsby'
-import React, { PureComponent } from 'react'
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/Seo'
-import { MarkdownRemarkEdge, Query } from '../graphqlTypes'
-import { rhythm, scale } from '../utils/typography'
+import { graphql, Link } from "gatsby";
+import React, { PureComponent } from "react";
+import Bio from "../components/Bio";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import { MarkdownRemarkEdge, Query } from "../graphqlTypes";
+import { rhythm, scale } from "../utils/typography";
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -24,19 +24,19 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
 interface Props {
-  location: Location
-  data: Query
-  pageContext: MarkdownRemarkEdge
+  location: Location;
+  data: Query;
+  pageContext: MarkdownRemarkEdge;
 }
 
 export default class BlogPostTemplate extends PureComponent<Props> {
   render() {
-    const post = this.props.data.markdownRemark!
-    const siteTitle = this.props.data.site!.siteMetadata!.title!
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark!;
+    const siteTitle = this.props.data.site!.siteMetadata!.title!;
+    const { previous, next } = this.props.pageContext;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -88,6 +88,6 @@ export default class BlogPostTemplate extends PureComponent<Props> {
           </li>
         </ul>
       </Layout>
-    )
+    );
   }
 }

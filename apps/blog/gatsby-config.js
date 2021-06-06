@@ -1,7 +1,7 @@
-const title = `:-) 🏕`
-const author = 'Keisuke Kan'
+const title = `:-) 🏕`;
+const author = "Keisuke Kan";
 
-const GATSBY_ALGOLIA_APP_ID = `GATSBY_ALGOLIA_APP_ID`
+const GATSBY_ALGOLIA_APP_ID = `GATSBY_ALGOLIA_APP_ID`;
 
 const plugins = [
   `gatsby-plugin-preact`,
@@ -46,7 +46,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
-      trackingIds: ['G-5SVZ0B41GD'],
+      trackingIds: ["G-5SVZ0B41GD"],
       gtagConfig: {
         anonymize_ip: true,
         cookie_expires: 0,
@@ -82,8 +82,8 @@ const plugins = [
                 date: edge.node.frontmatter.date,
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                custom_elements: [{ 'content:encoded': edge.node.html }],
-              }),
+                custom_elements: [{ "content:encoded": edge.node.html }],
+              })
             ),
           query: `
             {
@@ -104,7 +104,7 @@ const plugins = [
               }
             }
           `,
-          output: '/rss.xml',
+          output: "/rss.xml",
           title: "Your Site's RSS Feed",
         },
       ],
@@ -131,14 +131,14 @@ const plugins = [
     },
   },
   {
-    resolve: 'gatsby-plugin-sentry',
+    resolve: "gatsby-plugin-sentry",
     options: {
       dsn: process.env.SENTRY_DSN,
     },
   },
   `gatsby-plugin-typescript`,
-  'gatsby-plugin-typescript-checker',
-]
+  "gatsby-plugin-typescript-checker",
+];
 
 if (process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY) {
   plugins.concat([
@@ -147,16 +147,16 @@ if (process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY) {
       options: {
         appId: process.env[GATSBY_ALGOLIA_APP_ID],
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require('./src/utils/algolia'),
+        queries: require("./src/utils/algolia"),
       },
     },
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: [GATSBY_ALGOLIA_APP_ID, 'GATSBY_ALGOLIA_SEARCH_KEY'],
+        whitelist: [GATSBY_ALGOLIA_APP_ID, "GATSBY_ALGOLIA_SEARCH_KEY"],
       },
     },
-  ])
+  ]);
 }
 
 module.exports = {
@@ -170,4 +170,4 @@ module.exports = {
     },
   },
   plugins,
-}
+};

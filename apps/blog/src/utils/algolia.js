@@ -12,7 +12,7 @@ const pageQuery = `{
       }
     }
   }
-}`
+}`;
 
 const postQuery = `{
   posts: allMarkdownRemark(filter: {
@@ -31,14 +31,14 @@ const postQuery = `{
       }
     }
   }
-}`
+}`;
 
 const flatten = (arr) =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     ...rest,
-  }))
-const settings = { attributesToSnippet: [`excerpt:20`] }
+  }));
+const settings = { attributesToSnippet: [`excerpt:20`] };
 const queries = [
   {
     query: pageQuery,
@@ -52,6 +52,6 @@ const queries = [
     indexName: `Posts`,
     settings,
   },
-]
+];
 
-module.exports = queries
+module.exports = queries;

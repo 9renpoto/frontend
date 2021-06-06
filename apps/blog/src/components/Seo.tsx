@@ -1,28 +1,28 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+import Helmet from "react-helmet";
 
 interface Content {
-  name: string
-  content: string
+  name: string;
+  content: string;
 }
 
 interface Property {
-  property: string
-  content: string
+  property: string;
+  content: string;
 }
 
 interface Props {
-  lang?: string
-  meta?: Array<Content | Property>
-  keywords?: string[]
-  description?: string
-  title: string
+  lang?: string;
+  meta?: Array<Content | Property>;
+  keywords?: string[];
+  description?: string;
+  title: string;
 }
 
 function SEO({
-  description = '',
-  lang = 'ja',
+  description = "",
+  lang = "ja",
   meta = [],
   keywords = [],
   title,
@@ -38,12 +38,12 @@ function SEO({
           }
         }
       }
-    `,
-  )
+    `
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
-  const avator = `https://avatars3.githubusercontent.com/u/520693?s=460&v=4`
+  const avator = `https://avatars3.githubusercontent.com/u/520693?s=460&v=4`;
   return (
     <Helmet
       htmlAttributes={{
@@ -103,11 +103,11 @@ function SEO({
                 name: `keywords`,
                 content: keywords.join(`, `),
               }
-            : [],
+            : []
         )
         .concat(meta)}
     />
-  )
+  );
 }
 
-export default SEO
+export default SEO;
