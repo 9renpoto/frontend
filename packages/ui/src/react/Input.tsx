@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import { SearchIcon } from './SearchIcon'
+import styled, { css } from "styled-components";
+import { SearchIcon } from "./SearchIcon";
 
 const focus = css`
   width: 5em;
@@ -10,7 +10,7 @@ const focus = css`
     margin: 0.3em;
     color: ${(props: any) => props.theme.darkBlue};
   }
-`
+`;
 
 const collapse = css`
   width: 0;
@@ -25,7 +25,7 @@ const collapse = css`
   ::placeholder {
     color: ${(props: any) => props.theme.gray};
   }
-`
+`;
 
 const expand = css`
   width: 6em;
@@ -35,7 +35,7 @@ const expand = css`
   + ${SearchIcon} {
     margin: 0.3em;
   }
-`
+`;
 
 export const Input = styled.input`
   font-size: 1em;
@@ -45,4 +45,4 @@ export const Input = styled.input`
   outline: none;
   transition: ${(props: any) => props.theme.shortTrans};
   ${(props: { collapse?: boolean }) => (props.collapse ? collapse : expand)};
-`
+`;

@@ -4,5 +4,5 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['@9renpoto/eslint-config'],
-}
+  extends: ["@9renpoto/eslint-config"],
+};

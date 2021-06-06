@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const HitsWrapper = styled.div`
   top: calc(100% + 0.5em);
@@ -49,4 +49,4 @@ export const HitsWrapper = styled.div`
       border-radius: ${(props: any) => props.theme.smallBorderRadius};
     }
   }
-`
+`;

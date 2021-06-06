@@ -1,10 +1,10 @@
-import { graphql, Link } from 'gatsby'
-import React, { PureComponent } from 'react'
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/Seo'
-import { Query } from '../graphqlTypes'
-import { rhythm } from '../utils/typography'
+import { graphql, Link } from "gatsby";
+import React, { PureComponent } from "react";
+import Bio from "../components/Bio";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import { Query } from "../graphqlTypes";
+import { rhythm } from "../utils/typography";
 
 export const pageQuery = graphql`
   query {
@@ -28,25 +28,25 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
 interface Props {
-  location: Location
-  data: Query
+  location: Location;
+  data: Query;
 }
 
 export default class BlogIndex extends PureComponent<Props> {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site!.siteMetadata!.title!
-    const posts = data.allMarkdownRemark!.edges
+    const { data } = this.props;
+    const siteTitle = data.site!.siteMetadata!.title!;
+    const posts = data.allMarkdownRemark!.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" keywords={[`blog`, `javascript`, `react`]} />
         <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter!.title || node.fields!.slug
+          const title = node.frontmatter!.title || node.fields!.slug;
           return (
             <div key={node.fields!.slug!}>
               <h3
@@ -65,9 +65,9 @@ export default class BlogIndex extends PureComponent<Props> {
                 }}
               />
             </div>
-          )
+          );
         })}
       </Layout>
-    )
+    );
   }
 }
