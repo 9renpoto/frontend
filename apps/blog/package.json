@@ -61,7 +61,7 @@
     "typescript-styled-plugin": "0.18.0",
     "typography": "0.16.21",
     "typography-theme-github": "0.16.19",
-    "vfile-message": "2.0.4"
+    "vfile-message": "3.0.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.21.5",
