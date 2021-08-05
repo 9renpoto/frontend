@@ -23,6 +23,6 @@
     "eslint-plugin-flowtype": "^5.2.0"
   },
   "devDependencies": {
-    "flow-bin": "0.156.0"
+    "flow-bin": "0.157.0"
   }
 }
