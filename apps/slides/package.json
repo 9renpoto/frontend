@@ -21,6 +21,6 @@
   "devDependencies": {
     "@types/vnu-jar": "17.11.0",
     "lite-server": "2.6.1",
-    "vnu-jar": "21.6.11"
+    "vnu-jar": "21.9.2"
   }
 }
