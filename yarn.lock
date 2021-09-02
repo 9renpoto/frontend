@@ -8066,10 +8066,10 @@ camelize@^1.0.0:
   resolved "https://registry.yarnpkg.com/camelize/-/camelize-1.0.0.tgz#164a5483e630fa4321e5af07020e531831b2609b"
   integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
 
-can-npm-publish@1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/can-npm-publish/-/can-npm-publish-1.3.5.tgz#327997bb3e7401a7755a317e1a25cf286552ea3a"
-  integrity sha512-g6CfJFLD1WTjI8M/XU3Yy6i5Cs+JZa9eyWNhvq4GgvDFhEOQyLpnQxU5DymMp7iJHgOV5+6S7TclnMyGdZ5cjw==
+can-npm-publish@1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/can-npm-publish/-/can-npm-publish-1.3.6.tgz#94e54621e8fde0646230239311a77491e1354d2f"
+  integrity sha512-geMBfsTBe7KO/vzeggU4oEXRFFVLtxZT7MUhQ7T1zZb+22ip6+n5if92EXvgULQFleJV4rNmu9P34UD3miGd7Q==
   dependencies:
     cross-spawn "^7.0.3"
     extract-first-json "^1.0.1"
