@@ -17173,10 +17173,10 @@ limiter@^1.0.5:
   resolved "https://registry.yarnpkg.com/limiter/-/limiter-1.1.5.tgz#8f92a25b3b16c6131293a0cc834b4a838a2aa7c2"
   integrity sha512-FWWMIEOxz3GwUI4Ts/IvgVy6LPvoMPgjMdQ185nN6psJyBJ4yOpzqm695/h5umdLJg2vW3GR5iG11MAkR2AzJA==
 
-linaria@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/linaria/-/linaria-2.1.0.tgz#2afd27d9dbcab08031c010bcc60eec2a174d50c7"
-  integrity sha512-dv6vuATZMYCDmnD5Ccgcqi2RUYfkfq/wE0hGUpyTW3khNAJqpiPWM7NVApCXxdD+mGg3WnD7fdkL+ndL9s8vtQ==
+linaria@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/linaria/-/linaria-2.1.1.tgz#73b245b6aa647e6d3f44daa4b7b049d1a2b6d831"
+  integrity sha512-8jHVnBgurMOxzAWZR+9cXt7Vl7fC3w27B/Xmtl7ZAnKemGVfFioHzyQSh/jvgLWREPL5xieW+tQPY5Ho3Ges6w==
   dependencies:
     "@babel/generator" ">=7"
     "@babel/plugin-proposal-export-namespace-from" ">=7"
