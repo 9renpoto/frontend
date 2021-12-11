@@ -4321,10 +4321,10 @@
     "@prefresh/core" "^0.8.1"
     "@prefresh/utils" "^0.3.1"
 
-"@prettier/plugin-pug@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.18.0.tgz#b2f2425814bee1bc17cfbb3b7e382e73d4089fb7"
-  integrity sha512-67uxCVZRNS9CwvEGHZCeABeiBKODuxuxVagP7xd1GBbPCOy0MHkwNAduYldRQJbCLuz1+WNqADCwgZXmdpWipg==
+"@prettier/plugin-pug@1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-pug/-/plugin-pug-1.19.0.tgz#d4d9ee588ac6d09eadd696258aac1e1069caee7b"
+  integrity sha512-Oxwc3BiuOFMboYR0/oY6zsFxqCedyrDz/TsHUOS/1WKiZoCNtbUWGBfl3bUmA4GcgqlvHR9btWzWMSsLmsINbg==
   dependencies:
     pug-lexer "^5.0.0"
 
