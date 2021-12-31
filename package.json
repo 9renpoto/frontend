@@ -16,7 +16,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
-    "@babel/core": "7.16.5",
+    "@babel/core": "7.16.7",
     "@prettier/plugin-pug": "1.19.0",
     "@types/jest": "27.4.0",
     "babel-loader": "8.2.3",
