@@ -24,7 +24,7 @@
     "styleguide"
   ],
   "dependencies": {
-    "@headlessui/react": "^1.0.0"
+    "@headlessui/react": "^1.4.2"
   },
   "types": "lib/index.d.ts"
 }
