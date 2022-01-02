@@ -1,16 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [@9renpoto frontend playground](#9renpoto-frontend-playground)
-  - [Packages](#packages)
-  - [Apps](#apps)
-  - [Install](#install)
-  - [Tests](#tests)
-  - [Contribute](#contribute)
-  - [license](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # @9renpoto frontend playground
 
 ![Node CI](https://github.com/9renpoto/frontend/workflows/Node%20CI/badge.svg)
