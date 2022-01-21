@@ -9,7 +9,7 @@
     "clean": "rimraf react index*"
   },
   "dependencies": {
-    "@types/styled-components": "5.1.20",
+    "@types/styled-components": "5.1.21",
     "linaria": "2.3.1",
     "styled-components": "5.3.3",
     "styled-icons": "9.5.0"
