@@ -54,7 +54,7 @@
     "react": "npm:@preact/compat@17.0.3",
     "react-dom": "npm:@preact/compat@17.0.3",
     "react-helmet": "6.1.0",
-    "react-instantsearch-dom": "6.23.0",
+    "react-instantsearch-dom": "6.23.1",
     "react-typography": "0.16.20",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
