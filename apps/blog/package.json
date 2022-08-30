@@ -52,7 +52,7 @@
     "preact-render-to-string": "5.2.2",
     "prismjs": "1.29.0",
     "react": "npm:@preact/compat@17.1.1",
-    "react-dom": "npm:@preact/compat@17.0.3",
+    "react-dom": "npm:@preact/compat@17.1.1",
     "react-helmet": "6.1.0",
     "react-instantsearch-dom": "6.32.1",
     "react-typography": "0.16.20",
