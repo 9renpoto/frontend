@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/styled-components": "5.1.26",
-    "linaria": "4.1.5",
+    "linaria": "4.1.6",
     "styled-components": "5.3.6",
     "styled-icons": "9.5.0"
   }
