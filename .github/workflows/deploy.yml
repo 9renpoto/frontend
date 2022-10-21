@@ -21,7 +21,7 @@ jobs:
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.1
         with:
           name: blog
           path: apps/blog/public
