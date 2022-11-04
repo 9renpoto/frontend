@@ -25062,6 +25062,14 @@ textlint-rule-helper@^2.0.0, textlint-rule-helper@^2.1.1, textlint-rule-helper@^
     structured-source "^3.0.2"
     unist-util-visit "^1.1.0"
 
+textlint-rule-helper@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.2.2.tgz#bca5f6cd0f572cc62142411041bce99a10797dca"
+  integrity sha512-iwyRBbTQCH6aHUIXxdlK+R6hNQO82QpQ0sduygdW2jqLCJJhvdQESBwZLq7AEbeWS9IdA7k0BQxQxJR06gZXJQ==
+  dependencies:
+    structured-source "^3.0.2"
+    unist-util-visit "^2.0.3"
+
 textlint-rule-incremental-headers@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/textlint-rule-incremental-headers/-/textlint-rule-incremental-headers-0.2.0.tgz#ab056713b60acdb8ebf2a2726425e67b01ad9b2c"
@@ -25160,10 +25168,10 @@ textlint-rule-max-ten@^4.0.3:
     textlint-rule-helper "^2.0.0"
     textlint-util-to-string "^3.1.1"
 
-textlint-rule-no-dead-link@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.8.0.tgz#5cda5f57143d99d6ff754c1190c30bb8b346d1fd"
-  integrity sha512-jB45mvIhKdgLFs4kDzfn8Q3C1WBv+BGI6At07ZJd9YmM/+dm+P8W9urisBSXFeQcYoGcaXqDiKZwK9BpdnpciQ==
+textlint-rule-no-dead-link@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-5.1.1.tgz#fbcf8147798908647df4768183091a3d6c93d4cc"
+  integrity sha512-87DdbJn2LxOswlZw/JRzAsoKR2lo5yPTWI9MZMcDDSkctqvk6rTwyFDe7D4MhzcY1sGTxhamfD2+e4hTbJdMLA==
   dependencies:
     fs-extra "^8.1.0"
     get-url-origin "^1.0.1"
@@ -25171,7 +25179,7 @@ textlint-rule-no-dead-link@^4.8.0:
     node-fetch "^2.6.0"
     p-memoize "^3.1.0"
     p-queue "^6.2.0"
-    textlint-rule-helper "^2.1.1"
+    textlint-rule-helper "^2.2.2"
 
 textlint-rule-no-double-negative-ja@^2.0.1:
   version "2.0.1"
@@ -26415,7 +26423,7 @@ unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.1:
   dependencies:
     unist-util-visit-parents "^2.0.0"
 
-unist-util-visit@^2.0.0, unist-util-visit@^2.0.2:
+unist-util-visit@^2.0.0, unist-util-visit@^2.0.2, unist-util-visit@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.3.tgz#c3703893146df47203bb8a9795af47d7b971208c"
   integrity sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==
