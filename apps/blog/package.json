@@ -55,7 +55,7 @@
     "react-dom": "npm:@preact/compat@17.1.2",
     "react-helmet": "6.1.0",
     "react-instantsearch-dom": "6.38.1",
-    "react-typography": "0.16.20",
+    "react-typography": "0.16.23",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
     "typescript-styled-plugin": "0.18.2",
