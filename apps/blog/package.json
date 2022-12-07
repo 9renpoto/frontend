@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/blog",
-  "version": "7.5.0",
+  "version": "7.6.0",
   "private": true,
   "description": "my blogs",
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
@@ -23,7 +23,7 @@
     "gatsby"
   ],
   "dependencies": {
-    "@9renpoto/ui": "^7.5.0",
+    "@9renpoto/ui": "^7.6.0",
     "gatsby": "2.32.13",
     "gatsby-image": "2.11.0",
     "gatsby-plugin-algolia": "1.0.2",
