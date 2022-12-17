@@ -24,6 +24,7 @@ jobs:
           yarn test
         env:
           CI: true
+          BROWSERSLIST_DANGEROUS_EXTEND: 1
           GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
