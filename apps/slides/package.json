@@ -16,10 +16,12 @@
     "w:pug": "npm run build:html -- -w"
   },
   "dependencies": {
-    "pug-cli": "1.0.0-alpha6"
+    "pug-cli": "1.0.0-alpha6",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/vnu-jar": "17.11.0",
+    "cpx": "^1.5.0",
     "lite-server": "2.6.1",
     "vnu-jar": "22.9.29"
   }
