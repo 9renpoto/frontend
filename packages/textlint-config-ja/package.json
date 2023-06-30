@@ -32,6 +32,6 @@
     "textlint-rule-preset-jtf-style": "^2.3.4"
   },
   "devDependencies": {
-    "textlint": "13.3.2"
+    "textlint": "13.3.3"
   }
 }
