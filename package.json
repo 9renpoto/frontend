@@ -30,15 +30,15 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,graphql,css,scss,json,pug}": [
-      "prettier --write"
+    "*.{ts,tsx,json}": [
+      "deno fmt"
     ],
     "*.md": [
-      "prettier --write",
+      "deno fmt",
       "textlint --fix"
     ],
     "*.{ts,tsx}": [
-      "prettier --write",
+      "deno fmt",
       "eslint --fix"
     ],
     "*.tsx": [
