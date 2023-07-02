@@ -2,7 +2,6 @@
 
 ![Node CI](https://github.com/9renpoto/frontend/workflows/Node%20CI/badge.svg)
 [![CodeFactor](https://www.codefactor.io/repository/github/9renpoto/frontend/badge)](https://www.codefactor.io/repository/github/9renpoto/frontend)
-[![BCH compliance](https://bettercodehub.com/edge/badge/9renpoto/frontend?branch=master)](https://bettercodehub.com/)
 
 ## Packages
 
