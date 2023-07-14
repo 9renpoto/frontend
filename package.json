@@ -13,7 +13,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
-    "eslint": "8.44.0",
+    "eslint": "8.45.0",
     "husky": "8.0.3",
     "lerna": "6.6.2",
     "lerna-changelog": "2.2.0",
