@@ -1,3 +1,12 @@
+v7.7.2 (2023-07-17)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3796
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.7.1...7.7.2
 v7.7.1 (2023-07-17)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
