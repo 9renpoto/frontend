@@ -1,3 +1,179 @@
+v7.7.1 (2023-07-17)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update w9jds/firebase-action action to v11.18.0 by @renovate in https://github.com/9renpoto/frontend/pull/3616
+* chore(deps): update dependency flow-bin to v0.196.1 by @renovate in https://github.com/9renpoto/frontend/pull/3617
+* chore(deps): update dependency cypress to v12.2.0 by @renovate in https://github.com/9renpoto/frontend/pull/3618
+* chore(deps): update dependency flow-bin to v0.196.2 by @renovate in https://github.com/9renpoto/frontend/pull/3620
+* chore(deps): update dependency flow-bin to v0.196.3 by @renovate in https://github.com/9renpoto/frontend/pull/3624
+* chore(deps): bump matchai/waka-box from 4.0.5 to 5.0.0 by @dependabot in https://github.com/9renpoto/frontend/pull/3623
+* chore(deps): bump actions/stale from 6 to 7 by @dependabot in https://github.com/9renpoto/frontend/pull/3622
+* chore(deps): update actions/stale action to v7 by @renovate in https://github.com/9renpoto/frontend/pull/3619
+* chore(deps): update matchai/waka-box action to v5 - autoclosed by @renovate in https://github.com/9renpoto/frontend/pull/3621
+* chore(deps): update dependency @babel/core to v7.20.7 by @renovate in https://github.com/9renpoto/frontend/pull/3625
+* fix(deps): update dependency gatsby-plugin-env-variables to v2.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3626
+* chore(deps): update dependency @types/react-dom to v18.0.10 by @renovate in https://github.com/9renpoto/frontend/pull/3627
+* chore(deps): update maxam2017/productive-box action to v1.1.3 by @renovate in https://github.com/9renpoto/frontend/pull/3628
+* chore(deps): update dependency lerna to v6.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3630
+* chore(deps): update graphqlcodegenerator monorepo by @renovate in https://github.com/9renpoto/frontend/pull/3631
+* feat: deprecated by @9renpoto in https://github.com/9renpoto/frontend/pull/3629
+* chore(deps): bump postcss from 7.0.35 to 7.0.39 by @dependabot in https://github.com/9renpoto/frontend/pull/3634
+* chore(deps): bump minimatch from 3.0.4 to 3.0.5 by @dependabot in https://github.com/9renpoto/frontend/pull/3633
+* chore(deps): bump shell-quote from 1.7.2 to 1.7.4 by @dependabot in https://github.com/9renpoto/frontend/pull/3632
+* chore(deps): update dependency typescript to v4.9.4 by @renovate in https://github.com/9renpoto/frontend/pull/3577
+* chore(deps): bump node-fetch from 2.6.1 to 2.6.7 by @dependabot in https://github.com/9renpoto/frontend/pull/3635
+* chore(deps): update dependency prettier-plugin-organize-imports to v3 by @renovate in https://github.com/9renpoto/frontend/pull/3441
+* chore(deps): update dependency stylelint to v14 by @renovate in https://github.com/9renpoto/frontend/pull/3120
+* chore(deps): bump tar from 6.1.0 to 6.1.13 by @dependabot in https://github.com/9renpoto/frontend/pull/3636
+* refactor: yarn.lock to package-lock by @9renpoto in https://github.com/9renpoto/frontend/pull/3637
+* chore(deps): bump shell-quote from 1.7.2 to 1.7.4 by @dependabot in https://github.com/9renpoto/frontend/pull/3638
+* chore(deps): bump node-fetch from 2.6.1 to 2.6.7 by @dependabot in https://github.com/9renpoto/frontend/pull/3639
+* chore(deps): bump json5 and tsconfig-paths by @dependabot in https://github.com/9renpoto/frontend/pull/3641
+* chore(deps): bump tar from 6.1.0 to 6.1.13 by @dependabot in https://github.com/9renpoto/frontend/pull/3642
+* chore(deps): bump minimatch from 3.0.4 to 3.0.5 by @dependabot in https://github.com/9renpoto/frontend/pull/3640
+* chore(deps): update dependency stylelint to v14.16.1 by @renovate in https://github.com/9renpoto/frontend/pull/3643
+* chore(deps): update dependency textlint to v12.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3644
+* chore(deps): update dependency textlint to v12.3.1 by @renovate in https://github.com/9renpoto/frontend/pull/3645
+* chore(deps): update dependency eslint to v8.31.0 by @renovate in https://github.com/9renpoto/frontend/pull/3646
+* chore(deps): update dependency textlint to v12.4.0 by @renovate in https://github.com/9renpoto/frontend/pull/3647
+* chore(deps): update dependency husky to v8.0.3 by @renovate in https://github.com/9renpoto/frontend/pull/3648
+* chore(deps): update dependency textlint to v12.5.0 by @renovate in https://github.com/9renpoto/frontend/pull/3649
+* chore(deps): update dependency textlint to v12.5.1 by @renovate in https://github.com/9renpoto/frontend/pull/3651
+* chore(deps): update actions/checkout action to v3.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3652
+* chore(deps): update actions/setup-node action to v3.6.0 by @renovate in https://github.com/9renpoto/frontend/pull/3653
+* chore(deps): update dependency lerna to v6.4.0 by @renovate in https://github.com/9renpoto/frontend/pull/3655
+* chore(deps): update dependency lerna to v6.4.1 by @renovate in https://github.com/9renpoto/frontend/pull/3656
+* chore(deps): update dependency prettier-plugin-organize-imports to v3.2.2 by @renovate in https://github.com/9renpoto/frontend/pull/3658
+* fix(deps): update dependency textlint-rule-ja-no-mixed-period to v3 by @renovate in https://github.com/9renpoto/frontend/pull/3659
+* chore(deps): update dependency eslint to v8.32.0 by @renovate in https://github.com/9renpoto/frontend/pull/3660
+* chore(deps): update dependency @prettier/plugin-pug to v2.4.0 by @renovate in https://github.com/9renpoto/frontend/pull/3661
+* chore(deps): update dependency textlint to v12.6.0 by @renovate in https://github.com/9renpoto/frontend/pull/3662
+* chore(deps): update dependency @prettier/plugin-pug to v2.4.1 by @renovate in https://github.com/9renpoto/frontend/pull/3663
+* chore(deps): update dependency textlint to v12.6.1 by @renovate in https://github.com/9renpoto/frontend/pull/3664
+* chore(deps): update dependency eslint to v8.33.0 by @renovate in https://github.com/9renpoto/frontend/pull/3668
+* fix(deps): update dependency textlint-rule-no-nfd to v2 by @renovate in https://github.com/9renpoto/frontend/pull/3667
+* chore(deps): update dependency textlint to v13 by @renovate in https://github.com/9renpoto/frontend/pull/3666
+* chore(deps): bump ua-parser-js from 0.7.28 to 0.7.33 by @dependabot in https://github.com/9renpoto/frontend/pull/3665
+* chore(deps): update dependency rimraf to v4 by @renovate in https://github.com/9renpoto/frontend/pull/3657
+* chore(deps): update dependency textlint to v13.1.0 by @renovate in https://github.com/9renpoto/frontend/pull/3669
+* chore(deps): update dependency textlint to v13.1.1 by @renovate in https://github.com/9renpoto/frontend/pull/3670
+* chore(deps): update dependency textlint to v13.1.3 by @renovate in https://github.com/9renpoto/frontend/pull/3671
+* chore(deps): update dependency lint-staged to v13.1.1 by @renovate in https://github.com/9renpoto/frontend/pull/3674
+* chore(deps): update dependency textlint to v13.2.0 by @renovate in https://github.com/9renpoto/frontend/pull/3673
+* chore(deps): update dependency eslint to v8.34.0 by @renovate in https://github.com/9renpoto/frontend/pull/3676
+* chore(deps): update dependency textlint to v13.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3677
+* chore(deps): update dependency lint-staged to v13.1.2 by @renovate in https://github.com/9renpoto/frontend/pull/3678
+* chore(deps): update dependency lerna to v6.5.1 by @renovate in https://github.com/9renpoto/frontend/pull/3679
+* chore(deps): update dependency eslint to v8.35.0 by @renovate in https://github.com/9renpoto/frontend/pull/3681
+* chore(deps): update dependency textlint to v13.3.1 by @renovate in https://github.com/9renpoto/frontend/pull/3682
+* fix(deps): update dependency textlint-rule-no-hankaku-kana to v2 by @renovate in https://github.com/9renpoto/frontend/pull/3683
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3675
+* chore(deps): bump http-cache-semantics from 4.1.0 to 4.1.1 by @dependabot in https://github.com/9renpoto/frontend/pull/3672
+* chore(deps): update dependency rimraf to v4.1.3 by @renovate in https://github.com/9renpoto/frontend/pull/3684
+* chore(deps): update dependency rimraf to v4.2.0 by @renovate in https://github.com/9renpoto/frontend/pull/3685
+* chore(deps): update dependency rimraf to v4.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3686
+* chore(deps): update dependency rimraf to v4.3.1 by @renovate in https://github.com/9renpoto/frontend/pull/3687
+* chore(deps): update dependency rimraf to v4.4.0 by @renovate in https://github.com/9renpoto/frontend/pull/3688
+* chore(deps): update dependency eslint to v8.36.0 by @renovate in https://github.com/9renpoto/frontend/pull/3690
+* chore(deps): update dependency lint-staged to v13.2.0 by @renovate in https://github.com/9renpoto/frontend/pull/3689
+* fix(deps): update dependency textlint-rule-ja-no-successive-word to v2.0.1 by @renovate in https://github.com/9renpoto/frontend/pull/3693
+* fix(deps): update dependency stylelint-config-prettier to v9.0.5 by @renovate in https://github.com/9renpoto/frontend/pull/3691
+* fix(deps): update dependency textlint-rule-ja-no-mixed-period to v3.0.1 by @renovate in https://github.com/9renpoto/frontend/pull/3692
+* fix(deps): update dependency textlint-rule-no-dead-link to v5.1.2 by @renovate in https://github.com/9renpoto/frontend/pull/3695
+* fix(deps): update dependency textlint-rule-max-ten to v4.0.4 by @renovate in https://github.com/9renpoto/frontend/pull/3694
+* fix(deps): update dependency textlint-rule-no-doubled-conjunction to v2.0.4 by @renovate in https://github.com/9renpoto/frontend/pull/3696
+* fix(deps): update dependency textlint-rule-no-doubled-conjunctive-particle-ga to v2.0.5 by @renovate in https://github.com/9renpoto/frontend/pull/3697
+* fix(deps): update dependency textlint-rule-no-doubled-joshi to v4.0.3 by @renovate in https://github.com/9renpoto/frontend/pull/3698
+* fix(deps): update dependency textlint-rule-preset-jtf-style to v2.3.13 by @renovate in https://github.com/9renpoto/frontend/pull/3699
+* chore(deps): update actions/checkout action to v3.4.0 by @renovate in https://github.com/9renpoto/frontend/pull/3700
+* fix(deps): update dependency @typescript-eslint/parser to v5.55.0 by @renovate in https://github.com/9renpoto/frontend/pull/3701
+* fix(deps): update dependency eslint-config-prettier to v8.7.0 by @renovate in https://github.com/9renpoto/frontend/pull/3702
+* fix(deps): update dependency eslint-plugin-jsx-a11y to v6.7.1 by @renovate in https://github.com/9renpoto/frontend/pull/3703
+* fix(deps): update dependency eslint-plugin-prettier to v4.2.1 by @renovate in https://github.com/9renpoto/frontend/pull/3704
+* fix(deps): update dependency eslint-plugin-react to v7.32.2 by @renovate in https://github.com/9renpoto/frontend/pull/3705
+* fix(deps): update dependency eslint-plugin-react-hooks to v4.6.0 by @renovate in https://github.com/9renpoto/frontend/pull/3706
+* fix(deps): update dependency stylelint-config-recess-order to v3.1.0 by @renovate in https://github.com/9renpoto/frontend/pull/3707
+* fix(deps): update dependency textlint-rule-preset-ja-spacing to v2.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3708
+* fix(deps): update dependency @typescript-eslint/parser to v5.56.0 by @renovate in https://github.com/9renpoto/frontend/pull/3710
+* fix(deps): update dependency eslint-config-prettier to v8.8.0 by @renovate in https://github.com/9renpoto/frontend/pull/3711
+* chore(deps): update dependency rimraf to v4.4.1 by @renovate in https://github.com/9renpoto/frontend/pull/3712
+* chore(deps): bump actions/stale from 7 to 8 by @dependabot in https://github.com/9renpoto/frontend/pull/3715
+* chore(deps): update dependency typescript to v5 by @renovate in https://github.com/9renpoto/frontend/pull/3709
+* chore(deps): update actions/checkout action to v3.5.0 by @renovate in https://github.com/9renpoto/frontend/pull/3716
+* chore(deps): update dependency lerna to v6.6.1 by @renovate in https://github.com/9renpoto/frontend/pull/3714
+* chore(deps): update dependency @prettier/plugin-pug to v2.4.2 by @renovate in https://github.com/9renpoto/frontend/pull/3718
+* chore(deps): update dependency textlint to v13.3.2 by @renovate in https://github.com/9renpoto/frontend/pull/3717
+* fix(deps): update dependency @typescript-eslint/parser to v5.57.0 by @renovate in https://github.com/9renpoto/frontend/pull/3719
+* chore(deps): update dependency eslint to v8.37.0 by @renovate in https://github.com/9renpoto/frontend/pull/3720
+* fix(deps): update dependency @typescript-eslint/parser to v5.57.1 by @renovate in https://github.com/9renpoto/frontend/pull/3721
+* chore(deps): update dependency lint-staged to v13.2.1 by @renovate in https://github.com/9renpoto/frontend/pull/3722
+* chore(deps): update dependency eslint to v8.38.0 by @renovate in https://github.com/9renpoto/frontend/pull/3724
+* fix(deps): update dependency @typescript-eslint/parser to v5.58.0 by @renovate in https://github.com/9renpoto/frontend/pull/3727
+* chore(deps): update actions/checkout action to v3.5.1 by @renovate in https://github.com/9renpoto/frontend/pull/3728
+* chore(deps): update actions/checkout action to v3.5.2 by @renovate in https://github.com/9renpoto/frontend/pull/3729
+* chore(deps): update dependency vnu-jar to v23 by @renovate in https://github.com/9renpoto/frontend/pull/3726
+* chore(deps): update dependency rimraf to v5 by @renovate in https://github.com/9renpoto/frontend/pull/3725
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.0 by @renovate in https://github.com/9renpoto/frontend/pull/3730
+* chore(deps): update dependency eslint to v8.39.0 by @renovate in https://github.com/9renpoto/frontend/pull/3731
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.1 by @renovate in https://github.com/9renpoto/frontend/pull/3732
+* chore(deps): update dependency lint-staged to v13.2.2 by @renovate in https://github.com/9renpoto/frontend/pull/3734
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.2 by @renovate in https://github.com/9renpoto/frontend/pull/3735
+* chore(deps): update dependency lerna to v6.6.2 by @renovate in https://github.com/9renpoto/frontend/pull/3736
+* chore(deps): update dependency @prettier/plugin-pug to v2.5.0 by @renovate in https://github.com/9renpoto/frontend/pull/3737
+* chore(deps): update dependency eslint to v8.40.0 by @renovate in https://github.com/9renpoto/frontend/pull/3738
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.5 by @renovate in https://github.com/9renpoto/frontend/pull/3739
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.6 by @renovate in https://github.com/9renpoto/frontend/pull/3740
+* chore(deps): update dependency remark-preset-lint-recommended to v6.1.3 by @renovate in https://github.com/9renpoto/frontend/pull/3741
+* chore(deps): update dependency rimraf to v5.0.1 by @renovate in https://github.com/9renpoto/frontend/pull/3742
+* chore(deps): update dependency eslint to v8.41.0 by @renovate in https://github.com/9renpoto/frontend/pull/3743
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.7 by @renovate in https://github.com/9renpoto/frontend/pull/3744
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.8 by @renovate in https://github.com/9renpoto/frontend/pull/3745
+* chore(deps): update dependency @prettier/plugin-pug to v2.5.1 by @renovate in https://github.com/9renpoto/frontend/pull/3746
+* chore(deps): update dependency eslint to v8.42.0 by @renovate in https://github.com/9renpoto/frontend/pull/3747
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.9 by @renovate in https://github.com/9renpoto/frontend/pull/3748
+* fix(deps): update dependency textlint-rule-no-hankaku-kana to v2.0.1 by @renovate in https://github.com/9renpoto/frontend/pull/3749
+* fix(deps): update dependency textlint-rule-no-nfd to v2.0.2 by @renovate in https://github.com/9renpoto/frontend/pull/3750
+* chore(deps): update actions/checkout action to v3.5.3 by @renovate in https://github.com/9renpoto/frontend/pull/3752
+* fix(deps): update dependency @typescript-eslint/parser to v5.59.11 by @renovate in https://github.com/9renpoto/frontend/pull/3753
+* chore(deps): update dependency eslint to v8.43.0 by @renovate in https://github.com/9renpoto/frontend/pull/3755
+* chore(deps): update dependency prettier-plugin-package to v1.3.1 by @renovate in https://github.com/9renpoto/frontend/pull/3757
+* fix(deps): update dependency @typescript-eslint/parser to v5.60.0 by @renovate in https://github.com/9renpoto/frontend/pull/3758
+* fix(deps): update dependency @typescript-eslint/parser to v5.60.1 by @renovate in https://github.com/9renpoto/frontend/pull/3759
+* chore(deps): update dependency lint-staged to v13.2.3 by @renovate in https://github.com/9renpoto/frontend/pull/3760
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3754
+* chore(deps): update dependency textlint to v13.3.3 by @renovate in https://github.com/9renpoto/frontend/pull/3762
+* chore(deps): update dependency eslint to v8.44.0 by @renovate in https://github.com/9renpoto/frontend/pull/3763
+* refactor: remove unused by @9renpoto in https://github.com/9renpoto/frontend/pull/3764
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3761
+* chore: remove unused by @9renpoto in https://github.com/9renpoto/frontend/pull/3765
+* fix(deps): update dependency stylelint-config-recess-order to v4 by @renovate in https://github.com/9renpoto/frontend/pull/3766
+* Bump v7.7.0 by @9renpoto in https://github.com/9renpoto/frontend/pull/3767
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3768
+* chore: npm publish; by @9renpoto in https://github.com/9renpoto/frontend/pull/3769
+* chore(deps): update actions/checkout action to v3.5.3 by @renovate in https://github.com/9renpoto/frontend/pull/3770
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3771
+* fix(deps): update dependency @typescript-eslint/parser to v5.61.0 by @renovate in https://github.com/9renpoto/frontend/pull/3773
+* chore(deps): update actions/setup-node action to v3.7.0 by @renovate in https://github.com/9renpoto/frontend/pull/3775
+* chore(deps): update dependency stylelint to v15 [security] by @renovate in https://github.com/9renpoto/frontend/pull/3778
+* fix(deps): update dependency @typescript-eslint/parser to v5.62.0 by @renovate in https://github.com/9renpoto/frontend/pull/3779
+* fix(deps): update dependency @typescript-eslint/parser to v6 by @renovate in https://github.com/9renpoto/frontend/pull/3780
+* fix(deps): update dependency eslint-plugin-prettier to v5 by @renovate in https://github.com/9renpoto/frontend/pull/3782
+* chore(deps): bump semver from 5.7.1 to 5.7.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3781
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3772
+* chore(deps): update dependency eslint to v8.45.0 by @renovate in https://github.com/9renpoto/frontend/pull/3784
+* fix(deps): update dependency textlint-rule-no-doubled-joshi to v4.0.4 by @renovate in https://github.com/9renpoto/frontend/pull/3786
+* fix(deps): update dependency textlint-rule-no-doubled-joshi to v4.1.0 by @renovate in https://github.com/9renpoto/frontend/pull/3787
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3785
+* feat: add gh-actions by @9renpoto in https://github.com/9renpoto/frontend/pull/3788
+* chore: remove unused by @9renpoto in https://github.com/9renpoto/frontend/pull/3789
+* chore(deps): update dependency eslint to v8.45.0 by @renovate in https://github.com/9renpoto/frontend/pull/3790
+* fix(deps): update dependency textlint-rule-no-doubled-joshi to v4.1.0 by @renovate in https://github.com/9renpoto/frontend/pull/3791
+* chore: parse current version by @9renpoto in https://github.com/9renpoto/frontend/pull/3792
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.6.0...7.7.1
 ## v7.5.0 (2021-06-06)
 
 #### :house: Maintenance
