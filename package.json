@@ -3,22 +3,18 @@
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "repository": "ssh://git@github.com/9renpoto/frontend.git",
   "scripts": {
-    "build": "lerna run build --include-dependencies",
-    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
-    "clean": "lerna run clean --parallel && lerna clean",
+    "build": "npm run build -ws --if-present",
     "lint": "run-s -l lint:*",
     "lint:eslint": "eslint . --ext=ts,tsx,vue",
-    "lint:pkg": "lerna run lint --parallel",
+    "lint:pkg": "npm run lint -ws --if-present",
     "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{ts,tsx}'",
-    "test": "lerna run test"
+    "test": "npm run test -ws --if-present"
   },
   "devDependencies": {
-    "eslint": "8.45.0",
-    "husky": "8.0.3",
-    "lerna": "6.6.2",
-    "lerna-changelog": "2.2.0",
-    "lint-staged": "13.2.3",
-    "npm-run-all": "4.1.5",
+    "eslint": "^8.44.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^5.0.1"
   },
   "eslintConfig": {
