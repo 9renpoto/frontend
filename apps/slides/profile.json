@@ -1,10 +1,10 @@
 {
   "id": "9renpoto",
-  "name": "Keisuke Kan",
-  "homepage": "https://9renpoto.github.io",
+  "name": "Keisuke Umeno",
+  "homepage": "https://9renpoto.win",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/9renpoto/entry.git"
+    "url": "git+https://github.com/9renpoto/poem.git"
   },
   "editor": "atom",
   "game": [
