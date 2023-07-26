@@ -3,7 +3,8 @@ name: Node CI
 on:
   push:
   pull_request:
-    - release
+    branches:
+      - release
 
 jobs:
   build:
