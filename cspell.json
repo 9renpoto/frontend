@@ -1,17 +1,19 @@
 {
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "ignorePaths": [
-    "node_modules"
+  "useGitignore": true,
+  "dictionaries": [
+    "html",
+    "typescript",
+    "css",
+    "node",
+    "rust"
   ],
-  "dictionaryDefinitions": [],
-  "dictionaries": [],
   "words": [
     "9renpoto",
     "dearu",
     "desumasu",
     "hankaku",
     "joshi"
-  ],
-  "ignoreWords": [],
-  "import": []
+  ]
 }
