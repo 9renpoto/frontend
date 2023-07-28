@@ -1,3 +1,22 @@
+v7.7.3 (2023-07-28)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3798
+* Update bump.yml by @9renpoto in https://github.com/9renpoto/frontend/pull/3799
+* fix(deps): update dependency @typescript-eslint/parser to v6.1.0 by @renovate in https://github.com/9renpoto/frontend/pull/3800
+* chore(deps): update dependency stylelint to v15 by @renovate in https://github.com/9renpoto/frontend/pull/3801
+* chore: install via peerDependencies by @9renpoto in https://github.com/9renpoto/frontend/pull/3803
+* fix(deps): update dependency eslint-plugin-react to v7.33.0 by @renovate in https://github.com/9renpoto/frontend/pull/3804
+* fix(deps): update dependency @typescript-eslint/parser to v6.2.0 by @renovate in https://github.com/9renpoto/frontend/pull/3805
+* chore: build release by @9renpoto in https://github.com/9renpoto/frontend/pull/3806
+* Update bump.yml by @9renpoto in https://github.com/9renpoto/frontend/pull/3807
+* fix(deps): update dependency eslint-config-prettier to v8.9.0 by @renovate in https://github.com/9renpoto/frontend/pull/3808
+* chore: add base test by @9renpoto in https://github.com/9renpoto/frontend/pull/3809
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.7.2...7.7.3
 v7.7.2 (2023-07-17)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
