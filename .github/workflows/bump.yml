@@ -55,13 +55,20 @@ jobs:
       - run: mv temp ./CHANGELOG.md
       - run: rm new
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
-        with:
-          base: main
-          branch: release
-          commit-message: 'bump: v${{ steps.get_version.outputs.NEW_VERSION }}'
-          body: ${{ steps.get_release_note.outputs.result  }}
-          title: 'chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}'
-          draft: true
-          milestone: 'v${{ steps.get_version.outputs.NEW_VERSION }}'
+      # - name: Create Pull Request
+      #   uses: peter-evans/create-pull-request@v5.0.2
+      #   with:
+      #     base: main
+      #     branch: release
+      #     commit-message: 'bump: v${{ steps.get_version.outputs.NEW_VERSION }}'
+      #     body: ${{ steps.get_release_note.outputs.result  }}
+      #     title: 'chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}'
+      #     draft: true
+      #     milestone: 'v${{ steps.get_version.outputs.NEW_VERSION }}'
+      - run: |
+          echo '1' $GITHUB_REF
+          echo '2' ${{ github.ref }}
+          echo '3' ${{ github.ref_name }}
+          echo '4' ${{ github.head_ref }}
+          echo '5' ${{ github.base_ref }}
+
