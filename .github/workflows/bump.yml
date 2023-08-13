@@ -43,7 +43,7 @@ jobs:
               {
                 owner: context.repo.owner || '9renpoto',
                 repo: context.repo.repo || 'frontend',
-                tag_name: process.env.NEW_VERSION,
+                tag_name: `v${process.env.NEW_VERSION}`,
               }
             );
             return notes.data.body;
