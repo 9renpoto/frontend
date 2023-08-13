@@ -41,8 +41,8 @@ jobs:
           script: |
             const notes = await github.rest.repos.generateReleaseNotes(
               {
-                owner: context.repo.owner,
-                repo: context.repo.repo,
+                owner: context.repo.owner || '9renpoto',
+                repo: context.repo.repo || 'frontend',
                 tag_name: process.env.NEW_VERSION,
               }
             );
@@ -58,7 +58,7 @@ jobs:
       - run: rm new
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
+        uses: peter-evans/create-pull-request@v6
         with:
           base: main
           branch: main-${{ steps.get_version.outputs.NEW_VERSION }}
