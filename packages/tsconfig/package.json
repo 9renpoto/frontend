@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/tsconfig",
-  "version": "7.7.2",
+  "version": "7.8.0",
   "description": "Shared TypeScript config for my projects",
   "license": "MIT",
   "main": "tsconfig.json",
