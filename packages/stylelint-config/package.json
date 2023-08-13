@@ -16,7 +16,7 @@
   "keywords": [
     "stylelint-config"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^4.0.0"
   }

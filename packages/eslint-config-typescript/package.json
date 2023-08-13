@@ -17,7 +17,7 @@
     "eslint",
     "TypeScript"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "@9renpoto/eslint-config": "^7.7.0",
     "@typescript-eslint/parser": "^6.0.0"
   }
