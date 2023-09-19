@@ -1,3 +1,21 @@
+## v7.8.0 (2023-09-19)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency lint-staged to v13.3.0 by @renovate in https://github.com/9renpoto/frontend/pull/3823
+* chore(deps): update actions/setup-node action to v3.8.0 by @renovate in https://github.com/9renpoto/frontend/pull/3825
+* chore(deps): update dependency lint-staged to v14 by @renovate in https://github.com/9renpoto/frontend/pull/3824
+* chore(deps): update actions/setup-node action to v3.8.1 by @renovate in https://github.com/9renpoto/frontend/pull/3827
+* chore(deps): update dependency lint-staged to v14.0.1 by @renovate in https://github.com/9renpoto/frontend/pull/3828
+* chore(deps): update streetsidesoftware/cspell-action action to v3 by @renovate in https://github.com/9renpoto/frontend/pull/3829
+* chore(deps): update actions/checkout action to v3.6.0 by @renovate in https://github.com/9renpoto/frontend/pull/3830
+* chore(deps): update dependency eslint to v8.48.0 by @renovate in https://github.com/9renpoto/frontend/pull/3831
+* chore(deps): update actions/checkout action to v4 by @renovate in https://github.com/9renpoto/frontend/pull/3832
+* chore(deps): update dependency eslint to v8.49.0 by @renovate in https://github.com/9renpoto/frontend/pull/3833
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.7.3...v7.8.0
 ## v7.7.3 (2023-08-13)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
