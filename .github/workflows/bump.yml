@@ -22,7 +22,7 @@ jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@v4
 
       - run: npm version ${{ inputs.semver }} --no-git-tag-version --workspaces
 
@@ -58,7 +58,7 @@ jobs:
       - run: rm new
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
+        uses: peter-evans/create-pull-request@v5
         with:
           base: main
           branch: main-${{ steps.get_version.outputs.NEW_VERSION }}
