@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/eslint-config-typescript",
-  "version": "7.7.4",
+  "version": "7.7.3",
   "description": "TypeScript with eslint",
   "license": "MIT",
   "repository": {
