@@ -15,14 +15,12 @@
     "start": "lite-server --baseDir='dist'",
     "w:pug": "npm run build:html -- -w"
   },
-  "dependencies": {
-    "pug-cli": "1.0.0-alpha6",
-    "ts-node": "^10.9.1"
-  },
   "devDependencies": {
+    "ts-node": "^10.9.1",
     "@types/vnu-jar": "17.11.2",
     "cpx": "^1.5.0",
     "lite-server": "2.6.1",
+    "pub-cli": "^1.0.0",
     "vnu-jar": "23.4.11"
   }
 }
