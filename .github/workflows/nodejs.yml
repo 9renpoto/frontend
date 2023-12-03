@@ -1,10 +1,7 @@
 name: Node CI
 
 on:
-  push:
   pull_request:
-    branches:
-      - release
 
 jobs:
   build:

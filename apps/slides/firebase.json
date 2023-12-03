@@ -1,7 +1,0 @@
-{
-  "hosting": {
-    "site": "slide-dev-9renpoto",
-    "public": "dist",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-  }
-}
