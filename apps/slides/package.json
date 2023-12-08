@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "pug-cli": "1.0.0-alpha6",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/vnu-jar": "17.11.2",
