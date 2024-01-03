@@ -25,6 +25,9 @@
     ]
   },
   "lint-staged": {
+    "*.pug": [
+      "prettier --write --plugin=@prettier/plugin-pug"
+    ],
     "*.{ts,tsx,json}": [
       "biome check --apply"
     ],

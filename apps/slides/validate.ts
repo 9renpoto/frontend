@@ -1,5 +1,5 @@
-const { exec } = require("child_process");
-const vnu = require("vnu-jar");
+import { exec } from "child_process";
+import vnu from "vnu-jar";
 
 exec(`java -jar ${vnu} --skip-non-html dist`, (error, stdout) => {
   if (error) {

@@ -5,13 +5,15 @@
   "description": "my slides",
   "license": "https://github.com/9renpoto/frontend/blob/master/LICENSE",
   "main": "n/a",
+  "type": "module",
   "scripts": {
     "build": "run-s clean build:* copy clean:html",
     "build:html": "pug src --out dist",
     "clean": "rimraf dist",
     "clean:html": "find dist -name '*.html' | grep -v index.html | xargs rm",
     "copy": "cpx \"src/**/*.png\" dist",
-    "lint": "npm run build:html -- -P && npm run clean:html && ts-node validate.ts",
+    "lint": "run-p lint:*",
+    "lint:html": "npm run build:html -- -P && npm run clean:html && node --loader ts-node/esm validate.ts",
     "start": "lite-server --baseDir='dist'",
     "w:pug": "npm run build:html -- -w"
   },
