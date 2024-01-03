@@ -1,45 +1,50 @@
 extends ../base.pug
 
 block head
-  meta(name='viewport', content='width=1024')
+  meta(name="viewport", content="width=1024")
   meta(
-    name='description',
-    content='impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.'
+    name="description",
+    content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com."
   )
-  link(href='https://impress.js.org/css/impress-demo.css', rel='stylesheet')
+  link(href="https://impress.js.org/css/impress-demo.css", rel="stylesheet")
 block body
   body.impress-not-supported
     include ../fallback.pug
     #impress
-      #board.step.slide(data-x='-1000', data-y='-1500')
+      #board.step.slide(data-x="-1000", data-y="-1500")
         q JavaScript の苦手なあなたに
         img(
-          src='http://4.bp.blogspot.com/-ub5B6A2wCZ4/Wat2OAh6dmI/AAAAAAABGWA/4bPTYOUuZ5wpZzBw54UqngQo8KNtfvatwCLcBGAs/s800/bar_oachirano_okyakusama.png',
-          width='400',
-          alt='bar_oachirano_okyakusama'
+          src="http://4.bp.blogspot.com/-ub5B6A2wCZ4/Wat2OAh6dmI/AAAAAAABGWA/4bPTYOUuZ5wpZzBw54UqngQo8KNtfvatwCLcBGAs/s800/bar_oachirano_okyakusama.png",
+          width="400",
+          alt="bar_oachirano_okyakusama"
         )
-      #aboutme.step.slide(data-x='0', data-y='-1500')
+      #aboutme.step.slide(data-x="0", data-y="-1500")
         include ./profile.pug
-      #about.step(data-x='500', data-y='-1500', data-rotate='90', data-scale='0.3')
+      #about.step(
+        data-x="500",
+        data-y="-1500",
+        data-rotate="90",
+        data-scale="0.3"
+      )
         h1 Today, Talk about `JSON`
-      #background.step(data-x='1000', data-y='-1500', data-rotate='90')
+      #background.step(data-x="1000", data-y="-1500", data-rotate="90")
         h2 How to use JSON ?
-        pre(style='font-size: 20px').
+        pre(style="font-size: 20px").
         script(
-          src='https://gist.github.com/9renpoto/b0b7c006d3fbe368a29e540efd79e216.js'
+          src="https://gist.github.com/9renpoto/b0b7c006d3fbe368a29e540efd79e216.js"
         )
 
-      #esnext.step(data-x='1200', data-y='-1500', data-scale='0.01')
+      #esnext.step(data-x="1200", data-y="-1500", data-scale="0.01")
         script(
-          src='https://gist.github.com/9renpoto/2b4f0b0f172bb57e93628a5dfa9b8b17.js'
+          src="https://gist.github.com/9renpoto/2b4f0b0f172bb57e93628a5dfa9b8b17.js"
         )
         img(
-          src='http://4.bp.blogspot.com/-IxWKND4JML8/VwIjILi7wFI/AAAAAAAA5fE/lgjzp6DwT6cVJKTZI5dOQe-AHX4hGDaYw/s800/internet_kanki_woman2.png',
-          style='max-width:20rem;',
-          alt=''
+          src="http://4.bp.blogspot.com/-IxWKND4JML8/VwIjILi7wFI/AAAAAAAA5fE/lgjzp6DwT6cVJKTZI5dOQe-AHX4hGDaYw/s800/internet_kanki_woman2.png",
+          style="max-width: 20rem",
+          alt=""
         )
 
-      #why-is-it-great.step(data-x='1230', data-y='-1500', data-scale='0.01')
+      #why-is-it-great.step(data-x="1230", data-y="-1500", data-scale="0.01")
         ul
           li Easy parse
             b
@@ -48,7 +53,7 @@ block body
             b
               | components state
 
-      #component-state.step(data-x='1000', data-y='0', data-rotate='90')
+      #component-state.step(data-x="1000", data-y="0", data-rotate="90")
         h2 Too many JavaScript state frameworks
         ul
           li Redux
@@ -57,50 +62,57 @@ block body
           li Rx
           li Vuex
         img(
-          src='http://3.bp.blogspot.com/-zGMD_MYatSo/VyNc1u6gLyI/AAAAAAAA6I8/b_YPfMpAGT427n6xuXb3KuNk3TiO-qpWgCLcB/s800/regulation_tv_shinpai.png',
-          width='320',
-          alt='regulation_tv_shinpai'
+          src="http://3.bp.blogspot.com/-zGMD_MYatSo/VyNc1u6gLyI/AAAAAAAA6I8/b_YPfMpAGT427n6xuXb3KuNk3TiO-qpWgCLcB/s800/regulation_tv_shinpai.png",
+          width="320",
+          alt="regulation_tv_shinpai"
         )
 
-      #json-deram-stream.step(data-x='1000', data-y='1500', data-rotate='90')
+      #json-deram-stream.step(data-x="1000", data-y="1500", data-rotate="90")
         h2 Dream streams
         div Pub / Sub (Elm Architecture)
-        div(style='width:100%;height:0;padding-bottom:58%;position:relative;')
+        div(
+          style="width: 100%; height: 0; padding-bottom: 58%; position: relative"
+        )
           iframe.giphy-embed(
-            src='https://giphy.com/embed/14aumMYgx9CvKw',
-            style='position:absolute'
+            src="https://giphy.com/embed/14aumMYgx9CvKw",
+            style="position: absolute"
           )
         p
-          a(href='https://giphy.com/gifs/cats-endless-stream-14aumMYgx9CvKw')
+          a(href="https://giphy.com/gifs/cats-endless-stream-14aumMYgx9CvKw")
             | via GIPHY
 
-      #like-react.step(data-x='1000', data-y='3000', data-rotate='90')
+      #like-react.step(data-x="1000", data-y="3000", data-rotate="90")
         h2 React
         span
           | We love `read-only` state
         script(
-          src='https://gist.github.com/9renpoto/32333fa632d27c99083a70726ee9cd92.js'
+          src="https://gist.github.com/9renpoto/32333fa632d27c99083a70726ee9cd92.js"
         )
 
-      #immutable.step(data-x='1000', data-y='4500', data-rotate='90')
+      #immutable.step(data-x="1000", data-y="4500", data-rotate="90")
         div
-          a(href='https://facebook.github.io/immutable-js/')
+          a(href="https://facebook.github.io/immutable-js/")
             | immutable.js
         div
-          a(href='https://github.com/aearly/icepick')
+          a(href="https://github.com/aearly/icepick")
             | icepick
         div
           a(
-            href='https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze'
+            href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze"
           )
             | Object.freeze
 
-      #end.step(data-x='-500', data-y='-500', data-rotate='0', data-scale='0.1')
-        div(style='font-size: 36px;')
+      #end.step(
+        data-x="-500",
+        data-y="-500",
+        data-rotate="0",
+        data-scale="0.1"
+      )
+        div(style="font-size: 36px")
           img(
-            src='http://2.bp.blogspot.com/-QKUYCmLZQaM/WYAyZZB0e2I/AAAAAAABF1Q/QdBxruPS3lMAVBN1dCvmBYiDkP-J3l7BACLcBGAs/s800/police_man_kenju_gun.png',
-            width='400',
-            alt='police_man_kenju_gun'
+            src="http://2.bp.blogspot.com/-QKUYCmLZQaM/WYAyZZB0e2I/AAAAAAABF1Q/QdBxruPS3lMAVBN1dCvmBYiDkP-J3l7BACLcBGAs/s800/police_man_kenju_gun.png",
+            width="400",
+            alt="police_man_kenju_gun"
           )
           |
           | Happy Hacking!
@@ -110,26 +122,26 @@ block body
               li
                 | -
                 a(
-                  href='https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring'
+                  href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring"
                 )
                   | destructuring
               li
                 | -
-                a(href='https://guide.elm-lang.org/architecture/') elm architecture
+                a(href="https://guide.elm-lang.org/architecture/") elm architecture
               li
                 | -
                 a(
-                  href='https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0'
+                  href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0"
                 ) Presentational and Container Components
               li
                 | -
-                a(href='https://youtu.be/sNjCELYzEkU') Reactの最新動向とベストプラクティス
+                a(href="https://youtu.be/sNjCELYzEkU") Reactの最新動向とベストプラクティス
     .hint
       p Use a spacebar or arrow keys to navigate
     script.
-      if ('ontouchstart' in document.documentElement) {
-        document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
       }
-    script(src='https://impress.js.org/js/impress.js')
+    script(src="https://impress.js.org/js/impress.js")
     script.
       impress().init();

@@ -22,7 +22,7 @@ This repository is managed as monorepo.
 
 | Package                               | url                          |
 | :------------------------------------ | :--------------------------- |
-| **[@9renpoto/slides](./apps/slides)** | <https://slide.9renpoto.dev> |
+| **[@9renpoto/slides](./apps/slides)** | <https://slides.9renpoto.win> |
 
 ## Install
 

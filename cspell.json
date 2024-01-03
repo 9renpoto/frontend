@@ -3,17 +3,14 @@
   "version": "0.2",
   "useGitignore": true,
   "dictionaries": [
-    "html",
-    "typescript",
     "css",
+    "filetypes",
+    "fonts",
+    "html",
     "node",
-    "rust"
+    "npm",
+    "rust",
+    "typescript"
   ],
-  "words": [
-    "9renpoto",
-    "dearu",
-    "desumasu",
-    "hankaku",
-    "joshi"
-  ]
+  "words": ["9renpoto"]
 }

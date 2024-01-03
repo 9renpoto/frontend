@@ -7,11 +7,12 @@
     "lint": "run-s -l lint:*",
     "lint:eslint": "eslint . --ext=ts,tsx,vue",
     "lint:pkg": "npm run lint -ws --if-present",
-    "lint:prettier": "prettier --check './{packages,sandbox,apps}/**/*.{ts,tsx}'",
+    "lint:fmt": "biome check .",
+    "lint:txt": "textlint README.md",
     "test": "npm run test -ws --if-present"
   },
   "devDependencies": {
-    "eslint": "^8.55.0",
+    "@biomejs/biome": "^1.4.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
@@ -24,16 +25,18 @@
     ]
   },
   "lint-staged": {
+    "*.pug": [
+      "prettier --write --plugin=@prettier/plugin-pug"
+    ],
     "*.{ts,tsx,json}": [
-      "deno fmt"
+      "biome check --apply"
     ],
     "*.md": [
-      "deno fmt",
-      "textlint --fix"
+      "textlint"
     ],
     "*.{ts,tsx}": [
-      "deno fmt",
-      "eslint --fix"
+      "eslint --fix",
+      "biome check --apply"
     ],
     "*.tsx": [
       "stylelint --fix"

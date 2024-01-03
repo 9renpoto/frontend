@@ -7,8 +7,5 @@
     "url": "git+https://github.com/9renpoto/win.git"
   },
   "editor": "atom",
-  "game": [
-    "FPS",
-    "音ゲー"
-  ]
+  "game": ["FPS", "音ゲー"]
 }

@@ -1,0 +1,26 @@
+name: biome
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.json"
+      - "**.ts"
+      - "**.tsx"
+      - "**.js"
+
+jobs:
+  quality:
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v1
+        with:
+          version: latest
+      - name: Run Biome
+        run: biome ci .
