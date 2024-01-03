@@ -1,4 +1,4 @@
-ame: Link Check
+name: Link Check
 on:
   workflow_dispatch:
   schedule:
