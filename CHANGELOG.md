@@ -1,3 +1,29 @@
+## v7.8.0 (2024-01-09)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :bug: Type: Bug
+* chore: deploy cloudflare pages by @9renpoto in https://github.com/9renpoto/frontend/pull/3870
+### :rocket: Type: Feature
+* chore: watch images by @9renpoto in https://github.com/9renpoto/frontend/pull/3871
+* chore: add biome by @9renpoto in https://github.com/9renpoto/frontend/pull/3877
+### Other Changes
+* chore(deps): update dependency textlint-rule-no-doubled-conjunctive-particle-ga to v3 by @renovate in https://github.com/9renpoto/frontend/pull/3866
+* chore(deps): update dependency textlint-rule-max-ten to v5 by @renovate in https://github.com/9renpoto/frontend/pull/3865
+* chore(deps): update dependency textlint-rule-no-doubled-joshi to v5 by @renovate in https://github.com/9renpoto/frontend/pull/3863
+* chore(deps): update dependency textlint-rule-no-doubled-conjunction to v3 by @renovate in https://github.com/9renpoto/frontend/pull/3864
+* Create dependabot.yml by @9renpoto in https://github.com/9renpoto/frontend/pull/3867
+* chore: upgrade plugins by @9renpoto in https://github.com/9renpoto/frontend/pull/3868
+* chore(deps-dev): bump eslint from 8.54.0 to 8.55.0 by @dependabot in https://github.com/9renpoto/frontend/pull/3873
+* chore(deps): bump actions/github-script from 6 to 7 by @dependabot in https://github.com/9renpoto/frontend/pull/3872
+* chore(deps): bump ts-node from 10.9.1 to 10.9.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3875
+* chore(deps-dev): bump lint-staged from 15.1.0 to 15.2.0 by @dependabot in https://github.com/9renpoto/frontend/pull/3874
+* chore(deps): bump actions/checkout from 3 to 4 by @dependabot in https://github.com/9renpoto/frontend/pull/3878
+* chore(deps): bump github/codeql-action from 2 to 3 by @dependabot in https://github.com/9renpoto/frontend/pull/3879
+* chore(deps): bump actions/setup-node from 3 to 4 by @dependabot in https://github.com/9renpoto/frontend/pull/3880
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.7.4...v7.8.0
 ## v7.7.4 (2023-11-25)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
