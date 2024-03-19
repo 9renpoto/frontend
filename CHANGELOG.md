@@ -1,3 +1,18 @@
+## v7.9.0 (2024-03-19)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :bug: Type: Bug
+* fix: skip cloudflare pages comment by @9renpoto in https://github.com/9renpoto/frontend/pull/3887
+### Other Changes
+* chore(deps-dev): bump @biomejs/biome from 1.5.1 to 1.5.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3888
+* chore(deps-dev): bump lint-staged from 15.2.0 to 15.2.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3898
+* chore(deps): bump peter-evans/create-pull-request from 5 to 6 by @dependabot in https://github.com/9renpoto/frontend/pull/3894
+* chore(deps-dev): bump husky from 8.0.3 to 9.0.10 by @dependabot in https://github.com/9renpoto/frontend/pull/3897
+* chore(deps-dev): bump @biomejs/biome from 1.5.2 to 1.5.3 by @dependabot in https://github.com/9renpoto/frontend/pull/3890
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.8.0...v7.9.0
 ## v7.8.0 (2024-01-14)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
