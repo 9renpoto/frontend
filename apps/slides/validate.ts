@@ -1,4 +1,4 @@
-import { exec } from "child_process";
+import { exec } from "node:child_process";
 import vnu from "vnu-jar";
 
 exec(`java -jar ${vnu} --skip-non-html dist`, (error, stdout) => {
