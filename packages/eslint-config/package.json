@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/eslint-config",
-  "version": "7.8.0",
+  "version": "7.9.0",
   "description": "my eslint config",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,10 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "keywords": ["config", "eslint"],
+  "keywords": [
+    "config",
+    "eslint"
+  ],
   "peerDependencies": {
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0"
