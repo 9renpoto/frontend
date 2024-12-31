@@ -4,16 +4,8 @@
   "description": "Shared TypeScript config for my projects",
   "license": "MIT",
   "main": "tsconfig.json",
-  "files": [
-    "tsconfig.json"
-  ],
-  "keywords": [
-    "tsconfig",
-    "typescript",
-    "ts",
-    "config",
-    "configuration"
-  ],
+  "files": ["tsconfig.json"],
+  "keywords": ["tsconfig", "typescript", "ts", "config", "configuration"],
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
