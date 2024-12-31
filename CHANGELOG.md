@@ -1,3 +1,34 @@
+## v7.9.0 (2024-12-31)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :bug: Type: Bug
+* fix: skip cloudflare pages comment by @9renpoto in https://github.com/9renpoto/frontend/pull/3887
+### :house: Refactoring
+* refactor: biome check apply by @9renpoto in https://github.com/9renpoto/frontend/pull/3905
+### Other Changes
+* chore(deps-dev): bump @biomejs/biome from 1.5.1 to 1.5.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3888
+* chore(deps-dev): bump lint-staged from 15.2.0 to 15.2.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3898
+* chore(deps): bump peter-evans/create-pull-request from 5 to 6 by @dependabot in https://github.com/9renpoto/frontend/pull/3894
+* chore(deps-dev): bump husky from 8.0.3 to 9.0.10 by @dependabot in https://github.com/9renpoto/frontend/pull/3897
+* chore(deps-dev): bump @biomejs/biome from 1.5.2 to 1.5.3 by @dependabot in https://github.com/9renpoto/frontend/pull/3890
+* chore(deps): bump streetsidesoftware/cspell-action from 5 to 6 by @dependabot in https://github.com/9renpoto/frontend/pull/3900
+* chore(deps-dev): bump husky from 9.0.10 to 9.0.11 by @dependabot in https://github.com/9renpoto/frontend/pull/3899
+* chore(deps-dev): bump follow-redirects from 1.15.4 to 1.15.6 by @dependabot in https://github.com/9renpoto/frontend/pull/3903
+* chore(deps-dev): bump rimraf from 5.0.5 to 5.0.7 by @dependabot in https://github.com/9renpoto/frontend/pull/3913
+* chore(deps): bump braces from 3.0.2 to 3.0.3 by @dependabot in https://github.com/9renpoto/frontend/pull/3918
+* chore(deps-dev): bump lint-staged from 15.2.2 to 15.2.7 by @dependabot in https://github.com/9renpoto/frontend/pull/3920
+* chore(deps-dev): bump @biomejs/biome from 1.6.2 to 1.8.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3921
+* chore(deps-dev): bump @prettier/plugin-pug from 3.0.0 to 3.2.0 by @dependabot in https://github.com/9renpoto/frontend/pull/3924
+* chore(deps-dev): bump vnu-jar from 23.4.11 to 24.10.17 by @dependabot in https://github.com/9renpoto/frontend/pull/3925
+* chore(deps-dev): bump husky from 9.0.11 to 9.1.7 by @dependabot in https://github.com/9renpoto/frontend/pull/3928
+* chore(deps-dev): bump rimraf from 5.0.7 to 6.0.1 by @dependabot in https://github.com/9renpoto/frontend/pull/3926
+* chore(deps): bump cross-spawn by @dependabot in https://github.com/9renpoto/frontend/pull/3929
+* chore: s/ubuntu-latest/ubuntu-22.04/ by @9renpoto in https://github.com/9renpoto/frontend/pull/3932
+* chore(deps): bump peter-evans/create-pull-request from 6 to 7 by @dependabot in https://github.com/9renpoto/frontend/pull/3922
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.8.0...v7.9.0
 ## v7.8.0 (2024-01-14)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 

@@ -1,6 +1,6 @@
 {
   "name": "@9renpoto/textlint-config-ja",
-  "version": "7.8.0",
+  "version": "7.9.0",
   "description": "Configrations for Japanese text linter",
   "license": "MIT",
   "author": "9renpoto",
@@ -8,7 +8,10 @@
   "scripts": {
     "lint": "textlint README.md --cache"
   },
-  "keywords": ["ja", "textlint"],
+  "keywords": [
+    "ja",
+    "textlint"
+  ],
   "peerDependencies": {
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-incremental-headers": "^0.2.0",
