@@ -13,9 +13,7 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "keywords": [
-    "stylelint-config"
-  ],
+  "keywords": ["stylelint-config"],
   "peerDependencies": {
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^4.0.0"
