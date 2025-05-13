@@ -1,3 +1,17 @@
+## v7.10.0 (2025-05-13)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* fix: biome check . --apply by @9renpoto in https://github.com/9renpoto/frontend/pull/3935
+* fix(.github/workflow): stop textlint cron job by @9renpoto in https://github.com/9renpoto/frontend/pull/3934
+* chore(deps-dev): bump @prettier/plugin-pug from 3.2.0 to 3.2.1 by @dependabot in https://github.com/9renpoto/frontend/pull/3940
+* chore(deps-dev): bump @prettier/plugin-pug from 3.2.1 to 3.3.0 by @dependabot in https://github.com/9renpoto/frontend/pull/3942
+* chore(deps-dev): bump lint-staged from 15.3.0 to 15.5.1 by @dependabot in https://github.com/9renpoto/frontend/pull/3943
+* chore(deps-dev): bump lint-staged from 15.5.1 to 15.5.2 by @dependabot in https://github.com/9renpoto/frontend/pull/3945
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.9.0...v7.10.0
 ## v7.9.0 (2024-12-31)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
