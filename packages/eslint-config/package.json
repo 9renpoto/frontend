@@ -13,7 +13,10 @@
     "url": "https://github.com/9renpoto/frontend/issues"
   },
   "main": "index.js",
-  "keywords": ["config", "eslint"],
+  "keywords": [
+    "config",
+    "eslint"
+  ],
   "peerDependencies": {
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0"
