@@ -12,7 +12,7 @@
     "test": "npm run test -ws --if-present"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.3",
+    "@biomejs/biome": "2.2.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
     "npm-run-all": "^4.1.5",
