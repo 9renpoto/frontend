@@ -1,3 +1,28 @@
+## v7.9.1 (2025-09-17)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* fix: biome check . --apply by @9renpoto in https://github.com/9renpoto/frontend/pull/3935
+* fix(.github/workflow): stop textlint cron job by @9renpoto in https://github.com/9renpoto/frontend/pull/3934
+* chore(deps-dev): bump @prettier/plugin-pug from 3.2.0 to 3.2.1 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3940
+* chore(deps-dev): bump @prettier/plugin-pug from 3.2.1 to 3.3.0 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3942
+* chore(deps-dev): bump lint-staged from 15.3.0 to 15.5.1 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3943
+* chore(deps-dev): bump lint-staged from 15.5.1 to 15.5.2 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3945
+* chore(deps): bump streetsidesoftware/cspell-action from 6 to 7 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3946
+* build(deps): Update biomejs to v2.2.3 by @9renpoto in https://github.com/9renpoto/frontend/pull/3969
+* chore(deps): bump brace-expansion from 1.1.11 to 1.1.12 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3970
+* chore(deps-dev): bump lint-staged from 15.5.2 to 16.1.6 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3965
+* chore(deps-dev): bump @prettier/plugin-pug from 3.3.0 to 3.4.2 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3962
+* chore(deps): bump actions/download-artifact from 4 to 5 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3958
+* chore(deps): bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3961
+* chore(deps): bump actions/setup-node from 4 to 5 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3966
+* chore(deps): bump actions/github-script from 7 to 8 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3967
+* chore(deps-dev): bump @biomejs/biome from 2.2.3 to 2.2.4 by @dependabot[bot] in https://github.com/9renpoto/frontend/pull/3971
+* docs: update README for repository archival by @9renpoto in https://github.com/9renpoto/frontend/pull/3972
+
+
+**Full Changelog**: https://github.com/9renpoto/frontend/compare/v7.9.0...v7.9.1
 ## v7.9.0 (2024-12-31)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
